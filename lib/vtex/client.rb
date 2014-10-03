@@ -23,7 +23,7 @@ module VTEX
       }
 
       response = self.class.get('/api/oms/pvt/orders', options)
-      puts "\n\n get_orders: #{response.inspect}"
+      # puts "\n\n get_orders: #{response.inspect}"
       validate_response(response)
 
       orders = []
@@ -39,26 +39,12 @@ module VTEX
         query: { "an" => site_id }
       }
 
-      response = self.class.get("/api/oms/pvt/orders/#{vtex_order['id']}/", options)
-      puts "\n\n find_order: #{response.inspect}"
+      response = self.class.get("/api/oms/pvt/orders/#{vtex_order['orderId']}/", options)
+      # puts "\n\n find_order: #{response.inspect}"
       validate_response(response)
 
-      response['list'][0]
+      response
     end
-
-    def send_order(payload)
-      # order_placed_hash   = VTEX::OrderBuilder.order_placed(self, payload)
-
-      options = {
-        headers: headers,
-        basic_auth: auth,
-        body: order_placed_hash.to_json
-      }
-
-      response = self.class.post('/register_sales', options)
-      validate_response(response)
-    end
-
 
     private
 
