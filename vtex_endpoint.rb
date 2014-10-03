@@ -11,10 +11,10 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
     config.environment_name = ENV['RACK_ENV']
   end
 
-  post %r{(add_order|update_order)$} do
+  post %r{(add_shipment|update_shipment)$} do
     begin
       client                      = VTEX::Client.new(@config['vtex_site_id'], @config['vtex_app_key'], @config['vtex_app_token'])
-      response                    = client.send_order(@payload[:order])
+      response                    = client.send_shipment(@payload[:order])
       code                        = 200
       set_summary "The order #{@payload[:order][:id]} was sent to VTEX Storefront."
     rescue VTEXEndpointError => e
@@ -50,18 +50,11 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
     process_result code
   end
 
-  post '/get_products' do
+  post %r{(add_shipment|update_shipment)$} do
   end
 
-  post '/get_inventory' do
+  post '/set_inventory' do
   end
-
-  post '/get_customers' do
-  end
-
-  post %r{(add_customer|update_customer)$} do
-  end
-
 
   def error_notification(error)
     log_exception(error)
