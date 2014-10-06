@@ -23,7 +23,7 @@ module VTEX
       }
 
       response = self.class.get('/api/oms/pvt/orders', options)
-      puts "\n\n get_orders: #{response.inspect}"
+      # puts "\n\n get_orders: #{response.inspect}"
       validate_response(response)
 
       orders = []
@@ -45,6 +45,24 @@ module VTEX
       # puts "\n\n find_order: #{response.inspect}"
       validate_response(response)
 
+      response
+    end
+
+    def send_inventory(inventory)
+      options = {
+        headers: headers
+      }
+      inventories= []
+      inventories << VTEX::InventoryBuilder.build_inventory(inventory)
+      options[:body] = inventories.to_json
+
+      self.class.base_uri "http://#{site_id}.vtexcommercestable.com.br"
+
+      response = self.class.post('/api/logistics/pvt/inventory/warehouseitembalances', options)
+      puts "\n\n send_inventory: #{response.inspect}"
+      validate_response(response)
+
+      self.class.base_uri "http://oms.vtexcommerce.com.br/"
       response
     end
 
