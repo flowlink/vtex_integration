@@ -50,6 +50,23 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
     process_result code
   end
 
+  post '/update_order_status' do
+    begin
+      client   = VTEX::ClientRest.new(@config['vtex_site_id'], @config['vtex_app_key'], @config['vtex_app_token'])
+      response = client.send_order(@payload[:order])
+      code     = 200
+      set_summary "The order #{@payload[:order][:id]} was sent to VTEX Storefront."
+    rescue VTEXEndpointError => e
+      code = 500
+      set_summary "Validation error has ocurred: #{e.message}"
+    rescue => e
+      code = 500
+      error_notification(e)
+    end
+
+    process_result code
+  end
+
   post '/set_inventory' do
     begin
       client   = VTEX::ClientRest.new(@config['vtex_site_id'], @config['vtex_app_key'], @config['vtex_app_token'])

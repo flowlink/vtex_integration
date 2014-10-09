@@ -66,6 +66,18 @@ module VTEX
       response
     end
 
+    def send_order(order)
+      options = {
+        headers: headers,
+        query: { "an" => site_id }
+      }
+
+      response = self.class.post("/api/oms/pvt/orders/#{order['id']}/#{order['status']}/", options)
+      # puts "\n\n send_order: #{response.inspect}"
+      validate_response(response)
+      response
+    end
+
     private
 
     def validate_response(response)
