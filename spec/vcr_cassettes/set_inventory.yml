@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://spree.vtexcommercestable.com.br/api/logistics/pvt/inventory/warehouseitembalances
+    body:
+      encoding: UTF-8
+      string: '[{"wareHouseId":"1_1","itemId":"2000005","quantity":93}]'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Vtex-Api-Appkey:
+      - spree-key
+      X-Vtex-Api-Apptoken:
+      - token-123
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Thu, 09 Oct 2014 14:43:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      X-Vtex-Operation-Id:
+      - 6892371a-9cfa-4435-9684-1eb486f34463
+      X-Vtex-Router-Backend-App:
+      - logist - v6.0.6-stable+431
+      X-Vtex-Router-Janusnet-Aspnetlatency:
+      - '0'
+      X-Vtex-Router-Janusnet-Backendlatency:
+      - '134'
+      X-Vtex-Router-Janusnet-Januslatency:
+      - '144'
+      X-Vtex-Router-Powered-By:
+      - VTEX.JanusNet - 1.0.0
+      X-Track:
+      - stable
+      X-Forwarded-For:
+      - 172.0.9.194
+      X-Real-Ip:
+      - 172.0.9.194
+      X-Cdnignore:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: 'true'
+    http_version:
+  recorded_at: Thu, 09 Oct 2014 14:43:43 GMT
+recorded_with: VCR 2.9.3
