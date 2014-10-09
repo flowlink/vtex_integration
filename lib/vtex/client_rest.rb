@@ -59,7 +59,7 @@ module VTEX
       self.class.base_uri "http://#{site_id}.vtexcommercestable.com.br"
 
       response = self.class.post('/api/logistics/pvt/inventory/warehouseitembalances', options)
-      puts "\n\n send_inventory: #{response.inspect}"
+      # puts "\n\n send_inventory: #{response.inspect}"
       validate_response(response)
 
       self.class.base_uri "http://oms.vtexcommerce.com.br/"
