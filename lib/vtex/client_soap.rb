@@ -11,7 +11,14 @@ module VTEX
                              pretty_print_xml: true,
                              log: true,
                              basic_auth: [site_id, password],
-                             namespaces: {"xmlns:vtex" => "http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"})
+                             namespaces: namespaces)
+    end
+
+    def namespaces
+      {
+        "xmlns:vtex" => "http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts",
+        "xmlns:arr"  => "http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+      }
     end
 
     def send_product(product)
