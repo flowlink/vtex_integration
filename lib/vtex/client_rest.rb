@@ -1,5 +1,5 @@
 module VTEX
-  class Client
+  class ClientRest
     include ::HTTParty
 
     attr_reader :site_id, :headers, :app_key, :app_token
