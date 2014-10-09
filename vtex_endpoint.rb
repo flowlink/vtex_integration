@@ -13,9 +13,9 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
 
   post %r{(add_shipment|update_shipment)$} do
     begin
-      client                      = VTEX::Client.new(@config['vtex_site_id'], @config['vtex_app_key'], @config['vtex_app_token'])
-      response                    = client.send_shipment(@payload[:order])
-      code                        = 200
+      client   = VTEX::ClientRest.new(@config['vtex_site_id'], @config['vtex_app_key'], @config['vtex_app_token'])
+      response = client.send_shipment(@payload[:order])
+      code     = 200
       set_summary "The order #{@payload[:order][:id]} was sent to VTEX Storefront."
     rescue VTEXEndpointError => e
       code = 500
@@ -30,7 +30,7 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
 
   post '/get_orders' do
     begin
-      client = VTEX::Client.new(@config['vtex_site_id'], @config['vtex_app_key'], @config['vtex_app_token'])
+      client = VTEX::ClientRest.new(@config['vtex_site_id'], @config['vtex_app_key'], @config['vtex_app_token'])
       orders = client.get_orders(@config['vtex_poll_order_timestamp'])
 
       orders.each do |order|
@@ -50,14 +50,11 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
     process_result code
   end
 
-  post %r{(add_shipment|update_shipment)$} do
-  end
-
   post '/set_inventory' do
     begin
-      client = VTEX::Client.new(@config['vtex_site_id'], @config['vtex_app_key'], @config['vtex_app_token'])
-      response                    = client.send_inventory(@payload[:inventory])
-      code                        = 200
+      client   = VTEX::ClientRest.new(@config['vtex_site_id'], @config['vtex_app_key'], @config['vtex_app_token'])
+      response = client.send_inventory(@payload[:inventory])
+      code     = 200
       set_summary "The inventory #{@payload[:inventory][:id]} was sent to VTEX Storefront."
     rescue VTEXEndpointError => e
       code = 500
@@ -69,6 +66,25 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
 
     process_result code
   end
+
+  post %r{(add_product|update_product)$} do
+    begin
+      client   = VTEX::ClientSoap.new(@config['vtex_site_id'], @config['vtex_password'])
+      products = client.send_product(@payload[:product])
+      skus     = client.send_skus(@payload[:product])
+      code     = 200
+      set_summary "The product #{@payload[:product][:id]} and #{skus} were sent to VTEX Storefront."
+    rescue VTEXEndpointError => e
+      code = 500
+      set_summary "Validation error has ocurred: #{e.message}"
+    rescue => e
+      code = 500
+      error_notification(e)
+    end
+
+    process_result code
+  end
+
 
   def error_notification(error)
     log_exception(error)
