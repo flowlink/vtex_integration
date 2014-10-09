@@ -23,23 +23,17 @@ module VTEX
 
     def send_product(product)
       product = VTEX::ProductBuilder.build_product(product)
-# puts "\n\n #{product}\n\n"
       response = client.call(:product_insert_update, message: { 'tns:productVO' => product } )
-
-      puts "\n\n send_product(products): #{response.inspect}"
-
       validate_response(response)
-
-      products
+      product
     end
 
     def send_skus(product)
       skus     = VTEX::ProductBuilder.build_skus(product)
-
-      response = client.call(:stock_keeping_unit_insert_update, message: skus )
-# puts "\n\n send_product(skus): #{response.inspect}"
-      validate_response(response)
-
+      skus.each do |sku_item|
+        response = client.call(:stock_keeping_unit_insert_update, message: { 'tns:stockKeepingUnitVO' => sku_item } )
+        validate_response(response)
+      end
       skus
     end
 
