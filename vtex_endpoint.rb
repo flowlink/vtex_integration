@@ -90,7 +90,7 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
       products = client.send_product(@payload[:product])
       skus     = client.send_skus(@payload[:product])
       code     = 200
-      set_summary "The product #{@payload[:product][:id]} and #{skus.size} were sent to VTEX Storefront."
+      set_summary "The product #{@payload[:product][:id]} and #{skus.size} SKUs were sent to VTEX Storefront."
     rescue VTEXEndpointError => e
       code = 500
       set_summary "Validation error has ocurred: #{e.message}"
