@@ -31,7 +31,7 @@ module VTEX
 
       #Do not change the order of fields
       def build_skus(product)
-        skus = (product['variants'] || []).each_with_index.map do |item, i|
+        skus = (product['variants'] || []).map do |item|
           {
             'vtex:CommercialConditionId' => nil,
             'vtex:CostPrice'             => item['cost_price'],

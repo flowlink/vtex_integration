@@ -64,7 +64,7 @@ module VTEX
       def parse_payments(vtex_order)
         payments = []
         (vtex_order['paymentData']['transactions'] || []).each do | transaction |
-          (transaction['payments'] || []).each_with_index.map do |payment, i|
+          (transaction['payments'] || []).map do |payment|
             payments << {
               'tranaction_id'  => transaction['transactionId'],
               'number'         => payment['installments'],
@@ -79,7 +79,7 @@ module VTEX
       end
 
       def parse_items(vtex_order)
-        (vtex_order['items'] || []).each_with_index.map do |item, i|
+        (vtex_order['items'] || []).map do |item, |
           {
             'product_id' => item['productId'],
             'sku'        => item['sellerSku'],
@@ -102,11 +102,10 @@ module VTEX
       end
 
       def build_hash_total(vtex_order)
-        hash = {}
-        (vtex_order['totals'] || []).each_with_index.map do |total, i|
-          hash[total['id']] = total['value']
+        (vtex_order['totals'] || []).inject({}) do |acc, total|
+          acc[total['id']] = total['value']
+          acc
         end
-        hash
       end
     end
   end

@@ -26,13 +26,9 @@ module VTEX
       # puts "\n\n get_orders: #{response.inspect}"
       validate_response(response)
 
-      orders = []
-      (response['list'] || []).each_with_index.map do |order, i|
-        break if Time.parse(order['creationDate']) < Time.parse(poll_order_timestamp)
-
-        orders << VTEX::OrderBuilder.parse_order(find_order(order))
-      end
-      orders
+      (response['list'] || []).
+        select{|order| Time.parse(order['creationDate']) >= Time.parse(poll_order_timestamp)}.
+        map{|order| VTEX::OrderBuilder.parse_order(find_order(order))}
     end
 
     def find_order(vtex_order)
