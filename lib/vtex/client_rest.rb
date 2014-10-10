@@ -6,12 +6,12 @@ module VTEX
 
     def initialize(site_id, app_key, app_token)
       @site_id = site_id
-      @headers = { "Content-Type" => "application/json",
-                   "Accept" => "application/json",
-                   "x-vtex-api-appKey" => app_key,
-                   "x-vtex-api-appToken"=> app_token
+      @headers = {
+                   "Content-Type"        => "application/json",
+                   "Accept"              => "application/json",
+                   "x-vtex-api-appKey"   => app_key,
+                   "x-vtex-api-appToken" => app_token
                  }
-
 
       self.class.base_uri "http://oms.vtexcommerce.com.br/"
     end

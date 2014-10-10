@@ -1,16 +1,8 @@
 module VTEX
   class OrderBuilder
     class << self
-      def build_hash_total(vtex_order)
-        hash = {}
-        (vtex_order['totals'] || []).each_with_index.map do |total, i|
-          hash[total['id']] = total['value']
-        end
-        hash
-      end
-
       def parse_order(vtex_order)
-        hash_total = build_hash_total(vtex_order)
+        hash_total  = build_hash_total(vtex_order)
         adjustments = hash_total['Tax'] + hash_total['Discounts'] + hash_total['Shipping']
         total_order = hash_total['Items'] + adjustments
         {
@@ -69,14 +61,6 @@ module VTEX
         }
       end
 
-      def address1(vtex_order)
-        "#{vtex_order['shippingData']['address']['street']}, #{vtex_order['shippingData']['address']['number']}"
-      end
-
-      def address2(vtex_order)
-        "#{vtex_order['shippingData']['address']['neighborhood']} - #{vtex_order['shippingData']['address']['complement']}"
-      end
-
       def parse_payments(vtex_order)
         payments = []
         (vtex_order['paymentData']['transactions'] || []).each do | transaction |
@@ -105,6 +89,24 @@ module VTEX
             'price'      => item['price']
           }
         end
+      end
+
+      private
+
+      def address1(vtex_order)
+        "#{vtex_order['shippingData']['address']['street']}, #{vtex_order['shippingData']['address']['number']}"
+      end
+
+      def address2(vtex_order)
+        "#{vtex_order['shippingData']['address']['neighborhood']} - #{vtex_order['shippingData']['address']['complement']}"
+      end
+
+      def build_hash_total(vtex_order)
+        hash = {}
+        (vtex_order['totals'] || []).each_with_index.map do |total, i|
+          hash[total['id']] = total['value']
+        end
+        hash
       end
     end
   end
