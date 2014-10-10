@@ -12,6 +12,7 @@ module VTEX
       def parse_order(vtex_order)
         hash_total = build_hash_total(vtex_order)
         adjustments = hash_total['Tax'] + hash_total['Discounts'] + hash_total['Shipping']
+        total_order = hash_total['Items'] + adjustments
         {
           'id'              => vtex_order['orderId'],
           'follow_up_email' => vtex_order['followUpEmail'],
@@ -24,8 +25,8 @@ module VTEX
                         'adjustment' => adjustments,
                         'tax'        => hash_total['Tax'],
                         'shipping'   => hash_total['Shipping'],
-                        'payment'    => vtex_order['totalValue'],
-                        'order'      => vtex_order['totalValue']
+                        'payment'    => total_order,
+                        'order'      => total_order
                       },
           'line_items'  => parse_items(vtex_order),
           'adjustments' => [
