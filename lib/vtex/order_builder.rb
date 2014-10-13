@@ -12,6 +12,7 @@ module VTEX
           'channel'         => 'vtex',
           'origin'          => vtex_order['origin'],
           'email'           => vtex_order['clientProfileData']['email'],
+          'cpf_or_cnpj'     => vtex_order['clientProfileData']['document'],
           'placed_on'       => vtex_order['creationDate'],
           'totals' => {
                         'item'       => hash_total['Items'],
