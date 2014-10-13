@@ -9,7 +9,8 @@ module VTEX
           'id'              => vtex_order['orderId'],
           'follow_up_email' => vtex_order['followUpEmail'],
           'status'          => vtex_order['status'],
-          'channel'         => vtex_order['salesChannel'],
+          'channel'         => 'vtex',
+          'origin'          => vtex_order['origin'],
           'email'           => vtex_order['clientProfileData']['email'],
           'placed_on'       => vtex_order['creationDate'],
           'totals' => {
