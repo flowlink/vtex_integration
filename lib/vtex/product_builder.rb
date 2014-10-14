@@ -58,7 +58,7 @@ module VTEX
             'vtex:RealLength'            => nil,
             'vtex:RealWeightKg'          => nil,
             'vtex:RealWidth'             => nil,
-            'vtex:RefId'                 => clear_id(product['id']),
+            'vtex:RefId'                 => (item.has_key?('id') ? clear_id(item['id']) : clear_id(product['id'])),
             'vtex:RewardValue'           => nil,
             'vtex:StockKeepingUnitEans'  => nil,
             'vtex:UnitMultiplier'        => nil,
@@ -70,16 +70,16 @@ module VTEX
         skus << {
                 'vtex:CommercialConditionId' => nil,
                 'vtex:CostPrice'             => product['cost_price'],
-                'vtex:CubicWeight'           => 0,
+                'vtex:CubicWeight'           => 0.02,
                 'vtex:DateUpdated'           => nil,
                 'vtex:EstimatedDateArrival'  => nil,
-                'vtex:Height'                => 0,
+                'vtex:Height'                => 0.02,
                 'vtex:Id'                    => (product.has_key?('id') ? clear_id(product['id']) : nil),
                 'vtex:InternalNote'          => nil,
                 'vtex:IsActive'              => true,
                 'vtex:IsAvaiable'            => nil,
                 'vtex:IsKit'                 => false,
-                'vtex:Length'                => 0,
+                'vtex:Length'                => 0.02,
                 'vtex:ListPrice'             => product['price'],
                 'vtex:ManufacturerCode'      => nil,
                 'vtex:MeasurementUnit'       => nil,
@@ -93,12 +93,12 @@ module VTEX
                 'vtex:RealLength'            => nil,
                 'vtex:RealWeightKg'          => nil,
                 'vtex:RealWidth'             => nil,
-                'vtex:RefId'                 => clear_id(product['id']),
+                'vtex:RefId'                 => (product.has_key?('id') ? clear_id(product['id']) : nil),
                 'vtex:RewardValue'           => nil,
                 'vtex:StockKeepingUnitEans'  => nil,
                 'vtex:UnitMultiplier'        => nil,
-                'vtex:WeightKg'              => 0,
-                'vtex:Width'                 => 0
+                'vtex:WeightKg'              => 0.02,
+                'vtex:Width'                 => 0.02
               }
         skus
       end
