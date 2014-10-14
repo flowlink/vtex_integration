@@ -35,20 +35,20 @@ module VTEX
           {
             'vtex:CommercialConditionId' => nil,
             'vtex:CostPrice'             => item['cost_price'],
-            'vtex:CubicWeight'           => 0,
+            'vtex:CubicWeight'           => 0.02,
             'vtex:DateUpdated'           => nil,
             'vtex:EstimatedDateArrival'  => nil,
-            'vtex:Height'                => 0,
+            'vtex:Height'                => 0.02,
             'vtex:Id'                    => (item.has_key?('id') ? clear_id(item['id']) : nil),
             'vtex:InternalNote'          => nil,
             'vtex:IsActive'              => true,
             'vtex:IsAvaiable'            => nil,
             'vtex:IsKit'                 => false,
-            'vtex:Length'                => 0,
+            'vtex:Length'                => 0.02,
             'vtex:ListPrice'             => item['price'],
             'vtex:ManufacturerCode'      => nil,
             'vtex:MeasurementUnit'       => nil,
-            'vtex:ModalId'               => (item['options']['size']=='S' ? 1 : 2),
+            'vtex:ModalId'               => (item.has_key?('options') && item['options']['size']=='S' ? 1 : 2),
             'vtex:ModalType'             => nil,
             'vtex:Name'                  => product['name'],
             'vtex:Price'                 => item['price'],
@@ -62,8 +62,8 @@ module VTEX
             'vtex:RewardValue'           => nil,
             'vtex:StockKeepingUnitEans'  => nil,
             'vtex:UnitMultiplier'        => nil,
-            'vtex:WeightKg'              => 0,
-            'vtex:Width'                 => 0
+            'vtex:WeightKg'              => 0.02,
+            'vtex:Width'                 => 0.02
           }
         end
 
