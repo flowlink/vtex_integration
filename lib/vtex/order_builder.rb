@@ -68,7 +68,7 @@ module VTEX
         (vtex_order['paymentData']['transactions'] || []).each do | transaction |
           (transaction['payments'] || []).map do |payment|
             payments << {
-              'tranaction_id'  => transaction['transactionId'],
+              'transaction_id' => transaction['transactionId'],
               'number'         => payment['installments'],
               'status'         => vtex_order['status'],
               'amount'         => payment['value'],
