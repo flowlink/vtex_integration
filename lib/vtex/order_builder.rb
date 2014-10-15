@@ -64,10 +64,9 @@ module VTEX
       end
 
       def parse_payments(vtex_order)
-        payments = []
-        (vtex_order['paymentData']['transactions'] || []).each do | transaction |
-          (transaction['payments'] || []).map do |payment|
-            payments << {
+        vtex_order['paymentData']['transactions'].to_a.map do |transaction|
+          transaction['payments'].to_a.map do |payment|
+            {
               'transaction_id' => transaction['transactionId'],
               'number'         => payment['installments'],
               'status'         => vtex_order['status'],
@@ -76,8 +75,7 @@ module VTEX
               'due_date'       => payment['dueDate']
             }
           end
-        end
-        payments
+        end.flatten
       end
 
       def parse_items(vtex_order)
