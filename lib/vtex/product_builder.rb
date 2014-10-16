@@ -3,10 +3,10 @@ module VTEX
     class << self
 
       # Do not change the order of fields
-      def build_product(product)
+      def build_product(product, client)
         {
           'vtex:AdWordsRemarketingCode' => nil,
-          'vtex:BrandId'                => 1,
+          'vtex:BrandId'                => client.find_or_create_brand(product['brand']),
           'vtex:CategoryId'             => 1000000,
           'vtex:DepartmentId'           => 1000000,
           'vtex:Description'            => product['description'],
@@ -70,16 +70,16 @@ module VTEX
         skus << {
                 'vtex:CommercialConditionId' => nil,
                 'vtex:CostPrice'             => product['cost_price'],
-                'vtex:CubicWeight'           => 0.02,
+                'vtex:CubicWeight'           => product['weight'],
                 'vtex:DateUpdated'           => nil,
                 'vtex:EstimatedDateArrival'  => nil,
-                'vtex:Height'                => 0.02,
+                'vtex:Height'                => product['height'],
                 'vtex:Id'                    => (product.has_key?('id') ? clear_id(product['id']) : nil),
                 'vtex:InternalNote'          => nil,
                 'vtex:IsActive'              => true,
                 'vtex:IsAvaiable'            => nil,
                 'vtex:IsKit'                 => false,
-                'vtex:Length'                => 0.02,
+                'vtex:Length'                => product['height'],
                 'vtex:ListPrice'             => product['price'],
                 'vtex:ManufacturerCode'      => nil,
                 'vtex:MeasurementUnit'       => nil,
@@ -97,8 +97,8 @@ module VTEX
                 'vtex:RewardValue'           => nil,
                 'vtex:StockKeepingUnitEans'  => nil,
                 'vtex:UnitMultiplier'        => nil,
-                'vtex:WeightKg'              => 0.02,
-                'vtex:Width'                 => 0.02
+                'vtex:WeightKg'              => product['weight'],
+                'vtex:Width'                 => product['width']
               }
         skus
       end
