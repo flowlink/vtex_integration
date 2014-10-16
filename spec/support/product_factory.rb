@@ -1,17 +1,24 @@
 module Factories
   def self.product(sku = 'ROR-TS')
     {
-      'id'=> 12345,
-      'name'=> 'Ruby on Rails T-Shirt',
-      'description'=> 'Some description text for the product.',
-      'sku'=> sku,
-      'price'=> 31,
-      'created_at' => '2014-02-03T19:00:54.386Z',
-      'updated_at' => '2014-02-03T19:22:54.386Z',
+      'id'          => 12345,
+      'name'        => 'Ruby on Rails T-Shirt',
+      'description' => 'Some description text for the product.',
+      'sku'         => sku,
+      'price'       => 31,
+      'created_at'  => '2014-02-03T19:00:54.386Z',
+      'updated_at'  => '2014-02-03T19:22:54.386Z',
       'properties'=> {
         'fabric'=> 'cotton',
       },
-      'options'=> [ 'color', 'size' ],
+      'options' => [ 'color', 'size' ],
+      'class'   => 'Vendável',
+      'brand'   => 'American Pets',
+      'family'  =>  'Gatos',
+      'weight'  => '1.4',
+      'height'  => '40',
+      'width'   => '40',
+      'length'  => '55',
       'taxons'=> [
         ['Categories', 'Clothes', 'T-Shirts'],
         ['Brands', 'Spree']
