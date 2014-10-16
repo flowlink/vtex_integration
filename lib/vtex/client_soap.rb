@@ -41,18 +41,47 @@ module VTEX
       response = client.call(:brand_get_by_name, message: { 'tns:nameBrand' => brand_name } )
       validate_response(response)
 
-      return create_brand(brand_name) unless response.body[:brand_get_by_name_response][:brand_get_by_name_result][:id]
+      response.body[:brand_get_by_name_response][:brand_get_by_name_result][:id] ||
+        create_brand(brand_name)
+    end
 
-      response.body[:brand_get_by_name_response][:brand_get_by_name_result][:id]
+    def find_or_create_category(taxons)
+      return if taxons.to_a.empty?
+
+      category_name = taxons.first.last
+
+      find_category(category_name) || create_category_base_on_taxons(taxons)
     end
 
     private
 
+    def find_category(category_name)
+      response = client.call(:category_get_by_name, message: { 'tns:nameCategory' => category_name } )
+      validate_response(response)
+      response.body[:category_get_by_name_response][:category_get_by_name_result][:id]
+    end
+
+    def send_category(category_name, father_id)
+      response = client.call(:category_insert_update, message: { 'tns:category' => {  'vtex:FatherCategoryId' => father_id,
+                                                                                      'vtex:IsActive'         => true,
+                                                                                      'vtex:Name'             => category_name
+                                                                                    } } )
+      validate_response(response)
+
+      response.body[:category_insert_update_response][:category_insert_update_result][:id]
+    end
+
+    def create_category_base_on_taxons(taxons)
+      categories = taxons.first
+      father_id  = find_category(categories.first) || send_category(categories.first, nil)
+      send_category(categories.last, father_id)
+    end
+
     def create_brand(brand_name)
-      response = client.call(:brand_insert_update, message: { 'tns:brand' => { 'vtex:IsActive' => true,
+      response = client.call(:brand_insert_update, message: { 'tns:brand' => { 'vtex:IsActive'               => true,
                                                                                'vtex:AdWordsRemarketingCode' => nil,
-                                                                               'vtex:Name' => brand_name,
-                                                                               'vtex:Title' => brand_name
+                                                                               'vtex:Name'                   => brand_name,
+                                                                               'vtex:Title'                  => brand_name
                                                                                } } )
       validate_response(response)
 

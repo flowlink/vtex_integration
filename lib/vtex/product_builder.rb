@@ -6,8 +6,8 @@ module VTEX
       def build_product(product, client)
         {
           'vtex:AdWordsRemarketingCode' => nil,
-          'vtex:BrandId'                => client.find_or_create_brand(product['brand']),
-          'vtex:CategoryId'             => 1000000,
+          'vtex:BrandId'                => client.find_or_create_brand(product['brand']) || 1,
+          'vtex:CategoryId'             => client.find_or_create_category(product['taxons']) || 1000000,
           'vtex:DepartmentId'           => 1000000,
           'vtex:Description'            => product['description'],
           'vtex:DescriptionShort'       => nil,
