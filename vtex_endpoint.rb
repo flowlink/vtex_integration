@@ -102,10 +102,15 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
     process_result code
   end
 
+  post '/get_products' do
+    client = VTEX::ClientSoap.new(@config['vtex_site_id'], @config['vtex_password'])
+    client.get_products
+
+    result 200, "received from VTEX"
+  end
 
   def error_notification(error)
     log_exception(error)
     set_summary "A VTEX Endpoint error has ocurred: #{error.message}"
   end
-
 end

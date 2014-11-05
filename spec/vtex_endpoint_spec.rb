@@ -1,14 +1,6 @@
 require 'spec_helper'
 
 describe VTEXEndpoint do
-  def app
-    VTEXEndpoint
-  end
-
-  def auth
-    {'HTTP_X_AUGURY_TOKEN' => '6a204bd89f3c8348afd5c77c717a097a', "CONTENT_TYPE" => "application/json"}
-  end
-
   let(:inventory) { Factories.inventory }
   let(:product) { Factories.product }
   let(:params) { Factories.parameters }
@@ -31,7 +23,6 @@ describe VTEXEndpoint do
   end
 
   describe '/set_inventory' do
-
     context 'success' do
       it 'imports new inventories' do
         message = {
@@ -51,7 +42,6 @@ describe VTEXEndpoint do
   end
 
   describe '/add_product' do
-
     context 'success' do
       it 'imports new products' do
         message = {
@@ -70,5 +60,17 @@ describe VTEXEndpoint do
     end
   end
 
+  describe '/get_products' do
+    context 'success' do
+      it 'brings products' do
+        message = { parameters: params }
 
+        VCR.use_cassette('get_products') do
+          post '/get_products', message.to_json, auth
+          expect(json_response[:summary]).to match /received from VTEX/
+          expect(last_response.status).to eq(200)
+        end
+      end
+    end
+  end
 end

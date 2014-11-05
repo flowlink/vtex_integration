@@ -11,20 +11,26 @@ require File.join(File.dirname(__FILE__), '..', 'vtex_endpoint.rb')
 
 Dir['./spec/support/**/*.rb'].each &method(:require)
 
+require 'spree/testing_support/controllers'
+
 Sinatra::Base.environment = 'test'
 
-def app
-  VTEXEndpoint
-end
+ENV['VTEX_SITE_ID'] ||= 'siteid'
+ENV['VTEX_PASSWORD'] ||= 'passwd'
 
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/vcr_cassettes'
   c.hook_into :webmock
+
+  c.filter_sensitive_data("VTEX_SITE_ID") { ENV["VTEX_SITE_ID"] }
+  c.filter_sensitive_data("VTEX_PASSWORD") { ENV["VTEX_PASSWORD"] }
 end
 
 RSpec.configure do |config|
   config.run_all_when_everything_filtered = true
 
   config.include Rack::Test::Methods
+  config.include Spree::TestingSupport::Controllers
+
   config.order = 'random'
 end

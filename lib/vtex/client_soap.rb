@@ -1,6 +1,5 @@
 module VTEX
   class ClientSoap
-
     attr_reader :site_id, :client
 
     def initialize(site_id, password)
@@ -19,6 +18,16 @@ module VTEX
         "xmlns:vtex" => "http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts",
         "xmlns:arr"  => "http://schemas.microsoft.com/2003/10/Serialization/Arrays"
       }
+    end
+
+    def get_products
+      response = client.call(
+        :product_get_all_from_updated_date_and_id,
+        message: {
+          'tns:dateUpdated' => "2014-10-05T21:25:20Z",
+          'tns:topRows' => 10,
+        }
+      )
     end
 
     def send_product(product)
