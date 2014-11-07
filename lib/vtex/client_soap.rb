@@ -28,7 +28,7 @@ module VTEX
       response = client.call(
         :product_get_all_from_updated_date_and_id,
         message: {
-          'tns:dateUpdated' => config[:vtex_products_since],
+          'tns:dateUpdated' => vtex_products_since,
           'tns:topRows' => 100,
         }
       )

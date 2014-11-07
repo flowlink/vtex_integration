@@ -68,9 +68,12 @@ describe VTEXEndpoint do
 
       VCR.use_cassette("1415306393") do
         post '/get_products', message.to_json, auth
+
         expect(json_response[:summary]).to match /from VTEX/
         expect(last_response.status).to eq(200)
+
         expect(json_response[:products].count).to be >= 1
+        expect(json_response[:parameters]).to have_key 'vtex_products_since'
       end
     end
 
@@ -81,8 +84,11 @@ describe VTEXEndpoint do
 
       VCR.use_cassette("no_products_1415323854") do
         post '/get_products', message.to_json, auth
+
         expect(json_response[:summary]).to eq nil
         expect(last_response.status).to eq(200)
+
+        expect(json_response[:parameters]).to eq nil
       end
     end
   end

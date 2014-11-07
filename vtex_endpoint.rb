@@ -107,9 +107,10 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
     raw_products = client.get_products
     products = VTEX::ProductTransformer.map raw_products
 
-    if products.any?
-      count = products.count
+    if (count = products.count) > 0
       add_value 'products', products
+      add_parameter 'vtex_products_since', Time.now.utc.iso8601
+
       result 200, "Received #{count} #{"product".pluralize count} from VTEX"
     end
 
