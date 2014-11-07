@@ -105,7 +105,7 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
   post '/get_products' do
     client = VTEX::ClientSoap.new(@config['vtex_site_id'], @config['vtex_password'], @config)
     raw_products = client.get_products
-    products = VTEX::ProductTransformer.map raw_products
+    products = VTEX::ProductTransformer.map raw_products, client
 
     if (count = products.count) > 0
       add_value 'products', products

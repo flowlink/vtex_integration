@@ -5,6 +5,7 @@ module VTEX
     def initialize(site_id, password, config = {})
       @config = config
       @site_id = site_id
+
       # NOTE This url or part of it should come in as a config param?
       # good chance production url would be different
       @client = Savon.client(wsdl: 'http://webservice-sandboxintegracao.vtexcommerce.com.br/service.svc?wsdl',
@@ -37,6 +38,26 @@ module VTEX
 
       xml_response = response.body[:product_get_all_from_updated_date_and_id_response]
       result = xml_response[:product_get_all_from_updated_date_and_id_result][:product_dto]
+
+      if result.is_a? Array
+        result
+      else
+        [result].compact
+      end
+    end
+
+    def get_skus_by_product_id(product_id)
+      response = client.call(
+        :stock_keeping_unit_get_all_by_product,
+        message: {
+          'tns:idProduct' => product_id
+        }
+      )
+
+      validate_response(response)
+
+      xml_response = response.body[:stock_keeping_unit_get_all_by_product_response]
+      result = xml_response[:stock_keeping_unit_get_all_by_product_result][:stock_keeping_unit_dto]
 
       if result.is_a? Array
         result
