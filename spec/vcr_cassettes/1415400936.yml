@@ -21,23 +21,25 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Age:
-      - '0'
+      - '3018'
       Cache-Control:
       - no-cache
       Content-Type:
       - text/xml; charset=UTF-8
       Date:
-      - Thu, 06 Nov 2014 20:41:41 GMT
+      - Fri, 07 Nov 2014 22:55:34 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Vary:
       - Accept-Encoding
+      X-Debug-Obj-Ttl:
+      - '7782.228'
       X-Debug-X-Id:
-      - '1205250389'
+      - 2853309029 2852916263
       X-Forwarded:
-      - 187.41.87.21, 204.236.213.21, 10.66.218.205
+      - 187.41.95.228, 54.204.59.180, 10.31.167.136
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -54,13 +56,13 @@ http_interactions:
       X-Msg-05:
       - 'fetch: save cache with 2 Hours  Clean vary from (Accept-Encoding) to (Accept-Encoding)'
       X-Msg-06:
-      - 'deliver: cache MISS'
+      - 'deliver: cache HIT'
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
       - '2014-10-13 15:14:22'
       X-Vtex-Processado-Em:
-      - '02:00:11.9979380'
+      - '02:00:00.0155993'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -1810,7 +1812,7 @@ http_interactions:
         name="Service"><wsdl:port name="BasicHttpBinding_IService" binding="tns:BasicHttpBinding_IService"><soap:address
         location="http://webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc"/></wsdl:port></wsdl:service></wsdl:definitions>
     http_version: 
-  recorded_at: Thu, 06 Nov 2014 20:41:43 GMT
+  recorded_at: Fri, 07 Nov 2014 22:55:37 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -1819,7 +1821,7 @@ http_interactions:
       string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
         xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:ProductGetAllFromUpdatedDateAndId><tns:dateUpdated>2014-11-06T11:25:20Z</tns:dateUpdated><tns:topRows>100</tns:topRows></tns:ProductGetAllFromUpdatedDateAndId></env:Body></env:Envelope>
+        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:ProductGetAllFromUpdatedDateAndId><tns:dateUpdated>2014-11-07T11:25:20Z</tns:dateUpdated><tns:topRows>100</tns:topRows></tns:ProductGetAllFromUpdatedDateAndId></env:Body></env:Envelope>
     headers:
       Soapaction:
       - '"http://tempuri.org/IService/ProductGetAllFromUpdatedDateAndId"'
@@ -1848,22 +1850,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Thu, 06 Nov 2014 20:41:46 GMT
+      - Fri, 07 Nov 2014 22:55:35 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=qpzkxr0g1sy44clrr2saptb2; path=/; HttpOnly
-      - ASP.NET_SessionId=qpzkxr0g1sy44clrr2saptb2; path=/; HttpOnly
+      - ASP.NET_SessionId=oevz2c2m4wismyaxgykukqcl; path=/; HttpOnly
+      - ASP.NET_SessionId=oevz2c2m4wismyaxgykukqcl; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '1205256534'
+      - '2853309131'
       X-Forwarded:
-      - 187.41.87.21, 204.236.213.21, 10.31.167.136
+      - 187.41.95.228, 54.204.59.180, 10.31.167.136
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -1886,25 +1888,427 @@ http_interactions:
       X-Vtex-Lastupdate:
       - '2014-10-13 15:14:22'
       X-Vtex-Processado-Em:
-      - '02:00:04.7898140'
+      - '02:00:00'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
       - 1.0.0.0
       Content-Length:
-      - '566'
+      - '1496'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PHM6RW52ZWxvcGUgeG1sbnM6cz0iaHR0cDovL3NjaGVtYXMueG1sc29hcC5v
+        cmcvc29hcC9lbnZlbG9wZS8iPjxzOkJvZHk+PFByb2R1Y3RHZXRBbGxGcm9t
+        VXBkYXRlZERhdGVBbmRJZFJlc3BvbnNlIHhtbG5zPSJodHRwOi8vdGVtcHVy
+        aS5vcmcvIj48UHJvZHVjdEdldEFsbEZyb21VcGRhdGVkRGF0ZUFuZElkUmVz
+        dWx0IHhtbG5zOmE9Imh0dHA6Ly9zY2hlbWFzLmRhdGFjb250cmFjdC5vcmcv
+        MjAwNC8wNy9WdGV4LkNvbW1lcmNlLldlYkFwcHMuQWRtaW5XY2ZTZXJ2aWNl
+        LkNvbnRyYWN0cyIgeG1sbnM6aT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9Y
+        TUxTY2hlbWEtaW5zdGFuY2UiPjxhOlByb2R1Y3REVE8+PGE6QWRXb3Jkc1Jl
+        bWFya2V0aW5nQ29kZSBpOm5pbD0idHJ1ZSIvPjxhOkJyYW5kSWQ+MjAwMDAw
+        ODwvYTpCcmFuZElkPjxhOkNhdGVnb3J5SWQ+MTAwMDAwMjwvYTpDYXRlZ29y
+        eUlkPjxhOkRlcGFydG1lbnRJZD4xMDAwMDAxPC9hOkRlcGFydG1lbnRJZD48
+        YTpEZXNjcmlwdGlvbj5Tb21lIGRlc2NyaXB0aW9uIHRleHQgZm9yIHRoZSBw
+        cm9kdWN0LjwvYTpEZXNjcmlwdGlvbj48YTpEZXNjcmlwdGlvblNob3J0Lz48
+        YTpJZD4xMjM0NTwvYTpJZD48YTpJc0FjdGl2ZT5mYWxzZTwvYTpJc0FjdGl2
+        ZT48YTpJc1Zpc2libGU+dHJ1ZTwvYTpJc1Zpc2libGU+PGE6S2V5V29yZHMv
+        PjxhOkxpbmtJZD5SdWJ5LW9uLVJhaWxzLVQtU2hpcnQ8L2E6TGlua0lkPjxh
+        Okxpc3RTdG9yZUlkIGk6bmlsPSJ0cnVlIiB4bWxuczpiPSJodHRwOi8vc2No
+        ZW1hcy5taWNyb3NvZnQuY29tLzIwMDMvMTAvU2VyaWFsaXphdGlvbi9BcnJh
+        eXMiLz48YTpMb21hZGVlQ2FtcGFpZ25Db2RlIGk6bmlsPSJ0cnVlIi8+PGE6
+        TWV0YVRhZ0Rlc2NyaXB0aW9uPlNvbWUgZGVzY3JpcHRpb24gdGV4dCBmb3Ig
+        dGhlIHByb2R1Y3QuPC9hOk1ldGFUYWdEZXNjcmlwdGlvbj48YTpOYW1lPlJ1
+        Ynkgb24gUmFpbHMgVC1TaGlydDwvYTpOYW1lPjxhOlJlZklkPjEyMzQ1PC9h
+        OlJlZklkPjxhOlJlbGVhc2VEYXRlIGk6bmlsPSJ0cnVlIi8+PGE6U2hvd1dp
+        dGhvdXRTdG9jaz50cnVlPC9hOlNob3dXaXRob3V0U3RvY2s+PGE6U3VwcGxp
+        ZXJJZCBpOm5pbD0idHJ1ZSIvPjxhOlRheENvZGUvPjxhOlRpdGxlLz48L2E6
+        UHJvZHVjdERUTz48YTpQcm9kdWN0RFRPPjxhOkFkV29yZHNSZW1hcmtldGlu
+        Z0NvZGUgaTpuaWw9InRydWUiLz48YTpCcmFuZElkPjE8L2E6QnJhbmRJZD48
+        YTpDYXRlZ29yeUlkPjEwMDAwMDI8L2E6Q2F0ZWdvcnlJZD48YTpEZXBhcnRt
+        ZW50SWQ+MTAwMDAwMTwvYTpEZXBhcnRtZW50SWQ+PGE6RGVzY3JpcHRpb24+
+        MTkzNjIgbmV3IFNwcmVlIFQtU2hpcnQgQ2hlY2sgY2hlY2sgY2hlY2s8L2E6
+        RGVzY3JpcHRpb24+PGE6RGVzY3JpcHRpb25TaG9ydC8+PGE6SWQ+MTkzNjI8
+        L2E6SWQ+PGE6SXNBY3RpdmU+ZmFsc2U8L2E6SXNBY3RpdmU+PGE6SXNWaXNp
+        YmxlPnRydWU8L2E6SXNWaXNpYmxlPjxhOktleVdvcmRzLz48YTpMaW5rSWQ+
+        MTkzNjItdHNoaXJ0PC9hOkxpbmtJZD48YTpMaXN0U3RvcmVJZCBpOm5pbD0i
+        dHJ1ZSIgeG1sbnM6Yj0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS8y
+        MDAzLzEwL1NlcmlhbGl6YXRpb24vQXJyYXlzIi8+PGE6TG9tYWRlZUNhbXBh
+        aWduQ29kZSBpOm5pbD0idHJ1ZSIvPjxhOk1ldGFUYWdEZXNjcmlwdGlvbj4x
+        OTM2MiBuZXcgU3ByZWUgVC1TaGlydDwvYTpNZXRhVGFnRGVzY3JpcHRpb24+
+        PGE6TmFtZT5ULVNoaXJ0MTkzNjI8L2E6TmFtZT48YTpSZWZJZD4xOTM2Mjwv
+        YTpSZWZJZD48YTpSZWxlYXNlRGF0ZT4yMDE0LTAxLTI5VDAwOjAwOjAwPC9h
+        OlJlbGVhc2VEYXRlPjxhOlNob3dXaXRob3V0U3RvY2s+dHJ1ZTwvYTpTaG93
+        V2l0aG91dFN0b2NrPjxhOlN1cHBsaWVySWQgaTpuaWw9InRydWUiLz48YTpU
+        YXhDb2RlLz48YTpUaXRsZT5oZXJlIGlzIHRoZSBwYWdlIHRpdGxlIGZvciAx
+        OTM2Mi10c2hpcnQ8L2E6VGl0bGU+PC9hOlByb2R1Y3REVE8+PGE6UHJvZHVj
+        dERUTz48YTpBZFdvcmRzUmVtYXJrZXRpbmdDb2RlIGk6bmlsPSJ0cnVlIi8+
+        PGE6QnJhbmRJZD4xPC9hOkJyYW5kSWQ+PGE6Q2F0ZWdvcnlJZD4xPC9hOkNh
+        dGVnb3J5SWQ+PGE6RGVwYXJ0bWVudElkPjE8L2E6RGVwYXJ0bWVudElkPjxh
+        OkRlc2NyaXB0aW9uPlZvY8OqIHByb2N1cmEgdW1hIGdlbGFkZWlyYSAyIHBv
+        cnRhcyBlIHF1ZSBuw6NvIHByZWNpc2EgZGVzY29uZ2VsYXIsIGFsw6ltIGRl
+        IHNlciBlc3Bhw6dvc2E/IEFjYWJvdSBkZSBlbmNvbnRyYXIuICZsdDticiAv
+        Jmd0OyZsdDticiAvJmd0O0FybWF6ZW5lIHNldXMgYWxpbWVudG9zIGNvbSBt
+        YWlzIHNlZ3VyYW7Dp2EgZSBtYW50ZW5oYSBzdWEgY296aW5oYSBtYWlzIG1v
+        ZGVybmEuJmx0O2JyIC8mZ3Q7Jmx0O2JyIC8mZ3Q7Q29udGEgY29tIFNtYXJ0
+        IEljZSBjb20gTWF4aSBDdWJvcyBlIEFiYXN0ZWNlZG9yLCBxdWUgYXZpc2Eg
+        cXVhbmRvIG8gZ2VsbyBlc3TDoSBwcm9udG8uIFRlbSBTbWFydCBCYXIsIHF1
+        ZSBnZWxhIGFzIGJlYmlkYXMgbWFpcyByw6FwaWRvIGUgYXZpc2EgcXVhbmRv
+        IGVzdMOjbyBwcm9udGFzIHBhcmEgbyBjb25zdW1vLCB0dXJibyBmcmVlemVy
+        LCB0YcOnYXMgbmV2YWRhcywgZnJ1dGVpcmEsIGxhbmNoZWlyYSBlIGRpc3Bl
+        bnNlciBkZSBsYXRhcywgcGFyYSBxdWUgdm9jw6ogdGVuaGEgc2VtcHJlIGVt
+        IG3Do29zLCBzdWFzIGJlYmlkYXMgcHJlZGlsZXRhcyBjb20gYSB0ZW1wZXJh
+        dHVyYSBpZGVhbC4gJmx0O2JyIC8mZ3Q7Jmx0O2JyIC8mZ3Q7VGVtLCBhaW5k
+        YSwgZ2F2ZXRhcyBtdWx0aXVzbywgY29tcGFydGltZW50byBwYXJhIHRlbXBl
+        cm9zIGUgY29tcGFydGltZW50byBleHRyYS1mcmlvLiBTw6NvIHRhbnRhcyBh
+        cyB2YW50YWdlbnMgZSBiZW5lZsOtY2lvcyBxdWUgdm9jw6ogbsOjbyB2YWkg
+        cXVlcmVyIHNhaXIgZGUgcGVydG8gZGEgc3VhIGdlbGFkZWlyYSBCcmFzdGVt
+        cCBBdGl2ZSEgRnJvc3QgRnJlZSBCUk00OC4mbHQ7YnIgLyZndDsmbHQ7YnIg
+        LyZndDtWZXJpZmlxdWUgY29tIG9zIGZhYnJpY2FudGVzIGRvIHByb2R1dG8g
+        ZSBkZSBzZXVzIGNvbXBvbmVudGVzIGV2ZW50dWFpcyBsaW1pdGHDp8O1ZXMg
+        w6AgdXRpbGl6YcOnw6NvIGRlIHRvZG9zIG9zIHJlY3Vyc29zIGUgZnVuY2lv
+        bmFsaWRhZGVzLiAmbHQ7YnIgLyZndDsmbHQ7YnIgLyZndDtUb2RhcyBhcyBp
+        bmZvcm1hw6fDtWVzIGRpdnVsZ2FkYXMsIGJlbSBjb21vIG9zIGJlbmVmw61j
+        aW9zIGUgcmVzdWx0YWRvcyBkbyBwcm9kdXRvIHPDo28gZGUgcmVzcG9uc2Fi
+        aWxpZGFkZSBleGNsdXNpdmEgZG8gRmFicmljYW50ZS9Gb3JuZWNlZG9yLjwv
+        YTpEZXNjcmlwdGlvbj48YTpEZXNjcmlwdGlvblNob3J0PlByb2N1cmFuZG8g
+        dW1hIGdlbGFkZWlyYSAyIHBvcnRhcyBlIHF1ZSBuw6NvIHByZWNpc2EgZGVz
+        Y29uZ2VsYXI/IEFjYWJvdSBkZSBlbmNvbnRyYXIhPC9hOkRlc2NyaXB0aW9u
+        U2hvcnQ+PGE6SWQ+MjAwMDAwMjwvYTpJZD48YTpJc0FjdGl2ZT5mYWxzZTwv
+        YTpJc0FjdGl2ZT48YTpJc1Zpc2libGU+ZmFsc2U8L2E6SXNWaXNpYmxlPjxh
+        OktleVdvcmRzPjc4OTExMjkxOTg3NjAsNzg5MTEyOTE5ODc3NzwvYTpLZXlX
+        b3Jkcz48YTpMaW5rSWQ+cmVmcmlnZXJhZG9yLWJyYXN0ZW1wLWR1cGxleC1m
+        cm9zdC1mcmVlLWF0aXZlLWJybTQ4LTQwMy1saXRyb3MtYnJhbmNvLTIwMDAw
+        MDI8L2E6TGlua0lkPjxhOkxpc3RTdG9yZUlkIHhtbG5zOmI9Imh0dHA6Ly9z
+        Y2hlbWFzLm1pY3Jvc29mdC5jb20vMjAwMy8xMC9TZXJpYWxpemF0aW9uL0Fy
+        cmF5cyI+PGI6aW50PjE8L2I6aW50PjwvYTpMaXN0U3RvcmVJZD48YTpMb21h
+        ZGVlQ2FtcGFpZ25Db2RlIGk6bmlsPSJ0cnVlIi8+PGE6TWV0YVRhZ0Rlc2Ny
+        aXB0aW9uPkEgR2VsYWRlaXJhIEJyYXN0ZW1wIEF0aXZlISA0MDMgTGl0cm9z
+        IMOpIHBlcmZlaXRhIHByYSBxdWVtIHRlbSBwb3VjbyBlc3Bhw6dvIG5hIGNv
+        emluaGEgbWFzIHByZWNpc2EgZGUgbXVpdG8gZXNwYcOnbyBuYSBnZWxhZGVp
+        cmEuPC9hOk1ldGFUYWdEZXNjcmlwdGlvbj48YTpOYW1lPlJlZnJpZ2VyYWRv
+        ciBCcmFzdGVtcCBEdXBsZXggRnJvc3QgRnJlZSBBdGl2ZSEgQlJNNDggNDAz
+        IExpdHJvcyBCcmFuY288L2E6TmFtZT48YTpSZWZJZC8+PGE6UmVsZWFzZURh
+        dGU+MjAxNC0xMS0yOVQwMDowMDowMDwvYTpSZWxlYXNlRGF0ZT48YTpTaG93
+        V2l0aG91dFN0b2NrPmZhbHNlPC9hOlNob3dXaXRob3V0U3RvY2s+PGE6U3Vw
+        cGxpZXJJZCBpOm5pbD0idHJ1ZSIvPjxhOlRheENvZGUvPjxhOlRpdGxlPlJl
+        ZnJpZ2VyYWRvciBCcmFzdGVtcCBEdXBsZXggRnJvc3QgRnJlZSBBdGl2ZSEg
+        QlJNNDggNDAzIExpdHJvcyBCcmFuY288L2E6VGl0bGU+PC9hOlByb2R1Y3RE
+        VE8+PC9Qcm9kdWN0R2V0QWxsRnJvbVVwZGF0ZWREYXRlQW5kSWRSZXN1bHQ+
+        PC9Qcm9kdWN0R2V0QWxsRnJvbVVwZGF0ZWREYXRlQW5kSWRSZXNwb25zZT48
+        L3M6Qm9keT48L3M6RW52ZWxvcGU+
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 22:55:37 GMT
+- request:
+    method: post
+    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
+        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:StockKeepingUnitGetAllByProduct><tns:idProduct>12345</tns:idProduct></tns:StockKeepingUnitGetAllByProduct></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/IService/StockKeepingUnitGetAllByProduct"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '555'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      - '0'
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Fri, 07 Nov 2014 22:55:35 GMT
+      'No':
+      - MSERVICE01
+      P3p:
+      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
+      Set-Cookie:
+      - ASP.NET_SessionId=cs5bhm350bhcrvll0kwfrfxf; path=/; HttpOnly
+      - ASP.NET_SessionId=cs5bhm350bhcrvll0kwfrfxf; path=/; HttpOnly
+      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
+        path=/
+      Vary:
+      - Accept-Encoding
+      X-Debug-X-Id:
+      - '2853309211'
+      X-Forwarded:
+      - 187.41.95.228, 54.204.59.180, 10.31.167.136
+      X-Host:
+      - webservice-sandboxintegracao.vtexcommerce.com.br
+      X-Msg-00:
+      - Request processed by wvc-3.0.2
+      X-Msg-01:
+      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
+      X-Msg-02:
+      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
+        After=mkp0stable
+      X-Msg-03:
+      - 'recv: No cache for post'
+      X-Msg-04:
+      - 'Hash: No SegmentoCookie. cache line without cookie'
+      X-Msg-05:
+      - 'fetch: Not cacheable, Do not save on cache'
+      X-Msg-06:
+      - 'deliver: cache MISS'
+      X-Track:
+      - WebService
+      X-Vtex-Lastupdate:
+      - '2014-10-13 15:14:22'
+      X-Vtex-Processado-Em:
+      - '02:00:00.0312002'
+      X-Vtex-Server:
+      - ISP 1.4.1 WebService
+      X-Vtex-Version:
+      - 1.0.0.0
+      Content-Length:
+      - '663'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><ProductGetAllFromUpdatedDateAndIdResponse
-        xmlns="http://tempuri.org/"><ProductGetAllFromUpdatedDateAndIdResult xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:ProductDTO><a:AdWordsRemarketingCode
-        i:nil="true"/><a:BrandId>1</a:BrandId><a:CategoryId>1000000</a:CategoryId><a:DepartmentId>1000000</a:DepartmentId><a:Description>19362
-        new Spree T-Shirt Check check check</a:Description><a:DescriptionShort/><a:Id>19362</a:Id><a:IsActive>false</a:IsActive><a:IsVisible>true</a:IsVisible><a:KeyWords/><a:LinkId>19362-tshirt</a:LinkId><a:ListStoreId
-        i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><a:LomadeeCampaignCode
-        i:nil="true"/><a:MetaTagDescription>19362 new Spree T-Shirt</a:MetaTagDescription><a:Name>T-Shirt19362</a:Name><a:RefId>19362</a:RefId><a:ReleaseDate>2014-01-29T00:00:00</a:ReleaseDate><a:ShowWithoutStock>true</a:ShowWithoutStock><a:SupplierId
-        i:nil="true"/><a:TaxCode/><a:Title/></a:ProductDTO></ProductGetAllFromUpdatedDateAndIdResult></ProductGetAllFromUpdatedDateAndIdResponse></s:Body></s:Envelope>
+      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><StockKeepingUnitGetAllByProductResponse
+        xmlns="http://tempuri.org/"><StockKeepingUnitGetAllByProductResult xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
+        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>1.4000</a:CubicWeight><a:DateUpdated>2014-11-06T23:49:00</a:DateUpdated><a:EstimatedDateArrival
+        i:nil="true"/><a:Height>40.0000</a:Height><a:Id>12345</a:Id><a:InternalNote
+        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>40.0000</a:Length><a:ListPrice>31.0000</a:ListPrice><a:ManufacturerCode
+        i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>1</a:ModalId><a:ModalType
+        i:nil="true"/><a:Name>Ruby on Rails T-Shirt</a:Name><a:Price>31.0000</a:Price><a:ProductId>12345</a:ProductId><a:ProductName>Ruby
+        on Rails T-Shirt</a:ProductName><a:RealHeight i:nil="true"/><a:RealLength
+        i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>12345</a:RefId><a:RewardValue
+        i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>1.4000</a:WeightKg><a:Width>40.0000</a:Width></a:StockKeepingUnitDTO><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>0.0200</a:CubicWeight><a:DateUpdated>2014-10-16T14:14:00</a:DateUpdated><a:EstimatedDateArrival
+        i:nil="true"/><a:Height>0.0200</a:Height><a:Id>31018370</a:Id><a:InternalNote
+        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>0.0200</a:Length><a:ListPrice>30.0000</a:ListPrice><a:ManufacturerCode
+        i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>2</a:ModalId><a:ModalType
+        i:nil="true"/><a:Name>Ruby on Rails T-Shirt</a:Name><a:Price>30.0000</a:Price><a:ProductId>12345</a:ProductId><a:ProductName>Ruby
+        on Rails T-Shirt</a:ProductName><a:RealHeight i:nil="true"/><a:RealLength
+        i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>12345</a:RefId><a:RewardValue
+        i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.0200</a:WeightKg><a:Width>0.0200</a:Width></a:StockKeepingUnitDTO></StockKeepingUnitGetAllByProductResult></StockKeepingUnitGetAllByProductResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Thu, 06 Nov 2014 20:41:48 GMT
+  recorded_at: Fri, 07 Nov 2014 22:55:37 GMT
+- request:
+    method: post
+    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
+        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:StockKeepingUnitGetAllByProduct><tns:idProduct>19362</tns:idProduct></tns:StockKeepingUnitGetAllByProduct></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/IService/StockKeepingUnitGetAllByProduct"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '555'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      - '0'
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Fri, 07 Nov 2014 22:55:36 GMT
+      'No':
+      - MSERVICE01
+      P3p:
+      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
+      Set-Cookie:
+      - ASP.NET_SessionId=0wjodbep3tpcliwvikjv1iak; path=/; HttpOnly
+      - ASP.NET_SessionId=0wjodbep3tpcliwvikjv1iak; path=/; HttpOnly
+      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
+        path=/
+      Vary:
+      - Accept-Encoding
+      X-Debug-X-Id:
+      - '2853309302'
+      X-Forwarded:
+      - 187.41.95.228, 54.204.59.180, 10.31.167.136
+      X-Host:
+      - webservice-sandboxintegracao.vtexcommerce.com.br
+      X-Msg-00:
+      - Request processed by wvc-3.0.2
+      X-Msg-01:
+      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
+      X-Msg-02:
+      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
+        After=mkp0stable
+      X-Msg-03:
+      - 'recv: No cache for post'
+      X-Msg-04:
+      - 'Hash: No SegmentoCookie. cache line without cookie'
+      X-Msg-05:
+      - 'fetch: Not cacheable, Do not save on cache'
+      X-Msg-06:
+      - 'deliver: cache MISS'
+      X-Track:
+      - WebService
+      X-Vtex-Lastupdate:
+      - '2014-10-13 15:14:22'
+      X-Vtex-Processado-Em:
+      - '02:00:00.0156001'
+      X-Vtex-Server:
+      - ISP 1.4.1 WebService
+      X-Vtex-Version:
+      - 1.0.0.0
+      Content-Length:
+      - '616'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><StockKeepingUnitGetAllByProductResponse
+        xmlns="http://tempuri.org/"><StockKeepingUnitGetAllByProductResult xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
+        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>22.3300</a:CostPrice><a:CubicWeight>0.0000</a:CubicWeight><a:DateUpdated>2014-10-13T14:51:00</a:DateUpdated><a:EstimatedDateArrival
+        i:nil="true"/><a:Height>0.0000</a:Height><a:Id>19362</a:Id><a:InternalNote
+        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>0.0000</a:Length><a:ListPrice>35.0000</a:ListPrice><a:ManufacturerCode
+        i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>1</a:ModalId><a:ModalType
+        i:nil="true"/><a:Name>T-Shirt19362</a:Name><a:Price>35.0000</a:Price><a:ProductId>19362</a:ProductId><a:ProductName>T-Shirt19362</a:ProductName><a:RealHeight
+        i:nil="true"/><a:RealLength i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth
+        i:nil="true"/><a:RefId>19362</a:RefId><a:RewardValue i:nil="true"/><a:StockKeepingUnitEans
+        i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.0000</a:WeightKg><a:Width>0.0000</a:Width></a:StockKeepingUnitDTO><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>22.3300</a:CostPrice><a:CubicWeight>0.0000</a:CubicWeight><a:DateUpdated>2014-10-13T14:50:00</a:DateUpdated><a:EstimatedDateArrival
+        i:nil="true"/><a:Height>0.0000</a:Height><a:Id>2000042</a:Id><a:InternalNote
+        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>0.0000</a:Length><a:ListPrice>39.9900</a:ListPrice><a:ManufacturerCode
+        i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>1</a:ModalId><a:ModalType
+        i:nil="true"/><a:Name>T-Shirt19362</a:Name><a:Price>39.9900</a:Price><a:ProductId>19362</a:ProductId><a:ProductName>T-Shirt19362</a:ProductName><a:RealHeight
+        i:nil="true"/><a:RealLength i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth
+        i:nil="true"/><a:RefId>19362</a:RefId><a:RewardValue i:nil="true"/><a:StockKeepingUnitEans
+        i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.0000</a:WeightKg><a:Width>0.0000</a:Width></a:StockKeepingUnitDTO></StockKeepingUnitGetAllByProductResult></StockKeepingUnitGetAllByProductResponse></s:Body></s:Envelope>
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 22:55:38 GMT
+- request:
+    method: post
+    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
+        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:StockKeepingUnitGetAllByProduct><tns:idProduct>2000002</tns:idProduct></tns:StockKeepingUnitGetAllByProduct></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/IService/StockKeepingUnitGetAllByProduct"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '557'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      - '0'
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Fri, 07 Nov 2014 22:55:36 GMT
+      'No':
+      - MSERVICE01
+      P3p:
+      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
+      Set-Cookie:
+      - ASP.NET_SessionId=eqr1rk3u5tswwgnprjja1y1v; path=/; HttpOnly
+      - ASP.NET_SessionId=eqr1rk3u5tswwgnprjja1y1v; path=/; HttpOnly
+      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
+        path=/
+      Vary:
+      - Accept-Encoding
+      X-Debug-X-Id:
+      - '2853309357'
+      X-Forwarded:
+      - 187.41.95.228, 54.204.59.180, 10.31.167.136
+      X-Host:
+      - webservice-sandboxintegracao.vtexcommerce.com.br
+      X-Msg-00:
+      - Request processed by wvc-3.0.2
+      X-Msg-01:
+      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
+      X-Msg-02:
+      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
+        After=mkp0stable
+      X-Msg-03:
+      - 'recv: No cache for post'
+      X-Msg-04:
+      - 'Hash: No SegmentoCookie. cache line without cookie'
+      X-Msg-05:
+      - 'fetch: Not cacheable, Do not save on cache'
+      X-Msg-06:
+      - 'deliver: cache MISS'
+      X-Track:
+      - WebService
+      X-Vtex-Lastupdate:
+      - '2014-10-13 15:14:22'
+      X-Vtex-Processado-Em:
+      - '02:00:00.0156001'
+      X-Vtex-Server:
+      - ISP 1.4.1 WebService
+      X-Vtex-Version:
+      - 1.0.0.0
+      Content-Length:
+      - '775'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><StockKeepingUnitGetAllByProductResponse
+        xmlns="http://tempuri.org/"><StockKeepingUnitGetAllByProductResult xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
+        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>100.0000</a:CostPrice><a:CubicWeight>184.0000</a:CubicWeight><a:DateUpdated>2014-09-15T18:30:00</a:DateUpdated><a:EstimatedDateArrival
+        i:nil="true"/><a:Height>184.0000</a:Height><a:Id>2000000</a:Id><a:InternalNote
+        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>75.0000</a:Length><a:ListPrice>500.0000</a:ListPrice><a:ManufacturerCode/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>1</a:ModalId><a:ModalType
+        i:nil="true"/><a:Name>110V</a:Name><a:Price>100.0000</a:Price><a:ProductId>2000002</a:ProductId><a:ProductName>Refrigerador
+        Brastemp Duplex Frost Free Ative! BRM48 403 Litros Branco</a:ProductName><a:RealHeight>176.0000</a:RealHeight><a:RealLength>69.0000</a:RealLength><a:RealWeightKg>800.0000</a:RealWeightKg><a:RealWidth>72.0000</a:RealWidth><a:RefId>BRM48NBANA-110V</a:RefId><a:RewardValue>0.0000</a:RewardValue><a:StockKeepingUnitEans><a:StockKeepingUnitEanDTO><a:Ean>123456</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>123456</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>123456</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>123456</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>123456</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>123456</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>123456</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>123456</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>123456</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>123456</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>123456</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>123456</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>123456</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>123456</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>123456</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>123456</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>123456</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>7891129198760</a:Ean></a:StockKeepingUnitEanDTO></a:StockKeepingUnitEans><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>900.0000</a:WeightKg><a:Width>80.0000</a:Width></a:StockKeepingUnitDTO><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>100.0000</a:CostPrice><a:CubicWeight>184.0000</a:CubicWeight><a:DateUpdated>2014-09-15T18:30:00</a:DateUpdated><a:EstimatedDateArrival
+        i:nil="true"/><a:Height>184.0000</a:Height><a:Id>2000001</a:Id><a:InternalNote
+        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>75.0000</a:Length><a:ListPrice>500.0000</a:ListPrice><a:ManufacturerCode/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>1</a:ModalId><a:ModalType
+        i:nil="true"/><a:Name>220V</a:Name><a:Price>100.0000</a:Price><a:ProductId>2000002</a:ProductId><a:ProductName>Refrigerador
+        Brastemp Duplex Frost Free Ative! BRM48 403 Litros Branco</a:ProductName><a:RealHeight>176.0000</a:RealHeight><a:RealLength>69.0000</a:RealLength><a:RealWeightKg>800.0000</a:RealWeightKg><a:RealWidth>72.0000</a:RealWidth><a:RefId>BRM48NBANA-220V</a:RefId><a:RewardValue
+        i:nil="true"/><a:StockKeepingUnitEans><a:StockKeepingUnitEanDTO><a:Ean>12345678910</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>12345678910</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>12345678910</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>12345678910</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>12345678910</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>1234567</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>1234567</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>1234567</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>1234567</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>1234567</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>1234567</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>1234567</a:Ean></a:StockKeepingUnitEanDTO><a:StockKeepingUnitEanDTO><a:Ean>7891129198777</a:Ean></a:StockKeepingUnitEanDTO></a:StockKeepingUnitEans><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>900.0000</a:WeightKg><a:Width>80.0000</a:Width></a:StockKeepingUnitDTO></StockKeepingUnitGetAllByProductResult></StockKeepingUnitGetAllByProductResponse></s:Body></s:Envelope>
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 22:55:38 GMT
 recorded_with: VCR 2.9.3
