@@ -15,8 +15,8 @@ describe VTEXEndpoint do
 
         VCR.use_cassette('get_orders') do
           post '/get_orders', message, auth
+          expect(json_response[:summary]).to match /orders were retrieved/
           expect(last_response.status).to eq(200)
-          expect(last_response.body).to match /orders were retrieved/
         end
       end
     end
@@ -34,8 +34,8 @@ describe VTEXEndpoint do
         VCR.use_cassette('set_inventory') do
           post '/set_inventory', message, auth
 
+          expect(json_response[:summary]).to match /was sent to VTEX Storefront/
           expect(last_response.status).to eq(200)
-          expect(last_response.body).to match /was sent to VTEX Storefront/
         end
       end
     end
@@ -53,8 +53,8 @@ describe VTEXEndpoint do
         VCR.use_cassette('add_product') do
           post '/add_product', message, auth
 
+          expect(json_response[:summary]).to match /were sent to VTEX Storefront/
           expect(last_response.status).to eq(200)
-          expect(last_response.body).to match /were sent to VTEX Storefront/
         end
       end
     end

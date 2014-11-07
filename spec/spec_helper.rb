@@ -17,6 +17,8 @@ Sinatra::Base.environment = 'test'
 
 ENV['VTEX_SITE_ID'] ||= 'siteid'
 ENV['VTEX_PASSWORD'] ||= 'passwd'
+ENV['VTEX_APP_KEY'] ||= 'appkey'
+ENV['VTEX_APP_TOKEN'] ||= 'apptoken'
 
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/vcr_cassettes'
@@ -24,6 +26,8 @@ VCR.configure do |c|
 
   c.filter_sensitive_data("VTEX_SITE_ID") { ENV["VTEX_SITE_ID"] }
   c.filter_sensitive_data("VTEX_PASSWORD") { ENV["VTEX_PASSWORD"] }
+  c.filter_sensitive_data("VTEX_APP_KEY") { ENV["VTEX_APP_KEY"] }
+  c.filter_sensitive_data("VTEX_APP_TOKEN") { ENV["VTEX_APP_TOKEN"] }
 end
 
 RSpec.configure do |config|
