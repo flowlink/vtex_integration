@@ -104,9 +104,16 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
 
   post '/get_products' do
     client = VTEX::ClientSoap.new(@config['vtex_site_id'], @config['vtex_password'])
-    client.get_products
+    raw_products = client.get_products
+    products = VTEX::ProductTransformer.map raw_products
 
-    result 200, "received from VTEX"
+    if products.any?
+      count = products.count
+      add_value 'products', products
+      result 200, "Received #{count} #{"product".pluralize count} from VTEX"
+    end
+
+    result 200
   end
 
   def error_notification(error)

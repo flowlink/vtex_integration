@@ -61,15 +61,23 @@ describe VTEXEndpoint do
   end
 
   describe '/get_products' do
-    context 'success' do
-      it 'brings products' do
-        message = { parameters: params }
+    it 'brings products' do
+      message = { parameters: params }
 
-        VCR.use_cassette('get_products') do
-          post '/get_products', message.to_json, auth
-          expect(json_response[:summary]).to match /received from VTEX/
-          expect(last_response.status).to eq(200)
-        end
+      VCR.use_cassette("1415306393") do
+        post '/get_products', message.to_json, auth
+        expect(json_response[:summary]).to match /received from VTEX/
+        expect(last_response.status).to eq(200)
+      end
+    end
+
+    it "brings no products" do
+      message = { parameters: params }
+
+      VCR.use_cassette("no_products_1415323854") do
+        post '/get_products', message.to_json, auth
+        expect(json_response[:summary]).to eq nil
+        expect(last_response.status).to eq(200)
       end
     end
   end
