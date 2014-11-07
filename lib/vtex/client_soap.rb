@@ -10,7 +10,7 @@ module VTEX
       # good chance production url would be different
       @client = Savon.client(wsdl: 'http://webservice-sandboxintegracao.vtexcommerce.com.br/service.svc?wsdl',
                              ssl_verify_mode: :none,
-                             log_level: :debug,
+                             log_level: :info,
                              pretty_print_xml: true,
                              log: true,
                              basic_auth: [site_id, password],
