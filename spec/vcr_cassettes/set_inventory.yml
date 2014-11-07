@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://VTEX_SITE_ID.vtexcommercestable.com.br/api/logistics/pvt/inventory/warehouseitembalances
+    body:
+      encoding: UTF-8
+      string: '[{"wareHouseId":"1_1","itemId":"2000005","quantity":93}]'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Vtex-Api-Appkey:
+      - VTEX_APP_KEY
+      X-Vtex-Api-Apptoken:
+      - VTEX_APP_TOKEN
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 07 Nov 2014 01:55:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      X-Vtex-Operation-Id:
+      - ead8836d-a2af-4ce0-b0c9-5552720ed31a
+      X-Vtex-Router-Backend-App:
+      - logist - v6.0.40-stable+461
+      X-Vtex-Router-Janusnet-Aspnetlatency:
+      - '0'
+      X-Vtex-Router-Janusnet-Backendlatency:
+      - '223'
+      X-Vtex-Router-Janusnet-Januslatency:
+      - '40'
+      X-Vtex-Router-Powered-By:
+      - VTEX.JanusNet - 1.0.0
+      X-Track:
+      - stable
+      X-Powered-By-Vtex-Janus-Edge:
+      - v1.16.4
+      X-Cdnignore:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: 'true'
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 01:55:58 GMT
+recorded_with: VCR 2.9.3

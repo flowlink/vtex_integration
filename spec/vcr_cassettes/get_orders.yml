@@ -1,0 +1,2153 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://oms.vtexcommerce.com.br/api/oms/pvt/orders?an=VTEX_SITE_ID&orderBy=creationDate,desc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Vtex-Api-Appkey:
+      - VTEX_APP_KEY
+      X-Vtex-Api-Apptoken:
+      - VTEX_APP_TOKEN
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 07 Nov 2014 01:57:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '13583'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      X-Vtex-Router-Backend-App:
+      - omsapi - v1.3.73-stable+455
+      X-Vtex-Router-Janusnet-Aspnetlatency:
+      - '0'
+      X-Vtex-Router-Janusnet-Backendlatency:
+      - '71'
+      X-Vtex-Router-Janusnet-Januslatency:
+      - '37'
+      X-Vtex-Router-Powered-By:
+      - VTEX.JanusNet - 1.0.0
+      X-Track:
+      - stable
+      X-Powered-By-Vtex-Janus-Edge:
+      - v1.16.4
+      X-Cdnignore:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJsaXN0IjpbeyJvcmRlcklkIjoiNDc0MjkwMTgxMDc0LTAxIiwiY3JlYXRp
+        b25EYXRlIjoiMjAxNC0xMS0wNlQxMzowMzowMSIsImNsaWVudE5hbWUiOiJO
+        YW5kbyBHdWVycmVpcm8iLCJpdGVtcyI6W3sic2VsbGVyIjoiMSIsInF1YW50
+        aXR5IjoxLCJkZXNjcmlwdGlvbiI6IkFsZmFmYSBlbSBSYW1hIiwiZWFuIjpu
+        dWxsLCJyZWZJZCI6IjMxMDI1ODIifV0sInRvdGFsVmFsdWUiOjEwNTAwLjAs
+        InBheW1lbnROYW1lcyI6IkJvbGV0byBCYW5jw6FyaW8iLCJzdGF0dXMiOiJw
+        YXltZW50LXBlbmRpbmciLCJzdGF0dXNEZXNjcmlwdGlvbiI6IlBhZ2FtZW50
+        byBQZW5kZW50ZSIsIm1hcmtldFBsYWNlT3JkZXJJZCI6bnVsbCwic2VxdWVu
+        Y2UiOiI1MDAwNTkiLCJzYWxlc0NoYW5uZWwiOiIxIiwiYWZmaWxpYXRlSWQi
+        OiIiLCJvcmlnaW4iOiJNYXJrZXRwbGFjZSIsIndvcmtmbG93SW5FcnJvclN0
+        YXRlIjpmYWxzZSwid29ya2Zsb3dJblJldHJ5IjpmYWxzZSwibGFzdE1lc3Nh
+        Z2VVbnJlYWQiOiJWVEVYX1NJVEVfSUQgUGVkaWRvIHJlYWxpemFkbyBjb20g
+        c3VjZXNzbyEgcmVhbGl6YWRvIGVtOiAwNi8xMS8yMDE0IE9sw6EsIE5hbmRv
+        LiBPYnJpZ2FkbyBwb3IgY29tcHJhciBlbSBub3NzYSBsb2phLiBPcyBkZXRh
+        bGhlcyBkbyBwZWRpZG8gZW5jbyIsIlNoaXBwaW5nRXN0aW1hdGVkRGF0ZSI6
+        bnVsbCwib3JkZXJJc0NvbXBsZXRlIjp0cnVlLCJsaXN0SWQiOm51bGwsImxp
+        c3RUeXBlIjpudWxsfSx7Im9yZGVySWQiOiJNR1otNDY5MDUzOTk1MzMiLCJj
+        cmVhdGlvbkRhdGUiOiIyMDE0LTExLTAzVDE1OjMxOjM5IiwiY2xpZW50TmFt
+        ZSI6IkRhbmlsbyBBa2FtaW5lIiwiaXRlbXMiOlt7InNlbGxlciI6IjEiLCJx
+        dWFudGl0eSI6MSwiZGVzY3JpcHRpb24iOiJTYW1zdW5nIFM1IEJyYW5jbyIs
+        ImVhbiI6ImtsbjEybjNrIiwicmVmSWQiOiIzbTFuMms0In1dLCJ0b3RhbFZh
+        bHVlIjoxMjAwMDAuMCwicGF5bWVudE5hbWVzIjoiIiwic3RhdHVzIjoid2Fp
+        dGluZy1mZm10LWF1dGhvcml6YXRpb24iLCJzdGF0dXNEZXNjcmlwdGlvbiI6
+        IkFndWFyZGFuZG8gYXV0b3JpemHDp8OjbyBwYXJhIGRlc3BhY2hhciIsIm1h
+        cmtldFBsYWNlT3JkZXJJZCI6IjQ2OTA1Mzk5NTMzIiwic2VxdWVuY2UiOiI1
+        MDAwNTgiLCJzYWxlc0NoYW5uZWwiOiIzIiwiYWZmaWxpYXRlSWQiOiJNR1oi
+        LCJvcmlnaW4iOiJGdWxmaWxsbWVudCIsIndvcmtmbG93SW5FcnJvclN0YXRl
+        IjpmYWxzZSwid29ya2Zsb3dJblJldHJ5IjpmYWxzZSwibGFzdE1lc3NhZ2VV
+        bnJlYWQiOm51bGwsIlNoaXBwaW5nRXN0aW1hdGVkRGF0ZSI6bnVsbCwib3Jk
+        ZXJJc0NvbXBsZXRlIjp0cnVlLCJsaXN0SWQiOm51bGwsImxpc3RUeXBlIjpu
+        dWxsfSx7Im9yZGVySWQiOiI0NzI2NzE2MjkwMjAtMDEiLCJjcmVhdGlvbkRh
+        dGUiOiIyMDE0LTEwLTMwVDE5OjI3OjA5IiwiY2xpZW50TmFtZSI6IkpvbmFz
+        IEJvbG9nbmltIiwiaXRlbXMiOlt7InNlbGxlciI6IjEiLCJxdWFudGl0eSI6
+        MSwiZGVzY3JpcHRpb24iOiJWYXNvIEFydGVzYW5hbCBkZSBCYXJybyBWZXJt
+        ZWxobyBFc2N1cm8iLCJlYW4iOiIwMTIzNDU2Nzg5MTIzIiwicmVmSWQiOiIw
+        MDEyMzQ1NiJ9XSwidG90YWxWYWx1ZSI6MTExMTkuMCwicGF5bWVudE5hbWVz
+        IjoiQm9sZXRvIEJhbmPDoXJpbyIsInN0YXR1cyI6Imludm9pY2VkIiwic3Rh
+        dHVzRGVzY3JpcHRpb24iOiJGYXR1cmFkbyIsIm1hcmtldFBsYWNlT3JkZXJJ
+        ZCI6bnVsbCwic2VxdWVuY2UiOiI1MDAwNTUiLCJzYWxlc0NoYW5uZWwiOiIx
+        IiwiYWZmaWxpYXRlSWQiOiIiLCJvcmlnaW4iOiJNYXJrZXRwbGFjZSIsIndv
+        cmtmbG93SW5FcnJvclN0YXRlIjpmYWxzZSwid29ya2Zsb3dJblJldHJ5Ijpm
+        YWxzZSwibGFzdE1lc3NhZ2VVbnJlYWQiOiJTYW5kYm94LWludGVncmFjYW8g
+        U2V1IHBlZGlkbyBmb2kgZW52aWFkbyEgcmVhbGl6YWRvIGVtOiAzMC8xMC8y
+        MDE0IE9sw6EsIEpvbmFzLiBPcyBwcm9kdXRvcyBhYmFpeG8gasOhIGZvcmFt
+        IGVuY2FtaW5oYWRvcyBwYXJhIGEgdHJhbnNwb3J0YWRvIiwiU2hpcHBpbmdF
+        c3RpbWF0ZWREYXRlIjpudWxsLCJvcmRlcklzQ29tcGxldGUiOnRydWUsImxp
+        c3RJZCI6bnVsbCwibGlzdFR5cGUiOm51bGx9LHsib3JkZXJJZCI6Ik1HWi00
+        MzY0NjM0NjM0NjMiLCJjcmVhdGlvbkRhdGUiOiIyMDE0LTEwLTI4VDE4OjU5
+        OjA4IiwiY2xpZW50TmFtZSI6IkRhbmlsbyBBa2FtaW5lIiwiaXRlbXMiOlt7
+        InNlbGxlciI6IjEiLCJxdWFudGl0eSI6MSwiZGVzY3JpcHRpb24iOiJTYW1z
+        dW5nIFM1IEJyYW5jbyIsImVhbiI6ImtsbjEybjNrIiwicmVmSWQiOiIzbTFu
+        Mms0In1dLCJ0b3RhbFZhbHVlIjoxMTk1MDAuMCwicGF5bWVudE5hbWVzIjoi
+        Iiwic3RhdHVzIjoid2FpdGluZy1mZm10LWF1dGhvcml6YXRpb24iLCJzdGF0
+        dXNEZXNjcmlwdGlvbiI6IkFndWFyZGFuZG8gYXV0b3JpemHDp8OjbyBwYXJh
+        IGRlc3BhY2hhciIsIm1hcmtldFBsYWNlT3JkZXJJZCI6IjQzNjQ2MzQ2MzQ2
+        MyIsInNlcXVlbmNlIjoiNTAwMDU0Iiwic2FsZXNDaGFubmVsIjoiMyIsImFm
+        ZmlsaWF0ZUlkIjoiTUdaIiwib3JpZ2luIjoiRnVsZmlsbG1lbnQiLCJ3b3Jr
+        Zmxvd0luRXJyb3JTdGF0ZSI6ZmFsc2UsIndvcmtmbG93SW5SZXRyeSI6ZmFs
+        c2UsImxhc3RNZXNzYWdlVW5yZWFkIjpudWxsLCJTaGlwcGluZ0VzdGltYXRl
+        ZERhdGUiOm51bGwsIm9yZGVySXNDb21wbGV0ZSI6dHJ1ZSwibGlzdElkIjpu
+        dWxsLCJsaXN0VHlwZSI6bnVsbH0seyJvcmRlcklkIjoiTUdaLTI5NDI5NDA5
+        NDIiLCJjcmVhdGlvbkRhdGUiOiIyMDE0LTEwLTI4VDE4OjUzOjExIiwiY2xp
+        ZW50TmFtZSI6IkRhbmlsbyBBa2FtaW5lIiwiaXRlbXMiOlt7InNlbGxlciI6
+        IjEiLCJxdWFudGl0eSI6MSwiZGVzY3JpcHRpb24iOiJTYW1zdW5nIFM1IEJy
+        YW5jbyIsImVhbiI6ImtsbjEybjNrIiwicmVmSWQiOiIzbTFuMms0In1dLCJ0
+        b3RhbFZhbHVlIjoxMTk1MDAuMCwicGF5bWVudE5hbWVzIjoiIiwic3RhdHVz
+        Ijoid2FpdGluZy1mZm10LWF1dGhvcml6YXRpb24iLCJzdGF0dXNEZXNjcmlw
+        dGlvbiI6IkFndWFyZGFuZG8gYXV0b3JpemHDp8OjbyBwYXJhIGRlc3BhY2hh
+        ciIsIm1hcmtldFBsYWNlT3JkZXJJZCI6IjI5NDI5NDA5NDIiLCJzZXF1ZW5j
+        ZSI6IjUwMDA1MyIsInNhbGVzQ2hhbm5lbCI6IjMiLCJhZmZpbGlhdGVJZCI6
+        Ik1HWiIsIm9yaWdpbiI6IkZ1bGZpbGxtZW50Iiwid29ya2Zsb3dJbkVycm9y
+        U3RhdGUiOmZhbHNlLCJ3b3JrZmxvd0luUmV0cnkiOmZhbHNlLCJsYXN0TWVz
+        c2FnZVVucmVhZCI6bnVsbCwiU2hpcHBpbmdFc3RpbWF0ZWREYXRlIjpudWxs
+        LCJvcmRlcklzQ29tcGxldGUiOnRydWUsImxpc3RJZCI6bnVsbCwibGlzdFR5
+        cGUiOm51bGx9LHsib3JkZXJJZCI6IjQ3MTAyMjA5MzEyNS0wMSIsImNyZWF0
+        aW9uRGF0ZSI6IjIwMTQtMTAtMjNUMjE6MzQ6NTMiLCJjbGllbnROYW1lIjoi
+        Tm5hZG8gR3VlcnJlaXJvIiwiaXRlbXMiOlt7InNlbGxlciI6IjEiLCJxdWFu
+        dGl0eSI6MSwiZGVzY3JpcHRpb24iOiJBbGZhZmEgZW0gUmFtYSIsImVhbiI6
+        bnVsbCwicmVmSWQiOiIzMTAyNTgyIn1dLCJ0b3RhbFZhbHVlIjoxMDUwMC4w
+        LCJwYXltZW50TmFtZXMiOiJCb2xldG8gQmFuY8OhcmlvIiwic3RhdHVzIjoi
+        cGF5bWVudC1wZW5kaW5nIiwic3RhdHVzRGVzY3JpcHRpb24iOiJQYWdhbWVu
+        dG8gUGVuZGVudGUiLCJtYXJrZXRQbGFjZU9yZGVySWQiOm51bGwsInNlcXVl
+        bmNlIjoiNTAwMDUwIiwic2FsZXNDaGFubmVsIjoiMSIsImFmZmlsaWF0ZUlk
+        IjoiIiwib3JpZ2luIjoiTWFya2V0cGxhY2UiLCJ3b3JrZmxvd0luRXJyb3JT
+        dGF0ZSI6ZmFsc2UsIndvcmtmbG93SW5SZXRyeSI6ZmFsc2UsImxhc3RNZXNz
+        YWdlVW5yZWFkIjoiVlRFWF9TSVRFX0lEIFBhZ2FtZW50byBwZW5kZW50ZSBy
+        ZWFsaXphZG8gZW06IDIzLzEwLzIwMTQgT2zDoSwgTm5hZG8uIFZlcmlmaWNh
+        bW9zIHF1ZSBvIHBhZ2FtZW50byByZWZlcmVudGUgYW8ocykgcGVkaWRvKHMp
+        IGFiYWl4byBjb250aW51YSBwZW4iLCJTaGlwcGluZ0VzdGltYXRlZERhdGUi
+        Om51bGwsIm9yZGVySXNDb21wbGV0ZSI6dHJ1ZSwibGlzdElkIjpudWxsLCJs
+        aXN0VHlwZSI6bnVsbH0seyJvcmRlcklkIjoiTUdaLTQ5MjA0MjA0MjAzIiwi
+        Y3JlYXRpb25EYXRlIjoiMjAxNC0xMC0xN1QyMTo0NzoxMyIsImNsaWVudE5h
+        bWUiOiJEYW5pbG8gQWthbWluZSIsIml0ZW1zIjpbeyJzZWxsZXIiOiIxIiwi
+        cXVhbnRpdHkiOjEsImRlc2NyaXB0aW9uIjoiU2Ftc3VuZyBTNSBCcmFuY28i
+        LCJlYW4iOiJrbG4xMm4zayIsInJlZklkIjoiM20xbjJrNCJ9XSwidG90YWxW
+        YWx1ZSI6MTIwMDAwLjAsInBheW1lbnROYW1lcyI6IiIsInN0YXR1cyI6ImNh
+        bmNlbCIsInN0YXR1c0Rlc2NyaXB0aW9uIjoiQ2FuY2VsYXIiLCJtYXJrZXRQ
+        bGFjZU9yZGVySWQiOiI0OTIwNDIwNDIwMyIsInNlcXVlbmNlIjoiNTAwMDQ5
+        Iiwic2FsZXNDaGFubmVsIjoiMyIsImFmZmlsaWF0ZUlkIjoiTUdaIiwib3Jp
+        Z2luIjoiRnVsZmlsbG1lbnQiLCJ3b3JrZmxvd0luRXJyb3JTdGF0ZSI6dHJ1
+        ZSwid29ya2Zsb3dJblJldHJ5IjpmYWxzZSwibGFzdE1lc3NhZ2VVbnJlYWQi
+        Om51bGwsIlNoaXBwaW5nRXN0aW1hdGVkRGF0ZSI6IjIwMTQtMTAtMjRUMjE6
+        NTI6NDAiLCJvcmRlcklzQ29tcGxldGUiOnRydWUsImxpc3RJZCI6bnVsbCwi
+        bGlzdFR5cGUiOm51bGx9LHsib3JkZXJJZCI6IjQ2ODg5MjM5ODk1NS0wMSIs
+        ImNyZWF0aW9uRGF0ZSI6IjIwMTQtMTAtMTVUMDA6Mzk6NTgiLCJjbGllbnRO
+        YW1lIjoiV2FzaGluZ3RvbiBMdWl6IiwiaXRlbXMiOlt7InNlbGxlciI6IjEi
+        LCJxdWFudGl0eSI6MSwiZGVzY3JpcHRpb24iOiJBbGZhZmEgZW0gUmFtYSIs
+        ImVhbiI6bnVsbCwicmVmSWQiOiIzMTAyNTgyIn1dLCJ0b3RhbFZhbHVlIjox
+        MDUwMC4wLCJwYXltZW50TmFtZXMiOiJCb2xldG8gQmFuY8OhcmlvIiwic3Rh
+        dHVzIjoicGF5bWVudC1wZW5kaW5nIiwic3RhdHVzRGVzY3JpcHRpb24iOiJQ
+        YWdhbWVudG8gUGVuZGVudGUiLCJtYXJrZXRQbGFjZU9yZGVySWQiOm51bGws
+        InNlcXVlbmNlIjoiNTAwMDQ2Iiwic2FsZXNDaGFubmVsIjoiMSIsImFmZmls
+        aWF0ZUlkIjoiIiwib3JpZ2luIjoiTWFya2V0cGxhY2UiLCJ3b3JrZmxvd0lu
+        RXJyb3JTdGF0ZSI6ZmFsc2UsIndvcmtmbG93SW5SZXRyeSI6ZmFsc2UsImxh
+        c3RNZXNzYWdlVW5yZWFkIjoiVlRFWF9TSVRFX0lEIFBhZ2FtZW50byBwZW5k
+        ZW50ZSByZWFsaXphZG8gZW06IDE1LzEwLzIwMTQgT2zDoSwgV2FzaGluZ3Rv
+        bi4gVmVyaWZpY2Ftb3MgcXVlIG8gcGFnYW1lbnRvIHJlZmVyZW50ZSBhbyhz
+        KSBwZWRpZG8ocykgYWJhaXhvIGNvbnRpbnUiLCJTaGlwcGluZ0VzdGltYXRl
+        ZERhdGUiOm51bGwsIm9yZGVySXNDb21wbGV0ZSI6dHJ1ZSwibGlzdElkIjpu
+        dWxsLCJsaXN0VHlwZSI6bnVsbH0seyJvcmRlcklkIjoiTUdaLTI5NTAyOTkw
+        MzA0MyIsImNyZWF0aW9uRGF0ZSI6IjIwMTQtMTAtMTRUMTg6MjE6MDMiLCJj
+        bGllbnROYW1lIjoiRGFuaWxvIEFrYW1pbmUiLCJpdGVtcyI6W3sic2VsbGVy
+        IjoiMSIsInF1YW50aXR5IjoxLCJkZXNjcmlwdGlvbiI6IlNhbXN1bmcgUzUg
+        QnJhbmNvIiwiZWFuIjoia2xuMTJuM2siLCJyZWZJZCI6IjNtMW4yazQifV0s
+        InRvdGFsVmFsdWUiOjEyMDAwMC4wLCJwYXltZW50TmFtZXMiOiIiLCJzdGF0
+        dXMiOiJjYW5jZWwiLCJzdGF0dXNEZXNjcmlwdGlvbiI6IkNhbmNlbGFyIiwi
+        bWFya2V0UGxhY2VPcmRlcklkIjoiMjk1MDI5OTAzMDQzIiwic2VxdWVuY2Ui
+        OiI1MDAwNDUiLCJzYWxlc0NoYW5uZWwiOiIzIiwiYWZmaWxpYXRlSWQiOiJN
+        R1oiLCJvcmlnaW4iOiJGdWxmaWxsbWVudCIsIndvcmtmbG93SW5FcnJvclN0
+        YXRlIjp0cnVlLCJ3b3JrZmxvd0luUmV0cnkiOmZhbHNlLCJsYXN0TWVzc2Fn
+        ZVVucmVhZCI6bnVsbCwiU2hpcHBpbmdFc3RpbWF0ZWREYXRlIjoiMjAxNC0x
+        MC0yMVQxODoyMTozMSIsIm9yZGVySXNDb21wbGV0ZSI6dHJ1ZSwibGlzdElk
+        IjpudWxsLCJsaXN0VHlwZSI6bnVsbH0seyJvcmRlcklkIjoiTUdaLTc0MzQz
+        OTQ4MzA0MzkiLCJjcmVhdGlvbkRhdGUiOiIyMDE0LTEwLTE0VDE1OjE0OjUx
+        IiwiY2xpZW50TmFtZSI6IkRhbmlsbyBBa2FtaW5lIiwiaXRlbXMiOlt7InNl
+        bGxlciI6IjEiLCJxdWFudGl0eSI6MSwiZGVzY3JpcHRpb24iOiJTYW1zdW5n
+        IFM1IEJyYW5jbyIsImVhbiI6ImtsbjEybjNrIiwicmVmSWQiOiIzbTFuMms0
+        In1dLCJ0b3RhbFZhbHVlIjoxMjAwMDAuMCwicGF5bWVudE5hbWVzIjoiIiwi
+        c3RhdHVzIjoicmVhZHktZm9yLWhhbmRsaW5nIiwic3RhdHVzRGVzY3JpcHRp
+        b24iOiJQcm9udG8gcGFyYSBvIG1hbnVzZWlvIiwibWFya2V0UGxhY2VPcmRl
+        cklkIjoiNzQzNDM5NDgzMDQzOSIsInNlcXVlbmNlIjoiNTAwMDQ0Iiwic2Fs
+        ZXNDaGFubmVsIjoiMyIsImFmZmlsaWF0ZUlkIjoiTUdaIiwib3JpZ2luIjoi
+        RnVsZmlsbG1lbnQiLCJ3b3JrZmxvd0luRXJyb3JTdGF0ZSI6ZmFsc2UsIndv
+        cmtmbG93SW5SZXRyeSI6ZmFsc2UsImxhc3RNZXNzYWdlVW5yZWFkIjpudWxs
+        LCJTaGlwcGluZ0VzdGltYXRlZERhdGUiOiIyMDE0LTEwLTIxVDE1OjE1OjIw
+        Iiwib3JkZXJJc0NvbXBsZXRlIjp0cnVlLCJsaXN0SWQiOm51bGwsImxpc3RU
+        eXBlIjpudWxsfSx7Im9yZGVySWQiOiJNR1otMTkzMjkwNDIwOTMiLCJjcmVh
+        dGlvbkRhdGUiOiIyMDE0LTEwLTE0VDE0OjMwOjA0IiwiY2xpZW50TmFtZSI6
+        IkRhbmlsbyBBa2FtaW5lIiwiaXRlbXMiOlt7InNlbGxlciI6IjEiLCJxdWFu
+        dGl0eSI6MSwiZGVzY3JpcHRpb24iOiJTYW1zdW5nIFM1IEJyYW5jbyIsImVh
+        biI6ImtsbjEybjNrIiwicmVmSWQiOiIzbTFuMms0In1dLCJ0b3RhbFZhbHVl
+        IjoxMjAwMDAuMCwicGF5bWVudE5hbWVzIjoiIiwic3RhdHVzIjoicmVhZHkt
+        Zm9yLWhhbmRsaW5nIiwic3RhdHVzRGVzY3JpcHRpb24iOiJQcm9udG8gcGFy
+        YSBvIG1hbnVzZWlvIiwibWFya2V0UGxhY2VPcmRlcklkIjoiMTkzMjkwNDIw
+        OTMiLCJzZXF1ZW5jZSI6IjUwMDA0MyIsInNhbGVzQ2hhbm5lbCI6IjMiLCJh
+        ZmZpbGlhdGVJZCI6Ik1HWiIsIm9yaWdpbiI6IkZ1bGZpbGxtZW50Iiwid29y
+        a2Zsb3dJbkVycm9yU3RhdGUiOmZhbHNlLCJ3b3JrZmxvd0luUmV0cnkiOmZh
+        bHNlLCJsYXN0TWVzc2FnZVVucmVhZCI6bnVsbCwiU2hpcHBpbmdFc3RpbWF0
+        ZWREYXRlIjoiMjAxNC0xMC0yMVQxNDozMDoyMyIsIm9yZGVySXNDb21wbGV0
+        ZSI6dHJ1ZSwibGlzdElkIjpudWxsLCJsaXN0VHlwZSI6bnVsbH0seyJvcmRl
+        cklkIjoiTUdaLTQyODk0Mjg0MDA5IiwiY3JlYXRpb25EYXRlIjoiMjAxNC0x
+        MC0xNFQxNDoxNDowOCIsImNsaWVudE5hbWUiOiJEYW5pbG8gQWthbWluZSIs
+        Iml0ZW1zIjpbeyJzZWxsZXIiOiIxIiwicXVhbnRpdHkiOjEsImRlc2NyaXB0
+        aW9uIjoiU2Ftc3VuZyBTNSBCcmFuY28iLCJlYW4iOiJrbG4xMm4zayIsInJl
+        ZklkIjoiM20xbjJrNCJ9XSwidG90YWxWYWx1ZSI6MTIwMDAwLjAsInBheW1l
+        bnROYW1lcyI6IiIsInN0YXR1cyI6IndhaXRpbmctZmZtdC1hdXRob3JpemF0
+        aW9uIiwic3RhdHVzRGVzY3JpcHRpb24iOiJBZ3VhcmRhbmRvIGF1dG9yaXph
+        w6fDo28gcGFyYSBkZXNwYWNoYXIiLCJtYXJrZXRQbGFjZU9yZGVySWQiOiI0
+        Mjg5NDI4NDAwOSIsInNlcXVlbmNlIjoiNTAwMDQyIiwic2FsZXNDaGFubmVs
+        IjoiMyIsImFmZmlsaWF0ZUlkIjoiTUdaIiwib3JpZ2luIjoiRnVsZmlsbG1l
+        bnQiLCJ3b3JrZmxvd0luRXJyb3JTdGF0ZSI6ZmFsc2UsIndvcmtmbG93SW5S
+        ZXRyeSI6ZmFsc2UsImxhc3RNZXNzYWdlVW5yZWFkIjpudWxsLCJTaGlwcGlu
+        Z0VzdGltYXRlZERhdGUiOm51bGwsIm9yZGVySXNDb21wbGV0ZSI6dHJ1ZSwi
+        bGlzdElkIjpudWxsLCJsaXN0VHlwZSI6bnVsbH0seyJvcmRlcklkIjoiNDY4
+        NzgyOTM1NDk4LTAxIiwiY3JlYXRpb25EYXRlIjoiMjAxNC0xMC0xNFQxMzo0
+        ODo1NSIsImNsaWVudE5hbWUiOiJSZWluYWxkbyBCcmFnYSIsIml0ZW1zIjpb
+        eyJzZWxsZXIiOiIxIiwicXVhbnRpdHkiOjEsImRlc2NyaXB0aW9uIjoiQWNl
+        c3PDs3JpbyBkZSBFc2NvdmEgVGlyYSBQZWxvIEZ1cm1pbmF0b3IgcGFyYSBB
+        c3BpcmFkb3IgZGUgUMOzIiwiZWFuIjpudWxsLCJyZWZJZCI6IjMxMDM3MjQi
+        fV0sInRvdGFsVmFsdWUiOjExNTAwLjAsInBheW1lbnROYW1lcyI6IkJvbGV0
+        byBCYW5jw6FyaW8iLCJzdGF0dXMiOiJyZWFkeS1mb3ItaGFuZGxpbmciLCJz
+        dGF0dXNEZXNjcmlwdGlvbiI6IlByb250byBwYXJhIG8gbWFudXNlaW8iLCJt
+        YXJrZXRQbGFjZU9yZGVySWQiOm51bGwsInNlcXVlbmNlIjoiNTAwMDM5Iiwi
+        c2FsZXNDaGFubmVsIjoiMSIsImFmZmlsaWF0ZUlkIjoiIiwib3JpZ2luIjoi
+        TWFya2V0cGxhY2UiLCJ3b3JrZmxvd0luRXJyb3JTdGF0ZSI6ZmFsc2UsIndv
+        cmtmbG93SW5SZXRyeSI6ZmFsc2UsImxhc3RNZXNzYWdlVW5yZWFkIjoiU2Fu
+        ZGJveC1pbnRlZ3JhY2FvIFNldSBwYWdhbWVudG8gZm9pIGFwcm92YWRvISBw
+        ZWRpZG8gcmVhbGl6YWRvIGVtOiAxNC8xMC8yMDE0IE9sw6EsIFJlaW5hbGRv
+        LiBTZXUgcGFnYW1lbnRvIGZvaSBlZmV0dWFkbyBjb20gc3VjZXNzby4gVm9j
+        w6ogciIsIlNoaXBwaW5nRXN0aW1hdGVkRGF0ZSI6IjIwMTQtMTAtMTdUMTM6
+        NTA6MzQiLCJvcmRlcklzQ29tcGxldGUiOnRydWUsImxpc3RJZCI6bnVsbCwi
+        bGlzdFR5cGUiOm51bGx9LHsib3JkZXJJZCI6IjQ2ODc3MDQ4MTIxNS0wMSIs
+        ImNyZWF0aW9uRGF0ZSI6IjIwMTQtMTAtMTRUMTM6MDg6MDEiLCJjbGllbnRO
+        YW1lIjoiUmVpbmFsZG8gQnJhZ2EiLCJpdGVtcyI6W3sic2VsbGVyIjoiMSIs
+        InF1YW50aXR5IjoxLCJkZXNjcmlwdGlvbiI6IkFjZXNzw7NyaW8gZGUgRXNj
+        b3ZhIFRpcmEgUGVsbyBGdXJtaW5hdG9yIHBhcmEgQXNwaXJhZG9yIGRlIFDD
+        syIsImVhbiI6bnVsbCwicmVmSWQiOiIzMTAzNzI0In1dLCJ0b3RhbFZhbHVl
+        IjoxMTUwMC4wLCJwYXltZW50TmFtZXMiOiJCb2xldG8gQmFuY8OhcmlvIiwi
+        c3RhdHVzIjoicmVhZHktZm9yLWhhbmRsaW5nIiwic3RhdHVzRGVzY3JpcHRp
+        b24iOiJQcm9udG8gcGFyYSBvIG1hbnVzZWlvIiwibWFya2V0UGxhY2VPcmRl
+        cklkIjpudWxsLCJzZXF1ZW5jZSI6IjUwMDAzNiIsInNhbGVzQ2hhbm5lbCI6
+        IjEiLCJhZmZpbGlhdGVJZCI6IiIsIm9yaWdpbiI6Ik1hcmtldHBsYWNlIiwi
+        d29ya2Zsb3dJbkVycm9yU3RhdGUiOmZhbHNlLCJ3b3JrZmxvd0luUmV0cnki
+        OmZhbHNlLCJsYXN0TWVzc2FnZVVucmVhZCI6IlNhbmRib3gtaW50ZWdyYWNh
+        byBTZXUgcGFnYW1lbnRvIGZvaSBhcHJvdmFkbyEgcGVkaWRvIHJlYWxpemFk
+        byBlbTogMTQvMTAvMjAxNCBPbMOhLCBSZWluYWxkby4gU2V1IHBhZ2FtZW50
+        byBmb2kgZWZldHVhZG8gY29tIHN1Y2Vzc28uIFZvY8OqIHIiLCJTaGlwcGlu
+        Z0VzdGltYXRlZERhdGUiOiIyMDE0LTEwLTE3VDEzOjEyOjEyIiwib3JkZXJJ
+        c0NvbXBsZXRlIjp0cnVlLCJsaXN0SWQiOm51bGwsImxpc3RUeXBlIjpudWxs
+        fSx7Im9yZGVySWQiOiJNR1otNjkwNDU5NDA0MzkwIiwiY3JlYXRpb25EYXRl
+        IjoiMjAxNC0xMC0xNFQxMjo1MDoxMiIsImNsaWVudE5hbWUiOiJEYW5pbG8g
+        QWthbWluZSIsIml0ZW1zIjpbeyJzZWxsZXIiOiIxIiwicXVhbnRpdHkiOjEs
+        ImRlc2NyaXB0aW9uIjoiU2Ftc3VuZyBTNSBCcmFuY28iLCJlYW4iOiJrbG4x
+        Mm4zayIsInJlZklkIjoiM20xbjJrNCJ9XSwidG90YWxWYWx1ZSI6MTIwMDAw
+        LjAsInBheW1lbnROYW1lcyI6IiIsInN0YXR1cyI6InJlYWR5LWZvci1oYW5k
+        bGluZyIsInN0YXR1c0Rlc2NyaXB0aW9uIjoiUHJvbnRvIHBhcmEgbyBtYW51
+        c2VpbyIsIm1hcmtldFBsYWNlT3JkZXJJZCI6IjY5MDQ1OTQwNDM5MCIsInNl
+        cXVlbmNlIjoiNTAwMDM1Iiwic2FsZXNDaGFubmVsIjoiMyIsImFmZmlsaWF0
+        ZUlkIjoiTUdaIiwib3JpZ2luIjoiRnVsZmlsbG1lbnQiLCJ3b3JrZmxvd0lu
+        RXJyb3JTdGF0ZSI6ZmFsc2UsIndvcmtmbG93SW5SZXRyeSI6ZmFsc2UsImxh
+        c3RNZXNzYWdlVW5yZWFkIjpudWxsLCJTaGlwcGluZ0VzdGltYXRlZERhdGUi
+        OiIyMDE0LTEwLTIxVDEyOjUwOjI3Iiwib3JkZXJJc0NvbXBsZXRlIjp0cnVl
+        LCJsaXN0SWQiOm51bGwsImxpc3RUeXBlIjpudWxsfV0sImZhY2V0cyI6W3si
+        bmFtZSI6IlNhbGVzQ2hhbm5lbE5hbWUiLCJ0eXBlIjoibXVsdGlwbGUiLCJp
+        dGVtcyI6W3sibmFtZSI6IkxvamEgUHJpbmNpcGFsIiwicXVhbnRpdHkiOjks
+        InVybCI6IkxvamEgUHJpbmNpcGFsIn0seyJuYW1lIjoiTWFnYXppbmUgTHVp
+        emEiLCJxdWFudGl0eSI6MzMsInVybCI6Ik1hZ2F6aW5lIEx1aXphIn1dLCJy
+        YW5nZVVybFRlbXBsYXRlIjoiZl9zYWxlc0NoYW5uZWwifSx7Im5hbWUiOiJD
+        YWxsQ2VudGVyT3BlcmF0b3JOYW1lIiwidHlwZSI6Im11bHRpcGxlIiwiaXRl
+        bXMiOlt7Im5hbWUiOiJKb25hcyBCb2xvZ25pbSIsInF1YW50aXR5IjoxLCJ1
+        cmwiOiJKb25hcyBCb2xvZ25pbSJ9LHsibmFtZSI6IlRoaWFnbyBOYXRoYW5z
+        b24iLCJxdWFudGl0eSI6MSwidXJsIjoiVGhpYWdvIE5hdGhhbnNvbiJ9XSwi
+        cmFuZ2VVcmxUZW1wbGF0ZSI6ImZfY2FsbENlbnRlck9wZXJhdG9yTmFtZSJ9
+        LHsibmFtZSI6IlNlbGxlck5hbWVzIiwidHlwZSI6Im11bHRpcGxlIiwiaXRl
+        bXMiOlt7Im5hbWUiOiJWVEVYX1NJVEVfSUQiLCJxdWFudGl0eSI6OCwidXJs
+        IjoiVlRFWF9TSVRFX0lEIn0seyJuYW1lIjoic2FuZGJveGludGVncmFjYW8i
+        LCJxdWFudGl0eSI6MSwidXJsIjoic2FuZGJveGludGVncmFjYW8ifV0sInJh
+        bmdlVXJsVGVtcGxhdGUiOiJmX3NlbGxlck5hbWVzIn0seyJuYW1lIjoiUmF0
+        ZUFuZEJlbmVmaXRzIiwidHlwZSI6Im11bHRpcGxlIiwiaXRlbXMiOlt7Im5h
+        bWUiOiJQcm9tb8Onw6NvIEV4ZW1wbG8gRnJldGUgR3LDoXRpcyIsInF1YW50
+        aXR5IjozLCJ1cmwiOiJQcm9tb8Onw6NvIEV4ZW1wbG8gRnJldGUgR3LDoXRp
+        cyJ9XSwicmFuZ2VVcmxUZW1wbGF0ZSI6ImZfUm5CIn0seyJuYW1lIjoiUGF5
+        bWVudE5hbWVzIiwidHlwZSI6Im11bHRpcGxlIiwiaXRlbXMiOlt7Im5hbWUi
+        OiJCb2xldG8gQmFuY8OhcmlvIiwicXVhbnRpdHkiOjksInVybCI6IkJvbGV0
+        byBCYW5jw6FyaW8ifV0sInJhbmdlVXJsVGVtcGxhdGUiOiJmX3BheW1lbnRO
+        YW1lcyJ9LHsibmFtZSI6IlN0YXR1c0Rlc2NyaXB0aW9uIiwidHlwZSI6Im11
+        bHRpcGxlIiwiaXRlbXMiOlt7Im5hbWUiOiJBZ3VhcmRhbmRvIGF1dG9yaXph
+        w6fDo28gcGFyYSBkZXNwYWNoYXIiLCJxdWFudGl0eSI6MTYsInVybCI6IkFn
+        dWFyZGFuZG8gYXV0b3JpemHDp8OjbyBwYXJhIGRlc3BhY2hhciJ9LHsibmFt
+        ZSI6IkNhbmNlbGFkbyIsInF1YW50aXR5IjoxLCJ1cmwiOiJDYW5jZWxhZG8i
+        fSx7Im5hbWUiOiJDYW5jZWxhbWVudG8gU29saWNpdGFkbyIsInF1YW50aXR5
+        IjoxLCJ1cmwiOiJDYW5jZWxhbWVudG8gU29saWNpdGFkbyJ9LHsibmFtZSI6
+        IkNhbmNlbGFyIiwicXVhbnRpdHkiOjEwLCJ1cmwiOiJDYW5jZWxhciJ9LHsi
+        bmFtZSI6IkZhdHVyYWRvIiwicXVhbnRpdHkiOjEsInVybCI6IkZhdHVyYWRv
+        In0seyJuYW1lIjoiUGFnYW1lbnRvIFBlbmRlbnRlIiwicXVhbnRpdHkiOjMs
+        InVybCI6IlBhZ2FtZW50byBQZW5kZW50ZSJ9LHsibmFtZSI6IlByZXBhcmFu
+        ZG8gRW50cmVnYSIsInF1YW50aXR5IjoxLCJ1cmwiOiJQcmVwYXJhbmRvIEVu
+        dHJlZ2EifSx7Im5hbWUiOiJQcm9udG8gcGFyYSBvIG1hbnVzZWlvIiwicXVh
+        bnRpdHkiOjksInVybCI6IlByb250byBwYXJhIG8gbWFudXNlaW8ifV0sInJh
+        bmdlVXJsVGVtcGxhdGUiOiJmX3N0YXR1c0Rlc2NyaXB0aW9uIn0seyJuYW1l
+        IjoiU2hpcHBpbmdFc3RpbWF0ZWREYXRlIiwidHlwZSI6InNpbmdsZSIsIml0
+        ZW1zIjpbeyJuYW1lIjoiQXRyYXNhZGFzIiwicXVhbnRpdHkiOjE4LCJ1cmwi
+        OiItMS5kYXlzIn0seyJuYW1lIjoiSG9qZSIsInF1YW50aXR5IjowLCJ1cmwi
+        OiIwLmRheXMifSx7Im5hbWUiOiJBbWFuaMOjIiwicXVhbnRpdHkiOjAsInVy
+        bCI6IjEuZGF5cyJ9LHsibmFtZSI6IlByw7N4aW1vcyA3IGRpYXMiLCJxdWFu
+        dGl0eSI6MCwidXJsIjoiNy5kYXlzIn1dLCJyYW5nZVVybFRlbXBsYXRlIjoi
+        Zl9zaGlwcGluZ0VzdGltYXRlIn0seyJuYW1lIjoiY3JlYXRpb25EYXRlIiwi
+        dHlwZSI6ImRhdGUiLCJpdGVtcyI6W3sibmFtZSI6IkhvamUiLCJxdWFudGl0
+        eSI6MSwidXJsIjoiY3JlYXRpb25EYXRlOlsyMDE0LTExLTA2VDEyOjAwOjAw
+        WiBUTyAyMDE0LTExLTA3VDEyOjAwOjAwWl0ifSx7Im5hbWUiOiJIb2plIiwi
+        cXVhbnRpdHkiOjAsInVybCI6ImNyZWF0aW9uRGF0ZTpbMjAxNC0xMS0wN1Qx
+        MjowMDowMFogVE8gMjAxNC0xMS0wOFQxMjowMDowMFpdIn0seyJuYW1lIjoi
+        MjAxNC0xMS0wMVQxMjowMDowMFoiLCJxdWFudGl0eSI6MiwidXJsIjoiY3Jl
+        YXRpb25EYXRlOlsyMDE0LTExLTAxVDEyOjAwOjAwWiBUTyAyMDE0LTExLTA4
+        VDEyOjAwOjAwWl0ifSx7Im5hbWUiOiIyMDE0LTEwLTI0VDEyOjAwOjAwWiIs
+        InF1YW50aXR5Ijo1LCJ1cmwiOiJjcmVhdGlvbkRhdGU6WzIwMTQtMTAtMjRU
+        MTI6MDA6MDBaIFRPIDIwMTQtMTEtMDhUMTI6MDA6MDBaXSJ9LHsibmFtZSI6
+        IjIwMTQtMTAtMDlUMTI6MDA6MDBaIiwicXVhbnRpdHkiOjM4LCJ1cmwiOiJj
+        cmVhdGlvbkRhdGU6WzIwMTQtMTAtMDlUMTI6MDA6MDBaIFRPIDIwMTQtMTEt
+        MDhUMTI6MDA6MDBaXSJ9XSwicmFuZ2VVcmxUZW1wbGF0ZSI6ImZfY3JlYXRp
+        b25EYXRlIn0seyJuYW1lIjoiYXV0aG9yaXplZERhdGUiLCJ0eXBlIjoiZGF0
+        ZSIsIml0ZW1zIjpbeyJuYW1lIjoiSG9qZSIsInF1YW50aXR5IjowLCJ1cmwi
+        OiJhdXRob3JpemVkRGF0ZTpbMjAxNC0xMS0wNlQxMjowMDowMFogVE8gMjAx
+        NC0xMS0wN1QxMjowMDowMFpdIn0seyJuYW1lIjoiSG9qZSIsInF1YW50aXR5
+        IjowLCJ1cmwiOiJhdXRob3JpemVkRGF0ZTpbMjAxNC0xMS0wN1QxMjowMDow
+        MFogVE8gMjAxNC0xMS0wOFQxMjowMDowMFpdIn0seyJuYW1lIjoiMjAxNC0x
+        MS0wMVQxMjowMDowMFoiLCJxdWFudGl0eSI6MSwidXJsIjoiYXV0aG9yaXpl
+        ZERhdGU6WzIwMTQtMTEtMDFUMTI6MDA6MDBaIFRPIDIwMTQtMTEtMDhUMTI6
+        MDA6MDBaXSJ9LHsibmFtZSI6IjIwMTQtMTAtMjRUMTI6MDA6MDBaIiwicXVh
+        bnRpdHkiOjEsInVybCI6ImF1dGhvcml6ZWREYXRlOlsyMDE0LTEwLTI0VDEy
+        OjAwOjAwWiBUTyAyMDE0LTExLTA4VDEyOjAwOjAwWl0ifSx7Im5hbWUiOiIy
+        MDE0LTEwLTA5VDEyOjAwOjAwWiIsInF1YW50aXR5IjoxOSwidXJsIjoiYXV0
+        aG9yaXplZERhdGU6WzIwMTQtMTAtMDlUMTI6MDA6MDBaIFRPIDIwMTQtMTEt
+        MDhUMTI6MDA6MDBaXSJ9XSwicmFuZ2VVcmxUZW1wbGF0ZSI6ImZfYXV0aG9y
+        aXplZERhdGUifV0sInBhZ2luZyI6eyJ0b3RhbCI6NDIsInBhZ2VzIjozLCJj
+        dXJyZW50UGFnZSI6MSwicGVyUGFnZSI6MTV9LCJzdGF0cyI6eyJzdGF0cyI6
+        eyJ0b3RhbEl0ZW1zIjp7IkNvdW50Ijo0MiwiTWF4IjoxLjAsIk1lYW4iOjEu
+        MCwiTWluIjoxLjAsIk1pc3NpbmciOjAsIlN0ZERldiI6MC4wLCJTdW0iOjQy
+        LjAsIlN1bU9mU3F1YXJlcyI6NDIuMH0sInRvdGFsVmFsdWUiOnsiQ291bnQi
+        OjQyLCJNYXgiOjEzNTAwMC4wLCJNZWFuIjoxMDM4MjkuNSwiTWluIjoxMDUw
+        MC4wLCJNaXNzaW5nIjowLCJTdGREZXYiOjM4Nzk0Ljk3MzcxNTk1OTAxNSwi
+        U3VtIjo0MzYwODM5LjAsIlN1bU9mU3F1YXJlcyI6NTE0NDkwNzgyMzYxLjB9
+        fX19
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 01:57:08 GMT
+- request:
+    method: get
+    uri: http://oms.vtexcommerce.com.br/api/oms/pvt/orders/474290181074-01/?an=VTEX_SITE_ID
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Vtex-Api-Appkey:
+      - VTEX_APP_KEY
+      X-Vtex-Api-Apptoken:
+      - VTEX_APP_TOKEN
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 07 Nov 2014 01:57:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3956'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      X-Vtex-Router-Backend-App:
+      - omsapi - v1.3.73-stable+455
+      X-Vtex-Router-Janusnet-Aspnetlatency:
+      - '0'
+      X-Vtex-Router-Janusnet-Backendlatency:
+      - '1860'
+      X-Vtex-Router-Janusnet-Januslatency:
+      - '36'
+      X-Vtex-Router-Powered-By:
+      - VTEX.JanusNet - 1.0.0
+      X-Track:
+      - stable
+      X-Powered-By-Vtex-Janus-Edge:
+      - v1.16.4
+      X-Cdnignore:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJvcmRlcklkIjoiNDc0MjkwMTgxMDc0LTAxIiwic2VxdWVuY2UiOiI1MDAw
+        NTkiLCJtYXJrZXRwbGFjZU9yZGVySWQiOiIiLCJtYXJrZXRwbGFjZVNlcnZp
+        Y2VzRW5kcG9pbnQiOiJodHRwOi8vcG9ydGFsLnZ0ZXhjb21tZXJjZS5jb20u
+        YnIvYXBpL29tcz9hbj1zYW5kYm94aW50ZWdyYWNhbyIsInNlbGxlck9yZGVy
+        SWQiOiIwMC00NzQyOTAxODEwNzQtMDEiLCJvcmlnaW4iOiJNYXJrZXRwbGFj
+        ZSIsImFmZmlsaWF0ZUlkIjoiIiwic2FsZXNDaGFubmVsIjoiMSIsIm1lcmNo
+        YW50TmFtZSI6bnVsbCwic3RhdHVzIjoicGF5bWVudC1wZW5kaW5nIiwic3Rh
+        dHVzRGVzY3JpcHRpb24iOiJQYWdhbWVudG8gUGVuZGVudGUiLCJ2YWx1ZSI6
+        MTA1MDAsImNyZWF0aW9uRGF0ZSI6IjIwMTQtMTEtMDZUMTM6MDM6MDEuNTMx
+        OTYyMVoiLCJsYXN0Q2hhbmdlIjoiMjAxNC0xMS0wNlQxMzowMzoxMi4zMTEy
+        NzQ3WiIsIm9yZGVyR3JvdXAiOiI0NzQyOTAxODEwNzQiLCJ0b3RhbHMiOlt7
+        ImlkIjoiSXRlbXMiLCJuYW1lIjoiSXRlbXMgVG90YWwiLCJ2YWx1ZSI6MTAw
+        MDB9LHsiaWQiOiJEaXNjb3VudHMiLCJuYW1lIjoiRGlzY291bnRzIFRvdGFs
+        IiwidmFsdWUiOjB9LHsiaWQiOiJTaGlwcGluZyIsIm5hbWUiOiJTaGlwcGlu
+        ZyBUb3RhbCIsInZhbHVlIjo1MDB9LHsiaWQiOiJUYXgiLCJuYW1lIjoiVGF4
+        IFRvdGFsIiwidmFsdWUiOjB9XSwiaXRlbXMiOlt7ImlkIjoiMzEwMjU4MiIs
+        InByb2R1Y3RJZCI6IjMxMDI1ODIiLCJlYW4iOm51bGwsImxvY2tJZCI6IjAw
+        LTQ3NDI5MDE4MTA3NC0wMSIsIml0ZW1BdHRhY2htZW50Ijp7ImNvbnRlbnQi
+        Ont9LCJuYW1lIjpudWxsfSwiYXR0YWNobWVudHMiOltdLCJxdWFudGl0eSI6
+        MSwic2VsbGVyIjoiMSIsIm5hbWUiOiJBbGZhZmEgZW0gUmFtYSIsInJlZklk
+        IjoiMzEwMjU4MiIsInByaWNlIjoxMDAwMCwibGlzdFByaWNlIjoxMDAwMCwi
+        cHJpY2VUYWdzIjpbXSwiaW1hZ2VVcmwiOiIvYXJxdWl2b3MvaWRzLzE1NTI1
+        MC01NS01NS8xLnBuZyIsImRldGFpbFVybCI6Ii9hbGZhZmEtZW0tcmFtYS9w
+        IiwiY29tcG9uZW50cyI6W10sImJ1bmRsZUl0ZW1zIjpbXSwicGFyYW1zIjpb
+        XSwib2ZmZXJpbmdzIjpbXSwic2VsbGVyU2t1IjoiMzEwMjU4MiIsInByaWNl
+        VmFsaWRVbnRpbCI6bnVsbCwiY29tbWlzc2lvbiI6MCwidGF4IjowLCJwcmVT
+        YWxlRGF0ZSI6bnVsbCwiYWRkaXRpb25hbEluZm8iOnsiYnJhbmROYW1lIjoi
+        TWFyY2EgRXhlbXBsbyIsImJyYW5kSWQiOiIxIiwiY2F0ZWdvcmllc0lkcyI6
+        Ii8xMDAwMDAxLzEwMDAwMDIvIiwicHJvZHVjdENsdXN0ZXJJZCI6IjgiLCJj
+        b21tZXJjaWFsQ29uZGl0aW9uSWQiOiIxIn0sIm1lYXN1cmVtZW50VW5pdCI6
+        InVuIiwidW5pdE11bHRpcGxpZXIiOjEuMDAwMCwic2VsbGluZ1ByaWNlIjox
+        MDAwMCwiaXNHaWZ0IjpmYWxzZSwic2hpcHBpbmdQcmljZSI6bnVsbH1dLCJt
+        YXJrZXRwbGFjZUl0ZW1zIjpbXSwiY2xpZW50UHJvZmlsZURhdGEiOnsiaWQi
+        OiJjbGllbnRQcm9maWxlRGF0YSIsImVtYWlsIjoiMGQ2YWZlOWNhMmJkNGU0
+        MWI3NGNjMzM2NTEwOGI3YjlAY3QudnRleC5jb20uYnIiLCJmaXJzdE5hbWUi
+        OiJOYW5kbyIsImxhc3ROYW1lIjoiR3VlcnJlaXJvIiwiZG9jdW1lbnRUeXBl
+        IjoiY3BmIiwiZG9jdW1lbnQiOiIzMTg3MTkxNjgxMCIsInBob25lIjoiKzU1
+        MTE5OTkwOTU0NDEiLCJjb3Jwb3JhdGVOYW1lIjpudWxsLCJ0cmFkZU5hbWUi
+        Om51bGwsImNvcnBvcmF0ZURvY3VtZW50IjpudWxsLCJzdGF0ZUluc2NyaXB0
+        aW9uIjpudWxsLCJjb3Jwb3JhdGVQaG9uZSI6bnVsbCwiaXNDb3Jwb3JhdGUi
+        OmZhbHNlLCJ1c2VyUHJvZmlsZUlkIjoiZjM3M2I4ODItMjdkYi00NDY3LTk1
+        YzYtNWM0ZGIxZWRiN2QyIn0sImdpZnRSZWdpc3RyeURhdGEiOm51bGwsIm1h
+        cmtldGluZ0RhdGEiOm51bGwsInJhdGVzQW5kQmVuZWZpdHNEYXRhIjp7Imlk
+        IjoicmF0ZXNBbmRCZW5lZml0c0RhdGEiLCJyYXRlQW5kQmVuZWZpdHNJZGVu
+        dGlmaWVycyI6W119LCJzaGlwcGluZ0RhdGEiOnsiaWQiOiJzaGlwcGluZ0Rh
+        dGEiLCJhZGRyZXNzIjp7ImFkZHJlc3NUeXBlIjoicmVzaWRlbnRpYWwiLCJy
+        ZWNlaXZlck5hbWUiOiJOYW5kbyBHdWVycmVpcm8iLCJhZGRyZXNzSWQiOiIt
+        MTQxNTI3OTAwMzg3OSIsInBvc3RhbENvZGUiOiIwNTQ2NTA1MCIsImNpdHki
+        OiJTw6NvIFBhdWxvIiwic3RhdGUiOiJTUCIsImNvdW50cnkiOiJCUkEiLCJz
+        dHJlZXQiOiJSdWEgTWFzc2Fjw6EiLCJudW1iZXIiOiIxMjMiLCJuZWlnaGJv
+        cmhvb2QiOiJBbHRvIGRlIFBpbmhlaXJvcyIsImNvbXBsZW1lbnQiOm51bGws
+        InJlZmVyZW5jZSI6bnVsbH0sImxvZ2lzdGljc0luZm8iOlt7Iml0ZW1JbmRl
+        eCI6MCwic2VsZWN0ZWRTbGEiOiJOb3JtYWwiLCJsb2NrVFRMIjoiOGQiLCJw
+        cmljZSI6NTAwLCJkZWxpdmVyeVdpbmRvdyI6bnVsbCwiZGVsaXZlcnlDb21w
+        YW55IjoiVHJhbnNwb3J0YWRvcmEiLCJzaGlwcGluZ0VzdGltYXRlIjoiM2Jk
+        Iiwic2hpcHBpbmdFc3RpbWF0ZURhdGUiOm51bGwsInNsYXMiOlt7ImlkIjoi
+        Tm9ybWFsIiwibmFtZSI6Ik5vcm1hbCIsInNoaXBwaW5nRXN0aW1hdGUiOiIz
+        YmQiLCJkZWxpdmVyeVdpbmRvdyI6bnVsbCwicHJpY2UiOjUwMH1dLCJzaGlw
+        c1RvIjpbIkJSQSJdLCJzZWxsaW5nUHJpY2UiOjUwMCwiZGVsaXZlcnlJZHMi
+        Olt7ImNvdXJpZXJJZCI6IjEiLCJjb3VyaWVyTmFtZSI6IlRyYW5zcG9ydGFk
+        b3JhIiwiZG9ja0lkIjoiMSIsInF1YW50aXR5IjoxLCJ3YXJlaG91c2VJZCI6
+        IjFfMSJ9XX1dfSwicGF5bWVudERhdGEiOnsidHJhbnNhY3Rpb25zIjpbeyJp
+        c0FjdGl2ZSI6dHJ1ZSwidHJhbnNhY3Rpb25JZCI6IjczQjRCMjFFNDkyMDQ5
+        MEFCNTFFN0ZDNzJGNDlDRjM3IiwicGF5bWVudHMiOlt7ImlkIjoiOEREN0ZB
+        NkQ1MDE3NDBDREJCMzI5NTg1ODQ5QzcxMTciLCJwYXltZW50U3lzdGVtIjoi
+        NiIsInBheW1lbnRTeXN0ZW1OYW1lIjoiQm9sZXRvIEJhbmPDoXJpbyIsInZh
+        bHVlIjoxMDUwMCwiaW5zdGFsbG1lbnRzIjoxLCJyZWZlcmVuY2VWYWx1ZSI6
+        MTA1MDAsImNhcmRIb2xkZXIiOm51bGwsImNhcmROdW1iZXIiOm51bGwsImZp
+        cnN0RGlnaXRzIjpudWxsLCJsYXN0RGlnaXRzIjpudWxsLCJjdnYyIjpudWxs
+        LCJleHBpcmVNb250aCI6bnVsbCwiZXhwaXJlWWVhciI6bnVsbCwidXJsIjoi
+        aHR0cHM6Ly9CT1hQRVRMT1ZFLnZ0ZXhwYXltZW50cy5jb20uYnI6NDQzL0Jh
+        bmtJc3N1ZWRJbnZvaWNlL1RyYW5zYWN0aW9uLzczQjRCMjFFNDkyMDQ5MEFC
+        NTFFN0ZDNzJGNDlDRjM3L1BheW1lbnQvOEREN0ZBNkQ1MDE3NDBDREJCMzI5
+        NTg1ODQ5QzcxMTcvSW5zdGFsbG1lbnQve0luc3RhbGxtZW50fSIsImdpZnRD
+        YXJkSWQiOm51bGwsImdpZnRDYXJkTmFtZSI6bnVsbCwiZ2lmdENhcmRDYXB0
+        aW9uIjpudWxsLCJyZWRlbXB0aW9uQ29kZSI6bnVsbCwiZ3JvdXAiOiJiYW5r
+        SW52b2ljZSIsInRpZCI6bnVsbCwiZHVlRGF0ZSI6IjIwMTQtMTEtMTEiLCJj
+        b25uZWN0b3JSZXNwb25zZXMiOnt9fV19XX0sInBhY2thZ2VBdHRhY2htZW50
+        Ijp7InBhY2thZ2VzIjpbXX0sInNlbGxlcnMiOlt7ImlkIjoiMSIsIm5hbWUi
+        OiJWVEVYX1NJVEVfSUQiLCJsb2dvIjoiaHR0cDovL3BvcnRhbC52dGV4Y29t
+        bWVyY2UuY29tLmJyL2FycXVpdm9zL2xvZ28uanBnIn1dLCJjYWxsQ2VudGVy
+        T3BlcmF0b3JEYXRhIjpudWxsLCJmb2xsb3dVcEVtYWlsIjoiMjIyNDQxYmRk
+        Y2FhNDIwY2IyNDE2MjRiYTBlNjdlZTdAY3QudnRleC5jb20uYnIiLCJsYXN0
+        TWVzc2FnZSI6IlZURVhfU0lURV9JRCBQZWRpZG8gcmVhbGl6YWRvIGNvbSBz
+        dWNlc3NvISByZWFsaXphZG8gZW06IDA2LzExLzIwMTQgT2zDoSwgTmFuZG8u
+        IE9icmlnYWRvIHBvciBjb21wcmFyIGVtIG5vc3NhIGxvamEuIE9zIGRldGFs
+        aGVzIGRvIHBlZGlkbyBlbmNvIiwiaG9zdG5hbWUiOiJWVEVYX1NJVEVfSUQi
+        LCJjaGFuZ2VzQXR0YWNobWVudCI6bnVsbCwib3BlblRleHRGaWVsZCI6bnVs
+        bH0=
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 01:57:10 GMT
+- request:
+    method: get
+    uri: http://oms.vtexcommerce.com.br/api/oms/pvt/orders/MGZ-46905399533/?an=VTEX_SITE_ID
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Vtex-Api-Appkey:
+      - VTEX_APP_KEY
+      X-Vtex-Api-Apptoken:
+      - VTEX_APP_TOKEN
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 07 Nov 2014 01:57:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3432'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      X-Vtex-Router-Backend-App:
+      - omsapi - v1.3.73-stable+455
+      X-Vtex-Router-Janusnet-Aspnetlatency:
+      - '0'
+      X-Vtex-Router-Janusnet-Backendlatency:
+      - '673'
+      X-Vtex-Router-Janusnet-Januslatency:
+      - '40'
+      X-Vtex-Router-Powered-By:
+      - VTEX.JanusNet - 1.0.0
+      X-Track:
+      - stable
+      X-Powered-By-Vtex-Janus-Edge:
+      - v1.16.4
+      X-Cdnignore:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJvcmRlcklkIjoiTUdaLTQ2OTA1Mzk5NTMzIiwic2VxdWVuY2UiOiI1MDAw
+        NTgiLCJtYXJrZXRwbGFjZU9yZGVySWQiOiI0NjkwNTM5OTUzMyIsIm1hcmtl
+        dHBsYWNlU2VydmljZXNFbmRwb2ludCI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAw
+        MC9vcmRlcnMvc2VsbGVyLzIvbm90aWZpY2F0aW9ucy8iLCJzZWxsZXJPcmRl
+        cklkIjpudWxsLCJvcmlnaW4iOiJGdWxmaWxsbWVudCIsImFmZmlsaWF0ZUlk
+        IjoiTUdaIiwic2FsZXNDaGFubmVsIjoiMyIsIm1lcmNoYW50TmFtZSI6bnVs
+        bCwic3RhdHVzIjoid2FpdGluZy1mZm10LWF1dGhvcml6YXRpb24iLCJzdGF0
+        dXNEZXNjcmlwdGlvbiI6IkFndWFyZGFuZG8gYXV0b3JpemHDp8OjbyBwYXJh
+        IGRlc3BhY2hhciIsInZhbHVlIjoxMjAwMDAsImNyZWF0aW9uRGF0ZSI6IjIw
+        MTQtMTEtMDNUMTU6MzE6MzkuOTkxMjIwNFoiLCJsYXN0Q2hhbmdlIjoiMjAx
+        NC0xMS0wM1QxNTozMTo0MS44NDc1NjQ3WiIsIm9yZGVyR3JvdXAiOm51bGws
+        InRvdGFscyI6W3siaWQiOiJJdGVtcyIsIm5hbWUiOiJJdGVtcyBUb3RhbCIs
+        InZhbHVlIjoxMTkwMDB9LHsiaWQiOiJEaXNjb3VudHMiLCJuYW1lIjoiRGlz
+        Y291bnRzIFRvdGFsIiwidmFsdWUiOjB9LHsiaWQiOiJTaGlwcGluZyIsIm5h
+        bWUiOiJTaGlwcGluZyBUb3RhbCIsInZhbHVlIjoxMDAwfSx7ImlkIjoiVGF4
+        IiwibmFtZSI6IlRheCBUb3RhbCIsInZhbHVlIjowfV0sIml0ZW1zIjpbeyJp
+        ZCI6IjIwMDAwMzYiLCJwcm9kdWN0SWQiOiIyMDAwMDA3IiwiZWFuIjoia2xu
+        MTJuM2siLCJsb2NrSWQiOiI4N2MyNTAwYi1kN2UxLTQxMmMtODBjYS1mMjcw
+        ZDNhZGZlYzQiLCJpdGVtQXR0YWNobWVudCI6eyJjb250ZW50Ijp7fSwibmFt
+        ZSI6bnVsbH0sImF0dGFjaG1lbnRzIjpbXSwicXVhbnRpdHkiOjEsInNlbGxl
+        ciI6IjEiLCJuYW1lIjoiU2Ftc3VuZyBTNSBCcmFuY28iLCJyZWZJZCI6IjNt
+        MW4yazQiLCJwcmljZSI6MTE5MDAwLCJsaXN0UHJpY2UiOjEyOTAwMCwicHJp
+        Y2VUYWdzIjpbXSwiaW1hZ2VVcmwiOiIvYXJxdWl2b3MvaWRzLzE1NTI0Mi01
+        NS01NS9TNV8xLmpwZyIsImRldGFpbFVybCI6bnVsbCwiY29tcG9uZW50cyI6
+        W10sImJ1bmRsZUl0ZW1zIjpbXSwicGFyYW1zIjpbXSwib2ZmZXJpbmdzIjpb
+        XSwic2VsbGVyU2t1IjoiMjAwMDAzNiIsInByaWNlVmFsaWRVbnRpbCI6bnVs
+        bCwiY29tbWlzc2lvbiI6MCwidGF4IjowLCJwcmVTYWxlRGF0ZSI6bnVsbCwi
+        YWRkaXRpb25hbEluZm8iOnsiYnJhbmROYW1lIjoiU2Ftc3VuZyIsImJyYW5k
+        SWQiOiIyMDAwMDAxIiwiY2F0ZWdvcmllc0lkcyI6Ii8xMDAwMDAzLyIsInBy
+        b2R1Y3RDbHVzdGVySWQiOiI4IiwiY29tbWVyY2lhbENvbmRpdGlvbklkIjoi
+        MSJ9LCJtZWFzdXJlbWVudFVuaXQiOiJ1biIsInVuaXRNdWx0aXBsaWVyIjox
+        LjAwMDAsInNlbGxpbmdQcmljZSI6MTE5MDAwLCJpc0dpZnQiOmZhbHNlLCJz
+        aGlwcGluZ1ByaWNlIjpudWxsfV0sIm1hcmtldHBsYWNlSXRlbXMiOltdLCJj
+        bGllbnRQcm9maWxlRGF0YSI6eyJpZCI6ImNsaWVudFByb2ZpbGVEYXRhIiwi
+        ZW1haWwiOiJlOTI0MTI2ZTZiZWE0MjJhOWZkN2FlNGViOGUxMjA2ZkBjdC52
+        dGV4LmNvbS5iciIsImZpcnN0TmFtZSI6IkRhbmlsbyIsImxhc3ROYW1lIjoi
+        QWthbWluZSIsImRvY3VtZW50VHlwZSI6ImNwZiIsImRvY3VtZW50IjoiMzc2
+        MTQ4NjEzODgiLCJwaG9uZSI6IjU1MTE5OTk5OTk5OSIsImNvcnBvcmF0ZU5h
+        bWUiOm51bGwsInRyYWRlTmFtZSI6bnVsbCwiY29ycG9yYXRlRG9jdW1lbnQi
+        Om51bGwsInN0YXRlSW5zY3JpcHRpb24iOm51bGwsImNvcnBvcmF0ZVBob25l
+        IjpudWxsLCJpc0NvcnBvcmF0ZSI6ZmFsc2UsInVzZXJQcm9maWxlSWQiOm51
+        bGx9LCJnaWZ0UmVnaXN0cnlEYXRhIjpudWxsLCJtYXJrZXRpbmdEYXRhIjpu
+        dWxsLCJyYXRlc0FuZEJlbmVmaXRzRGF0YSI6eyJpZCI6InJhdGVzQW5kQmVu
+        ZWZpdHNEYXRhIiwicmF0ZUFuZEJlbmVmaXRzSWRlbnRpZmllcnMiOltdfSwi
+        c2hpcHBpbmdEYXRhIjp7ImlkIjoic2hpcHBpbmdEYXRhIiwiYWRkcmVzcyI6
+        eyJhZGRyZXNzVHlwZSI6InJlc2lkZW50aWFsIiwicmVjZWl2ZXJOYW1lIjoi
+        RGFuaWxvIiwiYWRkcmVzc0lkIjoiRU5TUCIsInBvc3RhbENvZGUiOiIwMTEy
+        MjMzNCIsImNpdHkiOiJTQU8gUEFVTE8iLCJzdGF0ZSI6IlNQIiwiY291bnRy
+        eSI6IkJSQSIsInN0cmVldCI6IkFNQVpPTkFTIERBIFNJTFZBIiwibnVtYmVy
+        IjoiMjciLCJuZWlnaGJvcmhvb2QiOiJWSUxBIEdVSUxIRVJNRSIsImNvbXBs
+        ZW1lbnQiOiJSRUNFUENBTyIsInJlZmVyZW5jZSI6IlBSRURJTyBBWlVMIn0s
+        ImxvZ2lzdGljc0luZm8iOlt7Iml0ZW1JbmRleCI6MCwic2VsZWN0ZWRTbGEi
+        OiJOb3JtYWwiLCJsb2NrVFRMIjoiNWJkIiwicHJpY2UiOjEwMDAsImRlbGl2
+        ZXJ5V2luZG93IjpudWxsLCJkZWxpdmVyeUNvbXBhbnkiOiJUcmFuc3BvcnRh
+        ZG9yYSIsInNoaXBwaW5nRXN0aW1hdGUiOiI1YmQiLCJzaGlwcGluZ0VzdGlt
+        YXRlRGF0ZSI6bnVsbCwic2xhcyI6bnVsbCwic2hpcHNUbyI6bnVsbCwic2Vs
+        bGluZ1ByaWNlIjoxMDAwLCJkZWxpdmVyeUlkcyI6W3siY291cmllcklkIjoi
+        MSIsImNvdXJpZXJOYW1lIjoiVHJhbnNwb3J0YWRvcmEiLCJkb2NrSWQiOiIx
+        ZjQyMjBkIiwicXVhbnRpdHkiOjEsIndhcmVob3VzZUlkIjoiMV8xIn1dfV19
+        LCJwYXltZW50RGF0YSI6eyJ0cmFuc2FjdGlvbnMiOlt7ImlzQWN0aXZlIjp0
+        cnVlLCJ0cmFuc2FjdGlvbklkIjpudWxsLCJwYXltZW50cyI6W3siaWQiOm51
+        bGwsInBheW1lbnRTeXN0ZW0iOiIwIiwicGF5bWVudFN5c3RlbU5hbWUiOiJB
+        c3N1bWVkIHZhbHVlIGJ5IGFmZmlsaWF0ZSBNYWdhemluZSBMdWl6YShNR1op
+        IiwidmFsdWUiOjEyMDAwMCwiaW5zdGFsbG1lbnRzIjowLCJyZWZlcmVuY2VW
+        YWx1ZSI6MTIwMDAwLCJjYXJkSG9sZGVyIjpudWxsLCJjYXJkTnVtYmVyIjpu
+        dWxsLCJmaXJzdERpZ2l0cyI6bnVsbCwibGFzdERpZ2l0cyI6bnVsbCwiY3Z2
+        MiI6bnVsbCwiZXhwaXJlTW9udGgiOm51bGwsImV4cGlyZVllYXIiOm51bGws
+        InVybCI6bnVsbCwiZ2lmdENhcmRJZCI6bnVsbCwiZ2lmdENhcmROYW1lIjpu
+        dWxsLCJnaWZ0Q2FyZENhcHRpb24iOm51bGwsInJlZGVtcHRpb25Db2RlIjpu
+        dWxsLCJncm91cCI6bnVsbCwidGlkIjpudWxsLCJkdWVEYXRlIjpudWxsLCJj
+        b25uZWN0b3JSZXNwb25zZXMiOnt9fV19XX0sInBhY2thZ2VBdHRhY2htZW50
+        Ijp7InBhY2thZ2VzIjpbXX0sInNlbGxlcnMiOlt7ImlkIjoiMSIsIm5hbWUi
+        Om51bGwsImxvZ28iOm51bGx9XSwiY2FsbENlbnRlck9wZXJhdG9yRGF0YSI6
+        bnVsbCwiZm9sbG93VXBFbWFpbCI6ImRhbmlsby5ha2FtaW5lQGx1aXphbGFi
+        cy5jb20iLCJsYXN0TWVzc2FnZSI6IiIsImhvc3RuYW1lIjoiYm94ZXBvY2Fj
+        b3NtZXRpY29zIiwiY2hhbmdlc0F0dGFjaG1lbnQiOm51bGwsIm9wZW5UZXh0
+        RmllbGQiOm51bGx9
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 01:57:11 GMT
+- request:
+    method: get
+    uri: http://oms.vtexcommerce.com.br/api/oms/pvt/orders/472671629020-01/?an=VTEX_SITE_ID
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Vtex-Api-Appkey:
+      - VTEX_APP_KEY
+      X-Vtex-Api-Apptoken:
+      - VTEX_APP_TOKEN
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 07 Nov 2014 01:57:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4991'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      X-Vtex-Router-Backend-App:
+      - omsapi - v1.3.73-stable+455
+      X-Vtex-Router-Janusnet-Aspnetlatency:
+      - '0'
+      X-Vtex-Router-Janusnet-Backendlatency:
+      - '1275'
+      X-Vtex-Router-Janusnet-Januslatency:
+      - '97'
+      X-Vtex-Router-Powered-By:
+      - VTEX.JanusNet - 1.0.0
+      X-Track:
+      - stable
+      X-Powered-By-Vtex-Janus-Edge:
+      - v1.16.4
+      X-Cdnignore:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJvcmRlcklkIjoiNDcyNjcxNjI5MDIwLTAxIiwic2VxdWVuY2UiOiI1MDAw
+        NTUiLCJtYXJrZXRwbGFjZU9yZGVySWQiOiIiLCJtYXJrZXRwbGFjZVNlcnZp
+        Y2VzRW5kcG9pbnQiOiJodHRwOi8vb21zLnZ0ZXhjb21tZXJjZWJldGEuY29t
+        LmJyL2FwaS9vbXMvP2FuPTM5NERCREM4QjFGNDRERUFBREZBMUVDMTA0RjNC
+        RkUxIiwic2VsbGVyT3JkZXJJZCI6IjAwLTQ3MjY3MTYyOTAyMC0wMSIsIm9y
+        aWdpbiI6Ik1hcmtldHBsYWNlIiwiYWZmaWxpYXRlSWQiOiIiLCJzYWxlc0No
+        YW5uZWwiOiIxIiwibWVyY2hhbnROYW1lIjpudWxsLCJzdGF0dXMiOiJpbnZv
+        aWNlZCIsInN0YXR1c0Rlc2NyaXB0aW9uIjoiRmF0dXJhZG8iLCJ2YWx1ZSI6
+        MTExMTksImNyZWF0aW9uRGF0ZSI6IjIwMTQtMTAtMzBUMTk6Mjc6MDkuMjI5
+        MjU0NVoiLCJsYXN0Q2hhbmdlIjoiMjAxNC0xMS0wNFQyMTo0NTozMC44NTU5
+        NjU2WiIsIm9yZGVyR3JvdXAiOiI0NzI2NzE2MjkwMjAiLCJ0b3RhbHMiOlt7
+        ImlkIjoiSXRlbXMiLCJuYW1lIjoiSXRlbXMgVG90YWwiLCJ2YWx1ZSI6MTEw
+        MDB9LHsiaWQiOiJEaXNjb3VudHMiLCJuYW1lIjoiRGlzY291bnRzIFRvdGFs
+        IiwidmFsdWUiOjB9LHsiaWQiOiJTaGlwcGluZyIsIm5hbWUiOiJTaGlwcGlu
+        ZyBUb3RhbCIsInZhbHVlIjoxMTl9LHsiaWQiOiJUYXgiLCJuYW1lIjoiVGF4
+        IFRvdGFsIiwidmFsdWUiOjB9XSwiaXRlbXMiOlt7ImlkIjoiMzEwMTgzNzEi
+        LCJwcm9kdWN0SWQiOiIzMTAxODM2OSIsImVhbiI6IjAxMjM0NTY3ODkxMjMi
+        LCJsb2NrSWQiOiIwMC00NzI2NzE2MjkwMjAtMDEiLCJpdGVtQXR0YWNobWVu
+        dCI6eyJjb250ZW50Ijp7fSwibmFtZSI6bnVsbH0sImF0dGFjaG1lbnRzIjpb
+        XSwicXVhbnRpdHkiOjEsInNlbGxlciI6IjEiLCJuYW1lIjoiVmFzbyBBcnRl
+        c2FuYWwgZGUgQmFycm8gVmVybWVsaG8gRXNjdXJvIiwicmVmSWQiOiIwMDEy
+        MzQ1NiIsInByaWNlIjoxMTAwMCwibGlzdFByaWNlIjoxNTAwMCwicHJpY2VU
+        YWdzIjpbXSwiaW1hZ2VVcmwiOiIvYXJxdWl2b3MvaWRzLzE1NTI1NS01NS01
+        NS9CYXJyby1WZXJtZWxoby1Fc2N1cm9jb20taW1hZ2VzLXEtdGJuLUFOZDlH
+        Y1E2THUwb2JtZGRzUVgzSkVMZTA0aFVzX2hTZWxzbVU4X1cxeW41enRnZEFr
+        NVNKQzdELmpwZyIsImRldGFpbFVybCI6Ii92YXNvX2JhcnJvX3Zlcm1lbGhv
+        L3AiLCJjb21wb25lbnRzIjpbXSwiYnVuZGxlSXRlbXMiOltdLCJwYXJhbXMi
+        OltdLCJvZmZlcmluZ3MiOltdLCJzZWxsZXJTa3UiOiIzMTAxODM3MSIsInBy
+        aWNlVmFsaWRVbnRpbCI6bnVsbCwiY29tbWlzc2lvbiI6MCwidGF4IjowLCJw
+        cmVTYWxlRGF0ZSI6bnVsbCwiYWRkaXRpb25hbEluZm8iOnsiYnJhbmROYW1l
+        IjoiRHVCb20iLCJicmFuZElkIjoiMjAwMDAxMSIsImNhdGVnb3JpZXNJZHMi
+        OiIvMTAwMDAxOC8xMDAwMDE5LzEwMDAwMjAvIiwicHJvZHVjdENsdXN0ZXJJ
+        ZCI6IiIsImNvbW1lcmNpYWxDb25kaXRpb25JZCI6IjEifSwibWVhc3VyZW1l
+        bnRVbml0IjoidW4iLCJ1bml0TXVsdGlwbGllciI6MS4wMDAwLCJzZWxsaW5n
+        UHJpY2UiOjExMDAwLCJpc0dpZnQiOmZhbHNlLCJzaGlwcGluZ1ByaWNlIjpu
+        dWxsfV0sIm1hcmtldHBsYWNlSXRlbXMiOltdLCJjbGllbnRQcm9maWxlRGF0
+        YSI6eyJpZCI6ImNsaWVudFByb2ZpbGVEYXRhIiwiZW1haWwiOiJkYzI3Y2Zk
+        ZDJiYmM0ZjRhODlkMDliZDQxYTg2MDViY0BjdC52dGV4LmNvbS5iciIsImZp
+        cnN0TmFtZSI6IkpvbmFzIiwibGFzdE5hbWUiOiJCb2xvZ25pbSIsImRvY3Vt
+        ZW50VHlwZSI6ImNwZiIsImRvY3VtZW50IjoiMDg4OTY1ODE4ODUiLCJwaG9u
+        ZSI6Iis1NTIxOTk5OTgxNDg4IiwiY29ycG9yYXRlTmFtZSI6bnVsbCwidHJh
+        ZGVOYW1lIjpudWxsLCJjb3Jwb3JhdGVEb2N1bWVudCI6bnVsbCwic3RhdGVJ
+        bnNjcmlwdGlvbiI6bnVsbCwiY29ycG9yYXRlUGhvbmUiOm51bGwsImlzQ29y
+        cG9yYXRlIjpmYWxzZSwidXNlclByb2ZpbGVJZCI6ImU0MWVmZDE0LWIyMzAt
+        NDJmNC05NTBhLTU2Y2M3Y2M2ODllNCJ9LCJnaWZ0UmVnaXN0cnlEYXRhIjpu
+        dWxsLCJtYXJrZXRpbmdEYXRhIjpudWxsLCJyYXRlc0FuZEJlbmVmaXRzRGF0
+        YSI6eyJpZCI6InJhdGVzQW5kQmVuZWZpdHNEYXRhIiwicmF0ZUFuZEJlbmVm
+        aXRzSWRlbnRpZmllcnMiOltdfSwic2hpcHBpbmdEYXRhIjp7ImlkIjoic2hp
+        cHBpbmdEYXRhIiwiYWRkcmVzcyI6eyJhZGRyZXNzVHlwZSI6InJlc2lkZW50
+        aWFsIiwicmVjZWl2ZXJOYW1lIjoiSm9uYXMgQm9sb2duaW0iLCJhZGRyZXNz
+        SWQiOiItMTQxNDY5NzE5NzgxOSIsInBvc3RhbENvZGUiOiIyMjA1MTAzMCIs
+        ImNpdHkiOiJSaW8gZGUgSmFuZWlybyIsInN0YXRlIjoiUkoiLCJjb3VudHJ5
+        IjoiQlJBIiwic3RyZWV0IjoiUnVhIENpbmNvIGRlIEp1bGhvIiwibnVtYmVy
+        IjoiMTc2IiwibmVpZ2hib3Job29kIjoiQ29wYWNhYmFuYSIsImNvbXBsZW1l
+        bnQiOiI4MDEiLCJyZWZlcmVuY2UiOm51bGx9LCJsb2dpc3RpY3NJbmZvIjpb
+        eyJpdGVtSW5kZXgiOjAsInNlbGVjdGVkU2xhIjoiTm9ybWFsIiwibG9ja1RU
+        TCI6IjhkIiwicHJpY2UiOjExOSwiZGVsaXZlcnlXaW5kb3ciOm51bGwsImRl
+        bGl2ZXJ5Q29tcGFueSI6IlRyYW5zcG9ydGFkb3JhIiwic2hpcHBpbmdFc3Rp
+        bWF0ZSI6IjFiZCIsInNoaXBwaW5nRXN0aW1hdGVEYXRlIjoiMjAxNC0xMS0w
+        M1QyMTo0NDo1Mi4zOTIzODE0WiIsInNsYXMiOlt7ImlkIjoiTm9ybWFsIiwi
+        bmFtZSI6Ik5vcm1hbCIsInNoaXBwaW5nRXN0aW1hdGUiOiIxYmQiLCJkZWxp
+        dmVyeVdpbmRvdyI6bnVsbCwicHJpY2UiOjExOX1dLCJzaGlwc1RvIjpbIkJS
+        QSJdLCJzZWxsaW5nUHJpY2UiOjExOSwiZGVsaXZlcnlJZHMiOlt7ImNvdXJp
+        ZXJJZCI6IjEiLCJjb3VyaWVyTmFtZSI6IlRyYW5zcG9ydGFkb3JhIiwiZG9j
+        a0lkIjoiMSIsInF1YW50aXR5IjoxLCJ3YXJlaG91c2VJZCI6IjFfMSJ9XX1d
+        fSwicGF5bWVudERhdGEiOnsidHJhbnNhY3Rpb25zIjpbeyJpc0FjdGl2ZSI6
+        dHJ1ZSwidHJhbnNhY3Rpb25JZCI6IkY2NjYzODI5MzEzMzQyQkRCODhFRTUx
+        QjgzMzYwNTkwIiwicGF5bWVudHMiOlt7ImlkIjoiMkNGRURBM0I3QUU5NEYy
+        QUE3QjVFNUQ1REU3Mzc5MTgiLCJwYXltZW50U3lzdGVtIjoiNiIsInBheW1l
+        bnRTeXN0ZW1OYW1lIjoiQm9sZXRvIEJhbmPDoXJpbyIsInZhbHVlIjoxMTEx
+        OSwiaW5zdGFsbG1lbnRzIjoxLCJyZWZlcmVuY2VWYWx1ZSI6MTExMTksImNh
+        cmRIb2xkZXIiOm51bGwsImNhcmROdW1iZXIiOm51bGwsImZpcnN0RGlnaXRz
+        IjpudWxsLCJsYXN0RGlnaXRzIjpudWxsLCJjdnYyIjpudWxsLCJleHBpcmVN
+        b250aCI6bnVsbCwiZXhwaXJlWWVhciI6bnVsbCwidXJsIjoiaHR0cHM6Ly9T
+        QU5EQk9YSU5URUdSQUNBTy52dGV4cGF5bWVudHMuY29tLmJyOjQ0My9CYW5r
+        SXNzdWVkSW52b2ljZS9UcmFuc2FjdGlvbi9GNjY2MzgyOTMxMzM0MkJEQjg4
+        RUU1MUI4MzM2MDU5MC9QYXltZW50LzJDRkVEQTNCN0FFOTRGMkFBN0I1RTVE
+        NURFNzM3OTE4L0luc3RhbGxtZW50L3tJbnN0YWxsbWVudH0iLCJnaWZ0Q2Fy
+        ZElkIjpudWxsLCJnaWZ0Q2FyZE5hbWUiOm51bGwsImdpZnRDYXJkQ2FwdGlv
+        biI6bnVsbCwicmVkZW1wdGlvbkNvZGUiOm51bGwsImdyb3VwIjoiYmFua0lu
+        dm9pY2UiLCJ0aWQiOm51bGwsImR1ZURhdGUiOiIyMDE0LTExLTA0IiwiY29u
+        bmVjdG9yUmVzcG9uc2VzIjp7fX1dfV19LCJwYWNrYWdlQXR0YWNobWVudCI6
+        eyJwYWNrYWdlcyI6W3siaXRlbXMiOlt7Iml0ZW1JbmRleCI6MCwicXVhbnRp
+        dHkiOjEsInByaWNlIjoxMTAwMCwiZGVzY3JpcHRpb24iOm51bGx9XSwiY291
+        cmllciI6IkNvcnJlaW9zIiwiaW52b2ljZU51bWJlciI6Ik5GZS0wMDAwMSIs
+        Imludm9pY2VWYWx1ZSI6MTEwMDAsImludm9pY2VVcmwiOm51bGwsImlzc3Vh
+        bmNlRGF0ZSI6IjIwMTQtMTEtMDRUMDA6MDA6MDAiLCJ0cmFja2luZ051bWJl
+        ciI6IlNSMDAwOTg3NjU0MzIxIiwidHJhY2tpbmdVcmwiOiJodHRwOi8vdHJh
+        a2luZy5jb3JyZWlvcy5jb20uYnIvc2VkZXgvU1IwMDA5ODc2NTQzMjEiLCJl
+        bWJlZGRlZEludm9pY2UiOm51bGwsInR5cGUiOiJPdXRwdXQiLCJjb3VyaWVy
+        U3RhdHVzIjp7InN0YXR1cyI6InVua25vd24iLCJmaW5pc2hlZCI6ZmFsc2Us
+        ImRhdGEiOltdfX0seyJpdGVtcyI6W10sImNvdXJpZXIiOiJDb3JyZWlvcyIs
+        Imludm9pY2VOdW1iZXIiOiJORmUtMDAwMDIiLCJpbnZvaWNlVmFsdWUiOjEx
+        OSwiaW52b2ljZVVybCI6bnVsbCwiaXNzdWFuY2VEYXRlIjoiMjAxNC0xMS0w
+        NFQwMDowMDowMCIsInRyYWNraW5nTnVtYmVyIjoiU1IwMDA5ODc2NTQzMjEi
+        LCJ0cmFja2luZ1VybCI6Imh0dHA6Ly90cmFraW5nLmNvcnJlaW9zLmNvbS5i
+        ci9zZWRleC9TUjAwMDk4NzY1NDMyMSIsImVtYmVkZGVkSW52b2ljZSI6bnVs
+        bCwidHlwZSI6Ik91dHB1dCIsImNvdXJpZXJTdGF0dXMiOnsic3RhdHVzIjoi
+        dW5rbm93biIsImZpbmlzaGVkIjpmYWxzZSwiZGF0YSI6W119fV19LCJzZWxs
+        ZXJzIjpbeyJpZCI6IjEiLCJuYW1lIjoic2FuZGJveGludGVncmFjYW8iLCJs
+        b2dvIjoiaHR0cDovL3BvcnRhbC52dGV4Y29tbWVyY2UuY29tLmJyL2FycXVp
+        dm9zL2xvZ28uanBnIn1dLCJjYWxsQ2VudGVyT3BlcmF0b3JEYXRhIjp7Imlk
+        IjoiQ2FsbENlbnRlck9wZXJhdG9yQXR0YWNobWVudCIsImVtYWlsIjoiam9u
+        YXMuYm9sb2duaW1AdnRleC5jb20uYnIiLCJ1c2VyTmFtZSI6IkpvbmFzIEJv
+        bG9nbmltIn0sImZvbGxvd1VwRW1haWwiOiJiNTU4OThhZGNhZTU0NmE1OTI0
+        MzFlYTM3YTRmZjFlMEBjdC52dGV4LmNvbS5iciIsImxhc3RNZXNzYWdlIjoi
+        U2FuZGJveC1pbnRlZ3JhY2FvIFNldSBwZWRpZG8gZm9pIGVudmlhZG8hIHJl
+        YWxpemFkbyBlbTogMzAvMTAvMjAxNCBPbMOhLCBKb25hcy4gT3MgcHJvZHV0
+        b3MgYWJhaXhvIGrDoSBmb3JhbSBlbmNhbWluaGFkb3MgcGFyYSBhIHRyYW5z
+        cG9ydGFkbyIsImhvc3RuYW1lIjoic2FuZGJveGludGVncmFjYW8iLCJjaGFu
+        Z2VzQXR0YWNobWVudCI6bnVsbCwib3BlblRleHRGaWVsZCI6bnVsbH0=
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 01:57:13 GMT
+- request:
+    method: get
+    uri: http://oms.vtexcommerce.com.br/api/oms/pvt/orders/MGZ-436463463463/?an=VTEX_SITE_ID
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Vtex-Api-Appkey:
+      - VTEX_APP_KEY
+      X-Vtex-Api-Apptoken:
+      - VTEX_APP_TOKEN
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 07 Nov 2014 01:57:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3476'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      X-Vtex-Router-Backend-App:
+      - omsapi - v1.3.73-stable+455
+      X-Vtex-Router-Janusnet-Aspnetlatency:
+      - '16'
+      X-Vtex-Router-Janusnet-Backendlatency:
+      - '516'
+      X-Vtex-Router-Janusnet-Januslatency:
+      - "-16"
+      X-Vtex-Router-Powered-By:
+      - VTEX.JanusNet - 1.0.0
+      X-Track:
+      - stable
+      X-Powered-By-Vtex-Janus-Edge:
+      - v1.16.4
+      X-Cdnignore:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJvcmRlcklkIjoiTUdaLTQzNjQ2MzQ2MzQ2MyIsInNlcXVlbmNlIjoiNTAw
+        MDU0IiwibWFya2V0cGxhY2VPcmRlcklkIjoiNDM2NDYzNDYzNDYzIiwibWFy
+        a2V0cGxhY2VTZXJ2aWNlc0VuZHBvaW50IjoiaHR0cDovL3Rlc3RlLm1hZ2F6
+        aW5lbHVpemEuY29tLmJyL2VuZHBvaW50Iiwic2VsbGVyT3JkZXJJZCI6bnVs
+        bCwib3JpZ2luIjoiRnVsZmlsbG1lbnQiLCJhZmZpbGlhdGVJZCI6Ik1HWiIs
+        InNhbGVzQ2hhbm5lbCI6IjMiLCJtZXJjaGFudE5hbWUiOm51bGwsInN0YXR1
+        cyI6IndhaXRpbmctZmZtdC1hdXRob3JpemF0aW9uIiwic3RhdHVzRGVzY3Jp
+        cHRpb24iOiJBZ3VhcmRhbmRvIGF1dG9yaXphw6fDo28gcGFyYSBkZXNwYWNo
+        YXIiLCJ2YWx1ZSI6MTE5NTAwLCJjcmVhdGlvbkRhdGUiOiIyMDE0LTEwLTI4
+        VDE4OjU5OjA4LjQzNjA4NDRaIiwibGFzdENoYW5nZSI6IjIwMTQtMTAtMjhU
+        MTg6NTk6MTAuMzM5MzQ1NloiLCJvcmRlckdyb3VwIjpudWxsLCJ0b3RhbHMi
+        Olt7ImlkIjoiSXRlbXMiLCJuYW1lIjoiSXRlbXMgVG90YWwiLCJ2YWx1ZSI6
+        MTE5MDAwfSx7ImlkIjoiRGlzY291bnRzIiwibmFtZSI6IkRpc2NvdW50cyBU
+        b3RhbCIsInZhbHVlIjowfSx7ImlkIjoiU2hpcHBpbmciLCJuYW1lIjoiU2hp
+        cHBpbmcgVG90YWwiLCJ2YWx1ZSI6NTAwfSx7ImlkIjoiVGF4IiwibmFtZSI6
+        IlRheCBUb3RhbCIsInZhbHVlIjowfV0sIml0ZW1zIjpbeyJpZCI6IjIwMDAw
+        MzYiLCJwcm9kdWN0SWQiOiIyMDAwMDA3IiwiZWFuIjoia2xuMTJuM2siLCJs
+        b2NrSWQiOiI5NDg3Mjg5OS05YTU1LTQ2Y2MtOGU1OC0zZGNkYTM3MTMxZWUi
+        LCJpdGVtQXR0YWNobWVudCI6eyJjb250ZW50Ijp7fSwibmFtZSI6bnVsbH0s
+        ImF0dGFjaG1lbnRzIjpbXSwicXVhbnRpdHkiOjEsInNlbGxlciI6IjEiLCJu
+        YW1lIjoiU2Ftc3VuZyBTNSBCcmFuY28iLCJyZWZJZCI6IjNtMW4yazQiLCJw
+        cmljZSI6MTE5MDAwLCJsaXN0UHJpY2UiOjEyOTAwMCwicHJpY2VUYWdzIjpb
+        XSwiaW1hZ2VVcmwiOiIvYXJxdWl2b3MvaWRzLzE1NTI0Mi01NS01NS9TNV8x
+        LmpwZyIsImRldGFpbFVybCI6bnVsbCwiY29tcG9uZW50cyI6W10sImJ1bmRs
+        ZUl0ZW1zIjpbXSwicGFyYW1zIjpbXSwib2ZmZXJpbmdzIjpbXSwic2VsbGVy
+        U2t1IjoiMjAwMDAzNiIsInByaWNlVmFsaWRVbnRpbCI6bnVsbCwiY29tbWlz
+        c2lvbiI6MCwidGF4IjowLCJwcmVTYWxlRGF0ZSI6bnVsbCwiYWRkaXRpb25h
+        bEluZm8iOnsiYnJhbmROYW1lIjoiU2Ftc3VuZyIsImJyYW5kSWQiOiIyMDAw
+        MDAxIiwiY2F0ZWdvcmllc0lkcyI6Ii8xMDAwMDAzLyIsInByb2R1Y3RDbHVz
+        dGVySWQiOiI4IiwiY29tbWVyY2lhbENvbmRpdGlvbklkIjoiMSJ9LCJtZWFz
+        dXJlbWVudFVuaXQiOiJ1biIsInVuaXRNdWx0aXBsaWVyIjoxLjAwMDAsInNl
+        bGxpbmdQcmljZSI6MTE5MDAwLCJpc0dpZnQiOmZhbHNlLCJzaGlwcGluZ1By
+        aWNlIjpudWxsfV0sIm1hcmtldHBsYWNlSXRlbXMiOltdLCJjbGllbnRQcm9m
+        aWxlRGF0YSI6eyJpZCI6ImNsaWVudFByb2ZpbGVEYXRhIiwiZW1haWwiOiIz
+        MGQ5YmU5ODZiNGY0YzM1OGRlMzJjNTVmY2I0NzE0OUBjdC52dGV4LmNvbS5i
+        ciIsImZpcnN0TmFtZSI6IkRhbmlsbyIsImxhc3ROYW1lIjoiQWthbWluZSIs
+        ImRvY3VtZW50VHlwZSI6ImNwZiIsImRvY3VtZW50IjoiMDEyNDEwMjM4NzUi
+        LCJwaG9uZSI6IjU1MTE5OTk5OTk5OSIsImNvcnBvcmF0ZU5hbWUiOiJNYWdh
+        emluZSBMdWl6YS4iLCJ0cmFkZU5hbWUiOiJNYWdhemluZSIsImNvcnBvcmF0
+        ZURvY3VtZW50IjoiNDc5NjA5NTAwMDAxMjEiLCJzdGF0ZUluc2NyaXB0aW9u
+        IjoiOTk5OTk5OTk5OTk5OS05IiwiY29ycG9yYXRlUGhvbmUiOiI1NSAxMSA4
+        ODg4LTg4ODgiLCJpc0NvcnBvcmF0ZSI6dHJ1ZSwidXNlclByb2ZpbGVJZCI6
+        bnVsbH0sImdpZnRSZWdpc3RyeURhdGEiOm51bGwsIm1hcmtldGluZ0RhdGEi
+        Om51bGwsInJhdGVzQW5kQmVuZWZpdHNEYXRhIjp7ImlkIjoicmF0ZXNBbmRC
+        ZW5lZml0c0RhdGEiLCJyYXRlQW5kQmVuZWZpdHNJZGVudGlmaWVycyI6W119
+        LCJzaGlwcGluZ0RhdGEiOnsiaWQiOiJzaGlwcGluZ0RhdGEiLCJhZGRyZXNz
+        Ijp7ImFkZHJlc3NUeXBlIjoiY29tbWVyY2lhbCIsInJlY2VpdmVyTmFtZSI6
+        IkRpZWd1ZXoiLCJhZGRyZXNzSWQiOiJFTlNQIiwicG9zdGFsQ29kZSI6IjAx
+        MTIyMzM0IiwiY2l0eSI6IlNBTyBQQVVMTyIsInN0YXRlIjoiU1AiLCJjb3Vu
+        dHJ5IjoiQlJBIiwic3RyZWV0IjoiQU1BWk9OQVMgREEgU0lMVkEiLCJudW1i
+        ZXIiOiIyNyIsIm5laWdoYm9yaG9vZCI6IlZJTEEgR1VJTEhFUk1FIiwiY29t
+        cGxlbWVudCI6IlJFQ0VQQ0FPIiwicmVmZXJlbmNlIjoiUFJFRElPIEFaVUwi
+        fSwibG9naXN0aWNzSW5mbyI6W3siaXRlbUluZGV4IjowLCJzZWxlY3RlZFNs
+        YSI6Ik5vcm1hbCIsImxvY2tUVEwiOiI1ZCIsInByaWNlIjo1MDAsImRlbGl2
+        ZXJ5V2luZG93IjpudWxsLCJkZWxpdmVyeUNvbXBhbnkiOiJUcmFuc3BvcnRh
+        ZG9yYSIsInNoaXBwaW5nRXN0aW1hdGUiOiI1YmQiLCJzaGlwcGluZ0VzdGlt
+        YXRlRGF0ZSI6bnVsbCwic2xhcyI6bnVsbCwic2hpcHNUbyI6bnVsbCwic2Vs
+        bGluZ1ByaWNlIjo1MDAsImRlbGl2ZXJ5SWRzIjpbeyJjb3VyaWVySWQiOiIx
+        IiwiY291cmllck5hbWUiOiJUcmFuc3BvcnRhZG9yYSIsImRvY2tJZCI6IjFm
+        NDIyMGQiLCJxdWFudGl0eSI6MSwid2FyZWhvdXNlSWQiOiIxXzEifV19XX0s
+        InBheW1lbnREYXRhIjp7InRyYW5zYWN0aW9ucyI6W3siaXNBY3RpdmUiOnRy
+        dWUsInRyYW5zYWN0aW9uSWQiOm51bGwsInBheW1lbnRzIjpbeyJpZCI6bnVs
+        bCwicGF5bWVudFN5c3RlbSI6IjAiLCJwYXltZW50U3lzdGVtTmFtZSI6IkFz
+        c3VtZWQgdmFsdWUgYnkgYWZmaWxpYXRlIE1hZ2F6aW5lIEx1aXphKE1HWiki
+        LCJ2YWx1ZSI6MTE5NTAwLCJpbnN0YWxsbWVudHMiOjAsInJlZmVyZW5jZVZh
+        bHVlIjoxMTk1MDAsImNhcmRIb2xkZXIiOm51bGwsImNhcmROdW1iZXIiOm51
+        bGwsImZpcnN0RGlnaXRzIjpudWxsLCJsYXN0RGlnaXRzIjpudWxsLCJjdnYy
+        IjpudWxsLCJleHBpcmVNb250aCI6bnVsbCwiZXhwaXJlWWVhciI6bnVsbCwi
+        dXJsIjpudWxsLCJnaWZ0Q2FyZElkIjpudWxsLCJnaWZ0Q2FyZE5hbWUiOm51
+        bGwsImdpZnRDYXJkQ2FwdGlvbiI6bnVsbCwicmVkZW1wdGlvbkNvZGUiOm51
+        bGwsImdyb3VwIjpudWxsLCJ0aWQiOm51bGwsImR1ZURhdGUiOm51bGwsImNv
+        bm5lY3RvclJlc3BvbnNlcyI6e319XX1dfSwicGFja2FnZUF0dGFjaG1lbnQi
+        OnsicGFja2FnZXMiOltdfSwic2VsbGVycyI6W3siaWQiOiIxIiwibmFtZSI6
+        bnVsbCwibG9nbyI6bnVsbH1dLCJjYWxsQ2VudGVyT3BlcmF0b3JEYXRhIjpu
+        dWxsLCJmb2xsb3dVcEVtYWlsIjoiZGFuaWxvLmFrYW1pbmVAbHVpemFsYWJz
+        LmNvbSIsImxhc3RNZXNzYWdlIjoiIiwiaG9zdG5hbWUiOiJib3hlcG9jYWNv
+        c21ldGljb3MiLCJjaGFuZ2VzQXR0YWNobWVudCI6bnVsbCwib3BlblRleHRG
+        aWVsZCI6bnVsbH0=
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 01:57:14 GMT
+- request:
+    method: get
+    uri: http://oms.vtexcommerce.com.br/api/oms/pvt/orders/MGZ-2942940942/?an=VTEX_SITE_ID
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Vtex-Api-Appkey:
+      - VTEX_APP_KEY
+      X-Vtex-Api-Apptoken:
+      - VTEX_APP_TOKEN
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 07 Nov 2014 01:57:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3472'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      X-Vtex-Router-Backend-App:
+      - omsapi - v1.3.73-stable+455
+      X-Vtex-Router-Janusnet-Aspnetlatency:
+      - '16'
+      X-Vtex-Router-Janusnet-Backendlatency:
+      - '500'
+      X-Vtex-Router-Janusnet-Januslatency:
+      - '17'
+      X-Vtex-Router-Powered-By:
+      - VTEX.JanusNet - 1.0.0
+      X-Track:
+      - stable
+      X-Powered-By-Vtex-Janus-Edge:
+      - v1.16.4
+      X-Cdnignore:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJvcmRlcklkIjoiTUdaLTI5NDI5NDA5NDIiLCJzZXF1ZW5jZSI6IjUwMDA1
+        MyIsIm1hcmtldHBsYWNlT3JkZXJJZCI6IjI5NDI5NDA5NDIiLCJtYXJrZXRw
+        bGFjZVNlcnZpY2VzRW5kcG9pbnQiOiJodHRwOi8vdGVzdGUubWFnYXppbmVs
+        dWl6YS5jb20uYnIvZW5kcG9pbnQiLCJzZWxsZXJPcmRlcklkIjpudWxsLCJv
+        cmlnaW4iOiJGdWxmaWxsbWVudCIsImFmZmlsaWF0ZUlkIjoiTUdaIiwic2Fs
+        ZXNDaGFubmVsIjoiMyIsIm1lcmNoYW50TmFtZSI6bnVsbCwic3RhdHVzIjoi
+        d2FpdGluZy1mZm10LWF1dGhvcml6YXRpb24iLCJzdGF0dXNEZXNjcmlwdGlv
+        biI6IkFndWFyZGFuZG8gYXV0b3JpemHDp8OjbyBwYXJhIGRlc3BhY2hhciIs
+        InZhbHVlIjoxMTk1MDAsImNyZWF0aW9uRGF0ZSI6IjIwMTQtMTAtMjhUMTg6
+        NTM6MTEuMzg2NTk3OVoiLCJsYXN0Q2hhbmdlIjoiMjAxNC0xMC0yOFQxODo1
+        MzoxMy4wNTU4MDM3WiIsIm9yZGVyR3JvdXAiOm51bGwsInRvdGFscyI6W3si
+        aWQiOiJJdGVtcyIsIm5hbWUiOiJJdGVtcyBUb3RhbCIsInZhbHVlIjoxMTkw
+        MDB9LHsiaWQiOiJEaXNjb3VudHMiLCJuYW1lIjoiRGlzY291bnRzIFRvdGFs
+        IiwidmFsdWUiOjB9LHsiaWQiOiJTaGlwcGluZyIsIm5hbWUiOiJTaGlwcGlu
+        ZyBUb3RhbCIsInZhbHVlIjo1MDB9LHsiaWQiOiJUYXgiLCJuYW1lIjoiVGF4
+        IFRvdGFsIiwidmFsdWUiOjB9XSwiaXRlbXMiOlt7ImlkIjoiMjAwMDAzNiIs
+        InByb2R1Y3RJZCI6IjIwMDAwMDciLCJlYW4iOiJrbG4xMm4zayIsImxvY2tJ
+        ZCI6ImY0MGIxYWZmLTkwM2UtNDliNy1hNjlkLTYwOTkwMDVkOTgwMCIsIml0
+        ZW1BdHRhY2htZW50Ijp7ImNvbnRlbnQiOnt9LCJuYW1lIjpudWxsfSwiYXR0
+        YWNobWVudHMiOltdLCJxdWFudGl0eSI6MSwic2VsbGVyIjoiMSIsIm5hbWUi
+        OiJTYW1zdW5nIFM1IEJyYW5jbyIsInJlZklkIjoiM20xbjJrNCIsInByaWNl
+        IjoxMTkwMDAsImxpc3RQcmljZSI6MTI5MDAwLCJwcmljZVRhZ3MiOltdLCJp
+        bWFnZVVybCI6Ii9hcnF1aXZvcy9pZHMvMTU1MjQyLTU1LTU1L1M1XzEuanBn
+        IiwiZGV0YWlsVXJsIjpudWxsLCJjb21wb25lbnRzIjpbXSwiYnVuZGxlSXRl
+        bXMiOltdLCJwYXJhbXMiOltdLCJvZmZlcmluZ3MiOltdLCJzZWxsZXJTa3Ui
+        OiIyMDAwMDM2IiwicHJpY2VWYWxpZFVudGlsIjpudWxsLCJjb21taXNzaW9u
+        IjowLCJ0YXgiOjAsInByZVNhbGVEYXRlIjpudWxsLCJhZGRpdGlvbmFsSW5m
+        byI6eyJicmFuZE5hbWUiOiJTYW1zdW5nIiwiYnJhbmRJZCI6IjIwMDAwMDEi
+        LCJjYXRlZ29yaWVzSWRzIjoiLzEwMDAwMDMvIiwicHJvZHVjdENsdXN0ZXJJ
+        ZCI6IjgiLCJjb21tZXJjaWFsQ29uZGl0aW9uSWQiOiIxIn0sIm1lYXN1cmVt
+        ZW50VW5pdCI6InVuIiwidW5pdE11bHRpcGxpZXIiOjEuMDAwMCwic2VsbGlu
+        Z1ByaWNlIjoxMTkwMDAsImlzR2lmdCI6ZmFsc2UsInNoaXBwaW5nUHJpY2Ui
+        Om51bGx9XSwibWFya2V0cGxhY2VJdGVtcyI6W10sImNsaWVudFByb2ZpbGVE
+        YXRhIjp7ImlkIjoiY2xpZW50UHJvZmlsZURhdGEiLCJlbWFpbCI6IjQ1YTY0
+        N2U5ODM1ZjRkZjBiYjM5OWY5NGUwMmQ1ZDMyQGN0LnZ0ZXguY29tLmJyIiwi
+        Zmlyc3ROYW1lIjoiRGFuaWxvIiwibGFzdE5hbWUiOiJBa2FtaW5lIiwiZG9j
+        dW1lbnRUeXBlIjoiY3BmIiwiZG9jdW1lbnQiOiIwMTI0MTAyMzg3NSIsInBo
+        b25lIjoiNTUxMTk5OTk5OTk5IiwiY29ycG9yYXRlTmFtZSI6Ik1hZ2F6aW5l
+        IEx1aXphLiIsInRyYWRlTmFtZSI6Ik1hZ2F6aW5lIiwiY29ycG9yYXRlRG9j
+        dW1lbnQiOiI0Nzk2MDk1MDAwMDEyMSIsInN0YXRlSW5zY3JpcHRpb24iOiI5
+        OTk5OTk5OTk5OTk5LTkiLCJjb3Jwb3JhdGVQaG9uZSI6IjU1IDExIDg4ODgt
+        ODg4OCIsImlzQ29ycG9yYXRlIjp0cnVlLCJ1c2VyUHJvZmlsZUlkIjpudWxs
+        fSwiZ2lmdFJlZ2lzdHJ5RGF0YSI6bnVsbCwibWFya2V0aW5nRGF0YSI6bnVs
+        bCwicmF0ZXNBbmRCZW5lZml0c0RhdGEiOnsiaWQiOiJyYXRlc0FuZEJlbmVm
+        aXRzRGF0YSIsInJhdGVBbmRCZW5lZml0c0lkZW50aWZpZXJzIjpbXX0sInNo
+        aXBwaW5nRGF0YSI6eyJpZCI6InNoaXBwaW5nRGF0YSIsImFkZHJlc3MiOnsi
+        YWRkcmVzc1R5cGUiOiJjb21tZXJjaWFsIiwicmVjZWl2ZXJOYW1lIjoiRGll
+        Z3VleiIsImFkZHJlc3NJZCI6IkVOU1AiLCJwb3N0YWxDb2RlIjoiMDExMjIz
+        MzQiLCJjaXR5IjoiU0FPIFBBVUxPIiwic3RhdGUiOiJTUCIsImNvdW50cnki
+        OiJCUkEiLCJzdHJlZXQiOiJBTUFaT05BUyBEQSBTSUxWQSIsIm51bWJlciI6
+        IjI3IiwibmVpZ2hib3Job29kIjoiVklMQSBHVUlMSEVSTUUiLCJjb21wbGVt
+        ZW50IjoiUkVDRVBDQU8iLCJyZWZlcmVuY2UiOiJQUkVESU8gQVpVTCJ9LCJs
+        b2dpc3RpY3NJbmZvIjpbeyJpdGVtSW5kZXgiOjAsInNlbGVjdGVkU2xhIjoi
+        Tm9ybWFsIiwibG9ja1RUTCI6IjVkIiwicHJpY2UiOjUwMCwiZGVsaXZlcnlX
+        aW5kb3ciOm51bGwsImRlbGl2ZXJ5Q29tcGFueSI6IlRyYW5zcG9ydGFkb3Jh
+        Iiwic2hpcHBpbmdFc3RpbWF0ZSI6IjViZCIsInNoaXBwaW5nRXN0aW1hdGVE
+        YXRlIjpudWxsLCJzbGFzIjpudWxsLCJzaGlwc1RvIjpudWxsLCJzZWxsaW5n
+        UHJpY2UiOjUwMCwiZGVsaXZlcnlJZHMiOlt7ImNvdXJpZXJJZCI6IjEiLCJj
+        b3VyaWVyTmFtZSI6IlRyYW5zcG9ydGFkb3JhIiwiZG9ja0lkIjoiMWY0MjIw
+        ZCIsInF1YW50aXR5IjoxLCJ3YXJlaG91c2VJZCI6IjFfMSJ9XX1dfSwicGF5
+        bWVudERhdGEiOnsidHJhbnNhY3Rpb25zIjpbeyJpc0FjdGl2ZSI6dHJ1ZSwi
+        dHJhbnNhY3Rpb25JZCI6bnVsbCwicGF5bWVudHMiOlt7ImlkIjpudWxsLCJw
+        YXltZW50U3lzdGVtIjoiMCIsInBheW1lbnRTeXN0ZW1OYW1lIjoiQXNzdW1l
+        ZCB2YWx1ZSBieSBhZmZpbGlhdGUgTWFnYXppbmUgTHVpemEoTUdaKSIsInZh
+        bHVlIjoxMTk1MDAsImluc3RhbGxtZW50cyI6MCwicmVmZXJlbmNlVmFsdWUi
+        OjExOTUwMCwiY2FyZEhvbGRlciI6bnVsbCwiY2FyZE51bWJlciI6bnVsbCwi
+        Zmlyc3REaWdpdHMiOm51bGwsImxhc3REaWdpdHMiOm51bGwsImN2djIiOm51
+        bGwsImV4cGlyZU1vbnRoIjpudWxsLCJleHBpcmVZZWFyIjpudWxsLCJ1cmwi
+        Om51bGwsImdpZnRDYXJkSWQiOm51bGwsImdpZnRDYXJkTmFtZSI6bnVsbCwi
+        Z2lmdENhcmRDYXB0aW9uIjpudWxsLCJyZWRlbXB0aW9uQ29kZSI6bnVsbCwi
+        Z3JvdXAiOm51bGwsInRpZCI6bnVsbCwiZHVlRGF0ZSI6bnVsbCwiY29ubmVj
+        dG9yUmVzcG9uc2VzIjp7fX1dfV19LCJwYWNrYWdlQXR0YWNobWVudCI6eyJw
+        YWNrYWdlcyI6W119LCJzZWxsZXJzIjpbeyJpZCI6IjEiLCJuYW1lIjpudWxs
+        LCJsb2dvIjpudWxsfV0sImNhbGxDZW50ZXJPcGVyYXRvckRhdGEiOm51bGws
+        ImZvbGxvd1VwRW1haWwiOiJkYW5pbG8uYWthbWluZUBsdWl6YWxhYnMuY29t
+        IiwibGFzdE1lc3NhZ2UiOiIiLCJob3N0bmFtZSI6ImJveGVwb2NhY29zbWV0
+        aWNvcyIsImNoYW5nZXNBdHRhY2htZW50IjpudWxsLCJvcGVuVGV4dEZpZWxk
+        IjpudWxsfQ==
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 01:57:15 GMT
+- request:
+    method: get
+    uri: http://oms.vtexcommerce.com.br/api/oms/pvt/orders/471022093125-01/?an=VTEX_SITE_ID
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Vtex-Api-Appkey:
+      - VTEX_APP_KEY
+      X-Vtex-Api-Apptoken:
+      - VTEX_APP_TOKEN
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 07 Nov 2014 01:57:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3959'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      X-Vtex-Router-Backend-App:
+      - omsapi - v1.3.73-stable+455
+      X-Vtex-Router-Janusnet-Aspnetlatency:
+      - '0'
+      X-Vtex-Router-Janusnet-Backendlatency:
+      - '817'
+      X-Vtex-Router-Janusnet-Januslatency:
+      - '0'
+      X-Vtex-Router-Powered-By:
+      - VTEX.JanusNet - 1.0.0
+      X-Track:
+      - stable
+      X-Powered-By-Vtex-Janus-Edge:
+      - v1.16.4
+      X-Cdnignore:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJvcmRlcklkIjoiNDcxMDIyMDkzMTI1LTAxIiwic2VxdWVuY2UiOiI1MDAw
+        NTAiLCJtYXJrZXRwbGFjZU9yZGVySWQiOiIiLCJtYXJrZXRwbGFjZVNlcnZp
+        Y2VzRW5kcG9pbnQiOiJodHRwOi8vcG9ydGFsLnZ0ZXhjb21tZXJjZS5jb20u
+        YnIvYXBpL29tcz9hbj1zYW5kYm94aW50ZWdyYWNhbyIsInNlbGxlck9yZGVy
+        SWQiOiIwMC00NzEwMjIwOTMxMjUtMDEiLCJvcmlnaW4iOiJNYXJrZXRwbGFj
+        ZSIsImFmZmlsaWF0ZUlkIjoiIiwic2FsZXNDaGFubmVsIjoiMSIsIm1lcmNo
+        YW50TmFtZSI6bnVsbCwic3RhdHVzIjoicGF5bWVudC1wZW5kaW5nIiwic3Rh
+        dHVzRGVzY3JpcHRpb24iOiJQYWdhbWVudG8gUGVuZGVudGUiLCJ2YWx1ZSI6
+        MTA1MDAsImNyZWF0aW9uRGF0ZSI6IjIwMTQtMTAtMjNUMjE6MzQ6NTMuODk1
+        ODk4NFoiLCJsYXN0Q2hhbmdlIjoiMjAxNC0xMC0yM1QyMTozNTowNC40MzY4
+        NTNaIiwib3JkZXJHcm91cCI6IjQ3MTAyMjA5MzEyNSIsInRvdGFscyI6W3si
+        aWQiOiJJdGVtcyIsIm5hbWUiOiJJdGVtcyBUb3RhbCIsInZhbHVlIjoxMDAw
+        MH0seyJpZCI6IkRpc2NvdW50cyIsIm5hbWUiOiJEaXNjb3VudHMgVG90YWwi
+        LCJ2YWx1ZSI6MH0seyJpZCI6IlNoaXBwaW5nIiwibmFtZSI6IlNoaXBwaW5n
+        IFRvdGFsIiwidmFsdWUiOjUwMH0seyJpZCI6IlRheCIsIm5hbWUiOiJUYXgg
+        VG90YWwiLCJ2YWx1ZSI6MH1dLCJpdGVtcyI6W3siaWQiOiIzMTAyNTgyIiwi
+        cHJvZHVjdElkIjoiMzEwMjU4MiIsImVhbiI6bnVsbCwibG9ja0lkIjoiMDAt
+        NDcxMDIyMDkzMTI1LTAxIiwiaXRlbUF0dGFjaG1lbnQiOnsiY29udGVudCI6
+        e30sIm5hbWUiOm51bGx9LCJhdHRhY2htZW50cyI6W10sInF1YW50aXR5Ijox
+        LCJzZWxsZXIiOiIxIiwibmFtZSI6IkFsZmFmYSBlbSBSYW1hIiwicmVmSWQi
+        OiIzMTAyNTgyIiwicHJpY2UiOjEwMDAwLCJsaXN0UHJpY2UiOjEwMDAwLCJw
+        cmljZVRhZ3MiOltdLCJpbWFnZVVybCI6Ii9hcnF1aXZvcy9pZHMvMTU1MjUw
+        LTU1LTU1LzEucG5nIiwiZGV0YWlsVXJsIjoiL2FsZmFmYS1lbS1yYW1hL3Ai
+        LCJjb21wb25lbnRzIjpbXSwiYnVuZGxlSXRlbXMiOltdLCJwYXJhbXMiOltd
+        LCJvZmZlcmluZ3MiOltdLCJzZWxsZXJTa3UiOiIzMTAyNTgyIiwicHJpY2VW
+        YWxpZFVudGlsIjpudWxsLCJjb21taXNzaW9uIjowLCJ0YXgiOjAsInByZVNh
+        bGVEYXRlIjpudWxsLCJhZGRpdGlvbmFsSW5mbyI6eyJicmFuZE5hbWUiOiJN
+        YXJjYSBFeGVtcGxvIiwiYnJhbmRJZCI6IjEiLCJjYXRlZ29yaWVzSWRzIjoi
+        LzEwMDAwMDEvMTAwMDAwMi8iLCJwcm9kdWN0Q2x1c3RlcklkIjoiOCIsImNv
+        bW1lcmNpYWxDb25kaXRpb25JZCI6IjEifSwibWVhc3VyZW1lbnRVbml0Ijoi
+        dW4iLCJ1bml0TXVsdGlwbGllciI6MS4wMDAwLCJzZWxsaW5nUHJpY2UiOjEw
+        MDAwLCJpc0dpZnQiOmZhbHNlLCJzaGlwcGluZ1ByaWNlIjpudWxsfV0sIm1h
+        cmtldHBsYWNlSXRlbXMiOltdLCJjbGllbnRQcm9maWxlRGF0YSI6eyJpZCI6
+        ImNsaWVudFByb2ZpbGVEYXRhIiwiZW1haWwiOiI2MTMwY2U0MmZiYzg0OWFh
+        OGE3NmE4MTYwMTU3ZjczY0BjdC52dGV4LmNvbS5iciIsImZpcnN0TmFtZSI6
+        Ik5uYWRvIiwibGFzdE5hbWUiOiJHdWVycmVpcm8iLCJkb2N1bWVudFR5cGUi
+        OiJjcGYiLCJkb2N1bWVudCI6IjMxODcxOTE2ODEwIiwicGhvbmUiOiIrNTUx
+        MTk5OTA5NTQ0MSIsImNvcnBvcmF0ZU5hbWUiOm51bGwsInRyYWRlTmFtZSI6
+        bnVsbCwiY29ycG9yYXRlRG9jdW1lbnQiOm51bGwsInN0YXRlSW5zY3JpcHRp
+        b24iOm51bGwsImNvcnBvcmF0ZVBob25lIjpudWxsLCJpc0NvcnBvcmF0ZSI6
+        ZmFsc2UsInVzZXJQcm9maWxlSWQiOiJhNmVhNDUzMC1lOTk2LTQ2NzctYjE2
+        Yi05M2FiYjU3YjA5YzcifSwiZ2lmdFJlZ2lzdHJ5RGF0YSI6bnVsbCwibWFy
+        a2V0aW5nRGF0YSI6bnVsbCwicmF0ZXNBbmRCZW5lZml0c0RhdGEiOnsiaWQi
+        OiJyYXRlc0FuZEJlbmVmaXRzRGF0YSIsInJhdGVBbmRCZW5lZml0c0lkZW50
+        aWZpZXJzIjpbXX0sInNoaXBwaW5nRGF0YSI6eyJpZCI6InNoaXBwaW5nRGF0
+        YSIsImFkZHJlc3MiOnsiYWRkcmVzc1R5cGUiOiJyZXNpZGVudGlhbCIsInJl
+        Y2VpdmVyTmFtZSI6Ik5uYWRvIEd1ZXJyZWlybyIsImFkZHJlc3NJZCI6Ii0x
+        NDE0MTAwMDg1OTI5IiwicG9zdGFsQ29kZSI6IjA1NDY1MDUwIiwiY2l0eSI6
+        IlPDo28gUGF1bG8iLCJzdGF0ZSI6IlNQIiwiY291bnRyeSI6IkJSQSIsInN0
+        cmVldCI6IlJ1YSBNYXNzYWPDoSIsIm51bWJlciI6IjM0NSIsIm5laWdoYm9y
+        aG9vZCI6IkFsdG8gZGUgUGluaGVpcm9zIiwiY29tcGxlbWVudCI6InRldHN0
+        ZSIsInJlZmVyZW5jZSI6bnVsbH0sImxvZ2lzdGljc0luZm8iOlt7Iml0ZW1J
+        bmRleCI6MCwic2VsZWN0ZWRTbGEiOiJOb3JtYWwiLCJsb2NrVFRMIjoiOGQi
+        LCJwcmljZSI6NTAwLCJkZWxpdmVyeVdpbmRvdyI6bnVsbCwiZGVsaXZlcnlD
+        b21wYW55IjoiVHJhbnNwb3J0YWRvcmEiLCJzaGlwcGluZ0VzdGltYXRlIjoi
+        M2JkIiwic2hpcHBpbmdFc3RpbWF0ZURhdGUiOm51bGwsInNsYXMiOlt7Imlk
+        IjoiTm9ybWFsIiwibmFtZSI6Ik5vcm1hbCIsInNoaXBwaW5nRXN0aW1hdGUi
+        OiIzYmQiLCJkZWxpdmVyeVdpbmRvdyI6bnVsbCwicHJpY2UiOjUwMH1dLCJz
+        aGlwc1RvIjpbIkJSQSJdLCJzZWxsaW5nUHJpY2UiOjUwMCwiZGVsaXZlcnlJ
+        ZHMiOlt7ImNvdXJpZXJJZCI6IjEiLCJjb3VyaWVyTmFtZSI6IlRyYW5zcG9y
+        dGFkb3JhIiwiZG9ja0lkIjoiMSIsInF1YW50aXR5IjoxLCJ3YXJlaG91c2VJ
+        ZCI6IjFfMSJ9XX1dfSwicGF5bWVudERhdGEiOnsidHJhbnNhY3Rpb25zIjpb
+        eyJpc0FjdGl2ZSI6dHJ1ZSwidHJhbnNhY3Rpb25JZCI6IkZCNDI2Njk1RTU4
+        NzQzODY4QThBMkIyRDgxRkI2NjdFIiwicGF5bWVudHMiOlt7ImlkIjoiMDBE
+        QzE2NEUyMkEwNDBGMDk0RjA2M0QxOEVERjQ3OTYiLCJwYXltZW50U3lzdGVt
+        IjoiNiIsInBheW1lbnRTeXN0ZW1OYW1lIjoiQm9sZXRvIEJhbmPDoXJpbyIs
+        InZhbHVlIjoxMDUwMCwiaW5zdGFsbG1lbnRzIjoxLCJyZWZlcmVuY2VWYWx1
+        ZSI6MTA1MDAsImNhcmRIb2xkZXIiOm51bGwsImNhcmROdW1iZXIiOm51bGws
+        ImZpcnN0RGlnaXRzIjpudWxsLCJsYXN0RGlnaXRzIjpudWxsLCJjdnYyIjpu
+        dWxsLCJleHBpcmVNb250aCI6bnVsbCwiZXhwaXJlWWVhciI6bnVsbCwidXJs
+        IjoiaHR0cHM6Ly9CT1hQRVRMT1ZFLnZ0ZXhwYXltZW50cy5jb20uYnI6NDQz
+        L0JhbmtJc3N1ZWRJbnZvaWNlL1RyYW5zYWN0aW9uL0ZCNDI2Njk1RTU4NzQz
+        ODY4QThBMkIyRDgxRkI2NjdFL1BheW1lbnQvMDBEQzE2NEUyMkEwNDBGMDk0
+        RjA2M0QxOEVERjQ3OTYvSW5zdGFsbG1lbnQve0luc3RhbGxtZW50fSIsImdp
+        ZnRDYXJkSWQiOm51bGwsImdpZnRDYXJkTmFtZSI6bnVsbCwiZ2lmdENhcmRD
+        YXB0aW9uIjpudWxsLCJyZWRlbXB0aW9uQ29kZSI6bnVsbCwiZ3JvdXAiOiJi
+        YW5rSW52b2ljZSIsInRpZCI6bnVsbCwiZHVlRGF0ZSI6IjIwMTQtMTAtMjgi
+        LCJjb25uZWN0b3JSZXNwb25zZXMiOnt9fV19XX0sInBhY2thZ2VBdHRhY2ht
+        ZW50Ijp7InBhY2thZ2VzIjpbXX0sInNlbGxlcnMiOlt7ImlkIjoiMSIsIm5h
+        bWUiOiJWVEVYX1NJVEVfSUQiLCJsb2dvIjoiaHR0cDovL3BvcnRhbC52dGV4
+        Y29tbWVyY2UuY29tLmJyL2FycXVpdm9zL2xvZ28uanBnIn1dLCJjYWxsQ2Vu
+        dGVyT3BlcmF0b3JEYXRhIjpudWxsLCJmb2xsb3dVcEVtYWlsIjoiNDQ5ZTAy
+        NWVmYjYzNDNiNThjMWJhZGU2MjYzMDQ1ODFAY3QudnRleC5jb20uYnIiLCJs
+        YXN0TWVzc2FnZSI6IlZURVhfU0lURV9JRCBQYWdhbWVudG8gcGVuZGVudGUg
+        cmVhbGl6YWRvIGVtOiAyMy8xMC8yMDE0IE9sw6EsIE5uYWRvLiBWZXJpZmlj
+        YW1vcyBxdWUgbyBwYWdhbWVudG8gcmVmZXJlbnRlIGFvKHMpIHBlZGlkbyhz
+        KSBhYmFpeG8gY29udGludWEgcGVuIiwiaG9zdG5hbWUiOiJWVEVYX1NJVEVf
+        SUQiLCJjaGFuZ2VzQXR0YWNobWVudCI6bnVsbCwib3BlblRleHRGaWVsZCI6
+        bnVsbH0=
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 01:57:16 GMT
+- request:
+    method: get
+    uri: http://oms.vtexcommerce.com.br/api/oms/pvt/orders/MGZ-49204204203/?an=VTEX_SITE_ID
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Vtex-Api-Appkey:
+      - VTEX_APP_KEY
+      X-Vtex-Api-Apptoken:
+      - VTEX_APP_TOKEN
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 07 Nov 2014 01:57:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3398'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      X-Vtex-Router-Backend-App:
+      - omsapi - v1.3.73-stable+455
+      X-Vtex-Router-Janusnet-Aspnetlatency:
+      - '0'
+      X-Vtex-Router-Janusnet-Backendlatency:
+      - '571'
+      X-Vtex-Router-Janusnet-Januslatency:
+      - '0'
+      X-Vtex-Router-Powered-By:
+      - VTEX.JanusNet - 1.0.0
+      X-Track:
+      - stable
+      X-Powered-By-Vtex-Janus-Edge:
+      - v1.16.4
+      X-Cdnignore:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '{"orderId":"MGZ-49204204203","sequence":"500049","marketplaceOrderId":"49204204203","marketplaceServicesEndpoint":"http://localhost:8000/orders/notifications/","sellerOrderId":null,"origin":"Fulfillment","affiliateId":"MGZ","salesChannel":"3","merchantName":null,"status":"cancel","statusDescription":"Cancelar","value":120000,"creationDate":"2014-10-17T21:47:13.2284873Z","lastChange":"2014-10-24T01:14:57.0584746Z","orderGroup":null,"totals":[{"id":"Items","name":"Items
+        Total","value":119000},{"id":"Discounts","name":"Discounts Total","value":0},{"id":"Shipping","name":"Shipping
+        Total","value":1000},{"id":"Tax","name":"Tax Total","value":0}],"items":[{"id":"2000036","productId":"2000007","ean":"kln12n3k","lockId":"d50d30e5-bc08-4609-a6a1-5e641f16f7bb","itemAttachment":{"content":{},"name":null},"attachments":[],"quantity":1,"seller":"1","name":"Samsung
+        S5 Branco","refId":"3m1n2k4","price":119000,"listPrice":129000,"priceTags":[],"imageUrl":"/arquivos/ids/155242-55-55/S5_1.jpg","detailUrl":null,"components":[],"bundleItems":[],"params":[],"offerings":[],"sellerSku":"2000036","priceValidUntil":null,"commission":0,"tax":0,"preSaleDate":null,"additionalInfo":{"brandName":"Samsung","brandId":"2000001","categoriesIds":"/1000003/","productClusterId":"8","commercialConditionId":"1"},"measurementUnit":"un","unitMultiplier":1.0000,"sellingPrice":119000,"isGift":false,"shippingPrice":null}],"marketplaceItems":[],"clientProfileData":{"id":"clientProfileData","email":"dda63e9d679c4f78b2f2be295a36c0a0@ct.vtex.com.br","firstName":"Danilo","lastName":"Akamine","documentType":"cpf","document":"37614861388","phone":"551199999999","corporateName":null,"tradeName":null,"corporateDocument":null,"stateInscription":null,"corporatePhone":null,"isCorporate":false,"userProfileId":null},"giftRegistryData":null,"marketingData":null,"ratesAndBenefitsData":{"id":"ratesAndBenefitsData","rateAndBenefitsIdentifiers":[]},"shippingData":{"id":"shippingData","address":{"addressType":"residential","receiverName":"Danilo","addressId":"ENSP","postalCode":"01122334","city":"SAO
+        PAULO","state":"SP","country":"BRA","street":"AMAZONAS DA SILVA","number":"27","neighborhood":"VILA
+        GUILHERME","complement":"RECEPCAO","reference":"PREDIO AZUL"},"logisticsInfo":[{"itemIndex":0,"selectedSla":"Normal","lockTTL":"5bd","price":1000,"deliveryWindow":null,"deliveryCompany":"Transportadora","shippingEstimate":"5bd","shippingEstimateDate":"2014-10-24T21:52:40.1339657Z","slas":null,"shipsTo":null,"sellingPrice":1000,"deliveryIds":[{"courierId":"1","courierName":"Transportadora","dockId":"1f4220d","quantity":1,"warehouseId":"1_1"}]}]},"paymentData":{"transactions":[{"isActive":true,"transactionId":null,"payments":[{"id":null,"paymentSystem":"0","paymentSystemName":"Assumed
+        value by affiliate Magazine Luiza(MGZ)","value":120000,"installments":0,"referenceValue":120000,"cardHolder":null,"cardNumber":null,"firstDigits":null,"lastDigits":null,"cvv2":null,"expireMonth":null,"expireYear":null,"url":null,"giftCardId":null,"giftCardName":null,"giftCardCaption":null,"redemptionCode":null,"group":null,"tid":null,"dueDate":null,"connectorResponses":{}}]}]},"packageAttachment":{"packages":[]},"sellers":[{"id":"1","name":null,"logo":null}],"callCenterOperatorData":null,"followUpEmail":"danilo.akamine@luizalabs.com","lastMessage":"","hostname":"boxepocacosmeticos","changesAttachment":null,"openTextField":null}'
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 01:57:17 GMT
+- request:
+    method: get
+    uri: http://oms.vtexcommerce.com.br/api/oms/pvt/orders/468892398955-01/?an=VTEX_SITE_ID
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Vtex-Api-Appkey:
+      - VTEX_APP_KEY
+      X-Vtex-Api-Apptoken:
+      - VTEX_APP_TOKEN
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 07 Nov 2014 01:57:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3938'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      X-Vtex-Router-Backend-App:
+      - omsapi - v1.3.73-stable+455
+      X-Vtex-Router-Janusnet-Aspnetlatency:
+      - '0'
+      X-Vtex-Router-Janusnet-Backendlatency:
+      - '849'
+      X-Vtex-Router-Janusnet-Januslatency:
+      - '0'
+      X-Vtex-Router-Powered-By:
+      - VTEX.JanusNet - 1.0.0
+      X-Track:
+      - stable
+      X-Powered-By-Vtex-Janus-Edge:
+      - v1.16.4
+      X-Cdnignore:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJvcmRlcklkIjoiNDY4ODkyMzk4OTU1LTAxIiwic2VxdWVuY2UiOiI1MDAw
+        NDYiLCJtYXJrZXRwbGFjZU9yZGVySWQiOiIiLCJtYXJrZXRwbGFjZVNlcnZp
+        Y2VzRW5kcG9pbnQiOiJodHRwOi8vcG9ydGFsLnZ0ZXhjb21tZXJjZS5jb20u
+        YnIvYXBpL29tcz9hbj1zYW5kYm94aW50ZWdyYWNhbyIsInNlbGxlck9yZGVy
+        SWQiOiIwMC00Njg4OTIzOTg5NTUtMDEiLCJvcmlnaW4iOiJNYXJrZXRwbGFj
+        ZSIsImFmZmlsaWF0ZUlkIjoiIiwic2FsZXNDaGFubmVsIjoiMSIsIm1lcmNo
+        YW50TmFtZSI6bnVsbCwic3RhdHVzIjoicGF5bWVudC1wZW5kaW5nIiwic3Rh
+        dHVzRGVzY3JpcHRpb24iOiJQYWdhbWVudG8gUGVuZGVudGUiLCJ2YWx1ZSI6
+        MTA1MDAsImNyZWF0aW9uRGF0ZSI6IjIwMTQtMTAtMTVUMDA6Mzk6NTguNzYx
+        NjYxMVoiLCJsYXN0Q2hhbmdlIjoiMjAxNC0xMC0xNVQwMDo0MDowOC44MjI3
+        NDkyWiIsIm9yZGVyR3JvdXAiOiI0Njg4OTIzOTg5NTUiLCJ0b3RhbHMiOlt7
+        ImlkIjoiSXRlbXMiLCJuYW1lIjoiSXRlbXMgVG90YWwiLCJ2YWx1ZSI6MTAw
+        MDB9LHsiaWQiOiJEaXNjb3VudHMiLCJuYW1lIjoiRGlzY291bnRzIFRvdGFs
+        IiwidmFsdWUiOjB9LHsiaWQiOiJTaGlwcGluZyIsIm5hbWUiOiJTaGlwcGlu
+        ZyBUb3RhbCIsInZhbHVlIjo1MDB9LHsiaWQiOiJUYXgiLCJuYW1lIjoiVGF4
+        IFRvdGFsIiwidmFsdWUiOjB9XSwiaXRlbXMiOlt7ImlkIjoiMzEwMjU4MiIs
+        InByb2R1Y3RJZCI6IjMxMDI1ODIiLCJlYW4iOm51bGwsImxvY2tJZCI6IjAw
+        LTQ2ODg5MjM5ODk1NS0wMSIsIml0ZW1BdHRhY2htZW50Ijp7ImNvbnRlbnQi
+        Ont9LCJuYW1lIjpudWxsfSwiYXR0YWNobWVudHMiOltdLCJxdWFudGl0eSI6
+        MSwic2VsbGVyIjoiMSIsIm5hbWUiOiJBbGZhZmEgZW0gUmFtYSIsInJlZklk
+        IjoiMzEwMjU4MiIsInByaWNlIjoxMDAwMCwibGlzdFByaWNlIjoxMDAwMCwi
+        cHJpY2VUYWdzIjpbXSwiaW1hZ2VVcmwiOiIvYXJxdWl2b3MvaWRzLzE1NTI1
+        MC01NS01NS8xLnBuZyIsImRldGFpbFVybCI6Ii9hbGZhZmEtZW0tcmFtYS9w
+        IiwiY29tcG9uZW50cyI6W10sImJ1bmRsZUl0ZW1zIjpbXSwicGFyYW1zIjpb
+        XSwib2ZmZXJpbmdzIjpbXSwic2VsbGVyU2t1IjoiMzEwMjU4MiIsInByaWNl
+        VmFsaWRVbnRpbCI6bnVsbCwiY29tbWlzc2lvbiI6MCwidGF4IjowLCJwcmVT
+        YWxlRGF0ZSI6bnVsbCwiYWRkaXRpb25hbEluZm8iOnsiYnJhbmROYW1lIjoi
+        TWFyY2EgRXhlbXBsbyIsImJyYW5kSWQiOiIxIiwiY2F0ZWdvcmllc0lkcyI6
+        Ii8xMDAwMDAxLzEwMDAwMDIvIiwicHJvZHVjdENsdXN0ZXJJZCI6IjgiLCJj
+        b21tZXJjaWFsQ29uZGl0aW9uSWQiOiIxIn0sIm1lYXN1cmVtZW50VW5pdCI6
+        InVuIiwidW5pdE11bHRpcGxpZXIiOjEuMDAwMCwic2VsbGluZ1ByaWNlIjox
+        MDAwMCwiaXNHaWZ0IjpmYWxzZSwic2hpcHBpbmdQcmljZSI6bnVsbH1dLCJt
+        YXJrZXRwbGFjZUl0ZW1zIjpbXSwiY2xpZW50UHJvZmlsZURhdGEiOnsiaWQi
+        OiJjbGllbnRQcm9maWxlRGF0YSIsImVtYWlsIjoiNjFkYWEyNjQzN2U1NDJh
+        ZDhkMzJlZjY2M2I4NWEyMzFAY3QudnRleC5jb20uYnIiLCJmaXJzdE5hbWUi
+        OiJXYXNoaW5ndG9uIiwibGFzdE5hbWUiOiJMdWl6IiwiZG9jdW1lbnRUeXBl
+        IjoiY3BmIiwiZG9jdW1lbnQiOiI4NTIwMjE1OTQ3MSIsInBob25lIjoiKzU1
+        ODY5OTg5NDEyNSIsImNvcnBvcmF0ZU5hbWUiOm51bGwsInRyYWRlTmFtZSI6
+        bnVsbCwiY29ycG9yYXRlRG9jdW1lbnQiOm51bGwsInN0YXRlSW5zY3JpcHRp
+        b24iOm51bGwsImNvcnBvcmF0ZVBob25lIjpudWxsLCJpc0NvcnBvcmF0ZSI6
+        ZmFsc2UsInVzZXJQcm9maWxlSWQiOiIwZGNhMzdkOC1iZGU3LTRjYTQtOWU0
+        My0yNTk5MzRmYjI5MTYifSwiZ2lmdFJlZ2lzdHJ5RGF0YSI6bnVsbCwibWFy
+        a2V0aW5nRGF0YSI6bnVsbCwicmF0ZXNBbmRCZW5lZml0c0RhdGEiOnsiaWQi
+        OiJyYXRlc0FuZEJlbmVmaXRzRGF0YSIsInJhdGVBbmRCZW5lZml0c0lkZW50
+        aWZpZXJzIjpbXX0sInNoaXBwaW5nRGF0YSI6eyJpZCI6InNoaXBwaW5nRGF0
+        YSIsImFkZHJlc3MiOnsiYWRkcmVzc1R5cGUiOiJyZXNpZGVudGlhbCIsInJl
+        Y2VpdmVyTmFtZSI6Ildhc2hpbmd0b24gTHVpeiIsImFkZHJlc3NJZCI6Ii0x
+        NDEzMzMzNTg4NzIyIiwicG9zdGFsQ29kZSI6IjY0MDIwNDEwIiwiY2l0eSI6
+        IlRlcmVzaW5hIiwic3RhdGUiOiJQSSIsImNvdW50cnkiOiJCUkEiLCJzdHJl
+        ZXQiOiJRdWFkcmEgU2FjaSIsIm51bWJlciI6IjAwIiwibmVpZ2hib3Job29k
+        IjoiU2FjaSIsImNvbXBsZW1lbnQiOiIwMCIsInJlZmVyZW5jZSI6bnVsbH0s
+        ImxvZ2lzdGljc0luZm8iOlt7Iml0ZW1JbmRleCI6MCwic2VsZWN0ZWRTbGEi
+        OiJOb3JtYWwiLCJsb2NrVFRMIjoiOGQiLCJwcmljZSI6NTAwLCJkZWxpdmVy
+        eVdpbmRvdyI6bnVsbCwiZGVsaXZlcnlDb21wYW55IjoiVHJhbnNwb3J0YWRv
+        cmEiLCJzaGlwcGluZ0VzdGltYXRlIjoiM2JkIiwic2hpcHBpbmdFc3RpbWF0
+        ZURhdGUiOm51bGwsInNsYXMiOlt7ImlkIjoiTm9ybWFsIiwibmFtZSI6Ik5v
+        cm1hbCIsInNoaXBwaW5nRXN0aW1hdGUiOiIzYmQiLCJkZWxpdmVyeVdpbmRv
+        dyI6bnVsbCwicHJpY2UiOjUwMH1dLCJzaGlwc1RvIjpbIkJSQSJdLCJzZWxs
+        aW5nUHJpY2UiOjUwMCwiZGVsaXZlcnlJZHMiOlt7ImNvdXJpZXJJZCI6IjEi
+        LCJjb3VyaWVyTmFtZSI6IlRyYW5zcG9ydGFkb3JhIiwiZG9ja0lkIjoiMSIs
+        InF1YW50aXR5IjoxLCJ3YXJlaG91c2VJZCI6IjFfMSJ9XX1dfSwicGF5bWVu
+        dERhdGEiOnsidHJhbnNhY3Rpb25zIjpbeyJpc0FjdGl2ZSI6dHJ1ZSwidHJh
+        bnNhY3Rpb25JZCI6IjAwREJDNUMwQUU5QjQ1MTc4MDE0NzZCODMxRjM4M0I0
+        IiwicGF5bWVudHMiOlt7ImlkIjoiN0NFRUZFMDJGODk4NDgzMThDQUZCNzM4
+        NjgzNDVGODEiLCJwYXltZW50U3lzdGVtIjoiNiIsInBheW1lbnRTeXN0ZW1O
+        YW1lIjoiQm9sZXRvIEJhbmPDoXJpbyIsInZhbHVlIjoxMDUwMCwiaW5zdGFs
+        bG1lbnRzIjoxLCJyZWZlcmVuY2VWYWx1ZSI6MTA1MDAsImNhcmRIb2xkZXIi
+        Om51bGwsImNhcmROdW1iZXIiOm51bGwsImZpcnN0RGlnaXRzIjpudWxsLCJs
+        YXN0RGlnaXRzIjpudWxsLCJjdnYyIjpudWxsLCJleHBpcmVNb250aCI6bnVs
+        bCwiZXhwaXJlWWVhciI6bnVsbCwidXJsIjoiaHR0cHM6Ly9CT1hQRVRMT1ZF
+        LnZ0ZXhwYXltZW50cy5jb20uYnI6NDQzL0JhbmtJc3N1ZWRJbnZvaWNlL1Ry
+        YW5zYWN0aW9uLzAwREJDNUMwQUU5QjQ1MTc4MDE0NzZCODMxRjM4M0I0L1Bh
+        eW1lbnQvN0NFRUZFMDJGODk4NDgzMThDQUZCNzM4NjgzNDVGODEvSW5zdGFs
+        bG1lbnQve0luc3RhbGxtZW50fSIsImdpZnRDYXJkSWQiOm51bGwsImdpZnRD
+        YXJkTmFtZSI6bnVsbCwiZ2lmdENhcmRDYXB0aW9uIjpudWxsLCJyZWRlbXB0
+        aW9uQ29kZSI6bnVsbCwiZ3JvdXAiOiJiYW5rSW52b2ljZSIsInRpZCI6bnVs
+        bCwiZHVlRGF0ZSI6IjIwMTQtMTAtMjAiLCJjb25uZWN0b3JSZXNwb25zZXMi
+        Ont9fV19XX0sInBhY2thZ2VBdHRhY2htZW50Ijp7InBhY2thZ2VzIjpbXX0s
+        InNlbGxlcnMiOlt7ImlkIjoiMSIsIm5hbWUiOiJWVEVYX1NJVEVfSUQiLCJs
+        b2dvIjoiaHR0cDovL3BvcnRhbC52dGV4Y29tbWVyY2UuY29tLmJyL2FycXVp
+        dm9zL2xvZ28uanBnIn1dLCJjYWxsQ2VudGVyT3BlcmF0b3JEYXRhIjpudWxs
+        LCJmb2xsb3dVcEVtYWlsIjoiZTVkNTVjMzRmYjc0NDljMjk5N2FkZmVhZmVk
+        NWVmOGZAY3QudnRleC5jb20uYnIiLCJsYXN0TWVzc2FnZSI6IlZURVhfU0lU
+        RV9JRCBQYWdhbWVudG8gcGVuZGVudGUgcmVhbGl6YWRvIGVtOiAxNS8xMC8y
+        MDE0IE9sw6EsIFdhc2hpbmd0b24uIFZlcmlmaWNhbW9zIHF1ZSBvIHBhZ2Ft
+        ZW50byByZWZlcmVudGUgYW8ocykgcGVkaWRvKHMpIGFiYWl4byBjb250aW51
+        IiwiaG9zdG5hbWUiOiJWVEVYX1NJVEVfSUQiLCJjaGFuZ2VzQXR0YWNobWVu
+        dCI6bnVsbCwib3BlblRleHRGaWVsZCI6bnVsbH0=
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 01:57:18 GMT
+- request:
+    method: get
+    uri: http://oms.vtexcommerce.com.br/api/oms/pvt/orders/MGZ-295029903043/?an=VTEX_SITE_ID
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Vtex-Api-Appkey:
+      - VTEX_APP_KEY
+      X-Vtex-Api-Apptoken:
+      - VTEX_APP_TOKEN
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 07 Nov 2014 01:57:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3362'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      X-Vtex-Router-Backend-App:
+      - omsapi - v1.3.73-stable+455
+      X-Vtex-Router-Janusnet-Aspnetlatency:
+      - '16'
+      X-Vtex-Router-Janusnet-Backendlatency:
+      - '526'
+      X-Vtex-Router-Janusnet-Januslatency:
+      - '21'
+      X-Vtex-Router-Powered-By:
+      - VTEX.JanusNet - 1.0.0
+      X-Track:
+      - stable
+      X-Powered-By-Vtex-Janus-Edge:
+      - v1.16.4
+      X-Cdnignore:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '{"orderId":"MGZ-295029903043","sequence":"500045","marketplaceOrderId":"295029903043","marketplaceServicesEndpoint":"#TODO","sellerOrderId":null,"origin":"Fulfillment","affiliateId":"MGZ","salesChannel":"3","merchantName":null,"status":"cancel","statusDescription":"Cancelar","value":120000,"creationDate":"2014-10-14T18:21:03.4792734Z","lastChange":"2014-10-24T01:16:03.2061215Z","orderGroup":null,"totals":[{"id":"Items","name":"Items
+        Total","value":119000},{"id":"Discounts","name":"Discounts Total","value":0},{"id":"Shipping","name":"Shipping
+        Total","value":1000},{"id":"Tax","name":"Tax Total","value":0}],"items":[{"id":"2000036","productId":"2000007","ean":"kln12n3k","lockId":"cf435a63-fa04-4f21-ad47-b8bdd78f3fb2","itemAttachment":{"content":{},"name":null},"attachments":[],"quantity":1,"seller":"1","name":"Samsung
+        S5 Branco","refId":"3m1n2k4","price":119000,"listPrice":129000,"priceTags":[],"imageUrl":"/arquivos/ids/155242-55-55/S5_1.jpg","detailUrl":null,"components":[],"bundleItems":[],"params":[],"offerings":[],"sellerSku":"2000036","priceValidUntil":null,"commission":0,"tax":0,"preSaleDate":null,"additionalInfo":{"brandName":"Samsung","brandId":"2000001","categoriesIds":"/1000003/","productClusterId":"8","commercialConditionId":"1"},"measurementUnit":"un","unitMultiplier":1.0000,"sellingPrice":119000,"isGift":false,"shippingPrice":null}],"marketplaceItems":[],"clientProfileData":{"id":"clientProfileData","email":"ed80a6bf891a4c578a77a522ce43f13c@ct.vtex.com.br","firstName":"Danilo","lastName":"Akamine","documentType":"cpf","document":"37614861388","phone":"551199999999","corporateName":null,"tradeName":null,"corporateDocument":null,"stateInscription":null,"corporatePhone":null,"isCorporate":false,"userProfileId":null},"giftRegistryData":null,"marketingData":null,"ratesAndBenefitsData":{"id":"ratesAndBenefitsData","rateAndBenefitsIdentifiers":[]},"shippingData":{"id":"shippingData","address":{"addressType":"residential","receiverName":"Danilo","addressId":"ENSP","postalCode":"01122334","city":"SAO
+        PAULO","state":"SP","country":"BRA","street":"AMAZONAS DA SILVA","number":"27","neighborhood":"VILA
+        GUILHERME","complement":"RECEPCAO","reference":"PREDIO AZUL"},"logisticsInfo":[{"itemIndex":0,"selectedSla":"Normal","lockTTL":"5bd","price":1000,"deliveryWindow":null,"deliveryCompany":"Transportadora","shippingEstimate":"5bd","shippingEstimateDate":"2014-10-21T18:21:31.9511224Z","slas":null,"shipsTo":null,"sellingPrice":1000,"deliveryIds":[{"courierId":"1","courierName":"Transportadora","dockId":"1f4220d","quantity":1,"warehouseId":"1_1"}]}]},"paymentData":{"transactions":[{"isActive":true,"transactionId":null,"payments":[{"id":null,"paymentSystem":"0","paymentSystemName":"Assumed
+        value by affiliate Magazine Luiza(MGZ)","value":120000,"installments":0,"referenceValue":120000,"cardHolder":null,"cardNumber":null,"firstDigits":null,"lastDigits":null,"cvv2":null,"expireMonth":null,"expireYear":null,"url":null,"giftCardId":null,"giftCardName":null,"giftCardCaption":null,"redemptionCode":null,"group":null,"tid":null,"dueDate":null,"connectorResponses":{}}]}]},"packageAttachment":{"packages":[]},"sellers":[{"id":"1","name":null,"logo":null}],"callCenterOperatorData":null,"followUpEmail":"danilo.akamine@luizalabs.com","lastMessage":"","hostname":"boxepocacosmeticos","changesAttachment":null,"openTextField":null}'
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 01:57:19 GMT
+- request:
+    method: get
+    uri: http://oms.vtexcommerce.com.br/api/oms/pvt/orders/MGZ-7434394830439/?an=VTEX_SITE_ID
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Vtex-Api-Appkey:
+      - VTEX_APP_KEY
+      X-Vtex-Api-Apptoken:
+      - VTEX_APP_TOKEN
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 07 Nov 2014 01:57:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3390'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      X-Vtex-Router-Backend-App:
+      - omsapi - v1.3.73-stable+455
+      X-Vtex-Router-Janusnet-Aspnetlatency:
+      - '0'
+      X-Vtex-Router-Janusnet-Backendlatency:
+      - '493'
+      X-Vtex-Router-Janusnet-Januslatency:
+      - '0'
+      X-Vtex-Router-Powered-By:
+      - VTEX.JanusNet - 1.0.0
+      X-Track:
+      - stable
+      X-Powered-By-Vtex-Janus-Edge:
+      - v1.16.4
+      X-Cdnignore:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '{"orderId":"MGZ-7434394830439","sequence":"500044","marketplaceOrderId":"7434394830439","marketplaceServicesEndpoint":"#TODO","sellerOrderId":null,"origin":"Fulfillment","affiliateId":"MGZ","salesChannel":"3","merchantName":null,"status":"ready-for-handling","statusDescription":"Pronto
+        para o manuseio","value":120000,"creationDate":"2014-10-14T15:14:51.2262028Z","lastChange":"2014-10-14T15:45:25.2219402Z","orderGroup":null,"totals":[{"id":"Items","name":"Items
+        Total","value":119000},{"id":"Discounts","name":"Discounts Total","value":0},{"id":"Shipping","name":"Shipping
+        Total","value":1000},{"id":"Tax","name":"Tax Total","value":0}],"items":[{"id":"2000036","productId":"2000007","ean":"kln12n3k","lockId":"96d2cb1e-975d-432e-bf25-e36a8150bf80","itemAttachment":{"content":{},"name":null},"attachments":[],"quantity":1,"seller":"1","name":"Samsung
+        S5 Branco","refId":"3m1n2k4","price":119000,"listPrice":129000,"priceTags":[],"imageUrl":"/arquivos/ids/155242-55-55/S5_1.jpg","detailUrl":null,"components":[],"bundleItems":[],"params":[],"offerings":[],"sellerSku":"2000036","priceValidUntil":null,"commission":0,"tax":0,"preSaleDate":null,"additionalInfo":{"brandName":"Samsung","brandId":"2000001","categoriesIds":"/1000003/","productClusterId":"8","commercialConditionId":"1"},"measurementUnit":"un","unitMultiplier":1.0000,"sellingPrice":119000,"isGift":false,"shippingPrice":null}],"marketplaceItems":[],"clientProfileData":{"id":"clientProfileData","email":"14e17ef7fdc741a0b657507c5c7680ab@ct.vtex.com.br","firstName":"Danilo","lastName":"Akamine","documentType":"cpf","document":"37614861388","phone":"551199999999","corporateName":null,"tradeName":null,"corporateDocument":null,"stateInscription":null,"corporatePhone":null,"isCorporate":false,"userProfileId":null},"giftRegistryData":null,"marketingData":null,"ratesAndBenefitsData":{"id":"ratesAndBenefitsData","rateAndBenefitsIdentifiers":[]},"shippingData":{"id":"shippingData","address":{"addressType":"residential","receiverName":"Danilo","addressId":"ENSP","postalCode":"01122334","city":"SAO
+        PAULO","state":"SP","country":"BRA","street":"AMAZONAS DA SILVA","number":"27","neighborhood":"VILA
+        GUILHERME","complement":"RECEPCAO","reference":"PREDIO AZUL"},"logisticsInfo":[{"itemIndex":0,"selectedSla":"Normal","lockTTL":"5bd","price":1000,"deliveryWindow":null,"deliveryCompany":"Transportadora","shippingEstimate":"5bd","shippingEstimateDate":"2014-10-21T15:15:20.3224868Z","slas":null,"shipsTo":null,"sellingPrice":1000,"deliveryIds":[{"courierId":"1","courierName":"Transportadora","dockId":"1f4220d","quantity":1,"warehouseId":"1_1"}]}]},"paymentData":{"transactions":[{"isActive":true,"transactionId":null,"payments":[{"id":null,"paymentSystem":"0","paymentSystemName":"Assumed
+        value by affiliate Magazine Luiza(MGZ)","value":120000,"installments":0,"referenceValue":120000,"cardHolder":null,"cardNumber":null,"firstDigits":null,"lastDigits":null,"cvv2":null,"expireMonth":null,"expireYear":null,"url":null,"giftCardId":null,"giftCardName":null,"giftCardCaption":null,"redemptionCode":null,"group":null,"tid":null,"dueDate":null,"connectorResponses":{}}]}]},"packageAttachment":{"packages":[]},"sellers":[{"id":"1","name":null,"logo":null}],"callCenterOperatorData":null,"followUpEmail":"danilo.akamine@luizalabs.com","lastMessage":"","hostname":"boxepocacosmeticos","changesAttachment":null,"openTextField":null}'
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 01:57:20 GMT
+- request:
+    method: get
+    uri: http://oms.vtexcommerce.com.br/api/oms/pvt/orders/MGZ-19329042093/?an=VTEX_SITE_ID
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Vtex-Api-Appkey:
+      - VTEX_APP_KEY
+      X-Vtex-Api-Apptoken:
+      - VTEX_APP_TOKEN
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 07 Nov 2014 01:57:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3386'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      X-Vtex-Router-Backend-App:
+      - omsapi - v1.3.73-stable+455
+      X-Vtex-Router-Janusnet-Aspnetlatency:
+      - '0'
+      X-Vtex-Router-Janusnet-Backendlatency:
+      - '448'
+      X-Vtex-Router-Janusnet-Januslatency:
+      - '1'
+      X-Vtex-Router-Powered-By:
+      - VTEX.JanusNet - 1.0.0
+      X-Track:
+      - stable
+      X-Powered-By-Vtex-Janus-Edge:
+      - v1.16.4
+      X-Cdnignore:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '{"orderId":"MGZ-19329042093","sequence":"500043","marketplaceOrderId":"19329042093","marketplaceServicesEndpoint":"#TODO","sellerOrderId":null,"origin":"Fulfillment","affiliateId":"MGZ","salesChannel":"3","merchantName":null,"status":"ready-for-handling","statusDescription":"Pronto
+        para o manuseio","value":120000,"creationDate":"2014-10-14T14:30:04.6297623Z","lastChange":"2014-10-14T15:00:26.4856194Z","orderGroup":null,"totals":[{"id":"Items","name":"Items
+        Total","value":119000},{"id":"Discounts","name":"Discounts Total","value":0},{"id":"Shipping","name":"Shipping
+        Total","value":1000},{"id":"Tax","name":"Tax Total","value":0}],"items":[{"id":"2000036","productId":"2000007","ean":"kln12n3k","lockId":"7d6a3a34-0406-4768-a656-3707a467668a","itemAttachment":{"content":{},"name":null},"attachments":[],"quantity":1,"seller":"1","name":"Samsung
+        S5 Branco","refId":"3m1n2k4","price":119000,"listPrice":129000,"priceTags":[],"imageUrl":"/arquivos/ids/155242-55-55/S5_1.jpg","detailUrl":null,"components":[],"bundleItems":[],"params":[],"offerings":[],"sellerSku":"2000036","priceValidUntil":null,"commission":0,"tax":0,"preSaleDate":null,"additionalInfo":{"brandName":"Samsung","brandId":"2000001","categoriesIds":"/1000003/","productClusterId":"8","commercialConditionId":"1"},"measurementUnit":"un","unitMultiplier":1.0000,"sellingPrice":119000,"isGift":false,"shippingPrice":null}],"marketplaceItems":[],"clientProfileData":{"id":"clientProfileData","email":"aff175b62b07471bae0a5c9d79123e11@ct.vtex.com.br","firstName":"Danilo","lastName":"Akamine","documentType":"cpf","document":"37614861388","phone":"551199999999","corporateName":null,"tradeName":null,"corporateDocument":null,"stateInscription":null,"corporatePhone":null,"isCorporate":false,"userProfileId":null},"giftRegistryData":null,"marketingData":null,"ratesAndBenefitsData":{"id":"ratesAndBenefitsData","rateAndBenefitsIdentifiers":[]},"shippingData":{"id":"shippingData","address":{"addressType":"residential","receiverName":"Danilo","addressId":"ENSP","postalCode":"01122334","city":"SAO
+        PAULO","state":"SP","country":"BRA","street":"AMAZONAS DA SILVA","number":"27","neighborhood":"VILA
+        GUILHERME","complement":"RECEPCAO","reference":"PREDIO AZUL"},"logisticsInfo":[{"itemIndex":0,"selectedSla":"Normal","lockTTL":"5bd","price":1000,"deliveryWindow":null,"deliveryCompany":"Transportadora","shippingEstimate":"5bd","shippingEstimateDate":"2014-10-21T14:30:23.2461492Z","slas":null,"shipsTo":null,"sellingPrice":1000,"deliveryIds":[{"courierId":"1","courierName":"Transportadora","dockId":"1f4220d","quantity":1,"warehouseId":"1_1"}]}]},"paymentData":{"transactions":[{"isActive":true,"transactionId":null,"payments":[{"id":null,"paymentSystem":"0","paymentSystemName":"Assumed
+        value by affiliate Magazine Luiza(MGZ)","value":120000,"installments":0,"referenceValue":120000,"cardHolder":null,"cardNumber":null,"firstDigits":null,"lastDigits":null,"cvv2":null,"expireMonth":null,"expireYear":null,"url":null,"giftCardId":null,"giftCardName":null,"giftCardCaption":null,"redemptionCode":null,"group":null,"tid":null,"dueDate":null,"connectorResponses":{}}]}]},"packageAttachment":{"packages":[]},"sellers":[{"id":"1","name":null,"logo":null}],"callCenterOperatorData":null,"followUpEmail":"danilo.akamine@luizalabs.com","lastMessage":"","hostname":"boxepocacosmeticos","changesAttachment":null,"openTextField":null}'
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 01:57:21 GMT
+- request:
+    method: get
+    uri: http://oms.vtexcommerce.com.br/api/oms/pvt/orders/MGZ-42894284009/?an=VTEX_SITE_ID
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Vtex-Api-Appkey:
+      - VTEX_APP_KEY
+      X-Vtex-Api-Apptoken:
+      - VTEX_APP_TOKEN
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 07 Nov 2014 01:57:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3385'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      X-Vtex-Router-Backend-App:
+      - omsapi - v1.3.73-stable+455
+      X-Vtex-Router-Janusnet-Aspnetlatency:
+      - '0'
+      X-Vtex-Router-Janusnet-Backendlatency:
+      - '662'
+      X-Vtex-Router-Janusnet-Januslatency:
+      - '1'
+      X-Vtex-Router-Powered-By:
+      - VTEX.JanusNet - 1.0.0
+      X-Track:
+      - stable
+      X-Powered-By-Vtex-Janus-Edge:
+      - v1.16.4
+      X-Cdnignore:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJvcmRlcklkIjoiTUdaLTQyODk0Mjg0MDA5Iiwic2VxdWVuY2UiOiI1MDAw
+        NDIiLCJtYXJrZXRwbGFjZU9yZGVySWQiOiI0Mjg5NDI4NDAwOSIsIm1hcmtl
+        dHBsYWNlU2VydmljZXNFbmRwb2ludCI6IiNUT0RPIiwic2VsbGVyT3JkZXJJ
+        ZCI6bnVsbCwib3JpZ2luIjoiRnVsZmlsbG1lbnQiLCJhZmZpbGlhdGVJZCI6
+        Ik1HWiIsInNhbGVzQ2hhbm5lbCI6IjMiLCJtZXJjaGFudE5hbWUiOm51bGws
+        InN0YXR1cyI6IndhaXRpbmctZmZtdC1hdXRob3JpemF0aW9uIiwic3RhdHVz
+        RGVzY3JpcHRpb24iOiJBZ3VhcmRhbmRvIGF1dG9yaXphw6fDo28gcGFyYSBk
+        ZXNwYWNoYXIiLCJ2YWx1ZSI6MTIwMDAwLCJjcmVhdGlvbkRhdGUiOiIyMDE0
+        LTEwLTE0VDE0OjE0OjA4LjI1NDI2NDRaIiwibGFzdENoYW5nZSI6IjIwMTQt
+        MTAtMTRUMTQ6MTQ6MTAuMjM1NDI2MVoiLCJvcmRlckdyb3VwIjpudWxsLCJ0
+        b3RhbHMiOlt7ImlkIjoiSXRlbXMiLCJuYW1lIjoiSXRlbXMgVG90YWwiLCJ2
+        YWx1ZSI6MTE5MDAwfSx7ImlkIjoiRGlzY291bnRzIiwibmFtZSI6IkRpc2Nv
+        dW50cyBUb3RhbCIsInZhbHVlIjowfSx7ImlkIjoiU2hpcHBpbmciLCJuYW1l
+        IjoiU2hpcHBpbmcgVG90YWwiLCJ2YWx1ZSI6MTAwMH0seyJpZCI6IlRheCIs
+        Im5hbWUiOiJUYXggVG90YWwiLCJ2YWx1ZSI6MH1dLCJpdGVtcyI6W3siaWQi
+        OiIyMDAwMDM2IiwicHJvZHVjdElkIjoiMjAwMDAwNyIsImVhbiI6ImtsbjEy
+        bjNrIiwibG9ja0lkIjoiODY4ZWU4NDItYzZlZi00Njk1LTg4YmYtOGFmOWVm
+        OWUzZTA0IiwiaXRlbUF0dGFjaG1lbnQiOnsiY29udGVudCI6e30sIm5hbWUi
+        Om51bGx9LCJhdHRhY2htZW50cyI6W10sInF1YW50aXR5IjoxLCJzZWxsZXIi
+        OiIxIiwibmFtZSI6IlNhbXN1bmcgUzUgQnJhbmNvIiwicmVmSWQiOiIzbTFu
+        Mms0IiwicHJpY2UiOjExOTAwMCwibGlzdFByaWNlIjoxMjkwMDAsInByaWNl
+        VGFncyI6W10sImltYWdlVXJsIjoiL2FycXVpdm9zL2lkcy8xNTUyNDItNTUt
+        NTUvUzVfMS5qcGciLCJkZXRhaWxVcmwiOm51bGwsImNvbXBvbmVudHMiOltd
+        LCJidW5kbGVJdGVtcyI6W10sInBhcmFtcyI6W10sIm9mZmVyaW5ncyI6W10s
+        InNlbGxlclNrdSI6IjIwMDAwMzYiLCJwcmljZVZhbGlkVW50aWwiOm51bGws
+        ImNvbW1pc3Npb24iOjAsInRheCI6MCwicHJlU2FsZURhdGUiOm51bGwsImFk
+        ZGl0aW9uYWxJbmZvIjp7ImJyYW5kTmFtZSI6IlNhbXN1bmciLCJicmFuZElk
+        IjoiMjAwMDAwMSIsImNhdGVnb3JpZXNJZHMiOiIvMTAwMDAwMy8iLCJwcm9k
+        dWN0Q2x1c3RlcklkIjoiOCIsImNvbW1lcmNpYWxDb25kaXRpb25JZCI6IjEi
+        fSwibWVhc3VyZW1lbnRVbml0IjoidW4iLCJ1bml0TXVsdGlwbGllciI6MS4w
+        MDAwLCJzZWxsaW5nUHJpY2UiOjExOTAwMCwiaXNHaWZ0IjpmYWxzZSwic2hp
+        cHBpbmdQcmljZSI6bnVsbH1dLCJtYXJrZXRwbGFjZUl0ZW1zIjpbXSwiY2xp
+        ZW50UHJvZmlsZURhdGEiOnsiaWQiOiJjbGllbnRQcm9maWxlRGF0YSIsImVt
+        YWlsIjoiODJlMjlmMWE5YzQwNDI0MmE2YzA2NWY2Zjg3ODYyMDRAY3QudnRl
+        eC5jb20uYnIiLCJmaXJzdE5hbWUiOiJEYW5pbG8iLCJsYXN0TmFtZSI6IkFr
+        YW1pbmUiLCJkb2N1bWVudFR5cGUiOiJjcGYiLCJkb2N1bWVudCI6IjM3NjE0
+        ODYxMzg4IiwicGhvbmUiOiI1NTExOTk5OTk5OTkiLCJjb3Jwb3JhdGVOYW1l
+        IjpudWxsLCJ0cmFkZU5hbWUiOm51bGwsImNvcnBvcmF0ZURvY3VtZW50Ijpu
+        dWxsLCJzdGF0ZUluc2NyaXB0aW9uIjpudWxsLCJjb3Jwb3JhdGVQaG9uZSI6
+        bnVsbCwiaXNDb3Jwb3JhdGUiOmZhbHNlLCJ1c2VyUHJvZmlsZUlkIjpudWxs
+        fSwiZ2lmdFJlZ2lzdHJ5RGF0YSI6bnVsbCwibWFya2V0aW5nRGF0YSI6bnVs
+        bCwicmF0ZXNBbmRCZW5lZml0c0RhdGEiOnsiaWQiOiJyYXRlc0FuZEJlbmVm
+        aXRzRGF0YSIsInJhdGVBbmRCZW5lZml0c0lkZW50aWZpZXJzIjpbXX0sInNo
+        aXBwaW5nRGF0YSI6eyJpZCI6InNoaXBwaW5nRGF0YSIsImFkZHJlc3MiOnsi
+        YWRkcmVzc1R5cGUiOiJyZXNpZGVudGlhbCIsInJlY2VpdmVyTmFtZSI6IkRh
+        bmlsbyIsImFkZHJlc3NJZCI6IkVOU1AiLCJwb3N0YWxDb2RlIjoiMDExMjIz
+        MzQiLCJjaXR5IjoiU0FPIFBBVUxPIiwic3RhdGUiOiJTUCIsImNvdW50cnki
+        OiJCUkEiLCJzdHJlZXQiOiJBTUFaT05BUyBEQSBTSUxWQSIsIm51bWJlciI6
+        IjI3IiwibmVpZ2hib3Job29kIjoiVklMQSBHVUlMSEVSTUUiLCJjb21wbGVt
+        ZW50IjoiUkVDRVBDQU8iLCJyZWZlcmVuY2UiOiJQUkVESU8gQVpVTCJ9LCJs
+        b2dpc3RpY3NJbmZvIjpbeyJpdGVtSW5kZXgiOjAsInNlbGVjdGVkU2xhIjoi
+        Tm9ybWFsIiwibG9ja1RUTCI6IjViZCIsInByaWNlIjoxMDAwLCJkZWxpdmVy
+        eVdpbmRvdyI6bnVsbCwiZGVsaXZlcnlDb21wYW55IjoiVHJhbnNwb3J0YWRv
+        cmEiLCJzaGlwcGluZ0VzdGltYXRlIjoiNWJkIiwic2hpcHBpbmdFc3RpbWF0
+        ZURhdGUiOm51bGwsInNsYXMiOm51bGwsInNoaXBzVG8iOm51bGwsInNlbGxp
+        bmdQcmljZSI6MTAwMCwiZGVsaXZlcnlJZHMiOlt7ImNvdXJpZXJJZCI6IjEi
+        LCJjb3VyaWVyTmFtZSI6IlRyYW5zcG9ydGFkb3JhIiwiZG9ja0lkIjoiMWY0
+        MjIwZCIsInF1YW50aXR5IjoxLCJ3YXJlaG91c2VJZCI6IjFfMSJ9XX1dfSwi
+        cGF5bWVudERhdGEiOnsidHJhbnNhY3Rpb25zIjpbeyJpc0FjdGl2ZSI6dHJ1
+        ZSwidHJhbnNhY3Rpb25JZCI6bnVsbCwicGF5bWVudHMiOlt7ImlkIjpudWxs
+        LCJwYXltZW50U3lzdGVtIjoiMCIsInBheW1lbnRTeXN0ZW1OYW1lIjoiQXNz
+        dW1lZCB2YWx1ZSBieSBhZmZpbGlhdGUgTWFnYXppbmUgTHVpemEoTUdaKSIs
+        InZhbHVlIjoxMjAwMDAsImluc3RhbGxtZW50cyI6MCwicmVmZXJlbmNlVmFs
+        dWUiOjEyMDAwMCwiY2FyZEhvbGRlciI6bnVsbCwiY2FyZE51bWJlciI6bnVs
+        bCwiZmlyc3REaWdpdHMiOm51bGwsImxhc3REaWdpdHMiOm51bGwsImN2djIi
+        Om51bGwsImV4cGlyZU1vbnRoIjpudWxsLCJleHBpcmVZZWFyIjpudWxsLCJ1
+        cmwiOm51bGwsImdpZnRDYXJkSWQiOm51bGwsImdpZnRDYXJkTmFtZSI6bnVs
+        bCwiZ2lmdENhcmRDYXB0aW9uIjpudWxsLCJyZWRlbXB0aW9uQ29kZSI6bnVs
+        bCwiZ3JvdXAiOm51bGwsInRpZCI6bnVsbCwiZHVlRGF0ZSI6bnVsbCwiY29u
+        bmVjdG9yUmVzcG9uc2VzIjp7fX1dfV19LCJwYWNrYWdlQXR0YWNobWVudCI6
+        eyJwYWNrYWdlcyI6W119LCJzZWxsZXJzIjpbeyJpZCI6IjEiLCJuYW1lIjpu
+        dWxsLCJsb2dvIjpudWxsfV0sImNhbGxDZW50ZXJPcGVyYXRvckRhdGEiOm51
+        bGwsImZvbGxvd1VwRW1haWwiOiJkYW5pbG8uYWthbWluZUBsdWl6YWxhYnMu
+        Y29tIiwibGFzdE1lc3NhZ2UiOiIiLCJob3N0bmFtZSI6ImJveGVwb2NhY29z
+        bWV0aWNvcyIsImNoYW5nZXNBdHRhY2htZW50IjpudWxsLCJvcGVuVGV4dEZp
+        ZWxkIjpudWxsfQ==
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 01:57:22 GMT
+- request:
+    method: get
+    uri: http://oms.vtexcommerce.com.br/api/oms/pvt/orders/468782935498-01/?an=VTEX_SITE_ID
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Vtex-Api-Appkey:
+      - VTEX_APP_KEY
+      X-Vtex-Api-Apptoken:
+      - VTEX_APP_TOKEN
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 07 Nov 2014 01:57:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4111'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      X-Vtex-Router-Backend-App:
+      - omsapi - v1.3.73-stable+455
+      X-Vtex-Router-Janusnet-Aspnetlatency:
+      - '2'
+      X-Vtex-Router-Janusnet-Backendlatency:
+      - '662'
+      X-Vtex-Router-Janusnet-Januslatency:
+      - '29'
+      X-Vtex-Router-Powered-By:
+      - VTEX.JanusNet - 1.0.0
+      X-Track:
+      - stable
+      X-Powered-By-Vtex-Janus-Edge:
+      - v1.16.4
+      X-Cdnignore:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJvcmRlcklkIjoiNDY4NzgyOTM1NDk4LTAxIiwic2VxdWVuY2UiOiI1MDAw
+        MzkiLCJtYXJrZXRwbGFjZU9yZGVySWQiOiIiLCJtYXJrZXRwbGFjZVNlcnZp
+        Y2VzRW5kcG9pbnQiOiJodHRwOi8vcG9ydGFsLnZ0ZXhjb21tZXJjZS5jb20u
+        YnIvYXBpL29tcz9hbj1zYW5kYm94aW50ZWdyYWNhbyIsInNlbGxlck9yZGVy
+        SWQiOiIwMC00Njg3ODI5MzU0OTgtMDEiLCJvcmlnaW4iOiJNYXJrZXRwbGFj
+        ZSIsImFmZmlsaWF0ZUlkIjoiIiwic2FsZXNDaGFubmVsIjoiMSIsIm1lcmNo
+        YW50TmFtZSI6bnVsbCwic3RhdHVzIjoicmVhZHktZm9yLWhhbmRsaW5nIiwi
+        c3RhdHVzRGVzY3JpcHRpb24iOiJQcm9udG8gcGFyYSBvIG1hbnVzZWlvIiwi
+        dmFsdWUiOjExNTAwLCJjcmVhdGlvbkRhdGUiOiIyMDE0LTEwLTE0VDEzOjQ4
+        OjU1LjgzMDcyNDFaIiwibGFzdENoYW5nZSI6IjIwMTQtMTAtMTRUMTQ6MjA6
+        NTIuOTQyNDg4NFoiLCJvcmRlckdyb3VwIjoiNDY4NzgyOTM1NDk4IiwidG90
+        YWxzIjpbeyJpZCI6Ikl0ZW1zIiwibmFtZSI6Ikl0ZW1zIFRvdGFsIiwidmFs
+        dWUiOjExMDAwfSx7ImlkIjoiRGlzY291bnRzIiwibmFtZSI6IkRpc2NvdW50
+        cyBUb3RhbCIsInZhbHVlIjowfSx7ImlkIjoiU2hpcHBpbmciLCJuYW1lIjoi
+        U2hpcHBpbmcgVG90YWwiLCJ2YWx1ZSI6NTAwfSx7ImlkIjoiVGF4IiwibmFt
+        ZSI6IlRheCBUb3RhbCIsInZhbHVlIjowfV0sIml0ZW1zIjpbeyJpZCI6IjMx
+        MDM3MjQiLCJwcm9kdWN0SWQiOiIzMTAzNzI0IiwiZWFuIjpudWxsLCJsb2Nr
+        SWQiOiIwMC00Njg3ODI5MzU0OTgtMDEiLCJpdGVtQXR0YWNobWVudCI6eyJj
+        b250ZW50Ijp7fSwibmFtZSI6bnVsbH0sImF0dGFjaG1lbnRzIjpbXSwicXVh
+        bnRpdHkiOjEsInNlbGxlciI6IjEiLCJuYW1lIjoiQWNlc3PDs3JpbyBkZSBF
+        c2NvdmEgVGlyYSBQZWxvIEZ1cm1pbmF0b3IgcGFyYSBBc3BpcmFkb3IgZGUg
+        UMOzIiwicmVmSWQiOiIzMTAzNzI0IiwicHJpY2UiOjExMDAwLCJsaXN0UHJp
+        Y2UiOjExMDAwLCJwcmljZVRhZ3MiOltdLCJpbWFnZVVybCI6Ii9hcnF1aXZv
+        cy9pZHMvMTU1MjUxLTU1LTU1LzEucG5nIiwiZGV0YWlsVXJsIjoiL2FjZXNz
+        b3Jpby1kZS1lc2NvdmEtdGlyYS1wZWxvLWZ1cm1pbmF0b3ItcGFyYS1hc3Bp
+        cmFkb3ItZGUtcG8vcCIsImNvbXBvbmVudHMiOltdLCJidW5kbGVJdGVtcyI6
+        W10sInBhcmFtcyI6W10sIm9mZmVyaW5ncyI6W10sInNlbGxlclNrdSI6IjMx
+        MDM3MjQiLCJwcmljZVZhbGlkVW50aWwiOm51bGwsImNvbW1pc3Npb24iOjAs
+        InRheCI6MCwicHJlU2FsZURhdGUiOm51bGwsImFkZGl0aW9uYWxJbmZvIjp7
+        ImJyYW5kTmFtZSI6Ik1hcmNhIEV4ZW1wbG8iLCJicmFuZElkIjoiMSIsImNh
+        dGVnb3JpZXNJZHMiOiIvMTAwMDAwMS8xMDAwMDAyLyIsInByb2R1Y3RDbHVz
+        dGVySWQiOiI4IiwiY29tbWVyY2lhbENvbmRpdGlvbklkIjoiMSJ9LCJtZWFz
+        dXJlbWVudFVuaXQiOiJ1biIsInVuaXRNdWx0aXBsaWVyIjoxLjAwMDAsInNl
+        bGxpbmdQcmljZSI6MTEwMDAsImlzR2lmdCI6ZmFsc2UsInNoaXBwaW5nUHJp
+        Y2UiOm51bGx9XSwibWFya2V0cGxhY2VJdGVtcyI6W10sImNsaWVudFByb2Zp
+        bGVEYXRhIjp7ImlkIjoiY2xpZW50UHJvZmlsZURhdGEiLCJlbWFpbCI6ImUx
+        NzgyNjY5NjE1MDRlODM4MWE1MDZjMjQwNGYwMThhQGN0LnZ0ZXguY29tLmJy
+        IiwiZmlyc3ROYW1lIjoiUmVpbmFsZG8iLCJsYXN0TmFtZSI6IkJyYWdhIiwi
+        ZG9jdW1lbnRUeXBlIjoiY3BmIiwiZG9jdW1lbnQiOiIyNjgzNDY5OTg1NiIs
+        InBob25lIjoiKzU1MTE5ODQyNDQyODEiLCJjb3Jwb3JhdGVOYW1lIjpudWxs
+        LCJ0cmFkZU5hbWUiOm51bGwsImNvcnBvcmF0ZURvY3VtZW50IjpudWxsLCJz
+        dGF0ZUluc2NyaXB0aW9uIjpudWxsLCJjb3Jwb3JhdGVQaG9uZSI6bnVsbCwi
+        aXNDb3Jwb3JhdGUiOmZhbHNlLCJ1c2VyUHJvZmlsZUlkIjoiYzNjNjNlNzct
+        ZmU4My00MTExLTgyNDQtOTQwMzIwMjMyYzk4In0sImdpZnRSZWdpc3RyeURh
+        dGEiOm51bGwsIm1hcmtldGluZ0RhdGEiOm51bGwsInJhdGVzQW5kQmVuZWZp
+        dHNEYXRhIjp7ImlkIjoicmF0ZXNBbmRCZW5lZml0c0RhdGEiLCJyYXRlQW5k
+        QmVuZWZpdHNJZGVudGlmaWVycyI6W119LCJzaGlwcGluZ0RhdGEiOnsiaWQi
+        OiJzaGlwcGluZ0RhdGEiLCJhZGRyZXNzIjp7ImFkZHJlc3NUeXBlIjoicmVz
+        aWRlbnRpYWwiLCJyZWNlaXZlck5hbWUiOiJSZWluYWxkbyBCcmFnYSIsImFk
+        ZHJlc3NJZCI6Ii0xNDEyMzQxODQ5NDg5IiwicG9zdGFsQ29kZSI6IjA0NTYz
+        MDAzIiwiY2l0eSI6IlPDo28gUGF1bG8iLCJzdGF0ZSI6IlNQIiwiY291bnRy
+        eSI6IkJSQSIsInN0cmVldCI6IkF2ZW5pZGEgUGFkcmUgQW50w7RuaW8gSm9z
+        w6kgZG9zIFNhbnRvcyIsIm51bWJlciI6IjExNDQiLCJuZWlnaGJvcmhvb2Qi
+        OiJDaWRhZGUgTW9uw6fDtWVzIiwiY29tcGxlbWVudCI6ImFwdG8gMTA1Iiwi
+        cmVmZXJlbmNlIjpudWxsfSwibG9naXN0aWNzSW5mbyI6W3siaXRlbUluZGV4
+        IjowLCJzZWxlY3RlZFNsYSI6Ik5vcm1hbCIsImxvY2tUVEwiOiI4ZCIsInBy
+        aWNlIjo1MDAsImRlbGl2ZXJ5V2luZG93IjpudWxsLCJkZWxpdmVyeUNvbXBh
+        bnkiOiJUcmFuc3BvcnRhZG9yYSIsInNoaXBwaW5nRXN0aW1hdGUiOiIzYmQi
+        LCJzaGlwcGluZ0VzdGltYXRlRGF0ZSI6IjIwMTQtMTAtMTdUMTM6NTA6MzQu
+        ODYwODc2WiIsInNsYXMiOlt7ImlkIjoiTm9ybWFsIiwibmFtZSI6Ik5vcm1h
+        bCIsInNoaXBwaW5nRXN0aW1hdGUiOiIzYmQiLCJkZWxpdmVyeVdpbmRvdyI6
+        bnVsbCwicHJpY2UiOjUwMH1dLCJzaGlwc1RvIjpbXSwic2VsbGluZ1ByaWNl
+        Ijo1MDAsImRlbGl2ZXJ5SWRzIjpbeyJjb3VyaWVySWQiOiIxIiwiY291cmll
+        ck5hbWUiOiJUcmFuc3BvcnRhZG9yYSIsImRvY2tJZCI6IjEiLCJxdWFudGl0
+        eSI6MSwid2FyZWhvdXNlSWQiOiIxXzEifV19XX0sInBheW1lbnREYXRhIjp7
+        InRyYW5zYWN0aW9ucyI6W3siaXNBY3RpdmUiOnRydWUsInRyYW5zYWN0aW9u
+        SWQiOiJEQkYwQjk0NkEwMkM0Qjk4ODJBQTFGMDYyNzZCRjNFNSIsInBheW1l
+        bnRzIjpbeyJpZCI6IjhEMTVENjhDOEUxOTRDMzQ4Q0FBM0EyMUY2RDU2OUUw
+        IiwicGF5bWVudFN5c3RlbSI6IjYiLCJwYXltZW50U3lzdGVtTmFtZSI6IkJv
+        bGV0byBCYW5jw6FyaW8iLCJ2YWx1ZSI6MTE1MDAsImluc3RhbGxtZW50cyI6
+        MSwicmVmZXJlbmNlVmFsdWUiOjExNTAwLCJjYXJkSG9sZGVyIjpudWxsLCJj
+        YXJkTnVtYmVyIjpudWxsLCJmaXJzdERpZ2l0cyI6bnVsbCwibGFzdERpZ2l0
+        cyI6bnVsbCwiY3Z2MiI6bnVsbCwiZXhwaXJlTW9udGgiOm51bGwsImV4cGly
+        ZVllYXIiOm51bGwsInVybCI6Imh0dHBzOi8vQk9YUEVUTE9WRS52dGV4cGF5
+        bWVudHMuY29tLmJyOjQ0My9CYW5rSXNzdWVkSW52b2ljZS9UcmFuc2FjdGlv
+        bi9EQkYwQjk0NkEwMkM0Qjk4ODJBQTFGMDYyNzZCRjNFNS9QYXltZW50LzhE
+        MTVENjhDOEUxOTRDMzQ4Q0FBM0EyMUY2RDU2OUUwL0luc3RhbGxtZW50L3tJ
+        bnN0YWxsbWVudH0iLCJnaWZ0Q2FyZElkIjpudWxsLCJnaWZ0Q2FyZE5hbWUi
+        Om51bGwsImdpZnRDYXJkQ2FwdGlvbiI6bnVsbCwicmVkZW1wdGlvbkNvZGUi
+        Om51bGwsImdyb3VwIjoiYmFua0ludm9pY2UiLCJ0aWQiOm51bGwsImR1ZURh
+        dGUiOiIyMDE0LTEwLTE5IiwiY29ubmVjdG9yUmVzcG9uc2VzIjp7fX1dfV19
+        LCJwYWNrYWdlQXR0YWNobWVudCI6eyJwYWNrYWdlcyI6W119LCJzZWxsZXJz
+        IjpbeyJpZCI6IjEiLCJuYW1lIjoiVlRFWF9TSVRFX0lEIiwibG9nbyI6Imh0
+        dHA6Ly9wb3J0YWwudnRleGNvbW1lcmNlLmNvbS5ici9hcnF1aXZvcy9sb2dv
+        LmpwZyJ9XSwiY2FsbENlbnRlck9wZXJhdG9yRGF0YSI6bnVsbCwiZm9sbG93
+        VXBFbWFpbCI6IjE2Y2Q5MjE5YzQxODRiMDVhMDk1ZTgzMTcxZWY3YjcxQGN0
+        LnZ0ZXguY29tLmJyIiwibGFzdE1lc3NhZ2UiOiJTYW5kYm94LWludGVncmFj
+        YW8gU2V1IHBhZ2FtZW50byBmb2kgYXByb3ZhZG8hIHBlZGlkbyByZWFsaXph
+        ZG8gZW06IDE0LzEwLzIwMTQgT2zDoSwgUmVpbmFsZG8uIFNldSBwYWdhbWVu
+        dG8gZm9pIGVmZXR1YWRvIGNvbSBzdWNlc3NvLiBWb2PDqiByIiwiaG9zdG5h
+        bWUiOiJWVEVYX1NJVEVfSUQiLCJjaGFuZ2VzQXR0YWNobWVudCI6bnVsbCwi
+        b3BlblRleHRGaWVsZCI6bnVsbH0=
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 01:57:26 GMT
+- request:
+    method: get
+    uri: http://oms.vtexcommerce.com.br/api/oms/pvt/orders/468770481215-01/?an=VTEX_SITE_ID
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Vtex-Api-Appkey:
+      - VTEX_APP_KEY
+      X-Vtex-Api-Apptoken:
+      - VTEX_APP_TOKEN
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 07 Nov 2014 01:57:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4117'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      X-Vtex-Router-Backend-App:
+      - omsapi - v1.3.73-stable+455
+      X-Vtex-Router-Janusnet-Aspnetlatency:
+      - '0'
+      X-Vtex-Router-Janusnet-Backendlatency:
+      - '825'
+      X-Vtex-Router-Janusnet-Januslatency:
+      - '1'
+      X-Vtex-Router-Powered-By:
+      - VTEX.JanusNet - 1.0.0
+      X-Track:
+      - stable
+      X-Powered-By-Vtex-Janus-Edge:
+      - v1.16.4
+      X-Cdnignore:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJvcmRlcklkIjoiNDY4NzcwNDgxMjE1LTAxIiwic2VxdWVuY2UiOiI1MDAw
+        MzYiLCJtYXJrZXRwbGFjZU9yZGVySWQiOiIiLCJtYXJrZXRwbGFjZVNlcnZp
+        Y2VzRW5kcG9pbnQiOiJodHRwOi8vcG9ydGFsLnZ0ZXhjb21tZXJjZS5jb20u
+        YnIvYXBpL29tcz9hbj1zYW5kYm94aW50ZWdyYWNhbyIsInNlbGxlck9yZGVy
+        SWQiOiIwMC00Njg3NzA0ODEyMTUtMDEiLCJvcmlnaW4iOiJNYXJrZXRwbGFj
+        ZSIsImFmZmlsaWF0ZUlkIjoiIiwic2FsZXNDaGFubmVsIjoiMSIsIm1lcmNo
+        YW50TmFtZSI6bnVsbCwic3RhdHVzIjoicmVhZHktZm9yLWhhbmRsaW5nIiwi
+        c3RhdHVzRGVzY3JpcHRpb24iOiJQcm9udG8gcGFyYSBvIG1hbnVzZWlvIiwi
+        dmFsdWUiOjExNTAwLCJjcmVhdGlvbkRhdGUiOiIyMDE0LTEwLTE0VDEzOjA4
+        OjAxLjcyOTI4MzhaIiwibGFzdENoYW5nZSI6IjIwMTQtMTAtMTRUMTM6NDI6
+        MzAuNTQ4Nzk5OFoiLCJvcmRlckdyb3VwIjoiNDY4NzcwNDgxMjE1IiwidG90
+        YWxzIjpbeyJpZCI6Ikl0ZW1zIiwibmFtZSI6Ikl0ZW1zIFRvdGFsIiwidmFs
+        dWUiOjExMDAwfSx7ImlkIjoiRGlzY291bnRzIiwibmFtZSI6IkRpc2NvdW50
+        cyBUb3RhbCIsInZhbHVlIjowfSx7ImlkIjoiU2hpcHBpbmciLCJuYW1lIjoi
+        U2hpcHBpbmcgVG90YWwiLCJ2YWx1ZSI6NTAwfSx7ImlkIjoiVGF4IiwibmFt
+        ZSI6IlRheCBUb3RhbCIsInZhbHVlIjowfV0sIml0ZW1zIjpbeyJpZCI6IjMx
+        MDM3MjQiLCJwcm9kdWN0SWQiOiIzMTAzNzI0IiwiZWFuIjpudWxsLCJsb2Nr
+        SWQiOiIwMC00Njg3NzA0ODEyMTUtMDEiLCJpdGVtQXR0YWNobWVudCI6eyJj
+        b250ZW50Ijp7fSwibmFtZSI6bnVsbH0sImF0dGFjaG1lbnRzIjpbXSwicXVh
+        bnRpdHkiOjEsInNlbGxlciI6IjEiLCJuYW1lIjoiQWNlc3PDs3JpbyBkZSBF
+        c2NvdmEgVGlyYSBQZWxvIEZ1cm1pbmF0b3IgcGFyYSBBc3BpcmFkb3IgZGUg
+        UMOzIiwicmVmSWQiOiIzMTAzNzI0IiwicHJpY2UiOjExMDAwLCJsaXN0UHJp
+        Y2UiOjExMDAwLCJwcmljZVRhZ3MiOltdLCJpbWFnZVVybCI6Ii9hcnF1aXZv
+        cy9pZHMvMTU1MjUxLTU1LTU1LzEucG5nIiwiZGV0YWlsVXJsIjoiL2FjZXNz
+        b3Jpby1kZS1lc2NvdmEtdGlyYS1wZWxvLWZ1cm1pbmF0b3ItcGFyYS1hc3Bp
+        cmFkb3ItZGUtcG8vcCIsImNvbXBvbmVudHMiOltdLCJidW5kbGVJdGVtcyI6
+        W10sInBhcmFtcyI6W10sIm9mZmVyaW5ncyI6W10sInNlbGxlclNrdSI6IjMx
+        MDM3MjQiLCJwcmljZVZhbGlkVW50aWwiOm51bGwsImNvbW1pc3Npb24iOjAs
+        InRheCI6MCwicHJlU2FsZURhdGUiOm51bGwsImFkZGl0aW9uYWxJbmZvIjp7
+        ImJyYW5kTmFtZSI6Ik1hcmNhIEV4ZW1wbG8iLCJicmFuZElkIjoiMSIsImNh
+        dGVnb3JpZXNJZHMiOiIvMTAwMDAwMS8xMDAwMDAyLyIsInByb2R1Y3RDbHVz
+        dGVySWQiOiI4IiwiY29tbWVyY2lhbENvbmRpdGlvbklkIjoiMSJ9LCJtZWFz
+        dXJlbWVudFVuaXQiOiJ1biIsInVuaXRNdWx0aXBsaWVyIjoxLjAwMDAsInNl
+        bGxpbmdQcmljZSI6MTEwMDAsImlzR2lmdCI6ZmFsc2UsInNoaXBwaW5nUHJp
+        Y2UiOm51bGx9XSwibWFya2V0cGxhY2VJdGVtcyI6W10sImNsaWVudFByb2Zp
+        bGVEYXRhIjp7ImlkIjoiY2xpZW50UHJvZmlsZURhdGEiLCJlbWFpbCI6ImU4
+        NWMzZTUzZThiMTQ2YmE4MWY1MWM3Y2FjNTEwMGExQGN0LnZ0ZXguY29tLmJy
+        IiwiZmlyc3ROYW1lIjoiUmVpbmFsZG8iLCJsYXN0TmFtZSI6IkJyYWdhIiwi
+        ZG9jdW1lbnRUeXBlIjoiY3BmIiwiZG9jdW1lbnQiOiIyNjgzNDY5OTg1NiIs
+        InBob25lIjoiKzU1MTE5ODQyNDQyODEiLCJjb3Jwb3JhdGVOYW1lIjpudWxs
+        LCJ0cmFkZU5hbWUiOm51bGwsImNvcnBvcmF0ZURvY3VtZW50IjpudWxsLCJz
+        dGF0ZUluc2NyaXB0aW9uIjpudWxsLCJjb3Jwb3JhdGVQaG9uZSI6bnVsbCwi
+        aXNDb3Jwb3JhdGUiOmZhbHNlLCJ1c2VyUHJvZmlsZUlkIjoiYzNjNjNlNzct
+        ZmU4My00MTExLTgyNDQtOTQwMzIwMjMyYzk4In0sImdpZnRSZWdpc3RyeURh
+        dGEiOm51bGwsIm1hcmtldGluZ0RhdGEiOm51bGwsInJhdGVzQW5kQmVuZWZp
+        dHNEYXRhIjp7ImlkIjoicmF0ZXNBbmRCZW5lZml0c0RhdGEiLCJyYXRlQW5k
+        QmVuZWZpdHNJZGVudGlmaWVycyI6W119LCJzaGlwcGluZ0RhdGEiOnsiaWQi
+        OiJzaGlwcGluZ0RhdGEiLCJhZGRyZXNzIjp7ImFkZHJlc3NUeXBlIjoicmVz
+        aWRlbnRpYWwiLCJyZWNlaXZlck5hbWUiOiJSZWluYWxkbyBCcmFnYSIsImFk
+        ZHJlc3NJZCI6Ii0xNDEyMzQxODQ5NDg5IiwicG9zdGFsQ29kZSI6IjA0NTYz
+        MDAzIiwiY2l0eSI6IlPDo28gUGF1bG8iLCJzdGF0ZSI6IlNQIiwiY291bnRy
+        eSI6IkJSQSIsInN0cmVldCI6IkF2ZW5pZGEgUGFkcmUgQW50w7RuaW8gSm9z
+        w6kgZG9zIFNhbnRvcyIsIm51bWJlciI6IjExNDQiLCJuZWlnaGJvcmhvb2Qi
+        OiJDaWRhZGUgTW9uw6fDtWVzIiwiY29tcGxlbWVudCI6ImFwdG8gMTA1Iiwi
+        cmVmZXJlbmNlIjpudWxsfSwibG9naXN0aWNzSW5mbyI6W3siaXRlbUluZGV4
+        IjowLCJzZWxlY3RlZFNsYSI6Ik5vcm1hbCIsImxvY2tUVEwiOiI4ZCIsInBy
+        aWNlIjo1MDAsImRlbGl2ZXJ5V2luZG93IjpudWxsLCJkZWxpdmVyeUNvbXBh
+        bnkiOiJUcmFuc3BvcnRhZG9yYSIsInNoaXBwaW5nRXN0aW1hdGUiOiIzYmQi
+        LCJzaGlwcGluZ0VzdGltYXRlRGF0ZSI6IjIwMTQtMTAtMTdUMTM6MTI6MTIu
+        MDQ5NTMyM1oiLCJzbGFzIjpbeyJpZCI6Ik5vcm1hbCIsIm5hbWUiOiJOb3Jt
+        YWwiLCJzaGlwcGluZ0VzdGltYXRlIjoiM2JkIiwiZGVsaXZlcnlXaW5kb3ci
+        Om51bGwsInByaWNlIjo1MDB9XSwic2hpcHNUbyI6WyJCUkEiXSwic2VsbGlu
+        Z1ByaWNlIjo1MDAsImRlbGl2ZXJ5SWRzIjpbeyJjb3VyaWVySWQiOiIxIiwi
+        Y291cmllck5hbWUiOiJUcmFuc3BvcnRhZG9yYSIsImRvY2tJZCI6IjEiLCJx
+        dWFudGl0eSI6MSwid2FyZWhvdXNlSWQiOiIxXzEifV19XX0sInBheW1lbnRE
+        YXRhIjp7InRyYW5zYWN0aW9ucyI6W3siaXNBY3RpdmUiOnRydWUsInRyYW5z
+        YWN0aW9uSWQiOiJENjdGNjU0NTQ0MjQ0RTNFODM2RkQ5MzdCOTZCNDkyQiIs
+        InBheW1lbnRzIjpbeyJpZCI6IjdEMEUwMTAzMEM0MzQwOUVCNUIzRTlGRENF
+        QTNFMjI5IiwicGF5bWVudFN5c3RlbSI6IjYiLCJwYXltZW50U3lzdGVtTmFt
+        ZSI6IkJvbGV0byBCYW5jw6FyaW8iLCJ2YWx1ZSI6MTE1MDAsImluc3RhbGxt
+        ZW50cyI6MSwicmVmZXJlbmNlVmFsdWUiOjExNTAwLCJjYXJkSG9sZGVyIjpu
+        dWxsLCJjYXJkTnVtYmVyIjpudWxsLCJmaXJzdERpZ2l0cyI6bnVsbCwibGFz
+        dERpZ2l0cyI6bnVsbCwiY3Z2MiI6bnVsbCwiZXhwaXJlTW9udGgiOm51bGws
+        ImV4cGlyZVllYXIiOm51bGwsInVybCI6Imh0dHBzOi8vQk9YUEVUTE9WRS52
+        dGV4cGF5bWVudHMuY29tLmJyOjQ0My9CYW5rSXNzdWVkSW52b2ljZS9UcmFu
+        c2FjdGlvbi9ENjdGNjU0NTQ0MjQ0RTNFODM2RkQ5MzdCOTZCNDkyQi9QYXlt
+        ZW50LzdEMEUwMTAzMEM0MzQwOUVCNUIzRTlGRENFQTNFMjI5L0luc3RhbGxt
+        ZW50L3tJbnN0YWxsbWVudH0iLCJnaWZ0Q2FyZElkIjpudWxsLCJnaWZ0Q2Fy
+        ZE5hbWUiOm51bGwsImdpZnRDYXJkQ2FwdGlvbiI6bnVsbCwicmVkZW1wdGlv
+        bkNvZGUiOm51bGwsImdyb3VwIjoiYmFua0ludm9pY2UiLCJ0aWQiOm51bGws
+        ImR1ZURhdGUiOiIyMDE0LTEwLTE5IiwiY29ubmVjdG9yUmVzcG9uc2VzIjp7
+        fX1dfV19LCJwYWNrYWdlQXR0YWNobWVudCI6eyJwYWNrYWdlcyI6W119LCJz
+        ZWxsZXJzIjpbeyJpZCI6IjEiLCJuYW1lIjoiVlRFWF9TSVRFX0lEIiwibG9n
+        byI6Imh0dHA6Ly9wb3J0YWwudnRleGNvbW1lcmNlLmNvbS5ici9hcnF1aXZv
+        cy9sb2dvLmpwZyJ9XSwiY2FsbENlbnRlck9wZXJhdG9yRGF0YSI6bnVsbCwi
+        Zm9sbG93VXBFbWFpbCI6IjQ1MmMxMWNmNmQ1NzQyYjZhMTQ0ZTQ0NGZhNjdl
+        MTJiQGN0LnZ0ZXguY29tLmJyIiwibGFzdE1lc3NhZ2UiOiJTYW5kYm94LWlu
+        dGVncmFjYW8gU2V1IHBhZ2FtZW50byBmb2kgYXByb3ZhZG8hIHBlZGlkbyBy
+        ZWFsaXphZG8gZW06IDE0LzEwLzIwMTQgT2zDoSwgUmVpbmFsZG8uIFNldSBw
+        YWdhbWVudG8gZm9pIGVmZXR1YWRvIGNvbSBzdWNlc3NvLiBWb2PDqiByIiwi
+        aG9zdG5hbWUiOiJWVEVYX1NJVEVfSUQiLCJjaGFuZ2VzQXR0YWNobWVudCI6
+        bnVsbCwib3BlblRleHRGaWVsZCI6bnVsbH0=
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 01:57:28 GMT
+- request:
+    method: get
+    uri: http://oms.vtexcommerce.com.br/api/oms/pvt/orders/MGZ-690459404390/?an=VTEX_SITE_ID
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      X-Vtex-Api-Appkey:
+      - VTEX_APP_KEY
+      X-Vtex-Api-Apptoken:
+      - VTEX_APP_TOKEN
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 07 Nov 2014 01:57:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3388'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      X-Vtex-Router-Backend-App:
+      - omsapi - v1.3.73-stable+455
+      X-Vtex-Router-Janusnet-Aspnetlatency:
+      - '0'
+      X-Vtex-Router-Janusnet-Backendlatency:
+      - '523'
+      X-Vtex-Router-Janusnet-Januslatency:
+      - '38'
+      X-Vtex-Router-Powered-By:
+      - VTEX.JanusNet - 1.0.0
+      X-Track:
+      - stable
+      X-Powered-By-Vtex-Janus-Edge:
+      - v1.16.4
+      X-Cdnignore:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '{"orderId":"MGZ-690459404390","sequence":"500035","marketplaceOrderId":"690459404390","marketplaceServicesEndpoint":"#TODO","sellerOrderId":null,"origin":"Fulfillment","affiliateId":"MGZ","salesChannel":"3","merchantName":null,"status":"ready-for-handling","statusDescription":"Pronto
+        para o manuseio","value":120000,"creationDate":"2014-10-14T12:50:12.0877751Z","lastChange":"2014-10-14T13:20:33.0187026Z","orderGroup":null,"totals":[{"id":"Items","name":"Items
+        Total","value":119000},{"id":"Discounts","name":"Discounts Total","value":0},{"id":"Shipping","name":"Shipping
+        Total","value":1000},{"id":"Tax","name":"Tax Total","value":0}],"items":[{"id":"2000036","productId":"2000007","ean":"kln12n3k","lockId":"e44b74d3-6289-42f1-b8cd-e2f5f8c0a106","itemAttachment":{"content":{},"name":null},"attachments":[],"quantity":1,"seller":"1","name":"Samsung
+        S5 Branco","refId":"3m1n2k4","price":119000,"listPrice":129000,"priceTags":[],"imageUrl":"/arquivos/ids/155242-55-55/S5_1.jpg","detailUrl":null,"components":[],"bundleItems":[],"params":[],"offerings":[],"sellerSku":"2000036","priceValidUntil":null,"commission":0,"tax":0,"preSaleDate":null,"additionalInfo":{"brandName":"Samsung","brandId":"2000001","categoriesIds":"/1000003/","productClusterId":"8","commercialConditionId":"1"},"measurementUnit":"un","unitMultiplier":1.0000,"sellingPrice":119000,"isGift":false,"shippingPrice":null}],"marketplaceItems":[],"clientProfileData":{"id":"clientProfileData","email":"7c062e9606d04b5991621cb937b705be@ct.vtex.com.br","firstName":"Danilo","lastName":"Akamine","documentType":"cpf","document":"37614861388","phone":"551199999999","corporateName":null,"tradeName":null,"corporateDocument":null,"stateInscription":null,"corporatePhone":null,"isCorporate":false,"userProfileId":null},"giftRegistryData":null,"marketingData":null,"ratesAndBenefitsData":{"id":"ratesAndBenefitsData","rateAndBenefitsIdentifiers":[]},"shippingData":{"id":"shippingData","address":{"addressType":"residential","receiverName":"Danilo","addressId":"ENSP","postalCode":"01122334","city":"SAO
+        PAULO","state":"SP","country":"BRA","street":"AMAZONAS DA SILVA","number":"27","neighborhood":"VILA
+        GUILHERME","complement":"RECEPCAO","reference":"PREDIO AZUL"},"logisticsInfo":[{"itemIndex":0,"selectedSla":"Normal","lockTTL":"5bd","price":1000,"deliveryWindow":null,"deliveryCompany":"Transportadora","shippingEstimate":"5bd","shippingEstimateDate":"2014-10-21T12:50:27.7729111Z","slas":null,"shipsTo":null,"sellingPrice":1000,"deliveryIds":[{"courierId":"1","courierName":"Transportadora","dockId":"1f4220d","quantity":1,"warehouseId":"1_1"}]}]},"paymentData":{"transactions":[{"isActive":true,"transactionId":null,"payments":[{"id":null,"paymentSystem":"0","paymentSystemName":"Assumed
+        value by affiliate Magazine Luiza(MGZ)","value":120000,"installments":0,"referenceValue":120000,"cardHolder":null,"cardNumber":null,"firstDigits":null,"lastDigits":null,"cvv2":null,"expireMonth":null,"expireYear":null,"url":null,"giftCardId":null,"giftCardName":null,"giftCardCaption":null,"redemptionCode":null,"group":null,"tid":null,"dueDate":null,"connectorResponses":{}}]}]},"packageAttachment":{"packages":[]},"sellers":[{"id":"1","name":null,"logo":null}],"callCenterOperatorData":null,"followUpEmail":"danilo.akamine@luizalabs.com","lastMessage":"","hostname":"boxepocacosmeticos","changesAttachment":null,"openTextField":null}'
+    http_version: 
+  recorded_at: Fri, 07 Nov 2014 01:57:29 GMT
+recorded_with: VCR 2.9.3
