@@ -1,8 +1,9 @@
 module VTEX
   class ClientSoap
-    attr_reader :site_id, :client
+    attr_reader :site_id, :client, :config
 
-    def initialize(site_id, password)
+    def initialize(site_id, password, config = {})
+      @config = config
       @site_id = site_id
       # NOTE This url or part of it should come in as a config param?
       # good chance production url would be different
@@ -27,7 +28,7 @@ module VTEX
       response = client.call(
         :product_get_all_from_updated_date_and_id,
         message: {
-          'tns:dateUpdated' => "2014-11-06T21:25:20Z",
+          'tns:dateUpdated' => config[:vtex_products_since],
           'tns:topRows' => 100,
         }
       )
@@ -77,6 +78,9 @@ module VTEX
     end
 
     private
+    def vtex_products_since
+      Time.parse(config[:vtex_products_since].to_s).utc.iso8601
+    end
 
     def find_category(category_name)
       response = client.call(:category_get_by_name, message: { 'tns:nameCategory' => category_name } )

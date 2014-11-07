@@ -62,17 +62,22 @@ describe VTEXEndpoint do
 
   describe '/get_products' do
     it 'brings products' do
-      message = { parameters: params }
+      message = {
+        parameters: params.merge(vtex_products_since: "2014-11-06T11:25:20Z")
+      }
 
       VCR.use_cassette("1415306393") do
         post '/get_products', message.to_json, auth
-        expect(json_response[:summary]).to match /received from VTEX/
+        expect(json_response[:summary]).to match /from VTEX/
         expect(last_response.status).to eq(200)
+        expect(json_response[:products].count).to be >= 1
       end
     end
 
     it "brings no products" do
-      message = { parameters: params }
+      message = {
+        parameters: params.merge(vtex_products_since: "2014-11-06T21:25:20Z")
+      }
 
       VCR.use_cassette("no_products_1415323854") do
         post '/get_products', message.to_json, auth

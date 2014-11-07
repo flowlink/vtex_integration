@@ -103,7 +103,7 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
   end
 
   post '/get_products' do
-    client = VTEX::ClientSoap.new(@config['vtex_site_id'], @config['vtex_password'])
+    client = VTEX::ClientSoap.new(@config['vtex_site_id'], @config['vtex_password'], @config)
     raw_products = client.get_products
     products = VTEX::ProductTransformer.map raw_products
 
