@@ -30,7 +30,7 @@ module VTEX
         :product_get_all_from_updated_date_and_id,
         message: {
           'tns:dateUpdated' => vtex_products_since,
-          'tns:topRows' => 100,
+          'tns:topRows' => 1000,
         }
       )
 
