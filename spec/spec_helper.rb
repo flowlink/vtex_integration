@@ -3,6 +3,7 @@ require 'bundler'
 require 'sinatra'
 
 Bundler.require(:default, :test)
+ENV['ENDPOINT_KEY'] = '123'
 
 require 'simplecov'
 SimpleCov.start
