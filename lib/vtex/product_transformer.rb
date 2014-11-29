@@ -27,7 +27,7 @@ module VTEX
             price: stock_unit.delete(:price),
             list_price: stock_unit.delete(:list_price),
             cost_price: stock_unit.delete(:cost_price)
-          }.merge stock_unit
+          }.merge stock_unit.except(:product_id)
         end
       end
     end
