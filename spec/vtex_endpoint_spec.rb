@@ -67,7 +67,7 @@ describe VTEXEndpoint do
   describe '/get_products' do
     it 'brings products' do
       message = {
-        parameters: params.merge(vtex_products_since: "2014-11-07T11:25:20Z")
+        parameters: params.merge(vtex_products_since: "2014-12-09T01:25:20Z")
       }
 
       VCR.use_cassette("1415400936") do

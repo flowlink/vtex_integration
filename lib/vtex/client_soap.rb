@@ -66,6 +66,26 @@ module VTEX
       end
     end
 
+    def get_image_list_by_stock_keeping_unit_id(stock_unit_id)
+      response = client.call(
+        :image_list_by_stock_keeping_unit_id,
+        message: {
+          'tns:StockKeepingUnitId' => stock_unit_id
+        }
+      )
+
+      validate_response(response)
+
+      xml_response = response.body[:image_list_by_stock_keeping_unit_id_response]
+      result = xml_response[:image_list_by_stock_keeping_unit_id_result][:image_dto]
+
+      if result.is_a? Array
+        result
+      else
+        [result].compact
+      end
+    end
+
     def send_product(product)
       product = VTEX::ProductBuilder.build_product(product, self)
       response = client.call(:product_insert_update, message: { 'tns:productVO' => product } )
