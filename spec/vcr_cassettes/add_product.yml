@@ -21,13 +21,13 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Age:
-      - '1102'
+      - '6195'
       Cache-Control:
       - no-cache
       Content-Type:
       - text/xml; charset=UTF-8
       Date:
-      - Fri, 07 Nov 2014 01:49:18 GMT
+      - Tue, 09 Dec 2014 17:57:57 GMT
       'No':
       - MSERVICE01
       P3p:
@@ -35,11 +35,11 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Debug-Obj-Ttl:
-      - '9697.609'
+      - '4605.173'
       X-Debug-X-Id:
-      - 2845227628 2845127896
+      - 1515801047 1514608639
       X-Forwarded:
-      - 187.41.87.21, 54.204.59.180, 10.31.167.136
+      - 54.163.253.53, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -60,15 +60,15 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-10-13 15:14:22'
+      - '2014-12-03 17:10:58'
       X-Vtex-Processado-Em:
-      - '02:00:00.1559950'
+      - '02:00:00.5147967'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
       - 1.0.0.0
       Content-Length:
-      - '10467'
+      - '10512'
       Connection:
       - keep-alive
     body:
@@ -94,6 +94,9 @@ http_interactions:
         namespace="http://schemas.datacontract.org/2004/07/Vtex.Commerce.Checkout2"/><xsd:import
         schemaLocation="http://webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc?xsd=xsd6"
         namespace="http://schemas.datacontract.org/2004/07/Vtex.Commerce.OrderManagement"/></xsd:schema></wsdl:types><wsdl:message
+        name="IService_StockKeepingUnitImageRemove_InputMessage"><wsdl:part name="parameters"
+        element="tns:StockKeepingUnitImageRemove"/></wsdl:message><wsdl:message name="IService_StockKeepingUnitImageRemove_OutputMessage"><wsdl:part
+        name="parameters" element="tns:StockKeepingUnitImageRemoveResponse"/></wsdl:message><wsdl:message
         name="IService_StockKeepingUnitImageRemoveByName_InputMessage"><wsdl:part
         name="parameters" element="tns:StockKeepingUnitImageRemoveByName"/></wsdl:message><wsdl:message
         name="IService_StockKeepingUnitImageRemoveByName_OutputMessage"><wsdl:part
@@ -595,6 +598,9 @@ http_interactions:
         name="IService_AddressGetByClientIdV3_InputMessage"><wsdl:part name="parameters"
         element="tns:AddressGetByClientIdV3"/></wsdl:message><wsdl:message name="IService_AddressGetByClientIdV3_OutputMessage"><wsdl:part
         name="parameters" element="tns:AddressGetByClientIdV3Response"/></wsdl:message><wsdl:message
+        name="IService_AddressGetByClientIdV2_InputMessage"><wsdl:part name="parameters"
+        element="tns:AddressGetByClientIdV2"/></wsdl:message><wsdl:message name="IService_AddressGetByClientIdV2_OutputMessage"><wsdl:part
+        name="parameters" element="tns:AddressGetByClientIdV2Response"/></wsdl:message><wsdl:message
         name="IService_AddressInsertByClientId_InputMessage"><wsdl:part name="parameters"
         element="tns:AddressInsertByClientId"/></wsdl:message><wsdl:message name="IService_AddressInsertByClientId_OutputMessage"><wsdl:part
         name="parameters" element="tns:AddressInsertByClientIdResponse"/></wsdl:message><wsdl:message
@@ -678,12 +684,12 @@ http_interactions:
         element="tns:ImageListByStockKeepingUnitIdResponse"/></wsdl:message><wsdl:message
         name="IService_ProductImageRemove_InputMessage"><wsdl:part name="parameters"
         element="tns:ProductImageRemove"/></wsdl:message><wsdl:message name="IService_ProductImageRemove_OutputMessage"><wsdl:part
-        name="parameters" element="tns:ProductImageRemoveResponse"/></wsdl:message><wsdl:message
-        name="IService_StockKeepingUnitImageRemove_InputMessage"><wsdl:part name="parameters"
-        element="tns:StockKeepingUnitImageRemove"/></wsdl:message><wsdl:message name="IService_StockKeepingUnitImageRemove_OutputMessage"><wsdl:part
-        name="parameters" element="tns:StockKeepingUnitImageRemoveResponse"/></wsdl:message><wsdl:portType
-        name="IService"><wsdl:operation name="StockKeepingUnitImageRemoveByName"><wsdl:input
-        wsaw:Action="http://tempuri.org/IService/StockKeepingUnitImageRemoveByName"
+        name="parameters" element="tns:ProductImageRemoveResponse"/></wsdl:message><wsdl:portType
+        name="IService"><wsdl:operation name="StockKeepingUnitImageRemove"><wsdl:input
+        wsaw:Action="http://tempuri.org/IService/StockKeepingUnitImageRemove" message="tns:IService_StockKeepingUnitImageRemove_InputMessage"/><wsdl:output
+        wsaw:Action="http://tempuri.org/IService/StockKeepingUnitImageRemoveResponse"
+        message="tns:IService_StockKeepingUnitImageRemove_OutputMessage"/></wsdl:operation><wsdl:operation
+        name="StockKeepingUnitImageRemoveByName"><wsdl:input wsaw:Action="http://tempuri.org/IService/StockKeepingUnitImageRemoveByName"
         message="tns:IService_StockKeepingUnitImageRemoveByName_InputMessage"/><wsdl:output
         wsaw:Action="http://tempuri.org/IService/StockKeepingUnitImageRemoveByNameResponse"
         message="tns:IService_StockKeepingUnitImageRemoveByName_OutputMessage"/></wsdl:operation><wsdl:operation
@@ -1235,6 +1241,9 @@ http_interactions:
         name="AddressGetByClientIdV3"><wsdl:input wsaw:Action="http://tempuri.org/IService/AddressGetByClientIdV3"
         message="tns:IService_AddressGetByClientIdV3_InputMessage"/><wsdl:output wsaw:Action="http://tempuri.org/IService/AddressGetByClientIdV3Response"
         message="tns:IService_AddressGetByClientIdV3_OutputMessage"/></wsdl:operation><wsdl:operation
+        name="AddressGetByClientIdV2"><wsdl:input wsaw:Action="http://tempuri.org/IService/AddressGetByClientIdV2"
+        message="tns:IService_AddressGetByClientIdV2_InputMessage"/><wsdl:output wsaw:Action="http://tempuri.org/IService/AddressGetByClientIdV2Response"
+        message="tns:IService_AddressGetByClientIdV2_OutputMessage"/></wsdl:operation><wsdl:operation
         name="AddressInsertByClientId"><wsdl:input wsaw:Action="http://tempuri.org/IService/AddressInsertByClientId"
         message="tns:IService_AddressInsertByClientId_InputMessage"/><wsdl:output
         wsaw:Action="http://tempuri.org/IService/AddressInsertByClientIdResponse"
@@ -1327,13 +1336,12 @@ http_interactions:
         message="tns:IService_ImageListByStockKeepingUnitId_OutputMessage"/></wsdl:operation><wsdl:operation
         name="ProductImageRemove"><wsdl:input wsaw:Action="http://tempuri.org/IService/ProductImageRemove"
         message="tns:IService_ProductImageRemove_InputMessage"/><wsdl:output wsaw:Action="http://tempuri.org/IService/ProductImageRemoveResponse"
-        message="tns:IService_ProductImageRemove_OutputMessage"/></wsdl:operation><wsdl:operation
-        name="StockKeepingUnitImageRemove"><wsdl:input wsaw:Action="http://tempuri.org/IService/StockKeepingUnitImageRemove"
-        message="tns:IService_StockKeepingUnitImageRemove_InputMessage"/><wsdl:output
-        wsaw:Action="http://tempuri.org/IService/StockKeepingUnitImageRemoveResponse"
-        message="tns:IService_StockKeepingUnitImageRemove_OutputMessage"/></wsdl:operation></wsdl:portType><wsdl:binding
+        message="tns:IService_ProductImageRemove_OutputMessage"/></wsdl:operation></wsdl:portType><wsdl:binding
         name="BasicHttpBinding_IService" type="tns:IService"><soap:binding transport="http://schemas.xmlsoap.org/soap/http"/><wsdl:operation
-        name="StockKeepingUnitImageRemoveByName"><soap:operation soapAction="http://tempuri.org/IService/StockKeepingUnitImageRemoveByName"
+        name="StockKeepingUnitImageRemove"><soap:operation soapAction="http://tempuri.org/IService/StockKeepingUnitImageRemove"
+        style="document"/><wsdl:input><soap:body use="literal"/></wsdl:input><wsdl:output><soap:body
+        use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="StockKeepingUnitImageRemoveByName"><soap:operation
+        soapAction="http://tempuri.org/IService/StockKeepingUnitImageRemoveByName"
         style="document"/><wsdl:input><soap:body use="literal"/></wsdl:input><wsdl:output><soap:body
         use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="StockKeepingUnitEspecificationListBySkuId"><soap:operation
         soapAction="http://tempuri.org/IService/StockKeepingUnitEspecificationListBySkuId"
@@ -1738,20 +1746,23 @@ http_interactions:
         use="literal"/></wsdl:input><wsdl:output><soap:body use="literal"/></wsdl:output></wsdl:operation><wsdl:operation
         name="AddressGetByClientIdV3"><soap:operation soapAction="http://tempuri.org/IService/AddressGetByClientIdV3"
         style="document"/><wsdl:input><soap:body use="literal"/></wsdl:input><wsdl:output><soap:body
-        use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="AddressInsertByClientId"><soap:operation
-        soapAction="http://tempuri.org/IService/AddressInsertByClientId" style="document"/><wsdl:input><soap:body
+        use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="AddressGetByClientIdV2"><soap:operation
+        soapAction="http://tempuri.org/IService/AddressGetByClientIdV2" style="document"/><wsdl:input><soap:body
         use="literal"/></wsdl:input><wsdl:output><soap:body use="literal"/></wsdl:output></wsdl:operation><wsdl:operation
-        name="AddressInsertUpdateV3"><soap:operation soapAction="http://tempuri.org/IService/AddressInsertUpdateV3"
+        name="AddressInsertByClientId"><soap:operation soapAction="http://tempuri.org/IService/AddressInsertByClientId"
         style="document"/><wsdl:input><soap:body use="literal"/></wsdl:input><wsdl:output><soap:body
-        use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="AddressInsertByCpfCnpj"><soap:operation
-        soapAction="http://tempuri.org/IService/AddressInsertByCpfCnpj" style="document"/><wsdl:input><soap:body
+        use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="AddressInsertUpdateV3"><soap:operation
+        soapAction="http://tempuri.org/IService/AddressInsertUpdateV3" style="document"/><wsdl:input><soap:body
         use="literal"/></wsdl:input><wsdl:output><soap:body use="literal"/></wsdl:output></wsdl:operation><wsdl:operation
-        name="BuyTogetherInsertUpdate"><soap:operation soapAction="http://tempuri.org/IService/BuyTogetherInsertUpdate"
+        name="AddressInsertByCpfCnpj"><soap:operation soapAction="http://tempuri.org/IService/AddressInsertByCpfCnpj"
         style="document"/><wsdl:input><soap:body use="literal"/></wsdl:input><wsdl:output><soap:body
-        use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="BuyTogetherBuyGainInsertUpdate"><soap:operation
-        soapAction="http://tempuri.org/IService/BuyTogetherBuyGainInsertUpdate" style="document"/><wsdl:input><soap:body
+        use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="BuyTogetherInsertUpdate"><soap:operation
+        soapAction="http://tempuri.org/IService/BuyTogetherInsertUpdate" style="document"/><wsdl:input><soap:body
         use="literal"/></wsdl:input><wsdl:output><soap:body use="literal"/></wsdl:output></wsdl:operation><wsdl:operation
-        name="BuyTogethertakeXPayYInsertUpdate"><soap:operation soapAction="http://tempuri.org/IService/BuyTogethertakeXPayYInsertUpdate"
+        name="BuyTogetherBuyGainInsertUpdate"><soap:operation soapAction="http://tempuri.org/IService/BuyTogetherBuyGainInsertUpdate"
+        style="document"/><wsdl:input><soap:body use="literal"/></wsdl:input><wsdl:output><soap:body
+        use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="BuyTogethertakeXPayYInsertUpdate"><soap:operation
+        soapAction="http://tempuri.org/IService/BuyTogethertakeXPayYInsertUpdate"
         style="document"/><wsdl:input><soap:body use="literal"/></wsdl:input><wsdl:output><soap:body
         use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="BuyTogetherDeleteById"><soap:operation
         soapAction="http://tempuri.org/IService/BuyTogetherDeleteById" style="document"/><wsdl:input><soap:body
@@ -1806,13 +1817,11 @@ http_interactions:
         use="literal"/></wsdl:input><wsdl:output><soap:body use="literal"/></wsdl:output></wsdl:operation><wsdl:operation
         name="ProductImageRemove"><soap:operation soapAction="http://tempuri.org/IService/ProductImageRemove"
         style="document"/><wsdl:input><soap:body use="literal"/></wsdl:input><wsdl:output><soap:body
-        use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="StockKeepingUnitImageRemove"><soap:operation
-        soapAction="http://tempuri.org/IService/StockKeepingUnitImageRemove" style="document"/><wsdl:input><soap:body
-        use="literal"/></wsdl:input><wsdl:output><soap:body use="literal"/></wsdl:output></wsdl:operation></wsdl:binding><wsdl:service
+        use="literal"/></wsdl:output></wsdl:operation></wsdl:binding><wsdl:service
         name="Service"><wsdl:port name="BasicHttpBinding_IService" binding="tns:BasicHttpBinding_IService"><soap:address
         location="http://webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc"/></wsdl:port></wsdl:service></wsdl:definitions>
     http_version: 
-  recorded_at: Fri, 07 Nov 2014 01:49:18 GMT
+  recorded_at: Tue, 09 Dec 2014 17:57:58 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -1851,22 +1860,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Fri, 07 Nov 2014 01:49:18 GMT
+      - Tue, 09 Dec 2014 17:57:58 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=xhu0thdyrcqqomozbvfsofqn; path=/; HttpOnly
-      - ASP.NET_SessionId=xhu0thdyrcqqomozbvfsofqn; path=/; HttpOnly
+      - ASP.NET_SessionId=lxg0qbkx3vpd2jsxiuwshucd; path=/; HttpOnly
+      - ASP.NET_SessionId=lxg0qbkx3vpd2jsxiuwshucd; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '2845227663'
+      - '3147829863'
       X-Forwarded:
-      - 187.41.87.21, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 54.204.59.180, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -1887,9 +1896,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-10-13 15:14:22'
+      - '2014-12-03 17:10:58'
       X-Vtex-Processado-Em:
-      - '02:00:00.0156001'
+      - '02:00:00.0623976'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -1907,7 +1916,7 @@ http_interactions:
         Core</a:Keywords><a:LomadeeCampaignCode i:nil="true"/><a:Name>Rails Core</a:Name><a:Title>Rails
         Core</a:Title></BrandGetByNameResult></BrandGetByNameResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Fri, 07 Nov 2014 01:49:19 GMT
+  recorded_at: Tue, 09 Dec 2014 17:57:58 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -1945,22 +1954,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Fri, 07 Nov 2014 01:49:19 GMT
+      - Tue, 09 Dec 2014 17:57:58 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=p3fen3jbnr4xkxcjvr4o21q5; path=/; HttpOnly
-      - ASP.NET_SessionId=p3fen3jbnr4xkxcjvr4o21q5; path=/; HttpOnly
+      - ASP.NET_SessionId=hztm55a2aeelfidypjkzwvte; path=/; HttpOnly
+      - ASP.NET_SessionId=hztm55a2aeelfidypjkzwvte; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '2845227685'
+      - '3147829974'
       X-Forwarded:
-      - 187.41.87.21, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 54.204.59.180, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -1981,9 +1990,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-10-13 15:14:22'
+      - '2014-12-03 17:10:58'
       X-Vtex-Processado-Em:
-      - '02:00:00.0156001'
+      - '02:00:00.0155994'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -2000,7 +2009,7 @@ http_interactions:
         i:nil="true"/><a:Description>T-Shirts</a:Description><a:FatherCategoryId>1000012</a:FatherCategoryId><a:Id>1000013</a:Id><a:IsActive>true</a:IsActive><a:Keywords>T-Shirts</a:Keywords><a:LomadeeCampaignCode
         i:nil="true"/><a:Name>T-Shirts</a:Name><a:Title i:nil="true"/></CategoryGetByNameResult></CategoryGetByNameResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Fri, 07 Nov 2014 01:49:19 GMT
+  recorded_at: Tue, 09 Dec 2014 17:57:59 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -2012,19 +2021,19 @@ http_interactions:
         xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:ProductInsertUpdate><tns:productVO><vtex:AdWordsRemarketingCode
         xsi:nil="true"/><vtex:BrandId>2000008</vtex:BrandId><vtex:CategoryId>1000013</vtex:CategoryId><vtex:DepartmentId>1000000</vtex:DepartmentId><vtex:Description>Some
         description text for the product.</vtex:Description><vtex:DescriptionShort
-        xsi:nil="true"/><vtex:Id>12345</vtex:Id><vtex:IsActive xsi:nil="true"/><vtex:IsVisible>true</vtex:IsVisible><vtex:KeyWords
-        xsi:nil="true"/><vtex:LinkId xsi:nil="true"/><vtex:ListStoreId xsi:nil="true"/><vtex:LomadeeCampaignCode
-        xsi:nil="true"/><vtex:MetaTagDescription xsi:nil="true"/><vtex:Name>Ruby on
-        Rails T-Shirt</vtex:Name><vtex:RefId>12345</vtex:RefId><vtex:ReleaseDate xsi:nil="true"/><vtex:ShowWithoutStock
-        xsi:nil="true"/><vtex:SupplierId xsi:nil="true"/><vtex:TaxCode xsi:nil="true"/><vtex:Title
-        xsi:nil="true"/></tns:productVO></tns:ProductInsertUpdate></env:Body></env:Envelope>
+        xsi:nil="true"/><vtex:Id>2345435</vtex:Id><vtex:IsActive xsi:nil="true"/><vtex:IsVisible>true</vtex:IsVisible><vtex:KeyWords
+        xsi:nil="true"/><vtex:LinkId>product-2345435</vtex:LinkId><vtex:ListStoreId
+        xsi:nil="true"/><vtex:LomadeeCampaignCode xsi:nil="true"/><vtex:MetaTagDescription
+        xsi:nil="true"/><vtex:Name>Ruby on Rails T-Shirt</vtex:Name><vtex:RefId>2345435</vtex:RefId><vtex:ReleaseDate
+        xsi:nil="true"/><vtex:ShowWithoutStock xsi:nil="true"/><vtex:SupplierId xsi:nil="true"/><vtex:TaxCode
+        xsi:nil="true"/><vtex:Title xsi:nil="true"/></tns:productVO></tns:ProductInsertUpdate></env:Body></env:Envelope>
     headers:
       Soapaction:
       - '"http://tempuri.org/IService/ProductInsertUpdate"'
       Content-Type:
       - text/xml;charset=UTF-8
       Content-Length:
-      - '1316'
+      - '1333'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -2046,22 +2055,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Fri, 07 Nov 2014 01:49:20 GMT
+      - Tue, 09 Dec 2014 17:57:59 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=it3xfoe01mtljtymtjlx2v14; path=/; HttpOnly
-      - ASP.NET_SessionId=it3xfoe01mtljtymtjlx2v14; path=/; HttpOnly
+      - ASP.NET_SessionId=0nnzyzj0gklpvqc4b30m4ucc; path=/; HttpOnly
+      - ASP.NET_SessionId=0nnzyzj0gklpvqc4b30m4ucc; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '1207614449'
+      - '3147830076'
       X-Forwarded:
-      - 187.41.87.21, 204.236.213.21, 10.66.218.205
+      - 177.177.84.176, 54.204.59.180, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -2082,15 +2091,15 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-10-13 15:14:22'
+      - '2014-12-03 17:10:58'
       X-Vtex-Processado-Em:
-      - '02:00:00.5304034'
+      - '02:00:00.4211838'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
       - 1.0.0.0
       Content-Length:
-      - '549'
+      - '540'
       Connection:
       - keep-alive
     body:
@@ -2099,14 +2108,14 @@ http_interactions:
         xmlns="http://tempuri.org/"><ProductInsertUpdateResult xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:AdWordsRemarketingCode
         i:nil="true"/><a:BrandId>2000008</a:BrandId><a:CategoryId>1000013</a:CategoryId><a:DepartmentId>1000000</a:DepartmentId><a:Description>Some
-        description text for the product.</a:Description><a:DescriptionShort i:nil="true"/><a:Id>12345</a:Id><a:IsActive>false</a:IsActive><a:IsVisible>true</a:IsVisible><a:KeyWords
-        i:nil="true"/><a:LinkId>Ruby-on-Rails-T-Shirt</a:LinkId><a:ListStoreId i:nil="true"
+        description text for the product.</a:Description><a:DescriptionShort i:nil="true"/><a:Id>2345435</a:Id><a:IsActive>false</a:IsActive><a:IsVisible>true</a:IsVisible><a:KeyWords
+        i:nil="true"/><a:LinkId>product-2345435</a:LinkId><a:ListStoreId i:nil="true"
         xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><a:LomadeeCampaignCode
-        i:nil="true"/><a:MetaTagDescription>Some description text for the product.</a:MetaTagDescription><a:Name>Ruby
-        on Rails T-Shirt</a:Name><a:RefId>12345</a:RefId><a:ReleaseDate i:nil="true"/><a:ShowWithoutStock>true</a:ShowWithoutStock><a:SupplierId
-        i:nil="true"/><a:TaxCode i:nil="true"/><a:Title i:nil="true"/></ProductInsertUpdateResult></ProductInsertUpdateResponse></s:Body></s:Envelope>
+        i:nil="true"/><a:MetaTagDescription i:nil="true"/><a:Name>Ruby on Rails T-Shirt</a:Name><a:RefId>2345435</a:RefId><a:ReleaseDate
+        i:nil="true"/><a:ShowWithoutStock>true</a:ShowWithoutStock><a:SupplierId i:nil="true"/><a:TaxCode
+        i:nil="true"/><a:Title i:nil="true"/></ProductInsertUpdateResult></ProductInsertUpdateResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Fri, 07 Nov 2014 01:49:20 GMT
+  recorded_at: Tue, 09 Dec 2014 17:57:59 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -2121,10 +2130,10 @@ http_interactions:
         xsi:nil="true"/><vtex:InternalNote xsi:nil="true"/><vtex:IsActive>true</vtex:IsActive><vtex:IsAvaiable
         xsi:nil="true"/><vtex:IsKit>false</vtex:IsKit><vtex:Length>0.02</vtex:Length><vtex:ListPrice>31</vtex:ListPrice><vtex:ManufacturerCode
         xsi:nil="true"/><vtex:MeasurementUnit xsi:nil="true"/><vtex:ModalId>2</vtex:ModalId><vtex:ModalType
-        xsi:nil="true"/><vtex:Name>Ruby on Rails T-Shirt</vtex:Name><vtex:Price>31</vtex:Price><vtex:ProductId>12345</vtex:ProductId><vtex:ProductName>Ruby
+        xsi:nil="true"/><vtex:Name>Ruby on Rails T-Shirt</vtex:Name><vtex:Price>31</vtex:Price><vtex:ProductId>2345435</vtex:ProductId><vtex:ProductName>Ruby
         on Rails T-Shirt</vtex:ProductName><vtex:RealHeight xsi:nil="true"/><vtex:RealLength
-        xsi:nil="true"/><vtex:RealWeightKg xsi:nil="true"/><vtex:RealWidth xsi:nil="true"/><vtex:RefId>12345</vtex:RefId><vtex:RewardValue
-        xsi:nil="true"/><vtex:StockKeepingUnitEans xsi:nil="true"/><vtex:UnitMultiplier
+        xsi:nil="true"/><vtex:RealWeightKg xsi:nil="true"/><vtex:RealWidth xsi:nil="true"/><vtex:RefId>2345435</vtex:RefId><vtex:RewardValue
+        xsi:nil="true"/><vtex:StockKeepingUnitEans><vtex:StockKeepingUnitEanDTO><vtex:Ean>45234535423455</vtex:Ean></vtex:StockKeepingUnitEanDTO></vtex:StockKeepingUnitEans><vtex:UnitMultiplier
         xsi:nil="true"/><vtex:WeightKg>0.02</vtex:WeightKg><vtex:Width>0.02</vtex:Width></tns:stockKeepingUnitVO></tns:StockKeepingUnitInsertUpdate></env:Body></env:Envelope>
     headers:
       Soapaction:
@@ -2132,7 +2141,7 @@ http_interactions:
       Content-Type:
       - text/xml;charset=UTF-8
       Content-Length:
-      - '1658'
+      - '1768'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -2154,22 +2163,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Fri, 07 Nov 2014 01:49:20 GMT
+      - Tue, 09 Dec 2014 17:58:00 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=mg0fkxezlr1efqhk2ar4am14; path=/; HttpOnly
-      - ASP.NET_SessionId=mg0fkxezlr1efqhk2ar4am14; path=/; HttpOnly
+      - ASP.NET_SessionId=etccewz4ar1ljl4qesbemumt; path=/; HttpOnly
+      - ASP.NET_SessionId=etccewz4ar1ljl4qesbemumt; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '1207614597'
+      - '3147830308'
       X-Forwarded:
-      - 187.41.87.21, 204.236.213.21, 10.66.218.205
+      - 177.177.84.176, 54.204.59.180, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -2190,30 +2199,32 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-10-13 15:14:22'
+      - '2014-12-03 17:10:58'
       X-Vtex-Processado-Em:
-      - '02:00:00.3276021'
+      - '02:00:00.6395754'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
       - 1.0.0.0
       Content-Length:
-      - '583'
+      - '611'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><StockKeepingUnitInsertUpdateResponse
         xmlns="http://tempuri.org/"><StockKeepingUnitInsertUpdateResult xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>0.02</a:CubicWeight><a:DateUpdated>2014-11-06T23:49:21.0303453</a:DateUpdated><a:EstimatedDateArrival
-        i:nil="true"/><a:Height>0.02</a:Height><a:Id>12345</a:Id><a:InternalNote i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>0.02</a:Length><a:ListPrice>31</a:ListPrice><a:ManufacturerCode
+        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:CommercialConditionId
+        i:nil="true"/><a:CostPrice>1</a:CostPrice><a:CubicWeight>0.02</a:CubicWeight><a:DateUpdated>2014-12-09T15:58:00.3823061</a:DateUpdated><a:EstimatedDateArrival
+        i:nil="true"/><a:Height>0.02</a:Height><a:Id>310113158</a:Id><a:InternalNote
+        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>0.02</a:Length><a:ListPrice>31</a:ListPrice><a:ManufacturerCode
         i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>2</a:ModalId><a:ModalType
-        i:nil="true"/><a:Name>Ruby on Rails T-Shirt</a:Name><a:Price>31</a:Price><a:ProductId>12345</a:ProductId><a:ProductName>Ruby
+        i:nil="true"/><a:Name>Ruby on Rails T-Shirt</a:Name><a:Price>31</a:Price><a:ProductId>2345435</a:ProductId><a:ProductName>Ruby
         on Rails T-Shirt</a:ProductName><a:RealHeight i:nil="true"/><a:RealLength
-        i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>12345</a:RefId><a:RewardValue
-        i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.02</a:WeightKg><a:Width>0.02</a:Width></StockKeepingUnitInsertUpdateResult></StockKeepingUnitInsertUpdateResponse></s:Body></s:Envelope>
+        i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>2345435</a:RefId><a:RewardValue
+        i:nil="true"/><a:StockKeepingUnitEans><a:StockKeepingUnitEanDTO><a:Ean>45234535423455</a:Ean></a:StockKeepingUnitEanDTO></a:StockKeepingUnitEans><a:UnitMultiplier>1</a:UnitMultiplier><a:WeightKg>0.02</a:WeightKg><a:Width>0.02</a:Width></StockKeepingUnitInsertUpdateResult></StockKeepingUnitInsertUpdateResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Fri, 07 Nov 2014 01:49:21 GMT
+  recorded_at: Tue, 09 Dec 2014 17:58:00 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -2228,9 +2239,9 @@ http_interactions:
         xsi:nil="true"/><vtex:InternalNote xsi:nil="true"/><vtex:IsActive>true</vtex:IsActive><vtex:IsAvaiable
         xsi:nil="true"/><vtex:IsKit>false</vtex:IsKit><vtex:Length>0.02</vtex:Length><vtex:ListPrice>30</vtex:ListPrice><vtex:ManufacturerCode
         xsi:nil="true"/><vtex:MeasurementUnit xsi:nil="true"/><vtex:ModalId>2</vtex:ModalId><vtex:ModalType
-        xsi:nil="true"/><vtex:Name>Ruby on Rails T-Shirt</vtex:Name><vtex:Price>30</vtex:Price><vtex:ProductId>12345</vtex:ProductId><vtex:ProductName>Ruby
+        xsi:nil="true"/><vtex:Name>Ruby on Rails T-Shirt</vtex:Name><vtex:Price>30</vtex:Price><vtex:ProductId>2345435</vtex:ProductId><vtex:ProductName>Ruby
         on Rails T-Shirt</vtex:ProductName><vtex:RealHeight xsi:nil="true"/><vtex:RealLength
-        xsi:nil="true"/><vtex:RealWeightKg xsi:nil="true"/><vtex:RealWidth xsi:nil="true"/><vtex:RefId>12345</vtex:RefId><vtex:RewardValue
+        xsi:nil="true"/><vtex:RealWeightKg xsi:nil="true"/><vtex:RealWidth xsi:nil="true"/><vtex:RefId>2345435</vtex:RefId><vtex:RewardValue
         xsi:nil="true"/><vtex:StockKeepingUnitEans xsi:nil="true"/><vtex:UnitMultiplier
         xsi:nil="true"/><vtex:WeightKg>0.02</vtex:WeightKg><vtex:Width>0.02</vtex:Width></tns:stockKeepingUnitVO></tns:StockKeepingUnitInsertUpdate></env:Body></env:Envelope>
     headers:
@@ -2239,7 +2250,7 @@ http_interactions:
       Content-Type:
       - text/xml;charset=UTF-8
       Content-Length:
-      - '1658'
+      - '1662'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -2261,22 +2272,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Fri, 07 Nov 2014 01:49:21 GMT
+      - Tue, 09 Dec 2014 17:58:02 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=nwjuzlaphczbt0od5gfncstg; path=/; HttpOnly
-      - ASP.NET_SessionId=nwjuzlaphczbt0od5gfncstg; path=/; HttpOnly
+      - ASP.NET_SessionId=lfg0d4u55jviovoidmtoxzga; path=/; HttpOnly
+      - ASP.NET_SessionId=lfg0d4u55jviovoidmtoxzga; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '1207614688'
+      - '3147830512'
       X-Forwarded:
-      - 187.41.87.21, 204.236.213.21, 10.66.218.205
+      - 177.177.84.176, 54.204.59.180, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -2297,30 +2308,31 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-10-13 15:14:22'
+      - '2014-12-03 17:10:58'
       X-Vtex-Processado-Em:
-      - '02:00:00.3744024'
+      - '02:00:01.5287541'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
       - 1.0.0.0
       Content-Length:
-      - '584'
+      - '620'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><StockKeepingUnitInsertUpdateResponse
         xmlns="http://tempuri.org/"><StockKeepingUnitInsertUpdateResult xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>0.02</a:CubicWeight><a:DateUpdated>2014-11-06T23:49:21.7323498</a:DateUpdated><a:EstimatedDateArrival
-        i:nil="true"/><a:Height>0.02</a:Height><a:Id>12345</a:Id><a:InternalNote i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>0.02</a:Length><a:ListPrice>30</a:ListPrice><a:ManufacturerCode
+        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>0.02</a:CubicWeight><a:DateUpdated>2014-12-09T15:58:01.4430653</a:DateUpdated><a:EstimatedDateArrival
+        i:nil="true"/><a:Height>0.02</a:Height><a:Id>310113158</a:Id><a:InternalNote
+        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>0.02</a:Length><a:ListPrice>30</a:ListPrice><a:ManufacturerCode
         i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>2</a:ModalId><a:ModalType
-        i:nil="true"/><a:Name>Ruby on Rails T-Shirt</a:Name><a:Price>30</a:Price><a:ProductId>12345</a:ProductId><a:ProductName>Ruby
+        i:nil="true"/><a:Name>Ruby on Rails T-Shirt</a:Name><a:Price>30</a:Price><a:ProductId>2345435</a:ProductId><a:ProductName>Ruby
         on Rails T-Shirt</a:ProductName><a:RealHeight i:nil="true"/><a:RealLength
-        i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>12345</a:RefId><a:RewardValue
-        i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.02</a:WeightKg><a:Width>0.02</a:Width></StockKeepingUnitInsertUpdateResult></StockKeepingUnitInsertUpdateResponse></s:Body></s:Envelope>
+        i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>2345435</a:RefId><a:RewardValue
+        i:nil="true"/><a:StockKeepingUnitEans><a:StockKeepingUnitEanDTO><a:Ean>45234535423455</a:Ean></a:StockKeepingUnitEanDTO></a:StockKeepingUnitEans><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.02</a:WeightKg><a:Width>0.02</a:Width></StockKeepingUnitInsertUpdateResult></StockKeepingUnitInsertUpdateResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Fri, 07 Nov 2014 01:49:22 GMT
+  recorded_at: Tue, 09 Dec 2014 17:58:03 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -2331,13 +2343,13 @@ http_interactions:
         xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
         xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:StockKeepingUnitInsertUpdate><tns:stockKeepingUnitVO><vtex:CommercialConditionId
         xsi:nil="true"/><vtex:CostPrice xsi:nil="true"/><vtex:CubicWeight>1.4</vtex:CubicWeight><vtex:DateUpdated
-        xsi:nil="true"/><vtex:EstimatedDateArrival xsi:nil="true"/><vtex:Height>40</vtex:Height><vtex:Id>12345</vtex:Id><vtex:InternalNote
+        xsi:nil="true"/><vtex:EstimatedDateArrival xsi:nil="true"/><vtex:Height>40</vtex:Height><vtex:Id>2345435</vtex:Id><vtex:InternalNote
         xsi:nil="true"/><vtex:IsActive>true</vtex:IsActive><vtex:IsAvaiable xsi:nil="true"/><vtex:IsKit>false</vtex:IsKit><vtex:Length>40</vtex:Length><vtex:ListPrice>31</vtex:ListPrice><vtex:ManufacturerCode
         xsi:nil="true"/><vtex:MeasurementUnit xsi:nil="true"/><vtex:ModalId>1</vtex:ModalId><vtex:ModalType
-        xsi:nil="true"/><vtex:Name>Ruby on Rails T-Shirt</vtex:Name><vtex:Price>31</vtex:Price><vtex:ProductId>12345</vtex:ProductId><vtex:ProductName>Ruby
+        xsi:nil="true"/><vtex:Name>Ruby on Rails T-Shirt</vtex:Name><vtex:Price>31</vtex:Price><vtex:ProductId>2345435</vtex:ProductId><vtex:ProductName>Ruby
         on Rails T-Shirt</vtex:ProductName><vtex:RealHeight xsi:nil="true"/><vtex:RealLength
-        xsi:nil="true"/><vtex:RealWeightKg xsi:nil="true"/><vtex:RealWidth xsi:nil="true"/><vtex:RefId>12345</vtex:RefId><vtex:RewardValue
-        xsi:nil="true"/><vtex:StockKeepingUnitEans xsi:nil="true"/><vtex:UnitMultiplier
+        xsi:nil="true"/><vtex:RealWeightKg xsi:nil="true"/><vtex:RealWidth xsi:nil="true"/><vtex:RefId>2345435</vtex:RefId><vtex:RewardValue
+        xsi:nil="true"/><vtex:StockKeepingUnitEans><vtex:StockKeepingUnitEanDTO><vtex:Ean>23435434235234</vtex:Ean></vtex:StockKeepingUnitEanDTO></vtex:StockKeepingUnitEans><vtex:UnitMultiplier
         xsi:nil="true"/><vtex:WeightKg>1.4</vtex:WeightKg><vtex:Width>40</vtex:Width></tns:stockKeepingUnitVO></tns:StockKeepingUnitInsertUpdate></env:Body></env:Envelope>
     headers:
       Soapaction:
@@ -2345,7 +2357,7 @@ http_interactions:
       Content-Type:
       - text/xml;charset=UTF-8
       Content-Length:
-      - '1649'
+      - '1761'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -2367,22 +2379,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Fri, 07 Nov 2014 01:49:22 GMT
+      - Tue, 09 Dec 2014 17:58:12 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=r1i1g3j1kzl5iiu3a0zizkar; path=/; HttpOnly
-      - ASP.NET_SessionId=r1i1g3j1kzl5iiu3a0zizkar; path=/; HttpOnly
+      - ASP.NET_SessionId=gcp2rvv3ewfr3padosikpdjm; path=/; HttpOnly
+      - ASP.NET_SessionId=gcp2rvv3ewfr3padosikpdjm; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '1207614754'
+      - '3147830917'
       X-Forwarded:
-      - 187.41.87.21, 204.236.213.21, 10.66.218.205
+      - 177.177.84.176, 54.204.59.180, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -2403,28 +2415,29 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-10-13 15:14:22'
+      - '2014-12-03 17:10:58'
       X-Vtex-Processado-Em:
-      - '02:00:00.4056026'
+      - '02:00:09.7186131'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
       - 1.0.0.0
       Content-Length:
-      - '585'
+      - '609'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><StockKeepingUnitInsertUpdateResponse
         xmlns="http://tempuri.org/"><StockKeepingUnitInsertUpdateResult xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>1.4</a:CubicWeight><a:DateUpdated>2014-11-06T23:49:22.5123548</a:DateUpdated><a:EstimatedDateArrival
-        i:nil="true"/><a:Height>40</a:Height><a:Id>12345</a:Id><a:InternalNote i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>40</a:Length><a:ListPrice>31</a:ListPrice><a:ManufacturerCode
+        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:CommercialConditionId
+        i:nil="true"/><a:CostPrice>1</a:CostPrice><a:CubicWeight>1.4</a:CubicWeight><a:DateUpdated>2014-12-09T15:58:03.7050053</a:DateUpdated><a:EstimatedDateArrival
+        i:nil="true"/><a:Height>40</a:Height><a:Id>2345435</a:Id><a:InternalNote i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>40</a:Length><a:ListPrice>31</a:ListPrice><a:ManufacturerCode
         i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>1</a:ModalId><a:ModalType
-        i:nil="true"/><a:Name>Ruby on Rails T-Shirt</a:Name><a:Price>31</a:Price><a:ProductId>12345</a:ProductId><a:ProductName>Ruby
+        i:nil="true"/><a:Name>Ruby on Rails T-Shirt</a:Name><a:Price>31</a:Price><a:ProductId>2345435</a:ProductId><a:ProductName>Ruby
         on Rails T-Shirt</a:ProductName><a:RealHeight i:nil="true"/><a:RealLength
-        i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>12345</a:RefId><a:RewardValue
-        i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>1.4</a:WeightKg><a:Width>40</a:Width></StockKeepingUnitInsertUpdateResult></StockKeepingUnitInsertUpdateResponse></s:Body></s:Envelope>
+        i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>2345435</a:RefId><a:RewardValue
+        i:nil="true"/><a:StockKeepingUnitEans><a:StockKeepingUnitEanDTO><a:Ean>23435434235234</a:Ean></a:StockKeepingUnitEanDTO></a:StockKeepingUnitEans><a:UnitMultiplier>1</a:UnitMultiplier><a:WeightKg>1.4</a:WeightKg><a:Width>40</a:Width></StockKeepingUnitInsertUpdateResult></StockKeepingUnitInsertUpdateResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Fri, 07 Nov 2014 01:49:22 GMT
+  recorded_at: Tue, 09 Dec 2014 17:58:14 GMT
 recorded_with: VCR 2.9.3

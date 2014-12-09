@@ -44,8 +44,12 @@ describe VTEXEndpoint do
   describe '/add_product' do
     context 'success' do
       it 'imports new products' do
+        product['id'] = '2345435'
+        product['permalink'] = "product-#{product['id']}"
+        product['abacos'] = { 'codigo_barras' => '23435434235234' }
+        product['variants'].first['abacos'] = { 'codigo_barras' => '45234535423455' }
+
         message = {
-          request_id: '123456',
           product: product,
           parameters: params
         }.to_json

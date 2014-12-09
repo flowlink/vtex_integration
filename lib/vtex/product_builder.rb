@@ -32,7 +32,7 @@ module VTEX
       #Do not change the order of fields
       def build_skus(product)
         skus = (product['variants'] || []).map do |item|
-          {
+          hash = {
             'vtex:CommercialConditionId' => nil,
             'vtex:CostPrice'             => item['cost_price'],
             'vtex:CubicWeight'           => 0.02,
@@ -65,9 +65,19 @@ module VTEX
             'vtex:WeightKg'              => 0.02,
             'vtex:Width'                 => 0.02
           }
+
+          if item['abacos'] && item['abacos']['codigo_barras']
+            hash['vtex:StockKeepingUnitEans'] = {
+              'vtex:StockKeepingUnitEanDTO' => {
+                'vtex:Ean' => item['abacos']['codigo_barras']
+              }
+            }
+          end
+
+          hash
         end
 
-        skus << {
+        master_product = {
                 'vtex:CommercialConditionId' => nil,
                 'vtex:CostPrice'             => product['cost_price'],
                 'vtex:CubicWeight'           => product['weight'],
@@ -100,6 +110,16 @@ module VTEX
                 'vtex:WeightKg'              => product['weight'],
                 'vtex:Width'                 => product['width']
               }
+
+        if product['abacos'] && product['abacos']['codigo_barras']
+          master_product['vtex:StockKeepingUnitEans'] = {
+            'vtex:StockKeepingUnitEanDTO' => {
+              'vtex:Ean' => product['abacos']['codigo_barras']
+            }
+          }
+        end
+
+        skus << master_product
         skus
       end
 
