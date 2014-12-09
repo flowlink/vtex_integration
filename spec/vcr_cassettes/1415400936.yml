@@ -21,13 +21,13 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Age:
-      - '7570'
+      - '1153'
       Cache-Control:
       - no-cache
       Content-Type:
       - text/xml; charset=UTF-8
       Date:
-      - Tue, 09 Dec 2014 18:58:06 GMT
+      - Tue, 09 Dec 2014 20:33:56 GMT
       'No':
       - MSERVICE01
       P3p:
@@ -35,11 +35,11 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Debug-Obj-Ttl:
-      - '3229.850'
+      - '9647.273'
       X-Debug-X-Id:
-      - 3148429701 3147153675
+      - 3149245320 3149095617
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 54.163.253.53, 54.204.59.180, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -60,9 +60,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0155999'
+      - '02:00:00.4211973'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -1821,7 +1821,7 @@ http_interactions:
         name="Service"><wsdl:port name="BasicHttpBinding_IService" binding="tns:BasicHttpBinding_IService"><soap:address
         location="http://webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc"/></wsdl:port></wsdl:service></wsdl:definitions>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:08 GMT
+  recorded_at: Tue, 09 Dec 2014 20:33:57 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -1859,22 +1859,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:12 GMT
+      - Tue, 09 Dec 2014 20:33:57 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=wsx3ebllsdpxbx3e5rfpgpox; path=/; HttpOnly
-      - ASP.NET_SessionId=wsx3ebllsdpxbx3e5rfpgpox; path=/; HttpOnly
+      - ASP.NET_SessionId=3pq2ahtq2fo2gvpapusehcza; path=/; HttpOnly
+      - ASP.NET_SessionId=3pq2ahtq2fo2gvpapusehcza; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '1516491544'
+      - '3149245393'
       X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
+      - 177.177.84.176, 54.204.59.180, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -1895,9 +1895,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:04.2275458'
+      - '02:00:00.0155999'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -2093,7 +2093,7 @@ http_interactions:
         cGRhdGVkRGF0ZUFuZElkUmVzdWx0PjwvUHJvZHVjdEdldEFsbEZyb21VcGRh
         dGVkRGF0ZUFuZElkUmVzcG9uc2U+PC9zOkJvZHk+PC9zOkVudmVsb3BlPg==
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:13 GMT
+  recorded_at: Tue, 09 Dec 2014 20:33:58 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -2131,22 +2131,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:15 GMT
+      - Tue, 09 Dec 2014 20:33:58 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=tnge5ge0fd2qkdrhmxh2kogu; path=/; HttpOnly
-      - ASP.NET_SessionId=tnge5ge0fd2qkdrhmxh2kogu; path=/; HttpOnly
+      - ASP.NET_SessionId=yx4d4iegcvscnzsrfvfc3kpt; path=/; HttpOnly
+      - ASP.NET_SessionId=yx4d4iegcvscnzsrfvfc3kpt; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148430597'
+      - '1517497394'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.66.218.205
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -2167,9 +2167,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:01.7627774'
+      - '02:00:00.0155999'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -2217,7 +2217,7 @@ http_interactions:
         aXRHZXRBbGxCeVByb2R1Y3RSZXNwb25zZT48L3M6Qm9keT48L3M6RW52ZWxv
         cGU+
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:16 GMT
+  recorded_at: Tue, 09 Dec 2014 20:33:59 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -2255,22 +2255,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:18 GMT
+      - Tue, 09 Dec 2014 20:34:00 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=5fi3ealw4nflm2zqolwfldig; path=/; HttpOnly
-      - ASP.NET_SessionId=5fi3ealw4nflm2zqolwfldig; path=/; HttpOnly
+      - ASP.NET_SessionId=ez30c2ojjjsd2w2lavgnbhtw; path=/; HttpOnly
+      - ASP.NET_SessionId=ez30c2ojjjsd2w2lavgnbhtw; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148431273'
+      - '1517497548'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -2291,9 +2291,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.6083922'
+      - '02:00:00.1871988'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -2317,7 +2317,7 @@ http_interactions:
         i:nil="true"/><a:Id>155680</a:Id><a:IsMain>false</a:IsMain><a:Label/><a:Name>caixa_importados</a:Name><a:StockKeepingUnitId>2000013</a:StockKeepingUnitId><a:Tag/><a:Url>http://www.sandboxintegracao.com.br/arquivos/ids/155680_2/caixa_importados.jpg</a:Url><a:Width>956</a:Width><a:WidthUnitMeasure
         i:nil="true"/></a:ImageDTO></ImageListByStockKeepingUnitIdResult></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:19 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:00 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -2355,22 +2355,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:19 GMT
+      - Tue, 09 Dec 2014 20:34:00 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=iydnqithkydsrfs3cskgkncq; path=/; HttpOnly
-      - ASP.NET_SessionId=iydnqithkydsrfs3cskgkncq; path=/; HttpOnly
+      - ASP.NET_SessionId=m5y1ml1yk0fljsglv0g1knf2; path=/; HttpOnly
+      - ASP.NET_SessionId=m5y1ml1yk0fljsglv0g1knf2; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148431799'
+      - '1517497603'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -2391,9 +2391,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0311996'
+      - '02:00:00.0155999'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -2422,7 +2422,7 @@ http_interactions:
         i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>234231</a:RefId><a:RewardValue
         i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.0200</a:WeightKg><a:Width>0.0200</a:Width></a:StockKeepingUnitDTO></StockKeepingUnitGetAllByProductResult></StockKeepingUnitGetAllByProductResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:20 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:00 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -2460,22 +2460,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:20 GMT
+      - Tue, 09 Dec 2014 20:34:01 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=b2isjzudvobnqtg0gsiybhvm; path=/; HttpOnly
-      - ASP.NET_SessionId=b2isjzudvobnqtg0gsiybhvm; path=/; HttpOnly
+      - ASP.NET_SessionId=oszxk3ad30xznno1s0vyb4r0; path=/; HttpOnly
+      - ASP.NET_SessionId=oszxk3ad30xznno1s0vyb4r0; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148431921'
+      - '1517497641'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -2496,9 +2496,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0779990'
+      - '02:00:00.0623996'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -2514,7 +2514,7 @@ http_interactions:
         xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:21 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:01 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -2552,22 +2552,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:21 GMT
+      - Tue, 09 Dec 2014 20:34:01 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=tns3ii120wo5pscffnyuhsfo; path=/; HttpOnly
-      - ASP.NET_SessionId=tns3ii120wo5pscffnyuhsfo; path=/; HttpOnly
+      - ASP.NET_SessionId=y2fvwuqw4sjaoaastih1hsyk; path=/; HttpOnly
+      - ASP.NET_SessionId=y2fvwuqw4sjaoaastih1hsyk; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148432070'
+      - '1517497707'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -2588,9 +2588,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0935988'
+      - '02:00:00.0623996'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -2606,7 +2606,7 @@ http_interactions:
         xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:21 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:02 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -2644,22 +2644,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:21 GMT
+      - Tue, 09 Dec 2014 20:34:02 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=00ald31qkkf0xkzwkrxjnqk4; path=/; HttpOnly
-      - ASP.NET_SessionId=00ald31qkkf0xkzwkrxjnqk4; path=/; HttpOnly
+      - ASP.NET_SessionId=aopgq2ky3xhp4v1jypyf4x4v; path=/; HttpOnly
+      - ASP.NET_SessionId=aopgq2ky3xhp4v1jypyf4x4v; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148432171'
+      - '1517497805'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -2680,9 +2680,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0155998'
+      - '02:00:00.0311998'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -2711,7 +2711,7 @@ http_interactions:
         i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>2345435</a:RefId><a:RewardValue
         i:nil="true"/><a:StockKeepingUnitEans><a:StockKeepingUnitEanDTO><a:Ean>45234535423455</a:Ean></a:StockKeepingUnitEanDTO></a:StockKeepingUnitEans><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.0200</a:WeightKg><a:Width>0.0200</a:Width></a:StockKeepingUnitDTO></StockKeepingUnitGetAllByProductResult></StockKeepingUnitGetAllByProductResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:22 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:03 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -2749,22 +2749,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:22 GMT
+      - Tue, 09 Dec 2014 20:34:07 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=mqdccyof3pgh3vevctqde4un; path=/; HttpOnly
-      - ASP.NET_SessionId=mqdccyof3pgh3vevctqde4un; path=/; HttpOnly
+      - ASP.NET_SessionId=moaxoj32bdg2z2ddwvk1zxkd; path=/; HttpOnly
+      - ASP.NET_SessionId=moaxoj32bdg2z2ddwvk1zxkd; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148432240'
+      - '1517498702'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -2785,9 +2785,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0935988'
+      - '02:00:00.0779995'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -2803,7 +2803,7 @@ http_interactions:
         xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:23 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:08 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -2841,22 +2841,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:23 GMT
+      - Tue, 09 Dec 2014 20:34:08 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=4zo2dohvlvxvqxtgisetjmrc; path=/; HttpOnly
-      - ASP.NET_SessionId=4zo2dohvlvxvqxtgisetjmrc; path=/; HttpOnly
+      - ASP.NET_SessionId=azz0qv5zr0hmdljl5pdmtvsj; path=/; HttpOnly
+      - ASP.NET_SessionId=azz0qv5zr0hmdljl5pdmtvsj; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148432357'
+      - '1517498860'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -2877,9 +2877,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0779990'
+      - '02:00:00.0623996'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -2895,7 +2895,7 @@ http_interactions:
         xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:24 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:09 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -2933,22 +2933,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:24 GMT
+      - Tue, 09 Dec 2014 20:34:10 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=jewd2h5tul2mgctr4f244kr1; path=/; HttpOnly
-      - ASP.NET_SessionId=jewd2h5tul2mgctr4f244kr1; path=/; HttpOnly
+      - ASP.NET_SessionId=g4smcoplauo0laf2oibole0l; path=/; HttpOnly
+      - ASP.NET_SessionId=g4smcoplauo0laf2oibole0l; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148432462'
+      - '1517499225'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -2969,9 +2969,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0155998'
+      - '02:00:00.0311998'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -3000,7 +3000,7 @@ http_interactions:
         i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>2435435</a:RefId><a:RewardValue
         i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.0200</a:WeightKg><a:Width>0.0200</a:Width></a:StockKeepingUnitDTO></StockKeepingUnitGetAllByProductResult></StockKeepingUnitGetAllByProductResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:25 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:11 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -3038,22 +3038,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:25 GMT
+      - Tue, 09 Dec 2014 20:34:12 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=ispnfqvlfikljri3oqw3nytc; path=/; HttpOnly
-      - ASP.NET_SessionId=ispnfqvlfikljri3oqw3nytc; path=/; HttpOnly
+      - ASP.NET_SessionId=tbyrpx04imhfqsbjjcumse4f; path=/; HttpOnly
+      - ASP.NET_SessionId=tbyrpx04imhfqsbjjcumse4f; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148432536'
+      - '1517499643'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -3074,9 +3074,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0623992'
+      - '02:00:00.0623996'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -3092,7 +3092,7 @@ http_interactions:
         xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:26 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:13 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -3130,22 +3130,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:26 GMT
+      - Tue, 09 Dec 2014 20:34:14 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=egqoar4bpmnpmpzoxsmnoii0; path=/; HttpOnly
-      - ASP.NET_SessionId=egqoar4bpmnpmpzoxsmnoii0; path=/; HttpOnly
+      - ASP.NET_SessionId=ukxu3n4nqp1fqe2jx4wfv21l; path=/; HttpOnly
+      - ASP.NET_SessionId=ukxu3n4nqp1fqe2jx4wfv21l; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148432594'
+      - '1517499928'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -3166,9 +3166,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0467994'
+      - '02:00:00.0623996'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -3184,7 +3184,7 @@ http_interactions:
         xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:27 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:15 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -3222,22 +3222,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:27 GMT
+      - Tue, 09 Dec 2014 20:34:15 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=h1vaman04nnukcrra4jkl5g2; path=/; HttpOnly
-      - ASP.NET_SessionId=h1vaman04nnukcrra4jkl5g2; path=/; HttpOnly
+      - ASP.NET_SessionId=o3ixqtp20qyilib3gfl1zqun; path=/; HttpOnly
+      - ASP.NET_SessionId=o3ixqtp20qyilib3gfl1zqun; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148432655'
+      - '1517500087'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -3258,9 +3258,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0155998'
+      - '02:00:00.0155999'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -3284,7 +3284,7 @@ http_interactions:
         i:nil="true"/><a:RefId>3104660</a:RefId><a:RewardValue i:nil="true"/><a:StockKeepingUnitEans
         i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>5.5000</a:WeightKg><a:Width>20.0000</a:Width></a:StockKeepingUnitDTO></StockKeepingUnitGetAllByProductResult></StockKeepingUnitGetAllByProductResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:28 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:16 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -3322,22 +3322,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:29 GMT
+      - Tue, 09 Dec 2014 20:34:16 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=puxqq1ag5e0azgjawbvkktna; path=/; HttpOnly
-      - ASP.NET_SessionId=puxqq1ag5e0azgjawbvkktna; path=/; HttpOnly
+      - ASP.NET_SessionId=s2wz1uy5sqtimexjhtrj1yzl; path=/; HttpOnly
+      - ASP.NET_SessionId=s2wz1uy5sqtimexjhtrj1yzl; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148432820'
+      - '1517500180'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -3358,9 +3358,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0467994'
+      - '02:00:00.0623996'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -3376,7 +3376,7 @@ http_interactions:
         xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:30 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:16 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -3414,22 +3414,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:30 GMT
+      - Tue, 09 Dec 2014 20:34:17 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=eltokbsce20edvm5fobv1dvq; path=/; HttpOnly
-      - ASP.NET_SessionId=eltokbsce20edvm5fobv1dvq; path=/; HttpOnly
+      - ASP.NET_SessionId=3heqvkrzpjjxzosrwlkrrumi; path=/; HttpOnly
+      - ASP.NET_SessionId=3heqvkrzpjjxzosrwlkrrumi; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148433033'
+      - '1517500230'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -3450,9 +3450,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0155998'
+      - '02:00:00.0155999'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -3481,7 +3481,7 @@ http_interactions:
         i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>23435452</a:RefId><a:RewardValue
         i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.0200</a:WeightKg><a:Width>0.0200</a:Width></a:StockKeepingUnitDTO></StockKeepingUnitGetAllByProductResult></StockKeepingUnitGetAllByProductResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:31 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:18 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -3519,22 +3519,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:31 GMT
+      - Tue, 09 Dec 2014 20:34:18 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=mpz2n4hxbu2vw1piyrbozxdz; path=/; HttpOnly
-      - ASP.NET_SessionId=mpz2n4hxbu2vw1piyrbozxdz; path=/; HttpOnly
+      - ASP.NET_SessionId=ukh1byxmox4djg4dq33a103v; path=/; HttpOnly
+      - ASP.NET_SessionId=ukh1byxmox4djg4dq33a103v; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148433262'
+      - '1517500373'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -3555,9 +3555,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0623992'
+      - '02:00:00.0623996'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -3573,7 +3573,7 @@ http_interactions:
         xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:32 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:19 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -3611,22 +3611,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:33 GMT
+      - Tue, 09 Dec 2014 20:34:19 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=v1i23oepcoc0wo3cndoqeazx; path=/; HttpOnly
-      - ASP.NET_SessionId=v1i23oepcoc0wo3cndoqeazx; path=/; HttpOnly
+      - ASP.NET_SessionId=hy20z0vxr4gcd0ehoxbdveqa; path=/; HttpOnly
+      - ASP.NET_SessionId=hy20z0vxr4gcd0ehoxbdveqa; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148433599'
+      - '1517500446'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -3647,9 +3647,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0623992'
+      - '02:00:00.0935994'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -3665,7 +3665,7 @@ http_interactions:
         xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:34 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:20 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -3703,22 +3703,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:35 GMT
+      - Tue, 09 Dec 2014 20:34:20 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=wcxh5po2ryqzpe34kmlv14ih; path=/; HttpOnly
-      - ASP.NET_SessionId=wcxh5po2ryqzpe34kmlv14ih; path=/; HttpOnly
+      - ASP.NET_SessionId=v5fwbgeblg5ggl45q1f3r4y0; path=/; HttpOnly
+      - ASP.NET_SessionId=v5fwbgeblg5ggl45q1f3r4y0; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148434047'
+      - '1517500539'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -3739,9 +3739,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0155998'
+      - '02:00:00.0155999'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -3770,7 +3770,7 @@ http_interactions:
         i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>31073171</a:RefId><a:RewardValue
         i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.0200</a:WeightKg><a:Width>0.0200</a:Width></a:StockKeepingUnitDTO></StockKeepingUnitGetAllByProductResult></StockKeepingUnitGetAllByProductResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:36 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:21 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -3808,22 +3808,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:36 GMT
+      - Tue, 09 Dec 2014 20:34:22 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=dbwxg4izcwakfqcppzthfzo5; path=/; HttpOnly
-      - ASP.NET_SessionId=dbwxg4izcwakfqcppzthfzo5; path=/; HttpOnly
+      - ASP.NET_SessionId=ugb0zgqjgzeug1i3zdicbyoj; path=/; HttpOnly
+      - ASP.NET_SessionId=ugb0zgqjgzeug1i3zdicbyoj; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148434402'
+      - '1517500785'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -3844,9 +3844,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0623992'
+      - '02:00:00.0623996'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -3862,7 +3862,7 @@ http_interactions:
         xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:37 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:23 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -3900,22 +3900,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:37 GMT
+      - Tue, 09 Dec 2014 20:34:23 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=hwwol4jdme0kzqap1ko2prca; path=/; HttpOnly
-      - ASP.NET_SessionId=hwwol4jdme0kzqap1ko2prca; path=/; HttpOnly
+      - ASP.NET_SessionId=u1kfl2m5wl1105fvmuz2zfi4; path=/; HttpOnly
+      - ASP.NET_SessionId=u1kfl2m5wl1105fvmuz2zfi4; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148434746'
+      - '1517500931'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -3936,9 +3936,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0623992'
+      - '02:00:00.0623996'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -3954,7 +3954,7 @@ http_interactions:
         xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:38 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:25 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -3992,22 +3992,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:39 GMT
+      - Tue, 09 Dec 2014 20:34:26 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=fgeicll2pflfylqjo0vmbeju; path=/; HttpOnly
-      - ASP.NET_SessionId=fgeicll2pflfylqjo0vmbeju; path=/; HttpOnly
+      - ASP.NET_SessionId=fcugtdg1mvbwduc3tdb2ofee; path=/; HttpOnly
+      - ASP.NET_SessionId=fcugtdg1mvbwduc3tdb2ofee; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148435081'
+      - '1517501213'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -4028,9 +4028,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0155998'
+      - '02:00:00.0155999'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -4059,7 +4059,7 @@ http_interactions:
         i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>31073175</a:RefId><a:RewardValue
         i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.0200</a:WeightKg><a:Width>0.0200</a:Width></a:StockKeepingUnitDTO></StockKeepingUnitGetAllByProductResult></StockKeepingUnitGetAllByProductResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:40 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:27 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -4097,22 +4097,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:40 GMT
+      - Tue, 09 Dec 2014 20:34:28 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=wz3rvgojwupvs4oxgqbip3pw; path=/; HttpOnly
-      - ASP.NET_SessionId=wz3rvgojwupvs4oxgqbip3pw; path=/; HttpOnly
+      - ASP.NET_SessionId=0bi4id3hp4zrfmvxqr3drvzj; path=/; HttpOnly
+      - ASP.NET_SessionId=0bi4id3hp4zrfmvxqr3drvzj; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148435447'
+      - '1517501581'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -4133,9 +4133,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.1247984'
+      - '02:00:00.0623996'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -4151,7 +4151,7 @@ http_interactions:
         xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:41 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:29 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -4189,22 +4189,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:41 GMT
+      - Tue, 09 Dec 2014 20:34:30 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=0p1nruocrd21t4xr0xyvtah5; path=/; HttpOnly
-      - ASP.NET_SessionId=0p1nruocrd21t4xr0xyvtah5; path=/; HttpOnly
+      - ASP.NET_SessionId=rxhtaxptp5nmo2b5z4amhja1; path=/; HttpOnly
+      - ASP.NET_SessionId=rxhtaxptp5nmo2b5z4amhja1; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148435655'
+      - '1517501771'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -4225,9 +4225,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0623992'
+      - '02:00:00.0623996'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -4243,7 +4243,7 @@ http_interactions:
         xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:42 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:31 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -4281,22 +4281,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:42 GMT
+      - Tue, 09 Dec 2014 20:34:33 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=k3vr1bkddczs44ls2upbyxfq; path=/; HttpOnly
-      - ASP.NET_SessionId=k3vr1bkddczs44ls2upbyxfq; path=/; HttpOnly
+      - ASP.NET_SessionId=ct3m0zewcy4avosty3oy1r50; path=/; HttpOnly
+      - ASP.NET_SessionId=ct3m0zewcy4avosty3oy1r50; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148435782'
+      - '1517502270'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -4317,9 +4317,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0155998'
+      - '02:00:00.0155999'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -4348,7 +4348,7 @@ http_interactions:
         i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>254325423</a:RefId><a:RewardValue
         i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.0200</a:WeightKg><a:Width>0.0200</a:Width></a:StockKeepingUnitDTO></StockKeepingUnitGetAllByProductResult></StockKeepingUnitGetAllByProductResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:43 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:33 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -4386,22 +4386,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:43 GMT
+      - Tue, 09 Dec 2014 20:34:34 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=01wi5oda1n4us1rgh5bdaoad; path=/; HttpOnly
-      - ASP.NET_SessionId=01wi5oda1n4us1rgh5bdaoad; path=/; HttpOnly
+      - ASP.NET_SessionId=ske4umqbh4mqm5xids20gqa4; path=/; HttpOnly
+      - ASP.NET_SessionId=ske4umqbh4mqm5xids20gqa4; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148435902'
+      - '1517502453'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -4422,9 +4422,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0935988'
+      - '02:00:00.0623996'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -4445,7 +4445,7 @@ http_interactions:
         i:nil="true"/><a:Id>155682</a:Id><a:IsMain>false</a:IsMain><a:Label>label</a:Label><a:Name>1418090526_759720466_1</a:Name><a:StockKeepingUnitId>254325423</a:StockKeepingUnitId><a:Tag>label</a:Tag><a:Url>http://www.sandboxintegracao.com.br/arquivos/ids/155682_2/1418090526_759720466_1.jpg</a:Url><a:Width>469</a:Width><a:WidthUnitMeasure
         i:nil="true"/></a:ImageDTO></ImageListByStockKeepingUnitIdResult></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:44 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:35 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -4483,22 +4483,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 18:58:44 GMT
+      - Tue, 09 Dec 2014 20:34:35 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=kzn25spu3dlt20xvdm1dlhli; path=/; HttpOnly
-      - ASP.NET_SessionId=kzn25spu3dlt20xvdm1dlhli; path=/; HttpOnly
+      - ASP.NET_SessionId=cm0akedby1s1kcnlcakj1xie; path=/; HttpOnly
+      - ASP.NET_SessionId=cm0akedby1s1kcnlcakj1xie; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3148436001'
+      - '1517502688'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.31.167.136
+      - 177.177.84.176, 204.236.213.21, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -4519,9 +4519,9 @@ http_interactions:
       X-Track:
       - WebService
       X-Vtex-Lastupdate:
-      - '2014-12-03 17:10:58'
+      - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0623992'
+      - '02:00:00.0623996'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
@@ -4537,5 +4537,5 @@ http_interactions:
         xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 18:58:45 GMT
+  recorded_at: Tue, 09 Dec 2014 20:34:37 GMT
 recorded_with: VCR 2.9.3
