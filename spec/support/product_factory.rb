@@ -25,7 +25,7 @@ module Factories
       ],
       'images' => [
         {
-          'url'      => 'http=>//dummyimage.com/600x400/000/fff.jpg&text=Spree T-Shirt',
+          'url'      => 'http://dummyimage.com/600x400/000/fff.jpg&text=Spree T-Shirt',
           'position' => 1,
           'title'    => 'Spree T-Shirt - Grey Small',
           'type'     => 'thumbnail',
@@ -46,7 +46,7 @@ module Factories
           },
           'images' => [
             {
-              'url'      => 'http=>//dummyimage.com/600x400/000/fff.jpg&text=Spree T-Shirt',
+              'url'      => 'http://dummyimage.com/600x400/000/fff.jpg&text=Spree T-Shirt',
               'position' => 1,
               'title'    => 'Spree T-Shirt - Grey Small',
               'type'     => 'thumbnail',
@@ -67,6 +67,12 @@ module Factories
           },
         }
       ],
+      'specifications' => [
+        {
+          'name' => 'Composition',
+          'value' => '100% Cottom'
+        }
+      ]
     }
   end
 end

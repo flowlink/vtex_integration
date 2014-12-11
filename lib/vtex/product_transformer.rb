@@ -20,7 +20,8 @@ module VTEX
             meta_description: product.delete(:title),
             is_visible: product.delete(:is_visible),
             is_active: product.delete(:is_active),
-            variants: map_variants(stock_units, product_id, client)
+            variants: map_variants(stock_units, product_id, client),
+            specifications: map_specifications(client, product_id)
           }.merge product
         end
       end
@@ -65,6 +66,17 @@ module VTEX
               height: image[:height],
               width: image[:width]
             }
+          }
+        end
+      end
+
+      def map_specifications(client, product_id)
+        specifications = client.get_product_specifications_by_product_id product_id
+
+        specifications.map do |spec|
+          {
+            name: spec[:name].delete(':'),
+            value: spec[:description]
           }
         end
       end

@@ -86,6 +86,25 @@ module VTEX
       end
     end
 
+    def get_product_specifications_by_product_id(product_id)
+      response = client.call(
+        :product_especification_list_by_product_id,
+        message: {
+          'tem:productId' => product_id
+        }
+      )
+      validate_response(response)
+
+      xml_response = response.body[:product_especification_list_by_product_id_response]
+      result = xml_response[:product_especification_list_by_product_id_result][:field_dto]
+
+      if result.is_a? Array
+        result
+      else
+        [result].compact
+      end
+    end
+
     def send_product(product)
       product = VTEX::ProductBuilder.build_product(product, self)
       response = client.call(:product_insert_update, message: { 'tns:productVO' => product } )
