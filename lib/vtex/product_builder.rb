@@ -11,7 +11,6 @@ module VTEX
           'vtex:DepartmentId'           => 1000000,
           'vtex:Description'            => product['description'],
           'vtex:DescriptionShort'       => nil,
-          'vtex:Id'                     => clear_id(product['id']), # I think this should be populated by vtex
           'vtex:IsActive'               => nil,
           'vtex:IsVisible'              => true,
           'vtex:KeyWords'               => product['meta_keywords'],
@@ -39,7 +38,6 @@ module VTEX
             'vtex:DateUpdated'           => nil,
             'vtex:EstimatedDateArrival'  => nil,
             'vtex:Height'                => 0.02,
-            'vtex:Id'                    => (item.has_key?('id') ? clear_id(item['id']) : nil), # I think this should be populated by vtex
             'vtex:InternalNote'          => nil,
             'vtex:IsActive'              => true,
             'vtex:IsAvaiable'            => nil,
@@ -84,7 +82,6 @@ module VTEX
           'vtex:DateUpdated'           => nil,
           'vtex:EstimatedDateArrival'  => nil,
           'vtex:Height'                => product['height'],
-          'vtex:Id'                    => (product.has_key?('id') ? product['id'] : nil), # I think this should be populated by vtex
           'vtex:InternalNote'          => nil,
           'vtex:IsActive'              => true,
           'vtex:IsAvaiable'            => nil,
@@ -97,7 +94,7 @@ module VTEX
           'vtex:ModalType'             => nil,
           'vtex:Name'                  => product['name'],
           'vtex:Price'                 => product['price'],
-          'vtex:ProductId'             => product['id'],
+          'vtex:ProductId'             => clear_id(product['id']),
           'vtex:ProductName'           => product['name'],
           'vtex:RealHeight'            => nil,
           'vtex:RealLength'            => nil,
