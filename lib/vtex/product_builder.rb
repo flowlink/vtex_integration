@@ -52,7 +52,7 @@ module VTEX
             'vtex:ModalType'             => nil,
             'vtex:Name'                  => product['name'],
             'vtex:Price'                 => item['price'],
-            'vtex:ProductId'             => product['id'],
+            'vtex:ProductId'             => clear_id(product['id']),
             'vtex:ProductName'           => product['name'],
             'vtex:RealHeight'            => nil,
             'vtex:RealLength'            => nil,
