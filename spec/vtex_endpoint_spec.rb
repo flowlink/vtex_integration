@@ -67,7 +67,7 @@ describe VTEXEndpoint do
   describe '/get_products' do
     it 'brings products' do
       message = {
-        parameters: params.merge(vtex_products_since: "2014-12-09T01:25:20Z")
+        parameters: params.merge(vtex_products_since: (Time.now - 14400).utc.iso8601)
       }
 
       VCR.use_cassette("1415400936") do
@@ -83,7 +83,7 @@ describe VTEXEndpoint do
 
     it "brings no products" do
       message = {
-        parameters: params.merge(vtex_products_since: "2014-11-06T21:25:20Z")
+        parameters: params.merge(vtex_products_since: Time.now.utc.iso8601)
       }
 
       VCR.use_cassette("no_products_1415323854") do
