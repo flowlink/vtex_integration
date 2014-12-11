@@ -11,7 +11,7 @@ module VTEX
           'vtex:DepartmentId'           => 1000000,
           'vtex:Description'            => product['description'],
           'vtex:DescriptionShort'       => nil,
-          'vtex:Id'                     => clear_id(product['id']),
+          'vtex:Id'                     => product['abacos']['codigo_produto_abacos'].to_i,
           'vtex:IsActive'               => nil,
           'vtex:IsVisible'              => true,
           'vtex:KeyWords'               => product['meta_keywords'],
