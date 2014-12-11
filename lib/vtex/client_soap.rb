@@ -90,7 +90,7 @@ module VTEX
       response = client.call(
         :product_especification_list_by_product_id,
         message: {
-          'tem:productId' => product_id
+          'tns:productId' => product_id
         }
       )
       validate_response(response)
