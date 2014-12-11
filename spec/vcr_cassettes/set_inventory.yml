@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://VTEX_SITE_ID.vtexcommercestable.com.br/api/logistics/pvt/inventory/warehouseitembalances
+    uri: http://VTEX_SITE_ID.vtexcommercestable.com.br/api/logistics/pvt/inventory/warehouseitems/setbalance
     body:
       encoding: UTF-8
       string: '[{"wareHouseId":"1_1","itemId":"2000005","quantity":93}]'
@@ -20,43 +20,49 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 07 Nov 2014 01:55:59 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '4'
-      Connection:
-      - keep-alive
       Cache-Control:
       - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 11 Dec 2014 20:19:39 GMT
       Expires:
       - "-1"
       Pragma:
       - no-cache
+      Server:
+      - nginx
+      X-Cdnignore:
+      - '1'
+      X-Powered-By-Vtex-Janus-Edge:
+      - v1.16.24
+      X-Track:
+      - stable
       X-Vtex-Operation-Id:
-      - ead8836d-a2af-4ce0-b0c9-5552720ed31a
+      - 177734bf-0024-4ccc-a1d0-a5d0f736ed60
       X-Vtex-Router-Backend-App:
-      - logist - v6.0.40-stable+461
+      - logist - v6.0.46-stable+476
       X-Vtex-Router-Janusnet-Aspnetlatency:
       - '0'
       X-Vtex-Router-Janusnet-Backendlatency:
-      - '223'
+      - '900'
       X-Vtex-Router-Janusnet-Januslatency:
-      - '40'
+      - '45'
       X-Vtex-Router-Powered-By:
       - VTEX.JanusNet - 1.0.0
-      X-Track:
-      - stable
-      X-Powered-By-Vtex-Janus-Edge:
-      - v1.16.4
-      X-Cdnignore:
-      - '1'
+      Content-Length:
+      - '4'
+      X-Cache:
+      - MISS from squid
+      X-Cache-Lookup:
+      - MISS from squid:3128
+      Via:
+      - 1.0 squid (squid/3.1.10)
+      Connection:
+      - keep-alive
     body:
       encoding: UTF-8
       string: 'true'
     http_version: 
-  recorded_at: Fri, 07 Nov 2014 01:55:58 GMT
+  recorded_at: Thu, 11 Dec 2014 20:19:39 GMT
 recorded_with: VCR 2.9.3

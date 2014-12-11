@@ -21,13 +21,13 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Age:
-      - '1153'
+      - '1893'
       Cache-Control:
       - no-cache
       Content-Type:
       - text/xml; charset=UTF-8
       Date:
-      - Tue, 09 Dec 2014 20:33:56 GMT
+      - Thu, 11 Dec 2014 20:19:31 GMT
       'No':
       - MSERVICE01
       P3p:
@@ -35,11 +35,11 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Debug-Obj-Ttl:
-      - '9647.273'
+      - '8906.987'
       X-Debug-X-Id:
-      - 3149245320 3149095617
+      - 3168725738 3168466952
       X-Forwarded:
-      - 54.163.253.53, 54.204.59.180, 10.66.218.205
+      - 54.163.253.100, 54.204.59.180, 10.66.218.205
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -62,13 +62,19 @@ http_interactions:
       X-Vtex-Lastupdate:
       - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.4211973'
+      - '02:00:00.0155998'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
       - 1.0.0.0
       Content-Length:
       - '10512'
+      X-Cache:
+      - MISS from squid
+      X-Cache-Lookup:
+      - MISS from squid:3128
+      Via:
+      - 1.0 squid (squid/3.1.10)
       Connection:
       - keep-alive
     body:
@@ -1821,7 +1827,7 @@ http_interactions:
         name="Service"><wsdl:port name="BasicHttpBinding_IService" binding="tns:BasicHttpBinding_IService"><soap:address
         location="http://webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc"/></wsdl:port></wsdl:service></wsdl:definitions>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:33:57 GMT
+  recorded_at: Thu, 11 Dec 2014 20:19:32 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -1830,7 +1836,7 @@ http_interactions:
       string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
         xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:ProductGetAllFromUpdatedDateAndId><tns:dateUpdated>2014-12-09T01:25:20Z</tns:dateUpdated><tns:topRows>1000</tns:topRows></tns:ProductGetAllFromUpdatedDateAndId></env:Body></env:Envelope>
+        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:ProductGetAllFromUpdatedDateAndId><tns:dateUpdated>2014-12-11T16:19:32Z</tns:dateUpdated><tns:topRows>1000</tns:topRows></tns:ProductGetAllFromUpdatedDateAndId></env:Body></env:Envelope>
     headers:
       Soapaction:
       - '"http://tempuri.org/IService/ProductGetAllFromUpdatedDateAndId"'
@@ -1859,22 +1865,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 20:33:57 GMT
+      - Thu, 11 Dec 2014 20:19:31 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=3pq2ahtq2fo2gvpapusehcza; path=/; HttpOnly
-      - ASP.NET_SessionId=3pq2ahtq2fo2gvpapusehcza; path=/; HttpOnly
+      - ASP.NET_SessionId=rdcxapgnl4q5hzodonllsdfw; path=/; HttpOnly
+      - ASP.NET_SessionId=rdcxapgnl4q5hzodonllsdfw; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '3149245393'
+      - '3168725783'
       X-Forwarded:
-      - 177.177.84.176, 54.204.59.180, 10.66.218.205
+      - 192.168.60.87, 189.44.101.2, 54.204.59.180, 10.31.167.136
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -1897,716 +1903,35 @@ http_interactions:
       X-Vtex-Lastupdate:
       - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0155999'
+      - '02:00:00.0155997'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
       - 1.0.0.0
       Content-Length:
-      - '1150'
-      Connection:
-      - keep-alive
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        PHM6RW52ZWxvcGUgeG1sbnM6cz0iaHR0cDovL3NjaGVtYXMueG1sc29hcC5v
-        cmcvc29hcC9lbnZlbG9wZS8iPjxzOkJvZHk+PFByb2R1Y3RHZXRBbGxGcm9t
-        VXBkYXRlZERhdGVBbmRJZFJlc3BvbnNlIHhtbG5zPSJodHRwOi8vdGVtcHVy
-        aS5vcmcvIj48UHJvZHVjdEdldEFsbEZyb21VcGRhdGVkRGF0ZUFuZElkUmVz
-        dWx0IHhtbG5zOmE9Imh0dHA6Ly9zY2hlbWFzLmRhdGFjb250cmFjdC5vcmcv
-        MjAwNC8wNy9WdGV4LkNvbW1lcmNlLldlYkFwcHMuQWRtaW5XY2ZTZXJ2aWNl
-        LkNvbnRyYWN0cyIgeG1sbnM6aT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9Y
-        TUxTY2hlbWEtaW5zdGFuY2UiPjxhOlByb2R1Y3REVE8+PGE6QWRXb3Jkc1Jl
-        bWFya2V0aW5nQ29kZSBpOm5pbD0idHJ1ZSIvPjxhOkJyYW5kSWQ+MTwvYTpC
-        cmFuZElkPjxhOkNhdGVnb3J5SWQ+MTAwMDAwMDwvYTpDYXRlZ29yeUlkPjxh
-        OkRlcGFydG1lbnRJZD4xMDAwMDAwPC9hOkRlcGFydG1lbnRJZD48YTpEZXNj
-        cmlwdGlvbj50ZXh0byBkZSBkZXNjcmnDp8OjbzwvYTpEZXNjcmlwdGlvbj48
-        YTpEZXNjcmlwdGlvblNob3J0PlV0aWxpemUgbyBDRVAgMDQ1NDgtMDA1IHBh
-        cmEgZnJldGUgZ3LDoXRpczwvYTpEZXNjcmlwdGlvblNob3J0PjxhOklkPjE8
-        L2E6SWQ+PGE6SXNBY3RpdmU+dHJ1ZTwvYTpJc0FjdGl2ZT48YTpJc1Zpc2li
-        bGU+dHJ1ZTwvYTpJc1Zpc2libGU+PGE6S2V5V29yZHM+UHJvZHV0byBwYXJh
-        IEhvbW9sb2dhw6fDo28gZGUgTWVpbyBkZSBQYWdhbWVudG8gTWFyY2EgRXhl
-        bXBsbyxSZWZyaWdlcmFkb3JlcyxFbGV0cm9kb23DqXN0aWNvczwvYTpLZXlX
-        b3Jkcz48YTpMaW5rSWQ+cHJvZHV0by1wYXJhLWhvbW9sb2dhY2FvLWRlLW1l
-        aW8tZGUtcGFnYW1lbnRvLTE8L2E6TGlua0lkPjxhOkxpc3RTdG9yZUlkIHht
-        bG5zOmI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vMjAwMy8xMC9T
-        ZXJpYWxpemF0aW9uL0FycmF5cyI+PGI6aW50PjE8L2I6aW50PjxiOmludD4y
-        PC9iOmludD48YjppbnQ+MzwvYjppbnQ+PGI6aW50PjQ8L2I6aW50PjwvYTpM
-        aXN0U3RvcmVJZD48YTpMb21hZGVlQ2FtcGFpZ25Db2RlIGk6bmlsPSJ0cnVl
-        Ii8+PGE6TWV0YVRhZ0Rlc2NyaXB0aW9uPnRleHRvIGRlIGRlc2NyacOnw6Nv
-        IG1ldGEgdGFnPC9hOk1ldGFUYWdEZXNjcmlwdGlvbj48YTpOYW1lPlByb2R1
-        dG8gcGFyYSBIb21vbG9nYcOnw6NvIGRlIE1laW8gZGUgUGFnYW1lbnRvPC9h
-        Ok5hbWU+PGE6UmVmSWQvPjxhOlJlbGVhc2VEYXRlPjIwMTMtMDEtMDFUMDA6
-        MDA6MDA8L2E6UmVsZWFzZURhdGU+PGE6U2hvd1dpdGhvdXRTdG9jaz5mYWxz
-        ZTwvYTpTaG93V2l0aG91dFN0b2NrPjxhOlN1cHBsaWVySWQ+MTwvYTpTdXBw
-        bGllcklkPjxhOlRheENvZGUvPjxhOlRpdGxlPlByb2R1dG8gcGFyYSBIb21v
-        bG9nYcOnw6NvIGRlIE1laW8gZGUgUGFnYW1lbnRvPC9hOlRpdGxlPjwvYTpQ
-        cm9kdWN0RFRPPjxhOlByb2R1Y3REVE8+PGE6QWRXb3Jkc1JlbWFya2V0aW5n
-        Q29kZSBpOm5pbD0idHJ1ZSIvPjxhOkJyYW5kSWQ+MjAwMDAwODwvYTpCcmFu
-        ZElkPjxhOkNhdGVnb3J5SWQ+MTAwMDAxMzwvYTpDYXRlZ29yeUlkPjxhOkRl
-        cGFydG1lbnRJZD4xMDAwMDAwPC9hOkRlcGFydG1lbnRJZD48YTpEZXNjcmlw
-        dGlvbj5Tb21lIGRlc2NyaXB0aW9uIHRleHQgZm9yIHRoZSBwcm9kdWN0Ljwv
-        YTpEZXNjcmlwdGlvbj48YTpEZXNjcmlwdGlvblNob3J0IGk6bmlsPSJ0cnVl
-        Ii8+PGE6SWQ+MjM0MjMxPC9hOklkPjxhOklzQWN0aXZlPmZhbHNlPC9hOklz
-        QWN0aXZlPjxhOklzVmlzaWJsZT50cnVlPC9hOklzVmlzaWJsZT48YTpLZXlX
-        b3JkcyBpOm5pbD0idHJ1ZSIvPjxhOkxpbmtJZD5wcm9kdWN0LXNrdS0yMzQy
-        MzE8L2E6TGlua0lkPjxhOkxpc3RTdG9yZUlkIGk6bmlsPSJ0cnVlIiB4bWxu
-        czpiPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tLzIwMDMvMTAvU2Vy
-        aWFsaXphdGlvbi9BcnJheXMiLz48YTpMb21hZGVlQ2FtcGFpZ25Db2RlIGk6
-        bmlsPSJ0cnVlIi8+PGE6TWV0YVRhZ0Rlc2NyaXB0aW9uIGk6bmlsPSJ0cnVl
-        Ii8+PGE6TmFtZT5SdWJ5IG9uIFJhaWxzIFQtU2hpcnQ8L2E6TmFtZT48YTpS
-        ZWZJZD4yMzQyMzE8L2E6UmVmSWQ+PGE6UmVsZWFzZURhdGUgaTpuaWw9InRy
-        dWUiLz48YTpTaG93V2l0aG91dFN0b2NrPnRydWU8L2E6U2hvd1dpdGhvdXRT
-        dG9jaz48YTpTdXBwbGllcklkIGk6bmlsPSJ0cnVlIi8+PGE6VGF4Q29kZSBp
-        Om5pbD0idHJ1ZSIvPjxhOlRpdGxlIGk6bmlsPSJ0cnVlIi8+PC9hOlByb2R1
-        Y3REVE8+PGE6UHJvZHVjdERUTz48YTpBZFdvcmRzUmVtYXJrZXRpbmdDb2Rl
-        IGk6bmlsPSJ0cnVlIi8+PGE6QnJhbmRJZD4yMDAwMDA4PC9hOkJyYW5kSWQ+
-        PGE6Q2F0ZWdvcnlJZD4xMDAwMDEzPC9hOkNhdGVnb3J5SWQ+PGE6RGVwYXJ0
-        bWVudElkPjEwMDAwMDA8L2E6RGVwYXJ0bWVudElkPjxhOkRlc2NyaXB0aW9u
-        PlNvbWUgZGVzY3JpcHRpb24gdGV4dCBmb3IgdGhlIHByb2R1Y3QuPC9hOkRl
-        c2NyaXB0aW9uPjxhOkRlc2NyaXB0aW9uU2hvcnQgaTpuaWw9InRydWUiLz48
-        YTpJZD4yMzQ1NDM1PC9hOklkPjxhOklzQWN0aXZlPmZhbHNlPC9hOklzQWN0
-        aXZlPjxhOklzVmlzaWJsZT50cnVlPC9hOklzVmlzaWJsZT48YTpLZXlXb3Jk
-        cyBpOm5pbD0idHJ1ZSIvPjxhOkxpbmtJZD5wcm9kdWN0LTIzNDU0MzU8L2E6
-        TGlua0lkPjxhOkxpc3RTdG9yZUlkIGk6bmlsPSJ0cnVlIiB4bWxuczpiPSJo
-        dHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tLzIwMDMvMTAvU2VyaWFsaXph
-        dGlvbi9BcnJheXMiLz48YTpMb21hZGVlQ2FtcGFpZ25Db2RlIGk6bmlsPSJ0
-        cnVlIi8+PGE6TWV0YVRhZ0Rlc2NyaXB0aW9uIGk6bmlsPSJ0cnVlIi8+PGE6
-        TmFtZT5SdWJ5IG9uIFJhaWxzIFQtU2hpcnQ8L2E6TmFtZT48YTpSZWZJZD4y
-        MzQ1NDM1PC9hOlJlZklkPjxhOlJlbGVhc2VEYXRlIGk6bmlsPSJ0cnVlIi8+
-        PGE6U2hvd1dpdGhvdXRTdG9jaz50cnVlPC9hOlNob3dXaXRob3V0U3RvY2s+
-        PGE6U3VwcGxpZXJJZCBpOm5pbD0idHJ1ZSIvPjxhOlRheENvZGUgaTpuaWw9
-        InRydWUiLz48YTpUaXRsZSBpOm5pbD0idHJ1ZSIvPjwvYTpQcm9kdWN0RFRP
-        PjxhOlByb2R1Y3REVE8+PGE6QWRXb3Jkc1JlbWFya2V0aW5nQ29kZSBpOm5p
-        bD0idHJ1ZSIvPjxhOkJyYW5kSWQ+MjAwMDAwODwvYTpCcmFuZElkPjxhOkNh
-        dGVnb3J5SWQ+MTAwMDAxMzwvYTpDYXRlZ29yeUlkPjxhOkRlcGFydG1lbnRJ
-        ZD4xMDAwMDAwPC9hOkRlcGFydG1lbnRJZD48YTpEZXNjcmlwdGlvbj5Tb21l
-        IGRlc2NyaXB0aW9uIHRleHQgZm9yIHRoZSBwcm9kdWN0LjwvYTpEZXNjcmlw
-        dGlvbj48YTpEZXNjcmlwdGlvblNob3J0IGk6bmlsPSJ0cnVlIi8+PGE6SWQ+
-        MjQzNTQzNTwvYTpJZD48YTpJc0FjdGl2ZT5mYWxzZTwvYTpJc0FjdGl2ZT48
-        YTpJc1Zpc2libGU+dHJ1ZTwvYTpJc1Zpc2libGU+PGE6S2V5V29yZHMgaTpu
-        aWw9InRydWUiLz48YTpMaW5rSWQ+cHJvZHVjdC0yNDM1NDM1PC9hOkxpbmtJ
-        ZD48YTpMaXN0U3RvcmVJZCBpOm5pbD0idHJ1ZSIgeG1sbnM6Yj0iaHR0cDov
-        L3NjaGVtYXMubWljcm9zb2Z0LmNvbS8yMDAzLzEwL1NlcmlhbGl6YXRpb24v
-        QXJyYXlzIi8+PGE6TG9tYWRlZUNhbXBhaWduQ29kZSBpOm5pbD0idHJ1ZSIv
-        PjxhOk1ldGFUYWdEZXNjcmlwdGlvbiBpOm5pbD0idHJ1ZSIvPjxhOk5hbWU+
-        UnVieSBvbiBSYWlscyBULVNoaXJ0PC9hOk5hbWU+PGE6UmVmSWQ+MjQzNTQz
-        NTwvYTpSZWZJZD48YTpSZWxlYXNlRGF0ZSBpOm5pbD0idHJ1ZSIvPjxhOlNo
-        b3dXaXRob3V0U3RvY2s+dHJ1ZTwvYTpTaG93V2l0aG91dFN0b2NrPjxhOlN1
-        cHBsaWVySWQgaTpuaWw9InRydWUiLz48YTpUYXhDb2RlIGk6bmlsPSJ0cnVl
-        Ii8+PGE6VGl0bGUgaTpuaWw9InRydWUiLz48L2E6UHJvZHVjdERUTz48YTpQ
-        cm9kdWN0RFRPPjxhOkFkV29yZHNSZW1hcmtldGluZ0NvZGUgaTpuaWw9InRy
-        dWUiLz48YTpCcmFuZElkPjIwMDAwMTQ8L2E6QnJhbmRJZD48YTpDYXRlZ29y
-        eUlkPjEwMDAwNzA8L2E6Q2F0ZWdvcnlJZD48YTpEZXBhcnRtZW50SWQ+MTAw
-        MDAwMDwvYTpEZXBhcnRtZW50SWQ+PGE6RGVzY3JpcHRpb24+Q2FycmluaG8g
-        Q2hhbGVzY28gQ29uZm9ydCBSaWRlIHBhcmEgQ2FjaG9ycm8gb3UgR2F0byAt
-        IFJvc2E8L2E6RGVzY3JpcHRpb24+PGE6RGVzY3JpcHRpb25TaG9ydCBpOm5p
-        bD0idHJ1ZSIvPjxhOklkPjMxMDQ2NjA8L2E6SWQ+PGE6SXNBY3RpdmU+ZmFs
-        c2U8L2E6SXNBY3RpdmU+PGE6SXNWaXNpYmxlPnRydWU8L2E6SXNWaXNpYmxl
-        PjxhOktleVdvcmRzIGk6bmlsPSJ0cnVlIi8+PGE6TGlua0lkPkNhcnJpbmhv
-        LUNoYWxlc2NvLUNvbmZvcnQtUmlkZS1wYXJhLUNhY2hvcnJvLW91LUdhdG8t
-        LS1Sb3NhPC9hOkxpbmtJZD48YTpMaXN0U3RvcmVJZCBpOm5pbD0idHJ1ZSIg
-        eG1sbnM6Yj0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS8yMDAzLzEw
-        L1NlcmlhbGl6YXRpb24vQXJyYXlzIi8+PGE6TG9tYWRlZUNhbXBhaWduQ29k
-        ZSBpOm5pbD0idHJ1ZSIvPjxhOk1ldGFUYWdEZXNjcmlwdGlvbj5DYXJyaW5o
-        byBDaGFsZXNjbyBDb25mb3J0IFJpZGUgcGFyYSBDYWNob3JybyBvdSBHYXRv
-        IC0gUm9zYTwvYTpNZXRhVGFnRGVzY3JpcHRpb24+PGE6TmFtZT5DYXJyaW5o
-        byBDaGFsZXNjbyBDb25mb3J0IFJpZGUgcGFyYSBDYWNob3JybyBvdSBHYXRv
-        IC0gUm9zYTwvYTpOYW1lPjxhOlJlZklkPjMxMDQ2NjA8L2E6UmVmSWQ+PGE6
-        UmVsZWFzZURhdGUgaTpuaWw9InRydWUiLz48YTpTaG93V2l0aG91dFN0b2Nr
-        PnRydWU8L2E6U2hvd1dpdGhvdXRTdG9jaz48YTpTdXBwbGllcklkIGk6bmls
-        PSJ0cnVlIi8+PGE6VGF4Q29kZSBpOm5pbD0idHJ1ZSIvPjxhOlRpdGxlIGk6
-        bmlsPSJ0cnVlIi8+PC9hOlByb2R1Y3REVE8+PGE6UHJvZHVjdERUTz48YTpB
-        ZFdvcmRzUmVtYXJrZXRpbmdDb2RlIGk6bmlsPSJ0cnVlIi8+PGE6QnJhbmRJ
-        ZD4yMDAwMDA4PC9hOkJyYW5kSWQ+PGE6Q2F0ZWdvcnlJZD4xMDAwMDEzPC9h
-        OkNhdGVnb3J5SWQ+PGE6RGVwYXJ0bWVudElkPjEwMDAwMDA8L2E6RGVwYXJ0
-        bWVudElkPjxhOkRlc2NyaXB0aW9uPlNvbWUgZGVzY3JpcHRpb24gdGV4dCBm
-        b3IgdGhlIHByb2R1Y3QuPC9hOkRlc2NyaXB0aW9uPjxhOkRlc2NyaXB0aW9u
-        U2hvcnQgaTpuaWw9InRydWUiLz48YTpJZD4yMzQzNTQ1MjwvYTpJZD48YTpJ
-        c0FjdGl2ZT5mYWxzZTwvYTpJc0FjdGl2ZT48YTpJc1Zpc2libGU+dHJ1ZTwv
-        YTpJc1Zpc2libGU+PGE6S2V5V29yZHMgaTpuaWw9InRydWUiLz48YTpMaW5r
-        SWQ+cHJvZHVjdC0yMzQzNTQ1MjwvYTpMaW5rSWQ+PGE6TGlzdFN0b3JlSWQg
-        aTpuaWw9InRydWUiIHhtbG5zOmI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29m
-        dC5jb20vMjAwMy8xMC9TZXJpYWxpemF0aW9uL0FycmF5cyIvPjxhOkxvbWFk
-        ZWVDYW1wYWlnbkNvZGUgaTpuaWw9InRydWUiLz48YTpNZXRhVGFnRGVzY3Jp
-        cHRpb24gaTpuaWw9InRydWUiLz48YTpOYW1lPlJ1Ynkgb24gUmFpbHMgVC1T
-        aGlydDwvYTpOYW1lPjxhOlJlZklkPjIzNDM1NDUyPC9hOlJlZklkPjxhOlJl
-        bGVhc2VEYXRlIGk6bmlsPSJ0cnVlIi8+PGE6U2hvd1dpdGhvdXRTdG9jaz50
-        cnVlPC9hOlNob3dXaXRob3V0U3RvY2s+PGE6U3VwcGxpZXJJZCBpOm5pbD0i
-        dHJ1ZSIvPjxhOlRheENvZGUgaTpuaWw9InRydWUiLz48YTpUaXRsZSBpOm5p
-        bD0idHJ1ZSIvPjwvYTpQcm9kdWN0RFRPPjxhOlByb2R1Y3REVE8+PGE6QWRX
-        b3Jkc1JlbWFya2V0aW5nQ29kZSBpOm5pbD0idHJ1ZSIvPjxhOkJyYW5kSWQ+
-        MjAwMDAyODwvYTpCcmFuZElkPjxhOkNhdGVnb3J5SWQ+MTAwMDAwMjwvYTpD
-        YXRlZ29yeUlkPjxhOkRlcGFydG1lbnRJZD4xMDAwMDAxPC9hOkRlcGFydG1l
-        bnRJZD48YTpEZXNjcmlwdGlvbj5DYWl4YSBkZSBUcmFuc3BvcnRlIFN0YW5k
-        YXJ0IC0gVmVyZGU8L2E6RGVzY3JpcHRpb24+PGE6RGVzY3JpcHRpb25TaG9y
-        dC8+PGE6SWQ+MzEwNzMxNzE8L2E6SWQ+PGE6SXNBY3RpdmU+ZmFsc2U8L2E6
-        SXNBY3RpdmU+PGE6SXNWaXNpYmxlPnRydWU8L2E6SXNWaXNpYmxlPjxhOktl
-        eVdvcmRzLz48YTpMaW5rSWQ+Q2FpeGEtZGUtVHJhbnNwb3J0ZS1TdGFuZGFy
-        dC0tLVZlcmRlPC9hOkxpbmtJZD48YTpMaXN0U3RvcmVJZCBpOm5pbD0idHJ1
-        ZSIgeG1sbnM6Yj0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS8yMDAz
-        LzEwL1NlcmlhbGl6YXRpb24vQXJyYXlzIi8+PGE6TG9tYWRlZUNhbXBhaWdu
-        Q29kZSBpOm5pbD0idHJ1ZSIvPjxhOk1ldGFUYWdEZXNjcmlwdGlvbj5DYWl4
-        YSBkZSBUcmFuc3BvcnRlIFN0YW5kYXJ0IC0gVmVyZGU8L2E6TWV0YVRhZ0Rl
-        c2NyaXB0aW9uPjxhOk5hbWU+Q2FpeGEgZGUgVHJhbnNwb3J0ZSBTdGFuZGFy
-        dCAtIFZlcmRlPC9hOk5hbWU+PGE6UmVmSWQ+MzEwNzMxNzE8L2E6UmVmSWQ+
-        PGE6UmVsZWFzZURhdGUgaTpuaWw9InRydWUiLz48YTpTaG93V2l0aG91dFN0
-        b2NrPnRydWU8L2E6U2hvd1dpdGhvdXRTdG9jaz48YTpTdXBwbGllcklkIGk6
-        bmlsPSJ0cnVlIi8+PGE6VGF4Q29kZS8+PGE6VGl0bGUvPjwvYTpQcm9kdWN0
-        RFRPPjxhOlByb2R1Y3REVE8+PGE6QWRXb3Jkc1JlbWFya2V0aW5nQ29kZSBp
-        Om5pbD0idHJ1ZSIvPjxhOkJyYW5kSWQ+MjAwMDAyODwvYTpCcmFuZElkPjxh
-        OkNhdGVnb3J5SWQ+MTAwMDAwMjwvYTpDYXRlZ29yeUlkPjxhOkRlcGFydG1l
-        bnRJZD4xMDAwMDAxPC9hOkRlcGFydG1lbnRJZD48YTpEZXNjcmlwdGlvbj5D
-        YWl4YSBkZSBUcmFuc3BvcnRlIFN0YW5kYXJ0IC0gUm94bzwvYTpEZXNjcmlw
-        dGlvbj48YTpEZXNjcmlwdGlvblNob3J0Lz48YTpJZD4zMTA3MzE3NTwvYTpJ
-        ZD48YTpJc0FjdGl2ZT5mYWxzZTwvYTpJc0FjdGl2ZT48YTpJc1Zpc2libGU+
-        dHJ1ZTwvYTpJc1Zpc2libGU+PGE6S2V5V29yZHMvPjxhOkxpbmtJZD5DYWl4
-        YS1kZS1UcmFuc3BvcnRlLVN0YW5kYXJ0LS0tUm94bzwvYTpMaW5rSWQ+PGE6
-        TGlzdFN0b3JlSWQgaTpuaWw9InRydWUiIHhtbG5zOmI9Imh0dHA6Ly9zY2hl
-        bWFzLm1pY3Jvc29mdC5jb20vMjAwMy8xMC9TZXJpYWxpemF0aW9uL0FycmF5
-        cyIvPjxhOkxvbWFkZWVDYW1wYWlnbkNvZGUgaTpuaWw9InRydWUiLz48YTpN
-        ZXRhVGFnRGVzY3JpcHRpb24+Q2FpeGEgZGUgVHJhbnNwb3J0ZSBTdGFuZGFy
-        dCAtIFJveG88L2E6TWV0YVRhZ0Rlc2NyaXB0aW9uPjxhOk5hbWU+Q2FpeGEg
-        ZGUgVHJhbnNwb3J0ZSBTdGFuZGFydCAtIFJveG88L2E6TmFtZT48YTpSZWZJ
-        ZD4zMTA3MzE3NTwvYTpSZWZJZD48YTpSZWxlYXNlRGF0ZSBpOm5pbD0idHJ1
-        ZSIvPjxhOlNob3dXaXRob3V0U3RvY2s+dHJ1ZTwvYTpTaG93V2l0aG91dFN0
-        b2NrPjxhOlN1cHBsaWVySWQgaTpuaWw9InRydWUiLz48YTpUYXhDb2RlLz48
-        YTpUaXRsZS8+PC9hOlByb2R1Y3REVE8+PGE6UHJvZHVjdERUTz48YTpBZFdv
-        cmRzUmVtYXJrZXRpbmdDb2RlIGk6bmlsPSJ0cnVlIi8+PGE6QnJhbmRJZD4y
-        MDAwMDA4PC9hOkJyYW5kSWQ+PGE6Q2F0ZWdvcnlJZD4xMDAwMDEzPC9hOkNh
-        dGVnb3J5SWQ+PGE6RGVwYXJ0bWVudElkPjEwMDAwMDA8L2E6RGVwYXJ0bWVu
-        dElkPjxhOkRlc2NyaXB0aW9uPlNvbWUgZGVzY3JpcHRpb24gdGV4dCBmb3Ig
-        dGhlIHByb2R1Y3QuPC9hOkRlc2NyaXB0aW9uPjxhOkRlc2NyaXB0aW9uU2hv
-        cnQgaTpuaWw9InRydWUiLz48YTpJZD4yNTQzMjU0MjM8L2E6SWQ+PGE6SXNB
-        Y3RpdmU+ZmFsc2U8L2E6SXNBY3RpdmU+PGE6SXNWaXNpYmxlPnRydWU8L2E6
-        SXNWaXNpYmxlPjxhOktleVdvcmRzIGk6bmlsPSJ0cnVlIi8+PGE6TGlua0lk
-        PnByb2R1Y3QtMjU0MzI1NDIzPC9hOkxpbmtJZD48YTpMaXN0U3RvcmVJZCBp
-        Om5pbD0idHJ1ZSIgeG1sbnM6Yj0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0
-        LmNvbS8yMDAzLzEwL1NlcmlhbGl6YXRpb24vQXJyYXlzIi8+PGE6TG9tYWRl
-        ZUNhbXBhaWduQ29kZSBpOm5pbD0idHJ1ZSIvPjxhOk1ldGFUYWdEZXNjcmlw
-        dGlvbiBpOm5pbD0idHJ1ZSIvPjxhOk5hbWU+UnVieSBvbiBSYWlscyBULVNo
-        aXJ0PC9hOk5hbWU+PGE6UmVmSWQ+MjU0MzI1NDIzPC9hOlJlZklkPjxhOlJl
-        bGVhc2VEYXRlIGk6bmlsPSJ0cnVlIi8+PGE6U2hvd1dpdGhvdXRTdG9jaz50
-        cnVlPC9hOlNob3dXaXRob3V0U3RvY2s+PGE6U3VwcGxpZXJJZCBpOm5pbD0i
-        dHJ1ZSIvPjxhOlRheENvZGUgaTpuaWw9InRydWUiLz48YTpUaXRsZSBpOm5p
-        bD0idHJ1ZSIvPjwvYTpQcm9kdWN0RFRPPjwvUHJvZHVjdEdldEFsbEZyb21V
-        cGRhdGVkRGF0ZUFuZElkUmVzdWx0PjwvUHJvZHVjdEdldEFsbEZyb21VcGRh
-        dGVkRGF0ZUFuZElkUmVzcG9uc2U+PC9zOkJvZHk+PC9zOkVudmVsb3BlPg==
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:33:58 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:StockKeepingUnitGetAllByProduct><tns:idProduct>1</tns:idProduct></tns:StockKeepingUnitGetAllByProduct></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/StockKeepingUnitGetAllByProduct"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '551'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:33:58 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=yx4d4iegcvscnzsrfvfc3kpt; path=/; HttpOnly
-      - ASP.NET_SessionId=yx4d4iegcvscnzsrfvfc3kpt; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517497394'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.0155999'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '624'
-      Connection:
-      - keep-alive
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        PHM6RW52ZWxvcGUgeG1sbnM6cz0iaHR0cDovL3NjaGVtYXMueG1sc29hcC5v
-        cmcvc29hcC9lbnZlbG9wZS8iPjxzOkJvZHk+PFN0b2NrS2VlcGluZ1VuaXRH
-        ZXRBbGxCeVByb2R1Y3RSZXNwb25zZSB4bWxucz0iaHR0cDovL3RlbXB1cmku
-        b3JnLyI+PFN0b2NrS2VlcGluZ1VuaXRHZXRBbGxCeVByb2R1Y3RSZXN1bHQg
-        eG1sbnM6YT0iaHR0cDovL3NjaGVtYXMuZGF0YWNvbnRyYWN0Lm9yZy8yMDA0
-        LzA3L1Z0ZXguQ29tbWVyY2UuV2ViQXBwcy5BZG1pbldjZlNlcnZpY2UuQ29u
-        dHJhY3RzIiB4bWxuczppPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNj
-        aGVtYS1pbnN0YW5jZSI+PGE6U3RvY2tLZWVwaW5nVW5pdERUTz48YTpDb21t
-        ZXJjaWFsQ29uZGl0aW9uSWQ+MTwvYTpDb21tZXJjaWFsQ29uZGl0aW9uSWQ+
-        PGE6Q29zdFByaWNlPjEuMDAwMDwvYTpDb3N0UHJpY2U+PGE6Q3ViaWNXZWln
-        aHQ+MC4xNjY3PC9hOkN1YmljV2VpZ2h0PjxhOkRhdGVVcGRhdGVkPjIwMTQt
-        MTEtMjRUMTQ6Mzg6MDA8L2E6RGF0ZVVwZGF0ZWQ+PGE6RXN0aW1hdGVkRGF0
-        ZUFycml2YWwgaTpuaWw9InRydWUiLz48YTpIZWlnaHQ+MTAuMDAwMDwvYTpI
-        ZWlnaHQ+PGE6SWQ+MjAwMDAxMzwvYTpJZD48YTpJbnRlcm5hbE5vdGUgaTpu
-        aWw9InRydWUiLz48YTpJc0FjdGl2ZT50cnVlPC9hOklzQWN0aXZlPjxhOklz
-        QXZhaWFibGU+ZmFsc2U8L2E6SXNBdmFpYWJsZT48YTpJc0tpdD5mYWxzZTwv
-        YTpJc0tpdD48YTpMZW5ndGg+MTAuMDAwMDwvYTpMZW5ndGg+PGE6TGlzdFBy
-        aWNlPjEuMDAwMDwvYTpMaXN0UHJpY2U+PGE6TWFudWZhY3R1cmVyQ29kZS8+
-        PGE6TWVhc3VyZW1lbnRVbml0PnVuPC9hOk1lYXN1cmVtZW50VW5pdD48YTpN
-        b2RhbElkPjE8L2E6TW9kYWxJZD48YTpNb2RhbFR5cGUgaTpuaWw9InRydWUi
-        Lz48YTpOYW1lPlByb2R1dG8gcGFyYSBIb21vbG9nYcOnw6NvIGRlIE1laW8g
-        ZGUgUGFnYW1lbnRvPC9hOk5hbWU+PGE6UHJpY2U+MS4wMDAwPC9hOlByaWNl
-        PjxhOlByb2R1Y3RJZD4xPC9hOlByb2R1Y3RJZD48YTpQcm9kdWN0TmFtZT5Q
-        cm9kdXRvIHBhcmEgSG9tb2xvZ2HDp8OjbyBkZSBNZWlvIGRlIFBhZ2FtZW50
-        bzwvYTpQcm9kdWN0TmFtZT48YTpSZWFsSGVpZ2h0IGk6bmlsPSJ0cnVlIi8+
-        PGE6UmVhbExlbmd0aCBpOm5pbD0idHJ1ZSIvPjxhOlJlYWxXZWlnaHRLZyBp
-        Om5pbD0idHJ1ZSIvPjxhOlJlYWxXaWR0aCBpOm5pbD0idHJ1ZSIvPjxhOlJl
-        ZklkPlBITVAwMTwvYTpSZWZJZD48YTpSZXdhcmRWYWx1ZSBpOm5pbD0idHJ1
-        ZSIvPjxhOlN0b2NrS2VlcGluZ1VuaXRFYW5zIGk6bmlsPSJ0cnVlIi8+PGE6
-        VW5pdE11bHRpcGxpZXI+MS4wMDAwPC9hOlVuaXRNdWx0aXBsaWVyPjxhOldl
-        aWdodEtnPjEwMDAuMDAwMDwvYTpXZWlnaHRLZz48YTpXaWR0aD4xMC4wMDAw
-        PC9hOldpZHRoPjwvYTpTdG9ja0tlZXBpbmdVbml0RFRPPjwvU3RvY2tLZWVw
-        aW5nVW5pdEdldEFsbEJ5UHJvZHVjdFJlc3VsdD48L1N0b2NrS2VlcGluZ1Vu
-        aXRHZXRBbGxCeVByb2R1Y3RSZXNwb25zZT48L3M6Qm9keT48L3M6RW52ZWxv
-        cGU+
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:33:59 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:ImageListByStockKeepingUnitId><tns:StockKeepingUnitId>2000013</tns:StockKeepingUnitId></tns:ImageListByStockKeepingUnitId></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/ImageListByStockKeepingUnitId"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '571'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:34:00 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=ez30c2ojjjsd2w2lavgnbhtw; path=/; HttpOnly
-      - ASP.NET_SessionId=ez30c2ojjjsd2w2lavgnbhtw; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517497548'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.1871988'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '687'
+      - '565'
+      X-Cache:
+      - MISS from squid
+      X-Cache-Lookup:
+      - MISS from squid:3128
+      Via:
+      - 1.0 squid (squid/3.1.10)
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><ImageListByStockKeepingUnitIdResponse
-        xmlns="http://tempuri.org/"><ImageListByStockKeepingUnitIdResult xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:ImageDTO><a:ArchiveFormatId>9</a:ArchiveFormatId><a:ArchiveParentId
-        i:nil="true"/><a:ArchiveTypeId>10</a:ArchiveTypeId><a:DateLastModified>2013-08-25T14:27:45.717</a:DateLastModified><a:Description>produto-para-homologacao-de-meio-de-pagamento-f01</a:Description><a:FileLocation>lojavazia/catalog/produto-para-homologacao-de-meio-de-pagamento-f01.png</a:FileLocation><a:Height>400</a:Height><a:HeightUnitMeasure
-        i:nil="true"/><a:Id>155216</a:Id><a:IsMain>true</a:IsMain><a:Label>F01</a:Label><a:Name>produto-para-homologacao-de-meio-de-pagamento-f01</a:Name><a:StockKeepingUnitId>2000013</a:StockKeepingUnitId><a:Tag>F01</a:Tag><a:Url>http://www.sandboxintegracao.com.br/arquivos/ids/155216_2/produto-para-homologacao-de-meio-de-pagamento-f01.png</a:Url><a:Width>400</a:Width><a:WidthUnitMeasure
-        i:nil="true"/></a:ImageDTO><a:ImageDTO><a:ArchiveFormatId>9</a:ArchiveFormatId><a:ArchiveParentId
-        i:nil="true"/><a:ArchiveTypeId>10</a:ArchiveTypeId><a:DateLastModified>2013-11-05T19:36:16.017</a:DateLastModified><a:Description>produto-para-homologacao-de-meio-de-pagamento-f01</a:Description><a:FileLocation>lojavazia/catalog/produto-para-homologacao-de-meio-de-pagamento-f01.png</a:FileLocation><a:Height>1024</a:Height><a:HeightUnitMeasure
-        i:nil="true"/><a:Id>155232</a:Id><a:IsMain>false</a:IsMain><a:Label/><a:Name>produto-para-homologacao-de-meio-de-pagamento-f01</a:Name><a:StockKeepingUnitId>2000013</a:StockKeepingUnitId><a:Tag/><a:Url>http://www.sandboxintegracao.com.br/arquivos/ids/155232_2/produto-para-homologacao-de-meio-de-pagamento-f01.png</a:Url><a:Width>1280</a:Width><a:WidthUnitMeasure
-        i:nil="true"/></a:ImageDTO><a:ImageDTO><a:ArchiveFormatId>2</a:ArchiveFormatId><a:ArchiveParentId
-        i:nil="true"/><a:ArchiveTypeId>10</a:ArchiveTypeId><a:DateLastModified>2014-11-24T14:37:09.65</a:DateLastModified><a:Description>caixa_importados</a:Description><a:FileLocation>sandboxintegracao/catalog/caixa_importados.jpg</a:FileLocation><a:Height>500</a:Height><a:HeightUnitMeasure
-        i:nil="true"/><a:Id>155680</a:Id><a:IsMain>false</a:IsMain><a:Label/><a:Name>caixa_importados</a:Name><a:StockKeepingUnitId>2000013</a:StockKeepingUnitId><a:Tag/><a:Url>http://www.sandboxintegracao.com.br/arquivos/ids/155680_2/caixa_importados.jpg</a:Url><a:Width>956</a:Width><a:WidthUnitMeasure
-        i:nil="true"/></a:ImageDTO></ImageListByStockKeepingUnitIdResult></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
+      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><ProductGetAllFromUpdatedDateAndIdResponse
+        xmlns="http://tempuri.org/"><ProductGetAllFromUpdatedDateAndIdResult xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
+        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:ProductDTO><a:AdWordsRemarketingCode
+        i:nil="true"/><a:BrandId>2000008</a:BrandId><a:CategoryId>1000013</a:CategoryId><a:DepartmentId>1000000</a:DepartmentId><a:Description>Some
+        description text for the product.</a:Description><a:DescriptionShort i:nil="true"/><a:Id>2345435</a:Id><a:IsActive>false</a:IsActive><a:IsVisible>true</a:IsVisible><a:KeyWords
+        i:nil="true"/><a:LinkId>product-2345435</a:LinkId><a:ListStoreId i:nil="true"
+        xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><a:LomadeeCampaignCode
+        i:nil="true"/><a:MetaTagDescription>Some description text for the product.</a:MetaTagDescription><a:Name>Ruby
+        on Rails T-Shirt</a:Name><a:RefId>2345435</a:RefId><a:ReleaseDate i:nil="true"/><a:ShowWithoutStock>true</a:ShowWithoutStock><a:SupplierId
+        i:nil="true"/><a:TaxCode i:nil="true"/><a:Title i:nil="true"/></a:ProductDTO></ProductGetAllFromUpdatedDateAndIdResult></ProductGetAllFromUpdatedDateAndIdResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:00 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:StockKeepingUnitGetAllByProduct><tns:idProduct>234231</tns:idProduct></tns:StockKeepingUnitGetAllByProduct></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/StockKeepingUnitGetAllByProduct"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '556'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:34:00 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=m5y1ml1yk0fljsglv0g1knf2; path=/; HttpOnly
-      - ASP.NET_SessionId=m5y1ml1yk0fljsglv0g1knf2; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517497603'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.0155999'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '654'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><StockKeepingUnitGetAllByProductResponse
-        xmlns="http://tempuri.org/"><StockKeepingUnitGetAllByProductResult xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>1.4000</a:CubicWeight><a:DateUpdated>2014-12-09T15:09:00</a:DateUpdated><a:EstimatedDateArrival
-        i:nil="true"/><a:Height>40.0000</a:Height><a:Id>234231</a:Id><a:InternalNote
-        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>40.0000</a:Length><a:ListPrice>31.0000</a:ListPrice><a:ManufacturerCode
-        i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>1</a:ModalId><a:ModalType
-        i:nil="true"/><a:Name>Ruby on Rails T-Shirt</a:Name><a:Price>31.0000</a:Price><a:ProductId>234231</a:ProductId><a:ProductName>Ruby
-        on Rails T-Shirt</a:ProductName><a:RealHeight i:nil="true"/><a:RealLength
-        i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>234231</a:RefId><a:RewardValue
-        i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>1.4000</a:WeightKg><a:Width>40.0000</a:Width></a:StockKeepingUnitDTO><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>0.0200</a:CubicWeight><a:DateUpdated>2014-12-09T15:09:00</a:DateUpdated><a:EstimatedDateArrival
-        i:nil="true"/><a:Height>0.0200</a:Height><a:Id>310113154</a:Id><a:InternalNote
-        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>0.0200</a:Length><a:ListPrice>30.0000</a:ListPrice><a:ManufacturerCode
-        i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>2</a:ModalId><a:ModalType
-        i:nil="true"/><a:Name>Ruby on Rails T-Shirt</a:Name><a:Price>30.0000</a:Price><a:ProductId>234231</a:ProductId><a:ProductName>Ruby
-        on Rails T-Shirt</a:ProductName><a:RealHeight i:nil="true"/><a:RealLength
-        i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>234231</a:RefId><a:RewardValue
-        i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.0200</a:WeightKg><a:Width>0.0200</a:Width></a:StockKeepingUnitDTO></StockKeepingUnitGetAllByProductResult></StockKeepingUnitGetAllByProductResponse></s:Body></s:Envelope>
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:00 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:ImageListByStockKeepingUnitId><tns:StockKeepingUnitId>234231</tns:StockKeepingUnitId></tns:ImageListByStockKeepingUnitId></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/ImageListByStockKeepingUnitId"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '570'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:34:01 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=oszxk3ad30xznno1s0vyb4r0; path=/; HttpOnly
-      - ASP.NET_SessionId=oszxk3ad30xznno1s0vyb4r0; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517497641'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.0623996'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '244'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><ImageListByStockKeepingUnitIdResponse
-        xmlns="http://tempuri.org/"><ImageListByStockKeepingUnitIdResult i:nil="true"
-        xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:01 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:ImageListByStockKeepingUnitId><tns:StockKeepingUnitId>310113154</tns:StockKeepingUnitId></tns:ImageListByStockKeepingUnitId></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/ImageListByStockKeepingUnitId"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '573'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:34:01 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=y2fvwuqw4sjaoaastih1hsyk; path=/; HttpOnly
-      - ASP.NET_SessionId=y2fvwuqw4sjaoaastih1hsyk; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517497707'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.0623996'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '244'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><ImageListByStockKeepingUnitIdResponse
-        xmlns="http://tempuri.org/"><ImageListByStockKeepingUnitIdResult i:nil="true"
-        xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:02 GMT
+  recorded_at: Thu, 11 Dec 2014 20:19:32 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -2644,22 +1969,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 20:34:02 GMT
+      - Thu, 11 Dec 2014 20:19:32 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=aopgq2ky3xhp4v1jypyf4x4v; path=/; HttpOnly
-      - ASP.NET_SessionId=aopgq2ky3xhp4v1jypyf4x4v; path=/; HttpOnly
+      - ASP.NET_SessionId=tjqn2nyxpkfjppjxa51vh5uz; path=/; HttpOnly
+      - ASP.NET_SessionId=tjqn2nyxpkfjppjxa51vh5uz; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '1517497805'
+      - '3168725806'
       X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
+      - 192.168.60.87, 189.44.101.2, 54.204.59.180, 10.31.167.136
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -2682,20 +2007,26 @@ http_interactions:
       X-Vtex-Lastupdate:
       - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0311998'
+      - '02:00:00.0155997'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
       - 1.0.0.0
       Content-Length:
-      - '690'
+      - '699'
+      X-Cache:
+      - MISS from squid
+      X-Cache-Lookup:
+      - MISS from squid:3128
+      Via:
+      - 1.0 squid (squid/3.1.10)
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><StockKeepingUnitGetAllByProductResponse
         xmlns="http://tempuri.org/"><StockKeepingUnitGetAllByProductResult xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>1.4000</a:CubicWeight><a:DateUpdated>2014-12-09T15:58:00</a:DateUpdated><a:EstimatedDateArrival
+        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>1.4000</a:CubicWeight><a:DateUpdated>2014-12-11T17:52:00</a:DateUpdated><a:EstimatedDateArrival
         i:nil="true"/><a:Height>40.0000</a:Height><a:Id>2345435</a:Id><a:InternalNote
         i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>40.0000</a:Length><a:ListPrice>31.0000</a:ListPrice><a:ManufacturerCode
         i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>1</a:ModalId><a:ModalType
@@ -2711,7 +2042,7 @@ http_interactions:
         i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>2345435</a:RefId><a:RewardValue
         i:nil="true"/><a:StockKeepingUnitEans><a:StockKeepingUnitEanDTO><a:Ean>45234535423455</a:Ean></a:StockKeepingUnitEanDTO></a:StockKeepingUnitEans><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.0200</a:WeightKg><a:Width>0.0200</a:Width></a:StockKeepingUnitDTO></StockKeepingUnitGetAllByProductResult></StockKeepingUnitGetAllByProductResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:03 GMT
+  recorded_at: Thu, 11 Dec 2014 20:19:33 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -2749,22 +2080,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 20:34:07 GMT
+      - Thu, 11 Dec 2014 20:19:32 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=moaxoj32bdg2z2ddwvk1zxkd; path=/; HttpOnly
-      - ASP.NET_SessionId=moaxoj32bdg2z2ddwvk1zxkd; path=/; HttpOnly
+      - ASP.NET_SessionId=xlgyhuhnwij54ttjegsnsqyf; path=/; HttpOnly
+      - ASP.NET_SessionId=xlgyhuhnwij54ttjegsnsqyf; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '1517498702'
+      - '3168725853'
       X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
+      - 192.168.60.87, 189.44.101.2, 54.204.59.180, 10.31.167.136
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -2787,13 +2118,19 @@ http_interactions:
       X-Vtex-Lastupdate:
       - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0779995'
+      - '02:00:00.0779985'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
       - 1.0.0.0
       Content-Length:
       - '244'
+      X-Cache:
+      - MISS from squid
+      X-Cache-Lookup:
+      - MISS from squid:3128
+      Via:
+      - 1.0 squid (squid/3.1.10)
       Connection:
       - keep-alive
     body:
@@ -2803,7 +2140,7 @@ http_interactions:
         xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:08 GMT
+  recorded_at: Thu, 11 Dec 2014 20:19:33 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -2841,22 +2178,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 20:34:08 GMT
+      - Thu, 11 Dec 2014 20:19:33 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=azz0qv5zr0hmdljl5pdmtvsj; path=/; HttpOnly
-      - ASP.NET_SessionId=azz0qv5zr0hmdljl5pdmtvsj; path=/; HttpOnly
+      - ASP.NET_SessionId=l2ysdk2yaxdhfztqhhmup2pc; path=/; HttpOnly
+      - ASP.NET_SessionId=l2ysdk2yaxdhfztqhhmup2pc; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '1517498860'
+      - '3168725927'
       X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
+      - 192.168.60.87, 189.44.101.2, 54.204.59.180, 10.31.167.136
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -2879,13 +2216,19 @@ http_interactions:
       X-Vtex-Lastupdate:
       - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0623996'
+      - '02:00:00.0623988'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
       - 1.0.0.0
       Content-Length:
       - '244'
+      X-Cache:
+      - MISS from squid
+      X-Cache-Lookup:
+      - MISS from squid:3128
+      Via:
+      - 1.0 squid (squid/3.1.10)
       Connection:
       - keep-alive
     body:
@@ -2895,7 +2238,7 @@ http_interactions:
         xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:09 GMT
+  recorded_at: Thu, 11 Dec 2014 20:19:34 GMT
 - request:
     method: post
     uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
@@ -2904,14 +2247,14 @@ http_interactions:
       string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
         xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:StockKeepingUnitGetAllByProduct><tns:idProduct>2435435</tns:idProduct></tns:StockKeepingUnitGetAllByProduct></env:Body></env:Envelope>
+        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:ProductEspecificationListByProductId><tns:productId>2345435</tns:productId></tns:ProductEspecificationListByProductId></env:Body></env:Envelope>
     headers:
       Soapaction:
-      - '"http://tempuri.org/IService/StockKeepingUnitGetAllByProduct"'
+      - '"http://tempuri.org/IService/ProductEspecificationListByProductId"'
       Content-Type:
       - text/xml;charset=UTF-8
       Content-Length:
-      - '557'
+      - '567'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -2933,22 +2276,22 @@ http_interactions:
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 09 Dec 2014 20:34:10 GMT
+      - Thu, 11 Dec 2014 20:19:33 GMT
       'No':
       - MSERVICE01
       P3p:
       - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
       Set-Cookie:
-      - ASP.NET_SessionId=g4smcoplauo0laf2oibole0l; path=/; HttpOnly
-      - ASP.NET_SessionId=g4smcoplauo0laf2oibole0l; path=/; HttpOnly
+      - ASP.NET_SessionId=h2jos1jeb3o3rv2yl32rkj2d; path=/; HttpOnly
+      - ASP.NET_SessionId=h2jos1jeb3o3rv2yl32rkj2d; path=/; HttpOnly
       - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
         path=/
       Vary:
       - Accept-Encoding
       X-Debug-X-Id:
-      - '1517499225'
+      - '3168725957'
       X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
+      - 192.168.60.87, 189.44.101.2, 54.204.59.180, 10.31.167.136
       X-Host:
       - webservice-sandboxintegracao.vtexcommerce.com.br
       X-Msg-00:
@@ -2971,1571 +2314,27 @@ http_interactions:
       X-Vtex-Lastupdate:
       - '2014-12-09 17:56:50'
       X-Vtex-Processado-Em:
-      - '02:00:00.0311998'
+      - '02:00:00.0155997'
       X-Vtex-Server:
       - ISP 1.4.1 WebService
       X-Vtex-Version:
       - 1.0.0.0
       Content-Length:
-      - '655'
+      - '245'
+      X-Cache:
+      - MISS from squid
+      X-Cache-Lookup:
+      - MISS from squid:3128
+      Via:
+      - 1.0 squid (squid/3.1.10)
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><StockKeepingUnitGetAllByProductResponse
-        xmlns="http://tempuri.org/"><StockKeepingUnitGetAllByProductResult xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>1.4000</a:CubicWeight><a:DateUpdated>2014-12-09T15:24:00</a:DateUpdated><a:EstimatedDateArrival
-        i:nil="true"/><a:Height>40.0000</a:Height><a:Id>2435435</a:Id><a:InternalNote
-        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>40.0000</a:Length><a:ListPrice>31.0000</a:ListPrice><a:ManufacturerCode
-        i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>1</a:ModalId><a:ModalType
-        i:nil="true"/><a:Name>Ruby on Rails T-Shirt</a:Name><a:Price>31.0000</a:Price><a:ProductId>2435435</a:ProductId><a:ProductName>Ruby
-        on Rails T-Shirt</a:ProductName><a:RealHeight i:nil="true"/><a:RealLength
-        i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>2435435</a:RefId><a:RewardValue
-        i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>1.4000</a:WeightKg><a:Width>40.0000</a:Width></a:StockKeepingUnitDTO><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>0.0200</a:CubicWeight><a:DateUpdated>2014-12-09T15:24:00</a:DateUpdated><a:EstimatedDateArrival
-        i:nil="true"/><a:Height>0.0200</a:Height><a:Id>310113156</a:Id><a:InternalNote
-        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>0.0200</a:Length><a:ListPrice>30.0000</a:ListPrice><a:ManufacturerCode
-        i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>2</a:ModalId><a:ModalType
-        i:nil="true"/><a:Name>Ruby on Rails T-Shirt</a:Name><a:Price>30.0000</a:Price><a:ProductId>2435435</a:ProductId><a:ProductName>Ruby
-        on Rails T-Shirt</a:ProductName><a:RealHeight i:nil="true"/><a:RealLength
-        i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>2435435</a:RefId><a:RewardValue
-        i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.0200</a:WeightKg><a:Width>0.0200</a:Width></a:StockKeepingUnitDTO></StockKeepingUnitGetAllByProductResult></StockKeepingUnitGetAllByProductResponse></s:Body></s:Envelope>
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:11 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:ImageListByStockKeepingUnitId><tns:StockKeepingUnitId>2435435</tns:StockKeepingUnitId></tns:ImageListByStockKeepingUnitId></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/ImageListByStockKeepingUnitId"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '571'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:34:12 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=tbyrpx04imhfqsbjjcumse4f; path=/; HttpOnly
-      - ASP.NET_SessionId=tbyrpx04imhfqsbjjcumse4f; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517499643'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.0623996'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '244'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><ImageListByStockKeepingUnitIdResponse
-        xmlns="http://tempuri.org/"><ImageListByStockKeepingUnitIdResult i:nil="true"
+      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><ProductEspecificationListByProductIdResponse
+        xmlns="http://tempuri.org/"><ProductEspecificationListByProductIdResult i:nil="true"
         xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
+        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ProductEspecificationListByProductIdResponse></s:Body></s:Envelope>
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:13 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:ImageListByStockKeepingUnitId><tns:StockKeepingUnitId>310113156</tns:StockKeepingUnitId></tns:ImageListByStockKeepingUnitId></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/ImageListByStockKeepingUnitId"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '573'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:34:14 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=ukxu3n4nqp1fqe2jx4wfv21l; path=/; HttpOnly
-      - ASP.NET_SessionId=ukxu3n4nqp1fqe2jx4wfv21l; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517499928'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.0623996'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '244'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><ImageListByStockKeepingUnitIdResponse
-        xmlns="http://tempuri.org/"><ImageListByStockKeepingUnitIdResult i:nil="true"
-        xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:15 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:StockKeepingUnitGetAllByProduct><tns:idProduct>3104660</tns:idProduct></tns:StockKeepingUnitGetAllByProduct></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/StockKeepingUnitGetAllByProduct"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '557'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:34:15 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=o3ixqtp20qyilib3gfl1zqun; path=/; HttpOnly
-      - ASP.NET_SessionId=o3ixqtp20qyilib3gfl1zqun; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517500087'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.0155999'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '627'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><StockKeepingUnitGetAllByProductResponse
-        xmlns="http://tempuri.org/"><StockKeepingUnitGetAllByProductResult xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>5.5000</a:CubicWeight><a:DateUpdated>2014-12-09T16:14:00</a:DateUpdated><a:EstimatedDateArrival
-        i:nil="true"/><a:Height>8.0000</a:Height><a:Id>3104660</a:Id><a:InternalNote
-        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>8.0000</a:Length><a:ListPrice>527.4300</a:ListPrice><a:ManufacturerCode
-        i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>1</a:ModalId><a:ModalType
-        i:nil="true"/><a:Name>Carrinho Chalesco Confort Ride para Cachorro ou Gato
-        - Rosa</a:Name><a:Price>527.4300</a:Price><a:ProductId>3104660</a:ProductId><a:ProductName>Carrinho
-        Chalesco Confort Ride para Cachorro ou Gato - Rosa</a:ProductName><a:RealHeight
-        i:nil="true"/><a:RealLength i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth
-        i:nil="true"/><a:RefId>3104660</a:RefId><a:RewardValue i:nil="true"/><a:StockKeepingUnitEans
-        i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>5.5000</a:WeightKg><a:Width>20.0000</a:Width></a:StockKeepingUnitDTO></StockKeepingUnitGetAllByProductResult></StockKeepingUnitGetAllByProductResponse></s:Body></s:Envelope>
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:16 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:ImageListByStockKeepingUnitId><tns:StockKeepingUnitId>3104660</tns:StockKeepingUnitId></tns:ImageListByStockKeepingUnitId></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/ImageListByStockKeepingUnitId"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '571'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:34:16 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=s2wz1uy5sqtimexjhtrj1yzl; path=/; HttpOnly
-      - ASP.NET_SessionId=s2wz1uy5sqtimexjhtrj1yzl; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517500180'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.0623996'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '244'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><ImageListByStockKeepingUnitIdResponse
-        xmlns="http://tempuri.org/"><ImageListByStockKeepingUnitIdResult i:nil="true"
-        xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:16 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:StockKeepingUnitGetAllByProduct><tns:idProduct>23435452</tns:idProduct></tns:StockKeepingUnitGetAllByProduct></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/StockKeepingUnitGetAllByProduct"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '558'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:34:17 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=3heqvkrzpjjxzosrwlkrrumi; path=/; HttpOnly
-      - ASP.NET_SessionId=3heqvkrzpjjxzosrwlkrrumi; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517500230'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.0155999'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '655'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><StockKeepingUnitGetAllByProductResponse
-        xmlns="http://tempuri.org/"><StockKeepingUnitGetAllByProductResult xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>1.4000</a:CubicWeight><a:DateUpdated>2014-12-09T15:27:00</a:DateUpdated><a:EstimatedDateArrival
-        i:nil="true"/><a:Height>40.0000</a:Height><a:Id>23435452</a:Id><a:InternalNote
-        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>40.0000</a:Length><a:ListPrice>31.0000</a:ListPrice><a:ManufacturerCode
-        i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>1</a:ModalId><a:ModalType
-        i:nil="true"/><a:Name>Ruby on Rails T-Shirt</a:Name><a:Price>31.0000</a:Price><a:ProductId>23435452</a:ProductId><a:ProductName>Ruby
-        on Rails T-Shirt</a:ProductName><a:RealHeight i:nil="true"/><a:RealLength
-        i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>23435452</a:RefId><a:RewardValue
-        i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>1.4000</a:WeightKg><a:Width>40.0000</a:Width></a:StockKeepingUnitDTO><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>0.0200</a:CubicWeight><a:DateUpdated>2014-12-09T15:27:00</a:DateUpdated><a:EstimatedDateArrival
-        i:nil="true"/><a:Height>0.0200</a:Height><a:Id>310113157</a:Id><a:InternalNote
-        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>0.0200</a:Length><a:ListPrice>30.0000</a:ListPrice><a:ManufacturerCode
-        i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>2</a:ModalId><a:ModalType
-        i:nil="true"/><a:Name>Ruby on Rails T-Shirt</a:Name><a:Price>30.0000</a:Price><a:ProductId>23435452</a:ProductId><a:ProductName>Ruby
-        on Rails T-Shirt</a:ProductName><a:RealHeight i:nil="true"/><a:RealLength
-        i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>23435452</a:RefId><a:RewardValue
-        i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.0200</a:WeightKg><a:Width>0.0200</a:Width></a:StockKeepingUnitDTO></StockKeepingUnitGetAllByProductResult></StockKeepingUnitGetAllByProductResponse></s:Body></s:Envelope>
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:18 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:ImageListByStockKeepingUnitId><tns:StockKeepingUnitId>23435452</tns:StockKeepingUnitId></tns:ImageListByStockKeepingUnitId></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/ImageListByStockKeepingUnitId"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '572'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:34:18 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=ukh1byxmox4djg4dq33a103v; path=/; HttpOnly
-      - ASP.NET_SessionId=ukh1byxmox4djg4dq33a103v; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517500373'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.0623996'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '244'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><ImageListByStockKeepingUnitIdResponse
-        xmlns="http://tempuri.org/"><ImageListByStockKeepingUnitIdResult i:nil="true"
-        xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:19 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:ImageListByStockKeepingUnitId><tns:StockKeepingUnitId>310113157</tns:StockKeepingUnitId></tns:ImageListByStockKeepingUnitId></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/ImageListByStockKeepingUnitId"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '573'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:34:19 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=hy20z0vxr4gcd0ehoxbdveqa; path=/; HttpOnly
-      - ASP.NET_SessionId=hy20z0vxr4gcd0ehoxbdveqa; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517500446'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.0935994'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '244'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><ImageListByStockKeepingUnitIdResponse
-        xmlns="http://tempuri.org/"><ImageListByStockKeepingUnitIdResult i:nil="true"
-        xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:20 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:StockKeepingUnitGetAllByProduct><tns:idProduct>31073171</tns:idProduct></tns:StockKeepingUnitGetAllByProduct></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/StockKeepingUnitGetAllByProduct"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '558'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:34:20 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=v5fwbgeblg5ggl45q1f3r4y0; path=/; HttpOnly
-      - ASP.NET_SessionId=v5fwbgeblg5ggl45q1f3r4y0; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517500539'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.0155999'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '671'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><StockKeepingUnitGetAllByProductResponse
-        xmlns="http://tempuri.org/"><StockKeepingUnitGetAllByProductResult xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>1.5000</a:CubicWeight><a:DateUpdated>2014-12-08T18:15:00</a:DateUpdated><a:EstimatedDateArrival
-        i:nil="true"/><a:Height>37.0000</a:Height><a:Id>31073171</a:Id><a:InternalNote
-        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>37.0000</a:Length><a:ListPrice>102.0500</a:ListPrice><a:ManufacturerCode
-        i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>1</a:ModalId><a:ModalType
-        i:nil="true"/><a:Name>Caixa de Transporte Standart - Verde</a:Name><a:Price>102.0500</a:Price><a:ProductId>31073171</a:ProductId><a:ProductName>Caixa
-        de Transporte Standart - Verde</a:ProductName><a:RealHeight i:nil="true"/><a:RealLength
-        i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>31073171</a:RefId><a:RewardValue
-        i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>1.5000</a:WeightKg><a:Width>45.0000</a:Width></a:StockKeepingUnitDTO><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>0.0200</a:CubicWeight><a:DateUpdated>2014-12-08T18:15:00</a:DateUpdated><a:EstimatedDateArrival
-        i:nil="true"/><a:Height>0.0200</a:Height><a:Id>310113122</a:Id><a:InternalNote
-        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>0.0200</a:Length><a:ListPrice>125.4000</a:ListPrice><a:ManufacturerCode
-        i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>2</a:ModalId><a:ModalType
-        i:nil="true"/><a:Name>Caixa de Transporte Standart - Verde</a:Name><a:Price>125.4000</a:Price><a:ProductId>31073171</a:ProductId><a:ProductName>Caixa
-        de Transporte Standart - Verde</a:ProductName><a:RealHeight i:nil="true"/><a:RealLength
-        i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>31073171</a:RefId><a:RewardValue
-        i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.0200</a:WeightKg><a:Width>0.0200</a:Width></a:StockKeepingUnitDTO></StockKeepingUnitGetAllByProductResult></StockKeepingUnitGetAllByProductResponse></s:Body></s:Envelope>
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:21 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:ImageListByStockKeepingUnitId><tns:StockKeepingUnitId>31073171</tns:StockKeepingUnitId></tns:ImageListByStockKeepingUnitId></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/ImageListByStockKeepingUnitId"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '572'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:34:22 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=ugb0zgqjgzeug1i3zdicbyoj; path=/; HttpOnly
-      - ASP.NET_SessionId=ugb0zgqjgzeug1i3zdicbyoj; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517500785'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.0623996'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '244'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><ImageListByStockKeepingUnitIdResponse
-        xmlns="http://tempuri.org/"><ImageListByStockKeepingUnitIdResult i:nil="true"
-        xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:23 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:ImageListByStockKeepingUnitId><tns:StockKeepingUnitId>310113122</tns:StockKeepingUnitId></tns:ImageListByStockKeepingUnitId></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/ImageListByStockKeepingUnitId"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '573'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:34:23 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=u1kfl2m5wl1105fvmuz2zfi4; path=/; HttpOnly
-      - ASP.NET_SessionId=u1kfl2m5wl1105fvmuz2zfi4; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517500931'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.0623996'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '244'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><ImageListByStockKeepingUnitIdResponse
-        xmlns="http://tempuri.org/"><ImageListByStockKeepingUnitIdResult i:nil="true"
-        xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:25 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:StockKeepingUnitGetAllByProduct><tns:idProduct>31073175</tns:idProduct></tns:StockKeepingUnitGetAllByProduct></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/StockKeepingUnitGetAllByProduct"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '558'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:34:26 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=fcugtdg1mvbwduc3tdb2ofee; path=/; HttpOnly
-      - ASP.NET_SessionId=fcugtdg1mvbwduc3tdb2ofee; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517501213'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.0155999'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '666'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><StockKeepingUnitGetAllByProductResponse
-        xmlns="http://tempuri.org/"><StockKeepingUnitGetAllByProductResult xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>0.0000</a:CubicWeight><a:DateUpdated>2014-12-08T18:15:00</a:DateUpdated><a:EstimatedDateArrival
-        i:nil="true"/><a:Height>37.0000</a:Height><a:Id>31073175</a:Id><a:InternalNote
-        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>37.0000</a:Length><a:ListPrice>102.0500</a:ListPrice><a:ManufacturerCode
-        i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>1</a:ModalId><a:ModalType
-        i:nil="true"/><a:Name>Caixa de Transporte Standart - Roxo</a:Name><a:Price>102.0500</a:Price><a:ProductId>31073175</a:ProductId><a:ProductName>Caixa
-        de Transporte Standart - Roxo</a:ProductName><a:RealHeight i:nil="true"/><a:RealLength
-        i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>31073175</a:RefId><a:RewardValue
-        i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.0000</a:WeightKg><a:Width>45.0000</a:Width></a:StockKeepingUnitDTO><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>0.0200</a:CubicWeight><a:DateUpdated>2014-12-08T18:15:00</a:DateUpdated><a:EstimatedDateArrival
-        i:nil="true"/><a:Height>0.0200</a:Height><a:Id>310113137</a:Id><a:InternalNote
-        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>0.0200</a:Length><a:ListPrice>125.4000</a:ListPrice><a:ManufacturerCode
-        i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>2</a:ModalId><a:ModalType
-        i:nil="true"/><a:Name>Caixa de Transporte Standart - Roxo</a:Name><a:Price>125.4000</a:Price><a:ProductId>31073175</a:ProductId><a:ProductName>Caixa
-        de Transporte Standart - Roxo</a:ProductName><a:RealHeight i:nil="true"/><a:RealLength
-        i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>31073175</a:RefId><a:RewardValue
-        i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.0200</a:WeightKg><a:Width>0.0200</a:Width></a:StockKeepingUnitDTO></StockKeepingUnitGetAllByProductResult></StockKeepingUnitGetAllByProductResponse></s:Body></s:Envelope>
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:27 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:ImageListByStockKeepingUnitId><tns:StockKeepingUnitId>31073175</tns:StockKeepingUnitId></tns:ImageListByStockKeepingUnitId></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/ImageListByStockKeepingUnitId"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '572'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:34:28 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=0bi4id3hp4zrfmvxqr3drvzj; path=/; HttpOnly
-      - ASP.NET_SessionId=0bi4id3hp4zrfmvxqr3drvzj; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517501581'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.0623996'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '244'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><ImageListByStockKeepingUnitIdResponse
-        xmlns="http://tempuri.org/"><ImageListByStockKeepingUnitIdResult i:nil="true"
-        xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:29 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:ImageListByStockKeepingUnitId><tns:StockKeepingUnitId>310113137</tns:StockKeepingUnitId></tns:ImageListByStockKeepingUnitId></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/ImageListByStockKeepingUnitId"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '573'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:34:30 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=rxhtaxptp5nmo2b5z4amhja1; path=/; HttpOnly
-      - ASP.NET_SessionId=rxhtaxptp5nmo2b5z4amhja1; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517501771'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.0623996'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '244'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><ImageListByStockKeepingUnitIdResponse
-        xmlns="http://tempuri.org/"><ImageListByStockKeepingUnitIdResult i:nil="true"
-        xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:31 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:StockKeepingUnitGetAllByProduct><tns:idProduct>254325423</tns:idProduct></tns:StockKeepingUnitGetAllByProduct></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/StockKeepingUnitGetAllByProduct"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '559'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:34:33 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=ct3m0zewcy4avosty3oy1r50; path=/; HttpOnly
-      - ASP.NET_SessionId=ct3m0zewcy4avosty3oy1r50; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517502270'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.0155999'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '656'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><StockKeepingUnitGetAllByProductResponse
-        xmlns="http://tempuri.org/"><StockKeepingUnitGetAllByProductResult xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>1.4000</a:CubicWeight><a:DateUpdated>2014-12-09T15:16:00</a:DateUpdated><a:EstimatedDateArrival
-        i:nil="true"/><a:Height>40.0000</a:Height><a:Id>254325423</a:Id><a:InternalNote
-        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>40.0000</a:Length><a:ListPrice>31.0000</a:ListPrice><a:ManufacturerCode
-        i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>1</a:ModalId><a:ModalType
-        i:nil="true"/><a:Name>Ruby on Rails T-Shirt</a:Name><a:Price>31.0000</a:Price><a:ProductId>254325423</a:ProductId><a:ProductName>Ruby
-        on Rails T-Shirt</a:ProductName><a:RealHeight i:nil="true"/><a:RealLength
-        i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>254325423</a:RefId><a:RewardValue
-        i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>1.4000</a:WeightKg><a:Width>40.0000</a:Width></a:StockKeepingUnitDTO><a:StockKeepingUnitDTO><a:CommercialConditionId>1</a:CommercialConditionId><a:CostPrice>1.0000</a:CostPrice><a:CubicWeight>0.0200</a:CubicWeight><a:DateUpdated>2014-12-09T15:16:00</a:DateUpdated><a:EstimatedDateArrival
-        i:nil="true"/><a:Height>0.0200</a:Height><a:Id>310113155</a:Id><a:InternalNote
-        i:nil="true"/><a:IsActive>false</a:IsActive><a:IsAvaiable>false</a:IsAvaiable><a:IsKit>false</a:IsKit><a:Length>0.0200</a:Length><a:ListPrice>30.0000</a:ListPrice><a:ManufacturerCode
-        i:nil="true"/><a:MeasurementUnit>un</a:MeasurementUnit><a:ModalId>2</a:ModalId><a:ModalType
-        i:nil="true"/><a:Name>Ruby on Rails T-Shirt</a:Name><a:Price>30.0000</a:Price><a:ProductId>254325423</a:ProductId><a:ProductName>Ruby
-        on Rails T-Shirt</a:ProductName><a:RealHeight i:nil="true"/><a:RealLength
-        i:nil="true"/><a:RealWeightKg i:nil="true"/><a:RealWidth i:nil="true"/><a:RefId>254325423</a:RefId><a:RewardValue
-        i:nil="true"/><a:StockKeepingUnitEans i:nil="true"/><a:UnitMultiplier>1.0000</a:UnitMultiplier><a:WeightKg>0.0200</a:WeightKg><a:Width>0.0200</a:Width></a:StockKeepingUnitDTO></StockKeepingUnitGetAllByProductResult></StockKeepingUnitGetAllByProductResponse></s:Body></s:Envelope>
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:33 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:ImageListByStockKeepingUnitId><tns:StockKeepingUnitId>254325423</tns:StockKeepingUnitId></tns:ImageListByStockKeepingUnitId></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/ImageListByStockKeepingUnitId"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '573'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:34:34 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=ske4umqbh4mqm5xids20gqa4; path=/; HttpOnly
-      - ASP.NET_SessionId=ske4umqbh4mqm5xids20gqa4; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517502453'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.0623996'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '607'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><ImageListByStockKeepingUnitIdResponse
-        xmlns="http://tempuri.org/"><ImageListByStockKeepingUnitIdResult xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><a:ImageDTO><a:ArchiveFormatId>2</a:ArchiveFormatId><a:ArchiveParentId
-        i:nil="true"/><a:ArchiveTypeId>10</a:ArchiveTypeId><a:DateLastModified>2014-12-09T15:38:37.1</a:DateLastModified><a:Description>teste-de-imagem-com-texto</a:Description><a:FileLocation>sandboxintegracao/catalog/1418090526_759720466_1.jpg</a:FileLocation><a:Height>625</a:Height><a:HeightUnitMeasure
-        i:nil="true"/><a:Id>155681</a:Id><a:IsMain>true</a:IsMain><a:Label>testedeimagemcomlabel</a:Label><a:Name>1418090526_759720466_1</a:Name><a:StockKeepingUnitId>254325423</a:StockKeepingUnitId><a:Tag>testedeimagemcomlabel</a:Tag><a:Url>http://www.sandboxintegracao.com.br/arquivos/ids/155681_2/1418090526_759720466_1.jpg</a:Url><a:Width>469</a:Width><a:WidthUnitMeasure
-        i:nil="true"/></a:ImageDTO><a:ImageDTO><a:ArchiveFormatId>2</a:ArchiveFormatId><a:ArchiveParentId
-        i:nil="true"/><a:ArchiveTypeId>10</a:ArchiveTypeId><a:DateLastModified>2014-12-09T16:20:52.113</a:DateLastModified><a:Description>texto</a:Description><a:FileLocation>sandboxintegracao/catalog/1418090526_759720466_1_6833.jpg</a:FileLocation><a:Height>625</a:Height><a:HeightUnitMeasure
-        i:nil="true"/><a:Id>155682</a:Id><a:IsMain>false</a:IsMain><a:Label>label</a:Label><a:Name>1418090526_759720466_1</a:Name><a:StockKeepingUnitId>254325423</a:StockKeepingUnitId><a:Tag>label</a:Tag><a:Url>http://www.sandboxintegracao.com.br/arquivos/ids/155682_2/1418090526_759720466_1.jpg</a:Url><a:Width>469</a:Width><a:WidthUnitMeasure
-        i:nil="true"/></a:ImageDTO></ImageListByStockKeepingUnitIdResult></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:35 GMT
-- request:
-    method: post
-    uri: http://VTEX_SITE_ID:VTEX_PASSWORD@webservice-sandboxintegracao.vtexcommerce.com.br/Service.svc
-    body:
-      encoding: UTF-8
-      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vtex="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><env:Body><tns:ImageListByStockKeepingUnitId><tns:StockKeepingUnitId>310113155</tns:StockKeepingUnitId></tns:ImageListByStockKeepingUnitId></env:Body></env:Envelope>
-    headers:
-      Soapaction:
-      - '"http://tempuri.org/IService/ImageListByStockKeepingUnitId"'
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Content-Length:
-      - '573'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      - '0'
-      Cache-Control:
-      - private
-      Content-Type:
-      - text/xml; charset=utf-8
-      Date:
-      - Tue, 09 Dec 2014 20:34:35 GMT
-      'No':
-      - MSERVICE01
-      P3p:
-      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
-      Set-Cookie:
-      - ASP.NET_SessionId=cm0akedby1s1kcnlcakj1xie; path=/; HttpOnly
-      - ASP.NET_SessionId=cm0akedby1s1kcnlcakj1xie; path=/; HttpOnly
-      - ISSMB=ScreenMedia=0&UserAcceptMobile=False; domain=webservice-sandboxintegracao.vtexcommerce.com.br;
-        path=/
-      Vary:
-      - Accept-Encoding
-      X-Debug-X-Id:
-      - '1517502688'
-      X-Forwarded:
-      - 177.177.84.176, 204.236.213.21, 10.66.218.205
-      X-Host:
-      - webservice-sandboxintegracao.vtexcommerce.com.br
-      X-Msg-00:
-      - Request processed by wvc-3.0.2
-      X-Msg-01:
-      - 'Clean Accept-Encoding=(gzip;q=1.0,deflate;q=0.6,identity;q=0.3): Select gzip'
-      X-Msg-02:
-      - Track detector -  Before=default1 HOST = webservice-sandboxintegracao.vtexcommerce.com.br
-        After=mkp0stable
-      X-Msg-03:
-      - 'recv: No cache for post'
-      X-Msg-04:
-      - 'Hash: No SegmentoCookie. cache line without cookie'
-      X-Msg-05:
-      - 'fetch: Not cacheable, Do not save on cache'
-      X-Msg-06:
-      - 'deliver: cache MISS'
-      X-Track:
-      - WebService
-      X-Vtex-Lastupdate:
-      - '2014-12-09 17:56:50'
-      X-Vtex-Processado-Em:
-      - '02:00:00.0623996'
-      X-Vtex-Server:
-      - ISP 1.4.1 WebService
-      X-Vtex-Version:
-      - 1.0.0.0
-      Content-Length:
-      - '244'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><ImageListByStockKeepingUnitIdResponse
-        xmlns="http://tempuri.org/"><ImageListByStockKeepingUnitIdResult i:nil="true"
-        xmlns:a="http://schemas.datacontract.org/2004/07/Vtex.Commerce.WebApps.AdminWcfService.Contracts"
-        xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/></ImageListByStockKeepingUnitIdResponse></s:Body></s:Envelope>
-    http_version: 
-  recorded_at: Tue, 09 Dec 2014 20:34:37 GMT
+  recorded_at: Thu, 11 Dec 2014 20:19:34 GMT
 recorded_with: VCR 2.9.3
