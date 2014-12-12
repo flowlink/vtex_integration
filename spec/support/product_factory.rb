@@ -1,8 +1,8 @@
 module Factories
   def self.product(sku = 'ROR-TS')
     {
-      'id'          => '12345',
-      'name'        => 'Ruby on Rails T-Shirt',
+      'id'          => sku,
+      'name'        => "Ruby on Rails T-Shirt #{sku}",
       'description' => 'Some description text for the product.',
       'sku'         => sku,
       'price'       => 31,
@@ -23,48 +23,32 @@ module Factories
         ['Clothes', 'T-Shirts'],
         ['Brands', 'Spree']
       ],
-      'images' => [
-        {
-          'url'      => 'http://dummyimage.com/600x400/000/fff.jpg&text=Spree T-Shirt',
-          'position' => 1,
-          'title'    => 'Spree T-Shirt - Grey Small',
-          'type'     => 'thumbnail',
-          'dimensions'=> {
-            'height' => 220,
-            'width'  => 100
-          }
-        }
-      ],
       'variants'=> [
         {
           'name' => 'Ruby on Rails T-Shirt S',
-          'sku'  => '#{sku}-small',
+          'sku'  => "#{sku}-small",
           'price'       => 31,
           'options'=> {
             'size'  => 'small',
             'color' => 'white'
           },
-          'images' => [
-            {
-              'url'      => 'http://dummyimage.com/600x400/000/fff.jpg&text=Spree T-Shirt',
-              'position' => 1,
-              'title'    => 'Spree T-Shirt - Grey Small',
-              'type'     => 'thumbnail',
-              'dimensions'=> {
-                'height' => 220,
-                'width'  => 100
-              }
-            }
-          ]
+          'abacos' => {
+            'codigo_barras' => "code-#{sku}-1",
+            'codigo_produto_abacos' => "#{sku}1"
+          }
         },
         {
           'name' => 'Ruby on Rails T-Shirt M',
-          'sku'  => '#{sku}-medium',
+          'sku'  => "#{sku}-medium",
           'price'       => 30,
           'options'=> {
             'size'  => 'medium',
             'color' => 'black'
           },
+          'abacos' => {
+            'codigo_barras' => "code-#{sku}-2",
+            'codigo_produto_abacos' => "#{sku}2"
+          }
         }
       ],
       'specifications' => [

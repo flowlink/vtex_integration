@@ -3,6 +3,11 @@ module VTEX
     class << self
 
       # Do not change the order of fields
+      #
+      # Id. Must be an unique integer
+      #
+      # RefId. Apparently can be any string, here to map Wombat IDs
+      #
       def build_product(product, client)
         {
           'vtex:AdWordsRemarketingCode' => nil,
@@ -29,7 +34,16 @@ module VTEX
          }
       end
 
-      #Do not change the order of fields
+      # Do not change the order of fields
+      #
+      # Id. Must be an unique integer
+      #
+      # RefId. Apparently can be any string, here to map Wombat IDs or Wombat
+      # product variant skus
+      #
+      # ProductId. Must pick the same value passed to vtex:Id when creating
+      # the product
+      #
       def build_skus(product)
         skus = (product['variants'] || []).map do |item|
           hash = {
@@ -39,6 +53,7 @@ module VTEX
             'vtex:DateUpdated'           => nil,
             'vtex:EstimatedDateArrival'  => nil,
             'vtex:Height'                => 0.02,
+            'vtex:Id'                    => item['abacos']['codigo_produto_abacos'].to_i,
             'vtex:InternalNote'          => nil,
             'vtex:IsActive'              => true,
             'vtex:IsAvaiable'            => nil,
@@ -51,13 +66,13 @@ module VTEX
             'vtex:ModalType'             => nil,
             'vtex:Name'                  => product['name'],
             'vtex:Price'                 => item['price'],
-            'vtex:ProductId'             => clear_id(product['id']),
+            'vtex:ProductId'             => product['abacos']['codigo_produto_abacos'].to_i,
             'vtex:ProductName'           => product['name'],
             'vtex:RealHeight'            => nil,
             'vtex:RealLength'            => nil,
             'vtex:RealWeightKg'          => nil,
             'vtex:RealWidth'             => nil,
-            'vtex:RefId'                 => (item.has_key?('id') ? item['id'] : product['id']),
+            'vtex:RefId'                 => item['sku'],
             'vtex:RewardValue'           => nil,
             'vtex:StockKeepingUnitEans'  => nil,
             'vtex:UnitMultiplier'        => nil,
@@ -83,6 +98,7 @@ module VTEX
           'vtex:DateUpdated'           => nil,
           'vtex:EstimatedDateArrival'  => nil,
           'vtex:Height'                => product['height'],
+          'vtex:Id'                    => product['abacos']['codigo_produto_abacos'].to_i,
           'vtex:InternalNote'          => nil,
           'vtex:IsActive'              => true,
           'vtex:IsAvaiable'            => nil,
@@ -95,13 +111,13 @@ module VTEX
           'vtex:ModalType'             => nil,
           'vtex:Name'                  => product['name'],
           'vtex:Price'                 => product['price'],
-          'vtex:ProductId'             => clear_id(product['id']),
+          'vtex:ProductId'             => product['abacos']['codigo_produto_abacos'].to_i,
           'vtex:ProductName'           => product['name'],
           'vtex:RealHeight'            => nil,
           'vtex:RealLength'            => nil,
           'vtex:RealWeightKg'          => nil,
           'vtex:RealWidth'             => nil,
-          'vtex:RefId'                 => (product.has_key?('id') ? product['id'] : nil),
+          'vtex:RefId'                 => product['id'],
           'vtex:RewardValue'           => nil,
           'vtex:StockKeepingUnitEans'  => nil,
           'vtex:UnitMultiplier'        => nil,

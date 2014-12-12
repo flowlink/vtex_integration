@@ -5,7 +5,7 @@ http_interactions:
     uri: http://VTEX_SITE_ID.vtexcommercestable.com.br/api/logistics/pvt/inventory/warehouseitems/setbalance
     body:
       encoding: UTF-8
-      string: '[{"wareHouseId":"1_1","itemId":"2000005","quantity":93}]'
+      string: '[{"wareHouseId":"1_1","itemId":"310114830","quantity":93}]'
     headers:
       Content-Type:
       - application/json
@@ -25,7 +25,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 11 Dec 2014 20:19:39 GMT
+      - Fri, 12 Dec 2014 01:51:56 GMT
       Expires:
       - "-1"
       Pragma:
@@ -39,30 +39,24 @@ http_interactions:
       X-Track:
       - stable
       X-Vtex-Operation-Id:
-      - 177734bf-0024-4ccc-a1d0-a5d0f736ed60
+      - 799bfdb5-2f82-43f0-bc41-6932df6dda8d
       X-Vtex-Router-Backend-App:
       - logist - v6.0.46-stable+476
       X-Vtex-Router-Janusnet-Aspnetlatency:
       - '0'
       X-Vtex-Router-Janusnet-Backendlatency:
-      - '900'
+      - '132'
       X-Vtex-Router-Janusnet-Januslatency:
-      - '45'
+      - '36'
       X-Vtex-Router-Powered-By:
       - VTEX.JanusNet - 1.0.0
       Content-Length:
       - '4'
-      X-Cache:
-      - MISS from squid
-      X-Cache-Lookup:
-      - MISS from squid:3128
-      Via:
-      - 1.0 squid (squid/3.1.10)
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: 'true'
     http_version: 
-  recorded_at: Thu, 11 Dec 2014 20:19:39 GMT
+  recorded_at: Fri, 12 Dec 2014 01:51:56 GMT
 recorded_with: VCR 2.9.3

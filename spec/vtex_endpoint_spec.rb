@@ -1,8 +1,6 @@
 require 'spec_helper'
 
 describe VTEXEndpoint do
-  let(:inventory) { Factories.inventory }
-  let(:product) { Factories.product }
   let(:params) { Factories.parameters }
 
   describe '/get_orders' do
@@ -23,10 +21,11 @@ describe VTEXEndpoint do
   end
 
   describe '/set_inventory' do
+    let(:inventory) { Factories.inventory }
+
     context 'success' do
       it 'imports new inventories' do
         message = {
-          request_id: '123456',
           inventory: inventory,
           parameters: params
         }.to_json
@@ -42,12 +41,15 @@ describe VTEXEndpoint do
   end
 
   describe '/add_product' do
+    let(:product) { Factories.product "888888" }
+
     context 'success' do
       it 'imports new products' do
-        # product['id'] = '2345435'
         product['permalink'] = "product-#{product['id']}"
-        product['abacos'] = { 'codigo_barras' => '23435434235234', 'codigo_produto_abacos' => '2345435' }
-        product['variants'].first['abacos'] = { 'codigo_barras' => '45234535423455' }
+        product['abacos'] = {
+          'codigo_barras' => "master-#{product['id']}",
+          'codigo_produto_abacos' => "1#{product['id']}"
+        }
 
         message = {
           product: product,
@@ -67,7 +69,7 @@ describe VTEXEndpoint do
   describe '/get_products' do
     it 'brings products' do
       message = {
-        parameters: params.merge(vtex_products_since: (Time.now - 14400).utc.iso8601)
+        parameters: params.merge(vtex_products_since: "2014-12-11T22:25:20Z")
       }
 
       VCR.use_cassette("1415400936") do
@@ -78,6 +80,12 @@ describe VTEXEndpoint do
 
         expect(json_response[:products].count).to be >= 1
         expect(json_response[:parameters]).to have_key 'vtex_products_since'
+
+        json_response[:products].each do |p|
+          p[:variants].each do |variant|
+            expect(variant[:sku]).not_to eq p[:sku]
+          end
+        end
       end
     end
 
