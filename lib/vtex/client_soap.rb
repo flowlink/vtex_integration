@@ -46,6 +46,34 @@ module VTEX
       end
     end
 
+    def get_product_by_ref_id(ref_id)
+      response = client.call(
+        :product_get_by_ref_id,
+        message: {
+          'tns:refId' => ref_id
+        }
+      )
+
+      validate_response(response)
+
+      xml_response = response.body[:product_get_by_ref_id_response]
+      xml_response[:product_get_by_ref_id_result]
+    end
+
+    def get_sku_by_ref_id(ref_id)
+      response = client.call(
+        :stock_keeping_unit_get_by_ref_id,
+        message: {
+          'tns:refId' => ref_id
+        }
+      )
+
+      validate_response(response)
+
+      xml_response = response.body[:stock_keeping_unit_get_by_ref_id_response]
+      xml_response[:stock_keeping_unit_get_by_ref_id_result]
+    end
+
     def get_skus_by_product_id(product_id)
       response = client.call(
         :stock_keeping_unit_get_all_by_product,
@@ -105,19 +133,35 @@ module VTEX
       end
     end
 
-    def send_product(product)
-      product = VTEX::ProductBuilder.build_product(product, self)
+    def send_product(wombat_product)
+      vtex_product = get_product_by_ref_id wombat_product['id']
+
+      product = VTEX::ProductBuilder.build_product(wombat_product, vtex_product, self)
       response = client.call(:product_insert_update, message: { 'tns:productVO' => product } )
+
       validate_response(response)
-      product
+
+      xml_response = response.body[:product_insert_update_response]
+      vtex_product_id = xml_response[:product_insert_update_result][:id]
+
+      skus = send_skus wombat_product, vtex_product[:id], vtex_product_id
+
+      [product, skus]
     end
 
-    def send_skus(product)
-      skus     = VTEX::ProductBuilder.build_skus(product)
+    def send_skus(wombat_product, preexisting_product, vtex_product_id)
+      skus = VTEX::ProductBuilder.build_skus(wombat_product, vtex_product_id)
+
       skus.each do |sku_item|
+        if preexisting_product
+          vtex_sku_id = get_sku_by_ref_id(sku_item['vtex:RefId'])[:id]
+          sku_item.merge!('vtex:Id' => vtex_sku_id) if vtex_sku_id
+        end
+
         response = client.call(:stock_keeping_unit_insert_update, message: { 'tns:stockKeepingUnitVO' => sku_item } )
         validate_response(response)
       end
+
       skus
     end
 

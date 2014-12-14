@@ -41,14 +41,13 @@ describe VTEXEndpoint do
   end
 
   describe '/add_product' do
-    let(:product) { Factories.product "888888" }
+    let(:product) { Factories.product "222555" }
 
-    context 'success' do
+    context 'product not there' do
       it 'imports new products' do
         product['permalink'] = "product-#{product['id']}"
         product['abacos'] = {
           'codigo_barras' => "master-#{product['id']}",
-          'codigo_produto_abacos' => "1#{product['id']}"
         }
 
         message = {
@@ -59,7 +58,7 @@ describe VTEXEndpoint do
         VCR.use_cassette('add_product') do
           post '/add_product', message, auth
 
-          expect(json_response[:summary]).to match /were sent to VTEX Storefront/
+          expect(json_response[:summary]).to match /sent to VTEX/
           expect(last_response.status).to eq(200)
         end
       end

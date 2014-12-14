@@ -8,7 +8,7 @@ module VTEX
       #
       # RefId. Apparently can be any string, here to map Wombat IDs
       #
-      def build_product(product, client)
+      def build_product(product, vtex_product, client)
         {
           'vtex:AdWordsRemarketingCode' => nil,
           'vtex:BrandId'                => client.find_or_create_brand(product['brand']) || 1,
@@ -16,7 +16,7 @@ module VTEX
           'vtex:DepartmentId'           => 1000000,
           'vtex:Description'            => product['description'],
           'vtex:DescriptionShort'       => nil,
-          'vtex:Id'                     => product['abacos']['codigo_produto_abacos'].to_i,
+          'vtex:Id'                     => vtex_product[:id],
           'vtex:IsActive'               => nil,
           'vtex:IsVisible'              => true,
           'vtex:KeyWords'               => product['meta_keywords'],
@@ -44,7 +44,7 @@ module VTEX
       # ProductId. Must pick the same value passed to vtex:Id when creating
       # the product
       #
-      def build_skus(product)
+      def build_skus(product, vtex_product_id)
         skus = (product['variants'] || []).map do |item|
           hash = {
             'vtex:CommercialConditionId' => nil,
@@ -53,7 +53,6 @@ module VTEX
             'vtex:DateUpdated'           => nil,
             'vtex:EstimatedDateArrival'  => nil,
             'vtex:Height'                => 0.02,
-            'vtex:Id'                    => item['abacos']['codigo_produto_abacos'].to_i,
             'vtex:InternalNote'          => nil,
             'vtex:IsActive'              => true,
             'vtex:IsAvaiable'            => nil,
@@ -66,7 +65,7 @@ module VTEX
             'vtex:ModalType'             => nil,
             'vtex:Name'                  => product['name'],
             'vtex:Price'                 => item['price'],
-            'vtex:ProductId'             => product['abacos']['codigo_produto_abacos'].to_i,
+            'vtex:ProductId'             => vtex_product_id,
             'vtex:ProductName'           => product['name'],
             'vtex:RealHeight'            => nil,
             'vtex:RealLength'            => nil,
@@ -98,7 +97,6 @@ module VTEX
           'vtex:DateUpdated'           => nil,
           'vtex:EstimatedDateArrival'  => nil,
           'vtex:Height'                => product['height'],
-          'vtex:Id'                    => product['abacos']['codigo_produto_abacos'].to_i,
           'vtex:InternalNote'          => nil,
           'vtex:IsActive'              => true,
           'vtex:IsAvaiable'            => nil,
@@ -111,7 +109,7 @@ module VTEX
           'vtex:ModalType'             => nil,
           'vtex:Name'                  => product['name'],
           'vtex:Price'                 => product['price'],
-          'vtex:ProductId'             => product['abacos']['codigo_produto_abacos'].to_i,
+          'vtex:ProductId'             => vtex_product_id,
           'vtex:ProductName'           => product['name'],
           'vtex:RealHeight'            => nil,
           'vtex:RealLength'            => nil,

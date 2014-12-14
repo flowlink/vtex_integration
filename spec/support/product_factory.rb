@@ -34,7 +34,6 @@ module Factories
           },
           'abacos' => {
             'codigo_barras' => "code-#{sku}-1",
-            'codigo_produto_abacos' => "#{sku}1"
           }
         },
         {
@@ -47,7 +46,18 @@ module Factories
           },
           'abacos' => {
             'codigo_barras' => "code-#{sku}-2",
-            'codigo_produto_abacos' => "#{sku}2"
+          }
+        },
+        {
+          'name' => 'Ruby on Rails T-Shirt M',
+          'sku'  => "#{sku}-third",
+          'price'       => 55,
+          'options'=> {
+            'size'  => 'medium',
+            'color' => 'black'
+          },
+          'abacos' => {
+            'codigo_barras' => "code-#{sku}-3",
           }
         }
       ],

@@ -86,20 +86,13 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
 
   post %r{(add_product|update_product)$} do
     begin
-      client   = VTEX::ClientSoap.new(@config['vtex_site_id'], @config['vtex_password'])
-      products = client.send_product(@payload[:product])
-      skus     = client.send_skus(@payload[:product])
-      code     = 200
-      set_summary "The product #{@payload[:product][:id]} and #{skus.size} SKUs were sent to VTEX Storefront."
-    rescue VTEXEndpointError => e
-      code = 500
-      set_summary "Validation error has ocurred: #{e.message}"
-    rescue => e
-      code = 500
-      error_notification(e)
-    end
+      client = VTEX::ClientSoap.new(@config['vtex_site_id'], @config['vtex_password'])
+      products, skus = client.send_product(@payload[:product])
 
-    process_result code
+      result 200, "Product #{@payload[:product][:id]} and #{skus.size} SKUs sent to VTEX"
+    rescue VTEXEndpointError => e
+      result 500, "Validation error has ocurred: #{e.message}"
+    end
   end
 
   post '/get_products' do
