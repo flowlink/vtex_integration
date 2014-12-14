@@ -21,7 +21,15 @@ describe VTEXEndpoint do
   end
 
   describe '/set_inventory' do
-    let(:inventory) { Factories.inventory }
+    let(:inventory) do
+      {
+        'id'         =>  '222555-medium',
+        'location'   =>  '1_1',
+        'product_id' =>  '310114830',
+        'abacos_id' =>  '2000005',
+        'quantity'   =>  99
+      }
+    end
 
     context 'success' do
       it 'imports new inventories' do
@@ -33,7 +41,7 @@ describe VTEXEndpoint do
         VCR.use_cassette('set_inventory') do
           post '/set_inventory', message, auth
 
-          expect(json_response[:summary]).to match /was sent to VTEX Storefront/
+          expect(json_response[:summary]).to match /updated with quantity/
           expect(last_response.status).to eq(200)
         end
       end

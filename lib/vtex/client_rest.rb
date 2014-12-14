@@ -44,17 +44,24 @@ module VTEX
       response
     end
 
-    def send_inventory(inventory)
+    def send_inventory(inventory, soap_password)
       options = {
         headers: headers
       }
+
       inventories= []
+
+      vtex_sku = ClientSoap.new(site_id, soap_password).get_sku_by_ref_id inventory['id']
+      raise VTEXEndpointError, "Sku #{inventory['id']} not found in VTEX" unless vtex_sku[:id]
+
+      inventory['id'] = vtex_sku[:id]
       inventories << VTEX::InventoryBuilder.build_inventory(inventory)
       options[:body] = inventories.to_json
 
       self.class.base_uri "http://#{site_id}.vtexcommercestable.com.br"
 
       response = self.class.post('/api/logistics/pvt/inventory/warehouseitems/setbalance', options)
+
       # puts "\n\n send_inventory: #{response.inspect}"
       validate_response(response)
 

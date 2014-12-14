@@ -5,7 +5,7 @@ module VTEX
       def build_inventory(inventory)
         {
           'wareHouseId' => inventory['location'] || '1_1',
-          'itemId'      => inventory['abacos_id'],
+          'itemId'      => inventory['id'],
           'quantity'    => inventory['quantity'].to_i
         }
       end

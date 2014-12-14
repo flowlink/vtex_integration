@@ -70,18 +70,11 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
   post '/set_inventory' do
     begin
       client   = VTEX::ClientRest.new(@config['vtex_site_id'], @config['vtex_app_key'], @config['vtex_app_token'])
-      response = client.send_inventory(@payload[:inventory])
-      code     = 200
-      set_summary "The inventory with product: #{@payload[:inventory][:product_id]} was sent to VTEX Storefront."
+      response = client.send_inventory(@payload[:inventory], @config['vtex_password'])
+      result 200, "Sku #{@payload[:inventory][:id]} updated with quantity #{@payload[:inventory][:quantity]} in VTEX"
     rescue VTEXEndpointError => e
-      code = 500
-      set_summary "Validation error has ocurred: #{e.message}"
-    rescue => e
-      code = 500
-      error_notification(e)
+      result 500, e.message
     end
-
-    process_result code
   end
 
   post %r{(add_product|update_product)$} do
