@@ -79,7 +79,7 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
 
   post %r{(add_product|update_product)$} do
     begin
-      client = VTEX::ClientSoap.new(@config['vtex_site_id'], @config['vtex_password'])
+      client = VTEX::ClientSoap.new(@config['vtex_site_id'], @config['vtex_password'], @config)
       products, skus = client.send_product(@payload[:product])
 
       result 200, "Product #{@payload[:product][:id]} and #{skus.size} SKUs sent to VTEX"

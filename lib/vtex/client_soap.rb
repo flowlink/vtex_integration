@@ -5,10 +5,11 @@ module VTEX
     def initialize(site_id, password, config = {})
       @config = config
       @site_id = site_id
+      url = config['vtex_soap_url'] || 'http://webservice-sandboxintegracao.vtexcommerce.com.br/service.svc?wsdl'
 
       # NOTE This url or part of it should come in as a config param?
       # good chance production url would be different
-      @client = Savon.client(wsdl: 'http://webservice-sandboxintegracao.vtexcommerce.com.br/service.svc?wsdl',
+      @client = Savon.client(wsdl: url,
                              ssl_verify_mode: :none,
                              log_level: :info,
                              pretty_print_xml: true,
