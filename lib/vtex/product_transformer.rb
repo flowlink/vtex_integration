@@ -11,6 +11,8 @@ module VTEX
           parent_sku = find_parent_sku stock_units, ref_id, client
           product = product.merge parent_sku
 
+          next unless ref_id
+
           {
             id: ref_id,
             channel: 'vtex',
@@ -25,7 +27,7 @@ module VTEX
             variants: map_variants(stock_units, ref_id, client),
             specifications: map_specifications(client, product_id)
           }.merge product
-        end
+        end.compact
       end
 
       def find_parent_sku(stock_units, ref_id, client)
