@@ -76,10 +76,13 @@ describe VTEXEndpoint do
   describe '/get_products' do
     it 'brings products' do
       message = {
-        parameters: params.merge(vtex_products_since: "2014-12-11T22:25:20Z")
+        parameters: params.merge(
+          vtex_products_since: "2014-02-11T22:25:20Z",
+          vtex_products_limit: 10
+        )
       }
 
-      VCR.use_cassette("1415400936") do
+      VCR.use_cassette("get_products") do
         post '/get_products', message.to_json, auth
 
         expect(json_response[:summary]).to match /from VTEX/

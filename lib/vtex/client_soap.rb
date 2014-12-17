@@ -7,8 +7,6 @@ module VTEX
       @site_id = site_id
       url = config['vtex_soap_url'] || 'http://webservice-sandboxintegracao.vtexcommerce.com.br/service.svc?wsdl'
 
-      # NOTE This url or part of it should come in as a config param?
-      # good chance production url would be different
       @client = Savon.client(wsdl: url,
                              ssl_verify_mode: :none,
                              log_level: :info,
@@ -27,11 +25,13 @@ module VTEX
 
     # Hopefully products are returned ordered by updated at date
     def get_products
+      default_limit = config[:vtex_products_limit].blank? ? 50 : config[:vtex_products_limit]
+
       response = client.call(
         :product_get_all_from_updated_date_and_id,
         message: {
           'tns:dateUpdated' => vtex_products_since,
-          'tns:topRows' => 1000,
+          'tns:topRows' => default_limit,
         }
       )
 
@@ -40,11 +40,7 @@ module VTEX
       xml_response = response.body[:product_get_all_from_updated_date_and_id_response]
       result = xml_response[:product_get_all_from_updated_date_and_id_result][:product_dto]
 
-      if result.is_a? Array
-        result
-      else
-        [result].compact
-      end
+      Array(result).compact
     end
 
     def get_product_by_ref_id(ref_id)
