@@ -1,5 +1,5 @@
 worker_processes 3
-timeout 180
+timeout ENV.fetch('TIMEOUT', 240).to_i
 
 preload_app true
 
