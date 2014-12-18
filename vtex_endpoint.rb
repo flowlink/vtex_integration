@@ -1,5 +1,7 @@
 require 'sinatra'
 require 'endpoint_base'
+require 'active_support/core_ext/date/calculations'
+require 'active_support/core_ext/numeric/time'
 
 Dir['./lib/**/*.rb'].each &method(:require)
 
@@ -86,7 +88,7 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
 
     if (count = products.count) > 0
       add_value 'products', products
-      add_parameter 'vtex_products_since', Time.now.utc.iso8601 - 2.hours
+      add_parameter 'vtex_products_since', (Time.now.utc - 2.hours).iso8601
 
       result 200, "Received #{count} #{"product".pluralize count} from VTEX"
     end
