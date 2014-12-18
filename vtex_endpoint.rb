@@ -93,4 +93,14 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
 
     result 200
   end
+
+  post '/get_skus_by_product_id' do
+    client = VTEX::ClientSoap.new(@config['vtex_site_id'], @config['vtex_password'])
+    stock_units = client.get_skus_by_product_id @payload[:product][:vtex_id]
+
+    product = VTEX::ProductTransformer.product_from_skus stock_units, @payload[:product], client
+    add_object "product", product
+
+    result 200, "Updated product skus, images and specifications from VTEX"
+  end
 end

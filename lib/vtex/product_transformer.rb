@@ -26,6 +26,19 @@ module VTEX
         end.compact
       end
 
+      def product_from_skus(stock_units, wombat_product, client)
+        product_id = wombat_product[:vtex_id]
+        ref_id = wombat_product[:sku]
+
+        parent_sku = find_parent_sku stock_units, ref_id, client
+
+        wombat_product = {
+          id: wombat_product[:id],
+          variants: map_variants(stock_units, ref_id, client),
+          specifications: map_specifications(client, product_id)
+        }.merge parent_sku
+      end
+
       def find_parent_sku(stock_units, ref_id, client)
         if unit = stock_units.find { |u| u[:ref_id] == ref_id }
           {
