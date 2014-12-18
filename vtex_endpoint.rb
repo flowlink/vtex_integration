@@ -86,7 +86,7 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
 
     if (count = products.count) > 0
       add_value 'products', products
-      add_parameter 'vtex_products_since', Time.now.utc.iso8601
+      add_parameter 'vtex_products_since', Time.now.utc.iso8601 - 2.hours
 
       result 200, "Received #{count} #{"product".pluralize count} from VTEX"
     end
@@ -101,6 +101,6 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
     product = VTEX::ProductTransformer.product_from_skus stock_units, @payload[:product], client
     add_object "product", product
 
-    result 200, "Updated product skus, images and specifications from VTEX"
+    result 200, "Updated product skus, images and specifications"
   end
 end
