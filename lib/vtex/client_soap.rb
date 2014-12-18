@@ -43,6 +43,25 @@ module VTEX
       format_result result
     end
 
+    def get_skus
+      limit = config[:vtex_skus_limit].blank? ? 50 : config[:vtex_skus_limit]
+      root_key = :stock_keeping_unit_get_all_from_updated_date_and_id
+
+      response = client.call(
+        root_key,
+        message: {
+          'tns:dateUpdated' => vtex_skus_since,
+          'tns:topRows' => limit,
+        }
+      )
+
+      validate_response(response)
+
+      xml_response = response.body[:"#{root_key}_response"]
+      result = xml_response[:"#{root_key}_result"][:stock_keeping_unit_dto]
+      format_result result
+    end
+
     def get_product_by_ref_id(ref_id)
       response = client.call(
         :product_get_by_ref_id,
@@ -177,6 +196,10 @@ module VTEX
 
     def vtex_products_since
       Time.parse(config[:vtex_products_since].to_s).utc.iso8601
+    end
+
+    def vtex_skus_since
+      Time.parse(config[:vtex_skus_since].to_s).utc.iso8601
     end
 
     def find_category(category_name)
