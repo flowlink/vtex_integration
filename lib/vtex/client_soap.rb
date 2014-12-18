@@ -5,6 +5,7 @@ module VTEX
     def initialize(site_id, password, config = {})
       @config = config
       @site_id = site_id
+
       url = config['vtex_soap_url'] || 'http://webservice-sandboxintegracao.vtexcommerce.com.br/service.svc?wsdl'
 
       @client = Savon.client(wsdl: url,
@@ -23,9 +24,8 @@ module VTEX
       }
     end
 
-    # Hopefully products are returned ordered by updated at date
     def get_products
-      default_limit = config[:vtex_products_limit].blank? ? 50 : config[:vtex_products_limit]
+      default_limit = config[:vtex_products_limit].blank? ? 1000 : config[:vtex_products_limit]
 
       response = client.call(
         :product_get_all_from_updated_date_and_id,

@@ -90,12 +90,6 @@ describe VTEXEndpoint do
 
         expect(json_response[:products].count).to be >= 1
         expect(json_response[:parameters]).to have_key 'vtex_products_since'
-
-        json_response[:products].each do |p|
-          p[:variants].each do |variant|
-            expect(variant[:sku]).not_to eq p[:sku]
-          end
-        end
       end
     end
 

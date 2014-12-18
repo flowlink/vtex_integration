@@ -6,17 +6,13 @@ module VTEX
           product_id = product.delete(:id)
           ref_id = product.delete(:ref_id)
 
-          stock_units = client.get_skus_by_product_id product_id
-
-          parent_sku = find_parent_sku stock_units, ref_id, client
-          product = product.merge parent_sku
-
           next unless ref_id
 
           {
             id: ref_id,
             channel: 'vtex',
             name: product.delete(:name),
+            sku: ref_id,
             description: product.delete(:description),
             permalink: product.delete(:link_id),
             available_on: product.delete(:release_date),
@@ -24,8 +20,8 @@ module VTEX
             meta_description: product.delete(:title),
             is_visible: product.delete(:is_visible),
             is_active: product.delete(:is_active),
-            variants: map_variants(stock_units, ref_id, client),
-            specifications: map_specifications(client, product_id)
+            vtex_id: product_id,
+            updated_at: Time.now.utc.iso8601
           }.merge product
         end.compact
       end
