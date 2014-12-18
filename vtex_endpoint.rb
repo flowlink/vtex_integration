@@ -20,9 +20,6 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
     rescue VTEXEndpointError => e
       code = 500
       set_summary "Validation error has ocurred: #{e.message}"
-    rescue => e
-      code = 500
-      error_notification(e)
     end
 
     process_result code
@@ -42,9 +39,6 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
     rescue VTEXEndpointError => e
       code = 500
       set_summary "Validation error has ocurred: #{e.message}"
-    rescue => e
-      code = 500
-      error_notification(e)
     end
 
     process_result code
@@ -59,9 +53,6 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
     rescue VTEXEndpointError => e
       code = 500
       set_summary "Validation error has ocurred: #{e.message}"
-    rescue => e
-      code = 500
-      error_notification(e)
     end
 
     process_result code
@@ -101,10 +92,5 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
     end
 
     result 200
-  end
-
-  def error_notification(error)
-    log_exception(error)
-    set_summary "A VTEX Endpoint error has ocurred: #{error.message}"
   end
 end
