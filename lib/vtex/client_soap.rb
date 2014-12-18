@@ -40,7 +40,7 @@ module VTEX
       xml_response = response.body[:product_get_all_from_updated_date_and_id_response]
       result = xml_response[:product_get_all_from_updated_date_and_id_result][:product_dto]
 
-      Array(result).compact
+      format_result result
     end
 
     def get_product_by_ref_id(ref_id)
@@ -84,11 +84,7 @@ module VTEX
       xml_response = response.body[:stock_keeping_unit_get_all_by_product_response]
       result = xml_response[:stock_keeping_unit_get_all_by_product_result][:stock_keeping_unit_dto]
 
-      if result.is_a? Array
-        result
-      else
-        [result].compact
-      end
+      format_result result
     end
 
     def get_image_list_by_stock_keeping_unit_id(stock_unit_id)
@@ -104,11 +100,7 @@ module VTEX
       xml_response = response.body[:image_list_by_stock_keeping_unit_id_response]
       result = xml_response[:image_list_by_stock_keeping_unit_id_result][:image_dto]
 
-      if result.is_a? Array
-        result
-      else
-        [result].compact
-      end
+      format_result result
     end
 
     def get_product_specifications_by_product_id(product_id)
@@ -123,11 +115,7 @@ module VTEX
       xml_response = response.body[:product_especification_list_by_product_id_response]
       result = xml_response[:product_especification_list_by_product_id_result][:field_dto]
 
-      if result.is_a? Array
-        result
-      else
-        [result].compact
-      end
+      format_result result
     end
 
     def send_product(wombat_product)
@@ -179,6 +167,14 @@ module VTEX
     end
 
     private
+    def format_result(result)
+      if result.is_a? Array
+        result
+      else
+        [result].compact
+      end
+    end
+
     def vtex_products_since
       Time.parse(config[:vtex_products_since].to_s).utc.iso8601
     end
