@@ -5,6 +5,7 @@ module VTEX
     def initialize(site_id, password, config = {})
       @config = config
       @site_id = site_id
+
       url = config['vtex_soap_url'] || 'http://webservice-sandboxintegracao.vtexcommerce.com.br/service.svc?wsdl'
 
       @client = Savon.client(wsdl: url,
@@ -23,9 +24,8 @@ module VTEX
       }
     end
 
-    # Hopefully products are returned ordered by updated at date
     def get_products
-      default_limit = config[:vtex_products_limit].blank? ? 50 : config[:vtex_products_limit]
+      default_limit = config[:vtex_products_limit].blank? ? 1000 : config[:vtex_products_limit]
 
       response = client.call(
         :product_get_all_from_updated_date_and_id,
@@ -40,6 +40,25 @@ module VTEX
       xml_response = response.body[:product_get_all_from_updated_date_and_id_response]
       result = xml_response[:product_get_all_from_updated_date_and_id_result][:product_dto]
 
+      format_result result
+    end
+
+    def get_skus
+      limit = config[:vtex_skus_limit].blank? ? 50 : config[:vtex_skus_limit]
+      root_key = :stock_keeping_unit_get_all_from_updated_date_and_id
+
+      response = client.call(
+        root_key,
+        message: {
+          'tns:dateUpdated' => vtex_skus_since,
+          'tns:topRows' => limit,
+        }
+      )
+
+      validate_response(response)
+
+      xml_response = response.body[:"#{root_key}_response"]
+      result = xml_response[:"#{root_key}_result"][:stock_keeping_unit_dto]
       format_result result
     end
 
@@ -177,6 +196,10 @@ module VTEX
 
     def vtex_products_since
       Time.parse(config[:vtex_products_since].to_s).utc.iso8601
+    end
+
+    def vtex_skus_since
+      Time.parse(config[:vtex_skus_since].to_s).utc.iso8601
     end
 
     def find_category(category_name)

@@ -77,7 +77,7 @@ describe VTEXEndpoint do
     it 'brings products' do
       message = {
         parameters: params.merge(
-          vtex_products_since: "2014-02-11T22:25:20Z",
+          vtex_products_since: "2014-12-18T15:55:20Z",
           vtex_products_limit: 10
         )
       }
@@ -90,12 +90,6 @@ describe VTEXEndpoint do
 
         expect(json_response[:products].count).to be >= 1
         expect(json_response[:parameters]).to have_key 'vtex_products_since'
-
-        json_response[:products].each do |p|
-          p[:variants].each do |variant|
-            expect(variant[:sku]).not_to eq p[:sku]
-          end
-        end
       end
     end
 
@@ -112,6 +106,30 @@ describe VTEXEndpoint do
 
         expect(json_response[:parameters]).to eq nil
       end
+    end
+  end
+
+  it 'get skus by product id' do
+    message = {
+      parameters: params.merge(
+        vtex_skus_since: "2014-02-11T22:25:20Z",
+        vtex_skus_limit: 100
+      ),
+      product: {
+        id: "222555",
+        sku: "222555",
+        vtex_id: "310114803"
+      }
+    }
+
+    VCR.use_cassette("get_skus_by_product_id") do
+      post '/get_skus_by_product_id', message.to_json, auth
+
+      expect(json_response[:summary]).to match /from VTEX/
+      expect(last_response.status).to eq(200)
+
+      expect(json_response[:products].count).to eq 1
+      expect(json_response[:products].first).to have_key "variants"
     end
   end
 end

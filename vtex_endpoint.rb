@@ -1,5 +1,7 @@
 require 'sinatra'
 require 'endpoint_base'
+require 'active_support/core_ext/date/calculations'
+require 'active_support/core_ext/numeric/time'
 
 Dir['./lib/**/*.rb'].each &method(:require)
 
@@ -20,9 +22,6 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
     rescue VTEXEndpointError => e
       code = 500
       set_summary "Validation error has ocurred: #{e.message}"
-    rescue => e
-      code = 500
-      error_notification(e)
     end
 
     process_result code
@@ -42,9 +41,6 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
     rescue VTEXEndpointError => e
       code = 500
       set_summary "Validation error has ocurred: #{e.message}"
-    rescue => e
-      code = 500
-      error_notification(e)
     end
 
     process_result code
@@ -59,9 +55,6 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
     rescue VTEXEndpointError => e
       code = 500
       set_summary "Validation error has ocurred: #{e.message}"
-    rescue => e
-      code = 500
-      error_notification(e)
     end
 
     process_result code
@@ -95,7 +88,7 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
 
     if (count = products.count) > 0
       add_value 'products', products
-      add_parameter 'vtex_products_since', Time.now.utc.iso8601
+      add_parameter 'vtex_products_since', (Time.now.utc - 2.hours).iso8601
 
       result 200, "Received #{count} #{"product".pluralize count} from VTEX"
     end
@@ -103,8 +96,13 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
     result 200
   end
 
-  def error_notification(error)
-    log_exception(error)
-    set_summary "A VTEX Endpoint error has ocurred: #{error.message}"
+  post '/get_skus_by_product_id' do
+    client = VTEX::ClientSoap.new(@config['vtex_site_id'], @config['vtex_password'])
+    stock_units = client.get_skus_by_product_id @payload[:product][:vtex_id]
+
+    product = VTEX::ProductTransformer.product_from_skus stock_units, @payload[:product], client
+    add_object "product", product
+
+    result 200, "Updated product skus, images and specifications"
   end
 end
