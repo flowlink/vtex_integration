@@ -125,11 +125,11 @@ describe VTEXEndpoint do
     VCR.use_cassette("get_skus_by_product_id") do
       post '/get_skus_by_product_id', message.to_json, auth
 
-      expect(json_response[:summary]).to match /from VTEX/
+      expect(json_response[:summary]).to match /Updated product/
       expect(last_response.status).to eq(200)
 
       expect(json_response[:products].count).to eq 1
-      expect(json_response[:products].first).to have_key "variants"
+      expect(json_response[:products].first[:vtex]).to have_key "variants"
     end
   end
 end

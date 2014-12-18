@@ -10,19 +10,20 @@ module VTEX
 
           {
             id: ref_id,
-            channel: 'vtex',
-            name: product.delete(:name),
-            sku: ref_id,
-            description: product.delete(:description),
-            permalink: product.delete(:link_id),
-            available_on: product.delete(:release_date),
-            meta_keywords: product.delete(:key_words),
-            meta_description: product.delete(:title),
-            is_visible: product.delete(:is_visible),
-            is_active: product.delete(:is_active),
             vtex_id: product_id,
-            updated_at: Time.now.utc.iso8601
-          }.merge product
+            updated_at: Time.now.utc.iso8601,
+            vtex: {
+              sku: ref_id,
+              name: product.delete(:name),
+              description: product.delete(:description),
+              permalink: product.delete(:link_id),
+              available_on: product.delete(:release_date),
+              meta_keywords: product.delete(:key_words),
+              meta_description: product.delete(:title),
+              is_visible: product.delete(:is_visible),
+              is_active: product.delete(:is_active)
+            }.merge(product)
+          }
         end.compact
       end
 
@@ -34,8 +35,10 @@ module VTEX
 
         wombat_product = {
           id: wombat_product[:id],
-          variants: map_variants(stock_units, ref_id, client),
-          specifications: map_specifications(client, product_id)
+          vtex: {
+            variants: map_variants(stock_units, ref_id, client),
+            specifications: map_specifications(client, product_id)
+          }
         }.merge parent_sku
       end
 
