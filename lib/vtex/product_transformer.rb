@@ -35,13 +35,14 @@ module VTEX
         variants = map_variants stock_units, ref_id, client
 
         unless variants.empty?
-          last_updated_at = variants.map { |v| v[:date_updated] }.sort.last.utc.iso8601
+          timestamp = variants.map { |v| v[:date_updated] }.compact.sort.last
+          timestamp = timestamp.utc.iso8601 if timestamp
         end
 
         wombat_product = {
           id: wombat_product[:id],
           vtex: {
-            updated_at: last_updated_at,
+            updated_at: timestamp,
             variants: variants,
             specifications: map_specifications(client, product_id)
           }
