@@ -32,11 +32,17 @@ module VTEX
         ref_id = wombat_product[:sku]
 
         parent_sku = find_parent_sku stock_units, ref_id, client
+        variants = map_variants stock_units, ref_id, client
+
+        unless variants.empty?
+          last_updated_at = variants.map { |v| v[:date_updated] }.sort.last.utc.iso8601
+        end
 
         wombat_product = {
           id: wombat_product[:id],
           vtex: {
-            variants: map_variants(stock_units, ref_id, client),
+            updated_at: last_updated_at,
+            variants: variants,
             specifications: map_specifications(client, product_id)
           }
         }.merge parent_sku
