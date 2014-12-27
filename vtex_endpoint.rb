@@ -14,8 +14,10 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
   end
 
   before do
-    unless @config['vtex_soap_user'].present?
-      @config['vtex_soap_user'] = @config['vtex_site_id']
+    if @config.is_a? Hash
+      unless @config['vtex_soap_user'].present?
+        @config['vtex_soap_user'] = @config['vtex_site_id']
+      end
     end
   end
 

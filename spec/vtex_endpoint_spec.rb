@@ -3,6 +3,11 @@ require 'spec_helper'
 describe VTEXEndpoint do
   let(:params) { Factories.parameters }
 
+  it "checks root" do
+    get '/'
+    expect(last_response.status).to eq(200)
+  end
+
   describe '/get_orders' do
     context 'success' do
       it 'retrive orders' do
