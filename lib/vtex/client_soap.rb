@@ -1,10 +1,12 @@
 module VTEX
   class ClientSoap
-    attr_reader :site_id, :client, :config
+    attr_reader :client, :config
 
-    def initialize(site_id, password, config = {})
+    def initialize(config = {})
       @config = config
-      @site_id = site_id
+
+      user = config['vtex_soap_user']
+      password = config['vtex_password']
 
       url = config['vtex_soap_url'] || 'http://webservice-sandboxintegracao.vtexcommerce.com.br/service.svc?wsdl'
 
@@ -13,7 +15,7 @@ module VTEX
                              log_level: :info,
                              pretty_print_xml: true,
                              log: true,
-                             basic_auth: [site_id, password],
+                             basic_auth: [user, password],
                              namespaces: namespaces)
     end
 

@@ -2,10 +2,15 @@ module VTEX
   class ClientRest
     include ::HTTParty
 
-    attr_reader :site_id, :headers, :app_key, :app_token
+    attr_reader :site_id, :headers, :app_key, :app_token, :config
 
-    def initialize(site_id, app_key, app_token)
-      @site_id = site_id
+    def initialize(config = {})
+      @config = config
+
+      @site_id = config[:vtex_site_id]
+      @app_key = config[:vtex_app_key]
+      @app_token = config[:vtex_app_token]
+
       @headers = {
                    "Content-Type"        => "application/json",
                    "Accept"              => "application/json",
@@ -51,7 +56,7 @@ module VTEX
 
       inventories= []
 
-      vtex_sku = ClientSoap.new(site_id, soap_password).get_sku_by_ref_id inventory['id']
+      vtex_sku = ClientSoap.new(config).get_sku_by_ref_id inventory['id']
       raise VTEXEndpointError, "Sku #{inventory['id']} not found in VTEX" unless vtex_sku[:id]
 
       inventory['id'] = vtex_sku[:id]

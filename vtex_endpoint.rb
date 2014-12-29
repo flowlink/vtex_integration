@@ -23,7 +23,7 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
 
   post %r{(add_shipment|update_shipment)$} do
     begin
-      client   = VTEX::ClientRest.new(@config['vtex_site_id'], @config['vtex_app_key'], @config['vtex_app_token'])
+      client   = VTEX::ClientRest.new(@config)
       response = client.send_shipment(@payload[:order])
       code     = 200
       set_summary "The order #{@payload[:order][:id]} was sent to VTEX Storefront."
@@ -37,7 +37,7 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
 
   post '/get_orders' do
     begin
-      client = VTEX::ClientRest.new(@config['vtex_site_id'], @config['vtex_app_key'], @config['vtex_app_token'])
+      client = VTEX::ClientRest.new(@config)
       orders = client.get_orders(@config['vtex_poll_order_timestamp'])
 
       orders.each do |order|
@@ -56,7 +56,7 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
 
   post '/update_order_status' do
     begin
-      client   = VTEX::ClientRest.new(@config['vtex_site_id'], @config['vtex_app_key'], @config['vtex_app_token'])
+      client   = VTEX::ClientRest.new(@config)
       response = client.send_order(@payload[:order])
       code     = 200
       set_summary "The order #{@payload[:order][:id]} was sent to VTEX Storefront."
@@ -70,7 +70,7 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
 
   post '/set_inventory' do
     begin
-      client   = VTEX::ClientRest.new(@config['vtex_site_id'], @config['vtex_app_key'], @config['vtex_app_token'])
+      client   = VTEX::ClientRest.new(@config)
       response = client.send_inventory(@payload[:inventory], @config['vtex_password'])
       result 200, "Sku #{@payload[:inventory][:id]} updated with quantity #{@payload[:inventory][:quantity]} in VTEX"
     rescue VTEXEndpointError => e
@@ -80,7 +80,7 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
 
   post %r{(add_product|update_product)$} do
     begin
-      client = VTEX::ClientSoap.new(@config['vtex_soap_user'], @config['vtex_password'], @config)
+      client = VTEX::ClientSoap.new(@config)
       products, skus = client.send_product(@payload[:product])
 
       result 200, "Product #{@payload[:product][:id]} and #{skus.size} SKUs sent to VTEX"
@@ -90,7 +90,7 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
   end
 
   post '/get_products' do
-    client = VTEX::ClientSoap.new(@config['vtex_soap_user'], @config['vtex_password'], @config)
+    client = VTEX::ClientSoap.new(@config)
     raw_products = client.get_products
     products = VTEX::ProductTransformer.map raw_products, client
 
@@ -105,7 +105,7 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
   end
 
   post '/get_skus_by_product_id' do
-    client = VTEX::ClientSoap.new(@config['vtex_soap_user'], @config['vtex_password'], @config)
+    client = VTEX::ClientSoap.new(@config)
     stock_units = client.get_skus_by_product_id @payload[:product][:vtex_id]
 
     product = VTEX::ProductTransformer.product_from_skus stock_units, @payload[:product], client
