@@ -67,6 +67,7 @@ module VTEX
 
           {
             sku: variant_ref_id,
+            vtex_id: stock_unit_id,
             price: stock_unit.delete(:price),
             list_price: stock_unit.delete(:list_price),
             cost_price: stock_unit.delete(:cost_price),
