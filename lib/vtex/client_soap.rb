@@ -14,7 +14,7 @@ module VTEX
                              ssl_verify_mode: :none,
                              log_level: :info,
                              pretty_print_xml: true,
-                             log: true,
+                             log: false,
                              basic_auth: [user, password],
                              namespaces: namespaces)
     end
