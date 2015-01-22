@@ -32,7 +32,7 @@ module VTEX
         ref_id = wombat_product[:sku]
 
         stock_units.map! do |unit|
-          if new_info = client.get_sku_by_ref_id unit[:ref_id]
+          if new_info = client.get_sku_by_ref_id(unit[:ref_id])
             unit.merge(new_info)
           else
             unit
