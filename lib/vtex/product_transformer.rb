@@ -31,6 +31,14 @@ module VTEX
         product_id = wombat_product[:vtex_id]
         ref_id = wombat_product[:sku]
 
+        stock_units.map! do |unit|
+          if new_info = client.get_sku_by_ref_id(unit[:ref_id])
+            unit.merge(new_info)
+          else
+            unit
+          end
+        end
+
         parent_sku = find_parent_sku stock_units, ref_id, client
         variants = map_variants stock_units, ref_id, client
 
