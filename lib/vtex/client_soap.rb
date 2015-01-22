@@ -8,7 +8,11 @@ module VTEX
       user = config['vtex_soap_user']
       password = config['vtex_password']
 
-      url = config['vtex_soap_url'] || 'http://webservice-sandboxintegracao.vtexcommerce.com.br/service.svc?wsdl'
+      url = if config['vtex_soap_url'].to_s.empty?
+              'http://webservice-sandboxintegracao.vtexcommerce.com.br/service.svc?wsdl'
+            else
+              config['vtex_soap_url']
+            end
 
       @client = Savon.client(wsdl: url,
                              ssl_verify_mode: :none,
