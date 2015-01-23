@@ -10,6 +10,7 @@ module VTEX
 
         expect(response['id']).not_to be_present
         expect(response[:id]).to be_present
+        expect(response[:product_id]).not_to be_present
       end
     end
 
@@ -32,6 +33,7 @@ module VTEX
 
         expect(response['id']).not_to be_present
         expect(response[:id]).to be_present
+        expect(response[:product_id]).to be_present
       end
     end
   end
