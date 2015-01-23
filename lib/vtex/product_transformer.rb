@@ -56,6 +56,7 @@ module VTEX
         if unit = stock_units.find { |u| u[:ref_id] == ref_id }
           {
             sku: unit[:ref_id],
+            vtex_sku_id: unit[:id],
             price: unit[:price],
             list_price: unit[:list_price],
             cost_price: unit[:cost_price],
@@ -75,7 +76,8 @@ module VTEX
 
           {
             sku: variant_ref_id,
-            vtex_id: stock_unit_id,
+            vtex_id: stock_unit.delete(:product_id),
+            vtex_sku_id: stock_unit_id,
             price: stock_unit.delete(:price),
             list_price: stock_unit.delete(:list_price),
             cost_price: stock_unit.delete(:cost_price),
