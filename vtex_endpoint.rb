@@ -113,4 +113,16 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
 
     result 200, "Updated product skus, images and specifications"
   end
+
+  get '/get_product_skus_by_product_id' do
+    client = VTEX::ClientPubApi.new(@config)
+    soap_client = VTEX::ClientSoap.new(client.config)
+
+    product_json = client.get_product_by_id @payload[:product][:vtex_id]
+
+    product = VTEX::ProductTransformer.product_from_pub_api product_json, @payload[:product], client, soap_client
+    add_object "product", product
+
+    result 200, "Updated product skus, images and specifications"
+  end
 end

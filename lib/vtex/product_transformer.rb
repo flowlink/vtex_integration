@@ -27,6 +27,80 @@ module VTEX
         end.compact
       end
 
+      def product_from_pub_api(json, wombat_product, client, soap_client)
+        json[:name] = json.delete('productName')
+        json[:brand] = json.delete('brand')
+        json[:description] = json.delete('description')
+        json[:permalink] = json.delete('linkText')
+        json[:link] = json.delete('link')
+        json.delete('productReference')
+        json[:categories] = json.delete('categories')
+        json[:categories].reverse!
+        json[:categories].map! do |c|
+          c.gsub!(/\A\/|\/\Z/,"")
+          c.split("/").last
+        end
+        json[:variants] = []
+        json['items'].each do |variant|
+          variant[:sku] = variant['referenceId'].first['Value']
+          variant.delete('referenceId')
+          variant[:vtex_id] = wombat_product[:vtex_id]
+          variant[:vtex_sku_id] = variant.delete('itemId')
+          variant[:name] = variant.delete('name')
+          variant[:full_name] = variant.delete('nameComplete')
+          variant[:complement_name] = variant.delete('complementName')
+          variant[:barcode] = variant.delete('ean')
+          variant[:images] = variant.delete('images').to_a.map do |img|
+            {
+              url: img['imageUrl'],
+              title: img['imageText']
+            }
+          end
+          seller = variant.delete('sellers').first
+          variant[:price] = seller['commertialOffer']['Price']
+          variant[:list_price] = seller['commertialOffer']['ListPrice']
+          variant[:hand_on_count] = seller['commertialOffer']['AvailableQuantity']
+          variant[:vtex_options] = {}
+          if variant.has_key?('variations')
+            variant['variations'].each do |option|
+              variant[:vtex_options][option.delete(':').parameterize.underscore.to_sym] = variant.delete(option).join
+            end
+            variant.delete('variations')
+          end
+          json[:variants] << variant
+        end
+        json.delete('items')
+
+        json[:specifications] = []
+        json['allSpecifications'].each do |spec|
+          json[:specifications] << {
+            name: spec.delete(':'),
+            value: json.delete(spec).join
+          }
+        end
+        json.delete('Especificações:')
+        json.delete('allSpecifications')
+
+        json[:variants].map! do |variant|
+          if new_info = soap_client.get_sku_by_ref_id(variant[:sku])
+            variant.merge(new_info)
+          else
+            variant
+          end
+        end
+
+        parent_sku = json[:variants].select { |sku| sku[:sku] == wombat_product[:id] }.first
+        json[:variants].reject! { |sku| sku[:sku] == wombat_product[:id] }
+
+        wombat_product = {
+          id: wombat_product[:id],
+          vtex_id: wombat_product[:vtex_id],
+          vtex: {
+            updated_at: Time.now.utc.iso8601,
+          }.merge(json)
+        }.merge(parent_sku.slice(:sku, :vtex_sku_id, :price, :list_price, :cost_price, :images, :height, :width, :length, :weight_kg, :is_active))
+      end
+
       def product_from_skus(stock_units, wombat_product, client)
         product_id = wombat_product[:vtex_id]
         ref_id = wombat_product[:sku]

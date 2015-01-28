@@ -7,6 +7,7 @@ module Factories
       'vtex_app_token' => ENV['VTEX_APP_TOKEN'],
       'vtex_password'  => ENV['VTEX_PASSWORD'],
       'vtex_soap_url'  => ENV['VTEX_SOAP_URL'],
+      'vtex_pub_api_url' => ENV['VTEX_PUB_API_URL'],
       'vtex_poll_order_timestamp' => '2014-10-05T14:49:00-03:00'
     }
   end

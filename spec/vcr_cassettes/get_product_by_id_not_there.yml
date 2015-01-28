@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.petlove.com.br/api/catalog_system/pub/products/search/?fq=productId:000111
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 28 Jan 2015 20:03:43 GMT
+      Expires:
+      - "-1"
+      'No':
+      - "-RLEN1DQM5NV"
+      P3p:
+      - policyref="/w3c/p3p.xml",CP="ADMa OUR NOR CNT NID DSP NOI COR"
+      Pragma:
+      - no-cache
+      Resources:
+      - 0-9/0
+      Server:
+      - nginx
+      Set-Cookie:
+      - janus_sid=b0bf874f-a2f2-404b-ab74-a391634f240b; expires=Sat, 31 Jan 2015 20:03:43
+        GMT; domain=www.petlove.com.br; path=/
+      - vtexjanushash=9B48422C55DE775F8CE3829EF51661B7; max-age=3600; path=/
+      X-Powered-By-Vtex-Janus-Edge:
+      - v1.16.37
+      X-Powered-By-Vtex-Janus-Router:
+      - 2.1.94
+      X-Track:
+      - stable
+      X-Vtex-Cache-Status-Janus-Edge:
+      - BYPASS
+      X-Vtex-Janus-Router-Backend-App:
+      - prtapi-v1.4.87-stable+208
+      X-Vtex-Operation-Id:
+      - 50ecd78a-da9d-4cf6-b9bc-e5c8b34fc4ad
+      Content-Length:
+      - '2'
+      X-Cache:
+      - MISS from squid
+      X-Cache-Lookup:
+      - MISS from squid:3128
+      Via:
+      - 1.0 squid (squid/3.1.10)
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 20:04:04 GMT
+recorded_with: VCR 2.9.3
