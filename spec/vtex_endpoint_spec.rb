@@ -137,4 +137,26 @@ describe VTEXEndpoint do
       expect(json_response[:products].first[:vtex]).to have_key "variants"
     end
   end
+
+  context "hitting public api" do
+    it 'get skus by product id' do
+      message = {
+        parameters: params,
+        product: {
+          id: "31024595",
+          vtex_id: "31068"
+        }
+      }
+
+      VCR.use_cassette("get_product_skus_by_product_id") do
+        post '/get_product_skus_by_product_id', message.to_json, auth
+
+        expect(json_response[:summary]).to match /Updated product/
+        expect(last_response.status).to eq(200)
+
+        expect(json_response[:products].count).to eq 1
+        expect(json_response[:products].first[:vtex]).to have_key "variants"
+      end
+    end
+  end
 end

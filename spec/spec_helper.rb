@@ -22,10 +22,13 @@ ENV['VTEX_APP_KEY'] ||= 'appkey'
 ENV['VTEX_APP_TOKEN'] ||= 'apptoken'
 ENV['VTEX_SOAP_USER'] ||= 'soapuser'
 ENV['VTEX_SOAP_URL'] ||= 'soapurl.com'
+ENV['VTEX_PUB_API_URL'] ||= 'test.com'
 
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/vcr_cassettes'
   c.hook_into :webmock
+
+  # c.force_utf8_encoding = true
 
   c.filter_sensitive_data("VTEX_SITE_ID") { ENV["VTEX_SITE_ID"] }
   c.filter_sensitive_data("VTEX_SOAP_USER") { ENV["VTEX_SOAP_USER"] }
