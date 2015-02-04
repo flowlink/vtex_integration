@@ -158,5 +158,19 @@ describe VTEXEndpoint do
         expect(json_response[:products].first[:vtex]).to have_key "variants"
       end
     end
+
+    it "fails early if cant find product" do
+      message = {
+        product: {
+          vtex_id: "2003224"
+        }
+      }
+
+      allow_any_instance_of(VTEX::ClientPubApi).to receive(:get_product_by_id).and_return nil
+      post '/get_product_skus_by_product_id', message.to_json, auth
+
+      expect(json_response[:summary]).to match /Could not find product/
+      expect(last_response.status).to eq 500
+    end
   end
 end

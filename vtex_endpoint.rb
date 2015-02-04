@@ -117,12 +117,15 @@ class VTEXEndpoint < EndpointBase::Sinatra::Base
   post '/get_product_skus_by_product_id' do
     client = VTEX::ClientPubApi.new(@config)
     soap_client = VTEX::ClientSoap.new(client.config)
+    vtex_id = @payload[:product][:vtex_id]
 
-    product_json = client.get_product_by_id @payload[:product][:vtex_id]
+    if product_json = client.get_product_by_id(vtex_id)
+      product = VTEX::ProductTransformer.product_from_pub_api product_json, @payload[:product], soap_client
+      add_object "product", product
 
-    product = VTEX::ProductTransformer.product_from_pub_api product_json, @payload[:product], soap_client
-    add_object "product", product
-
-    result 200, "Updated product skus, images and specifications"
+      result 200, "Updated product skus, images and specifications"
+    else
+      result 500, "Could not find product #{vtex_id} in VTEX"
+    end
   end
 end
