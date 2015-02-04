@@ -56,7 +56,7 @@ module VTEX
           variant[:hand_on_count] = offer.try('AvailableQuantity')
           variant[:vtex_options] = {}
           variant.delete('variations').to_a.each do |option|
-            variant[:vtex_options][option.delete(':').parameterize.underscore.to_sym] = variant.delete(option).join
+            variant[:vtex_options][option.delete(':').parameterize.underscore.to_sym] = variant.delete(option).join(", ")
           end
           new_info = client.get_sku_by_ref_id(variant[:sku]) || {}
           json[:variants] << variant.merge(new_info)
@@ -65,7 +65,7 @@ module VTEX
         json.delete('allSpecifications').to_a.each do |spec|
           json[:specifications] << {
             name: spec.delete(':'),
-            value: json.delete(spec).join
+            value: json.delete(spec).join(", ")
           }
         end
         json.reject!{ |k,v| ['Especificações:','productReference','link','complementName'].include?(k) }
