@@ -28,9 +28,9 @@ describe VTEXEndpoint do
   describe '/set_inventory' do
     let(:inventory) do
       {
-        'id'         =>  '222555-medium',
+        'id'         =>  '31024595',
         'location'   =>  '1_1',
-        'product_id' =>  '310114830',
+        'product_id' =>  '31024595',
         'abacos_id' =>  '2000005',
         'quantity'   =>  99
       }
@@ -82,7 +82,7 @@ describe VTEXEndpoint do
     it 'brings products' do
       message = {
         parameters: params.merge(
-          vtex_products_since: "2014-12-18T15:55:20Z",
+          vtex_products_since: "2015-02-08T15:55:20Z",
           vtex_products_limit: 10
         )
       }
@@ -103,14 +103,14 @@ describe VTEXEndpoint do
         parameters: params.merge(vtex_products_since: Time.now.utc.iso8601)
       }
 
-      VCR.use_cassette("no_products_1415323854") do
-        post '/get_products', message.to_json, auth
+      allow_any_instance_of(VTEX::ClientSoap).to receive(:get_products).and_return []
 
-        expect(json_response[:summary]).to eq nil
-        expect(last_response.status).to eq(200)
+      post '/get_products', message.to_json, auth
 
-        expect(json_response[:parameters]).to eq nil
-      end
+      expect(json_response[:summary]).to eq nil
+      expect(last_response.status).to eq(200)
+
+      expect(json_response[:parameters]).to eq nil
     end
   end
 
