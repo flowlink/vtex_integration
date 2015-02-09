@@ -9,11 +9,15 @@ module VTEX
       # RefId. Apparently can be any string, here to map Wombat IDs
       #
       def build_product(product, vtex_product, client)
+        brand_id = vtex_product[:brand_id] || product['vtex_brand_id']
+        category_id = vtex_product[:category_id] || product['vtex_category_id']
+        department_id = vtex_product[:department_id] || product['vtex_department_id']
+
         {
           'vtex:AdWordsRemarketingCode' => nil,
-          'vtex:BrandId'                => client.find_or_create_brand(product['brand']) || 1,
-          'vtex:CategoryId'             => client.find_or_create_category(product['taxons']) || 1000000,
-          'vtex:DepartmentId'           => 1000000,
+          'vtex:BrandId'                => brand_id,
+          'vtex:CategoryId'             => category_id,
+          'vtex:DepartmentId'           => department_id,
           'vtex:Description'            => product['description'],
           'vtex:DescriptionShort'       => nil,
           'vtex:Id'                     => vtex_product[:id],
@@ -31,7 +35,7 @@ module VTEX
           'vtex:SupplierId'             => nil,
           'vtex:TaxCode'                => nil,
           'vtex:Title'                  => nil
-         }
+        }
       end
 
       # Do not change the order of fields
