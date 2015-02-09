@@ -34,7 +34,7 @@ module VTEX
         json[:permalink] = json.delete('linkText')
         json[:categories] = json.delete('categories').reverse.map do |c|
           c.gsub!(/\A\/|\/\Z/,"")
-          c.split("/").last
+          c.split("/")
         end
         json[:variants] = []
         json.delete('items').to_a.each do |variant|
