@@ -18,5 +18,7 @@
 
 /coverage
 
+.env
+
 .DS_Store
 public/assets

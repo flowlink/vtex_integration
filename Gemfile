@@ -31,4 +31,5 @@ group :test do
   gem 'rb-fsevent', '~> 0.9.1'
   gem 'rack-test'
   gem 'timecop'
+  gem 'dotenv'
 end

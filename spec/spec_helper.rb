@@ -1,12 +1,10 @@
 require 'rubygems'
 require 'bundler'
 require 'sinatra'
+require 'dotenv'
+Dotenv.load
 
 Bundler.require(:default, :test)
-ENV['ENDPOINT_KEY'] = '123'
-
-require 'simplecov'
-SimpleCov.start
 
 require File.join(File.dirname(__FILE__), '..', 'vtex_endpoint.rb')
 
