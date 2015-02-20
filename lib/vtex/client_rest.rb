@@ -44,7 +44,7 @@ module VTEX
 
       response = self.class.get("/api/oms/pvt/orders/#{vtex_order['orderId']}/", options)
       # puts "\n\n find_order: #{response.inspect}"
-      validate_response(response)
+      validate_response(response, "Processing order:[#{vtex_order['orderId']}] ")
 
       response
     end
@@ -88,8 +88,8 @@ module VTEX
 
     private
 
-    def validate_response(response)
-      raise VTEXEndpointError, response if VTEX::ErrorParser.response_has_errors?(response)
+    def validate_response(response, additional_message='')
+      raise VTEXEndpointError, "#{additional_message}#{response}" if VTEX::ErrorParser.response_has_errors?(response)
       response
     end
 
